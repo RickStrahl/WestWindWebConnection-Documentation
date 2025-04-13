@@ -1,0 +1,1 @@
+﻿Closes an SMTP connection opened with Connect

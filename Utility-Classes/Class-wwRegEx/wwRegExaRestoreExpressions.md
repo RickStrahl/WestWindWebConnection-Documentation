@@ -1,0 +1,1 @@
+﻿Restore stripped expressions in a text string that match a given static string that was typically created with aStripExpressions. This routine finds the static text and replaces it with the content of the array passed in one match for each string match.

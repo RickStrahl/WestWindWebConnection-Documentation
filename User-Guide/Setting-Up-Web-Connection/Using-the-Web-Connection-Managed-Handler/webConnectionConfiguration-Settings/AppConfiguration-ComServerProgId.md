@@ -1,0 +1,1 @@
+﻿The ProgId of the COM server to be loaded

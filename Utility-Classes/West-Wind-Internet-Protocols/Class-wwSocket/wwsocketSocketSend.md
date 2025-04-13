@@ -1,0 +1,1 @@
+﻿High level method that connects to a socket, sends data and receives a result then disconnects from the socket. Great for various XML services that follow a simple transaction model with a 'hit'.

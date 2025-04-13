@@ -1,0 +1,1 @@
+﻿Removes HTML tags from the passed text and converts it to plain text. Note formatting is totally removed!

@@ -1,0 +1,1 @@
+﻿Port to connect on. Default: 110 (standard POP3 port)

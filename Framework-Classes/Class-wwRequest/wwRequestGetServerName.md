@@ -1,0 +1,1 @@
+﻿Returns the server's domain or IP address. Note that this value returns only the server portion of the current URL.

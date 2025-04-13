@@ -1,0 +1,1 @@
+﻿List of properties that are not included in the XML document when creating XML from an object with ObjectToXML. This property is preset to strip out most VFP properties used for Custom objects. You can add to this property to filter out additional properties. Lower case values separated by commas.

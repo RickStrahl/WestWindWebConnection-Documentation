@@ -1,0 +1,1 @@
+﻿Attributes to be added to the table when rendered

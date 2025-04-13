@@ -1,0 +1,1 @@
+﻿Adds a validation error to the collection of errors.

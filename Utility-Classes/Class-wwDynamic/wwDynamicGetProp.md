@@ -1,0 +1,1 @@
+﻿Retrieves a value from a dynamic property.

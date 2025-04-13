@@ -1,0 +1,1 @@
+﻿By default a standard Http Header is created, but you can set this property and write a standard Web Connection HTTP header on your own.

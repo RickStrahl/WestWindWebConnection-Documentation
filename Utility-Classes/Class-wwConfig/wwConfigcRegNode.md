@@ -1,0 +1,1 @@
+﻿The key name to used to persist a value in the registry. Note currently wwConfig persists the entire object as a single value in the registry. The value is written as an XML string.

@@ -1,0 +1,1 @@
+﻿Retrieves the Temp Path appropriate for the Web Server. Supported only for Website - returns the system temp path for all others.

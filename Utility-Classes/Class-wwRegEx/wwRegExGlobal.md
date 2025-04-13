@@ -1,0 +1,1 @@
+﻿This property determines whether all matches or just the first one is returned. Defaults to .T. returning all matches in the match collection.

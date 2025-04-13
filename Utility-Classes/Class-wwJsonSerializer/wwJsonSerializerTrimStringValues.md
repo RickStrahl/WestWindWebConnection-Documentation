@@ -1,0 +1,1 @@
+﻿If .T. trims all string values removing trailing spaces to minimize payload size on the wire.

@@ -1,0 +1,1 @@
+﻿An error message if the script execution fails. Also set is the lError property.

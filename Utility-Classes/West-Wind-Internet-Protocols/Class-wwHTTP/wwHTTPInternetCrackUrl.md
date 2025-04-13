@@ -1,0 +1,1 @@
+﻿This method breaks down an incoming URL into its component pieces.

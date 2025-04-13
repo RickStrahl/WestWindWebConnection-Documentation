@@ -1,0 +1,1 @@
+﻿Hides the panel, making it invisible by setting display="none";

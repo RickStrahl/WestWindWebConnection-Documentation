@@ -1,0 +1,1 @@
+﻿Username for authentication against the FTP server.

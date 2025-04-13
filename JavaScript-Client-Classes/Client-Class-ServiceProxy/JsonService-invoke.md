@@ -1,0 +1,1 @@
+﻿Calls a service method by specifying a method name, an array of parameters and a callback and error handler method.

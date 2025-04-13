@@ -1,0 +1,1 @@
+﻿The HTTP Version for the header. Default: 1.1

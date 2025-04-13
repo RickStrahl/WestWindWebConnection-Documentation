@@ -1,0 +1,1 @@
+﻿Reads a string or integer value from the registry.

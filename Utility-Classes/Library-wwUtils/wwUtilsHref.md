@@ -1,0 +1,1 @@
+﻿Creates an HTML anchor tag like `<a href="">` as a string.

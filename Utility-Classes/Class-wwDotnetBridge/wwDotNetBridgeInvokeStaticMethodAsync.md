@@ -1,0 +1,1 @@
+﻿Invokes a .NET static method asynchronously on a seperate thread and fires `OnCompleted()` and `OnError()` events into the passed in Callback object.Uses the same mechanism as [wwDotNetBridge::InvokeMethodAsync](VFPS://Topic/_4IU0WXVI1).

@@ -1,0 +1,1 @@
+﻿Deletes files based on a path and file spec, recursively down the folder hiearchy. Optionally also allows removal of empty folders effectively deleting entire folder hiearchy.

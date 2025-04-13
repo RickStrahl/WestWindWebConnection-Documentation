@@ -1,0 +1,1 @@
+﻿Checks to see if a COM object exists in the registry.

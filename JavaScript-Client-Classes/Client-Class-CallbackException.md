@@ -1,0 +1,3 @@
+﻿The Callback Exception object is used to return errors from any callbacks. Any errors are always routed to the callbackErrorHandler specified on the client control (or parameter if available).
+
+Most framework errors that occur as part of a callback will fire the callback handler. This includes network and security errors from XmlHttp, server side execution or routing errors, as well as possible control assignment (for Panel operations).

@@ -1,0 +1,1 @@
+﻿Contains the version number after a call to GetVersionInfo(). Value is either string or numeric depending on the cVersionType setting.

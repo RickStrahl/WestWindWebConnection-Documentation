@@ -1,0 +1,1 @@
+﻿Determines whether emails need to use SSL to send.

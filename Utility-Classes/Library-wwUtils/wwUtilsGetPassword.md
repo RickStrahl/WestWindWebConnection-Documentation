@@ -1,0 +1,1 @@
+﻿Pops up a VFP Form Inputbox asking for a password. The password is hidden with a password mask.

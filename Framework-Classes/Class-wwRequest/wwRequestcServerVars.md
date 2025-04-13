@@ -1,0 +1,1 @@
+﻿This property holds the raw Server variables returned from the Web Connection DLL. This data is URLEncoded and was created by Web Connection on the fly. Every call to ServerVariables accesses this data directly to extract the appropriate server variable value.

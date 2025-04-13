@@ -1,0 +1,3 @@
+﻿Receives data from a socket.
+
+To receive large amounts of data you will have to use Receive() in a loop until you've received the expected content size. There's no way to know when content is complete if neither a size or terminating string is available. In this situation you have to keep reading until you get a timeout. Most protocols (HTTP, SMPT, POP3 etc) provide either terminating character for commands and content (SMTP,POP3 etc.) or provide a content size (HTTP) that allows you read an exact amount of characters from the socket.

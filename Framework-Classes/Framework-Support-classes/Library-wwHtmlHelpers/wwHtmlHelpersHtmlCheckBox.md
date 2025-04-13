@@ -1,0 +1,1 @@
+﻿Creates an HTML CheckBox as an input element.

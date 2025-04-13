@@ -1,0 +1,1 @@
+﻿By default all types are generated using XML types which can be converted to Fox types and back. If you use Fox on both ends of the connection exclusively you can set this flag to .T. to allow the use of native Fox types, which results in better parsing performance.

@@ -1,0 +1,1 @@
+﻿The wwWebMailLink control embeds an email link into the page that attempts to thwart Spam bots from picking up the email address. It does this by splitting the email address and referring to a JavaScript function to actually pop up the mailto link.

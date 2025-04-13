@@ -1,0 +1,1 @@
+﻿This method is used to register the stock PostBackScript block in the page. This method should be called by any control that requires an Autopostback operation to be initiated.

@@ -1,0 +1,1 @@
+﻿Deletes the currently selected user.

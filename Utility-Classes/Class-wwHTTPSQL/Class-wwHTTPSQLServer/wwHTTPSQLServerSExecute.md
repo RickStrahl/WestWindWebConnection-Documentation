@@ -1,0 +1,1 @@
+﻿The core SQL handler method parses the incoming XML, executes the SQL statement/command and then returns the result  (or error) as an XML response in the cResponseXML property.

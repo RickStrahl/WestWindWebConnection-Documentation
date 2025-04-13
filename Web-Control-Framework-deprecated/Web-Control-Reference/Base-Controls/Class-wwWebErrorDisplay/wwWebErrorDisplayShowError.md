@@ -1,0 +1,1 @@
+﻿Displays an error message based on an Html string passed as input. The message is displayed in error format with the ErrorIcon if provided.

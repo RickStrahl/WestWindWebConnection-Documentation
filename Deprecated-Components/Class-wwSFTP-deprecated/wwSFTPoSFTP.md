@@ -1,0 +1,1 @@
+﻿Instance of the `SftpFtpCLient` .NET wrapper class.

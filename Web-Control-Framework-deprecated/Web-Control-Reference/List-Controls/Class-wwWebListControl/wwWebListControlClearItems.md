@@ -1,0 +1,1 @@
+﻿Clears all the items manually added to the control. Removes all items and clears the DataSource.

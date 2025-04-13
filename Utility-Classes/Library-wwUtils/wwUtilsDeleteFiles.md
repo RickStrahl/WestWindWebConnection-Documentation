@@ -1,0 +1,1 @@
+﻿Deletes files given a wildcard path spec (ie. `c:\temp\*.tmp`) and a timeout or expiration value. This function is useful for quick clean up of temporary files created for Web display.

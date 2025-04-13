@@ -1,0 +1,1 @@
+﻿Connection timeout to retrieve a feed in seconds

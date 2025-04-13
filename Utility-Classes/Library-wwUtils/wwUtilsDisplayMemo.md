@@ -1,0 +1,1 @@
+﻿This method formats a memo field for minimal HTML presentation by simply converting multiple linebreaks to `< p>` paragraph tags and linebreaks to `< br\> ` breaks. This behavior is similar to Response.WriteMemo(), but doesn't require a Response object.

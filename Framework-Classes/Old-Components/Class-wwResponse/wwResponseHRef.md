@@ -1,0 +1,1 @@
+﻿This method creates a hyperlink string.

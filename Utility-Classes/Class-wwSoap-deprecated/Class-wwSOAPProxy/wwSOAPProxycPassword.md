@@ -1,0 +1,1 @@
+﻿Windows or Basic Authentication Passwords for accessing the Web Service on the server side. Password is applied to both the Web Service and the WSDL URLs.

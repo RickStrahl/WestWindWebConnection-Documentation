@@ -1,0 +1,1 @@
+﻿Returns a control in the control's immediate child collection by name.

@@ -1,0 +1,1 @@
+﻿Returns the Windows System directory.

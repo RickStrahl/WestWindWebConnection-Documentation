@@ -1,0 +1,1 @@
+﻿The HTML client id of the control that is updated with the callback's result content. By default this value is the same as the control's controlId property so by default the full content of the panel is updated.  By specifying a ControlId only that specific element is updated which allows for composition of reusable content inside of the panel.

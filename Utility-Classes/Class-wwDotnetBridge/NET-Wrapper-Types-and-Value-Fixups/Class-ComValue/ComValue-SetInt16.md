@@ -1,0 +1,1 @@
+﻿Sets a Short value which is not supported in Visual FoxPro

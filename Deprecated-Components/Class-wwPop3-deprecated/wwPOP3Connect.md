@@ -1,0 +1,1 @@
+﻿Connects to the POP server and logs in and sets the message nMessageCount of the mail box.

@@ -1,0 +1,1 @@
+﻿The timeout before the feed retrieval is aborted.

@@ -1,0 +1,1 @@
+﻿This method is identical in behavior to the [ErrorMsg() method](vfps://Topic/wwProcess%3A%3AErrorMsg) and the default implementation simply calls back to the ErrorMsg() method. Please see the documentation for this method. The main reason for both methods is to provide one error message and one status message page separately.

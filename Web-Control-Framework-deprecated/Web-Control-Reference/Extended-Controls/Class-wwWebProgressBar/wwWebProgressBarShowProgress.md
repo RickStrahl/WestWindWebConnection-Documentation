@@ -1,0 +1,1 @@
+﻿Wrapper method that sets Percent and Message properties.

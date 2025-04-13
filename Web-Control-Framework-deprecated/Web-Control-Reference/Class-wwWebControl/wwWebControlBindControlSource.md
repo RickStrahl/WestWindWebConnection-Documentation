@@ -1,0 +1,1 @@
+﻿Internal method used to bind a ControlSource to the ControlProperty of the control.

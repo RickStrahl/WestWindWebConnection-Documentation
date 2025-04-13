@@ -1,0 +1,1 @@
+﻿Rolls back a SQL transaction started with BeginTransaction.

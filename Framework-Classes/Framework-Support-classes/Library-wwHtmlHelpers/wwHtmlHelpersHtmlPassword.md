@@ -1,0 +1,1 @@
+﻿Works like HtmlTextBox but displays password characters instead of text.

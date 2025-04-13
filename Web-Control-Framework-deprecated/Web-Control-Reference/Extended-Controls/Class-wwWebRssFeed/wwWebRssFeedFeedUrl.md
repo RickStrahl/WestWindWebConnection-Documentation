@@ -1,0 +1,1 @@
+﻿The URL to the RSS Feed - only RSS 2.0 is supported

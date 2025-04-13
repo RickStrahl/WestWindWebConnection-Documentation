@@ -1,0 +1,1 @@
+﻿The URL to the online XML version resource file.

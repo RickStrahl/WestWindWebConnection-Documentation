@@ -1,0 +1,1 @@
+﻿The max number of number buttons displayed on the Pager for the Grid.

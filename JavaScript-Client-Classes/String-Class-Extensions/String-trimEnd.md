@@ -1,0 +1,1 @@
+﻿Trims white space off the end of a string.

@@ -1,0 +1,1 @@
+﻿The current size of the string data stored in the stream.

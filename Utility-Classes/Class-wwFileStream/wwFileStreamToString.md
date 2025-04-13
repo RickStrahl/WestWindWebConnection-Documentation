@@ -1,0 +1,1 @@
+﻿Returns the content of the stream as a string. Note that this string can potentially be bigger than 16mb in size if stored to a FoxPro variable which works.

@@ -1,0 +1,1 @@
+﻿Converts a value to a string and checks for expression syntax.

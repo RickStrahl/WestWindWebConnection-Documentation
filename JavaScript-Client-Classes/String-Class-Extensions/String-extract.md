@@ -1,0 +1,3 @@
+﻿Function that extracts a string from within another string based on two delimiters.  The function operates case insensitively and the string returned by default returns the value between the first set of matched delimiters.
+
+Options allow returning the delimiters as part of the string, as well as ignoring a non-match for the end delimiter in which case the string returns the remainder of the string.

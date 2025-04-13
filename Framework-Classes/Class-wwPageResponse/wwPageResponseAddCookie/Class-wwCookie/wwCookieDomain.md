@@ -1,0 +1,1 @@
+﻿Optional - the domain that the cookie applies to. This is optional and by default the current host's domain is used.

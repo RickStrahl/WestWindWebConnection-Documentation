@@ -1,0 +1,1 @@
+﻿Returns the last item without popping it off the stack.

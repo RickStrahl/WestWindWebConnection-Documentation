@@ -1,0 +1,1 @@
+﻿Style tags to be added to the table when rendered on the top level container.

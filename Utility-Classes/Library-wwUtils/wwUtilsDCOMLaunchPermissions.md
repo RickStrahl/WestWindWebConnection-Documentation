@@ -1,0 +1,1 @@
+﻿Sets the Launch and Access permissions of a DCOM server.

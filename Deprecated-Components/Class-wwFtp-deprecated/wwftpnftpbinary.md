@@ -1,0 +1,1 @@
+﻿Flag to determine whether FTP file sent is ASCII (0) or Binary (1)

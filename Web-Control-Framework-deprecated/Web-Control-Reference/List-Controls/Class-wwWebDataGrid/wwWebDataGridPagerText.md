@@ -1,0 +1,1 @@
+﻿The text displayed before the actual page display. Defaults to *Pages:*.

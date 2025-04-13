@@ -1,0 +1,1 @@
+﻿Instance of a wwSQL object that can be used to execute a SQL connection. Use this if you have a persistent SQL connection object you want to re-use.

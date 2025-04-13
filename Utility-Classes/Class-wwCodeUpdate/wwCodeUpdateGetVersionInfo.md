@@ -1,0 +1,1 @@
+﻿Retrieves the online XML resource specified in cVersionUrl and parses the content into object properties.

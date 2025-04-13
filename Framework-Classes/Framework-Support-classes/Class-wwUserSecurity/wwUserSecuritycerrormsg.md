@@ -1,0 +1,1 @@
+﻿Holds error messages when lError = .T. or when any methods return False.

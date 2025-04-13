@@ -1,0 +1,1 @@
+﻿Turns an existing XMLTable from the XMLAdapter into a cursor by name or index.

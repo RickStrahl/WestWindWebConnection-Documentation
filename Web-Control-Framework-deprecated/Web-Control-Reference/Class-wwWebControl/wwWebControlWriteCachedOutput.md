@@ -1,0 +1,1 @@
+﻿Takes output and writes it into the cache. The framework takes care of naming the cachekey or uses the CacheKey you specified explicitly.

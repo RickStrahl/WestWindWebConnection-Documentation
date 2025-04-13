@@ -1,0 +1,1 @@
+﻿Error Message set when an error occurs in a method call. Check return values from methods or lError for error conditions.

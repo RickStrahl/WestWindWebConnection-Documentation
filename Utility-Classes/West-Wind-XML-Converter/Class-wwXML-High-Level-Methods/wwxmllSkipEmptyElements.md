@@ -1,0 +1,1 @@
+﻿If a string element value  is 'empty' no value is written in the various XML generation routines.

@@ -1,0 +1,1 @@
+﻿The subname for the persisted object. For XML this will be the class level element that all the fields live below. For INI files this will be the section header. The subname describes the object in question.

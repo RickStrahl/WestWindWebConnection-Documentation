@@ -1,0 +1,1 @@
+﻿Url to release the COM server. Can be used to kill the COM servers when clicking the Exit button on a server when running in COM mode.

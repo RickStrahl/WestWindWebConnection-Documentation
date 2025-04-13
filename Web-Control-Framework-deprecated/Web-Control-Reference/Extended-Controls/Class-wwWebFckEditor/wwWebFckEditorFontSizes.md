@@ -1,0 +1,1 @@
+﻿Semi-colon delimited list of font-sizes displayed in hte size dialog

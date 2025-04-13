@@ -1,0 +1,1 @@
+﻿The LocaleInfo class provides information about a particular Locale and lets you Set the Locale information for the current Visual FoxPro Session.

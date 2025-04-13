@@ -1,0 +1,1 @@
+﻿Loads an XML string or loads an XML document from a URL or file.

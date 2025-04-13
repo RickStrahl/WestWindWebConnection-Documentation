@@ -1,0 +1,1 @@
+﻿Error message property set when an error occurs.

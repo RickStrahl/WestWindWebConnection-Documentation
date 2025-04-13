@@ -1,0 +1,1 @@
+﻿Message displayed on the Authentication dialog for the user when cAuthenticationMode is *UserSecurity*.

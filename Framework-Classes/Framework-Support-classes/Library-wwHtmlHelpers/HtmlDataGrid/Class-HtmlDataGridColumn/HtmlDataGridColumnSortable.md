@@ -1,0 +1,1 @@
+﻿Determines if the column is sortable

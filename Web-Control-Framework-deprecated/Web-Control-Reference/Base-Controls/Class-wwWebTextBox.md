@@ -1,0 +1,1 @@
+﻿The TextBox control provides basic text input functionality for single line, multiline and password type text input.

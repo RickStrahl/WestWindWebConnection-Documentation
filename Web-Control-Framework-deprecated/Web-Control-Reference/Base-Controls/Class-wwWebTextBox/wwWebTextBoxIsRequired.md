@@ -1,0 +1,1 @@
+﻿Determines whether the text box can be left empty. If empty an error is created in the BindindErrors collection

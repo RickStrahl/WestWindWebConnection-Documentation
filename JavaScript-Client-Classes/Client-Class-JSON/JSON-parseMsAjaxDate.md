@@ -1,0 +1,3 @@
+﻿Determines whether MSAjax dates are parsed as part of the date parsing operations performed by this extension class. Defaults to false.
+
+Leave this setting at its default unless you use servers that return dates in MS AJax formats (ASP.NET AJAX, WCF REST etc.). Most newer Microsoft technologies like Web API, Nancy and ServiceStack properly return ISO dates, so this setting typically can be left off. Leaving it false improves performance slightly as one less RegEx check is performed when parsing string properties.

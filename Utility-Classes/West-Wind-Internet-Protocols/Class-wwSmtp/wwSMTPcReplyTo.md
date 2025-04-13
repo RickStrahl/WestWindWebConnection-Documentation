@@ -1,0 +1,1 @@
+﻿The Reply-To address that is used when the user clicks on Reply in the mail client. By default this value is not provided and the reply to button simply replies to the sender.

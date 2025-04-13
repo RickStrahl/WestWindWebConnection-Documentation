@@ -1,0 +1,1 @@
+﻿Data member that receives all of the field names as property values.

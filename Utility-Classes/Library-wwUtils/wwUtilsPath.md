@@ -1,0 +1,1 @@
+﻿Adds or deletes items from the Visual FoxPro path string.

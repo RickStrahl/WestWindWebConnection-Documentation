@@ -1,0 +1,1 @@
+﻿Converts an RGB color value to an HTML color value.

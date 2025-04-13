@@ -1,0 +1,1 @@
+﻿Creates an empty List of T.

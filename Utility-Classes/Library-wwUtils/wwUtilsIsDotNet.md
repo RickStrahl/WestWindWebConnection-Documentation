@@ -1,0 +1,1 @@
+﻿Returns whether .Net is installed. Also can return the latest installed version and directory of the .Net framework.

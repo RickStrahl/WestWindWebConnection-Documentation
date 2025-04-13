@@ -1,0 +1,1 @@
+﻿Creates a footer for a page. Creates </BODY></HTML> tags preceeded by option HTML passed as parm. Optionally pass text to display just prior to tags

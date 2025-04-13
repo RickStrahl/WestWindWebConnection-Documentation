@@ -1,0 +1,1 @@
+﻿This method turns logging on or off.

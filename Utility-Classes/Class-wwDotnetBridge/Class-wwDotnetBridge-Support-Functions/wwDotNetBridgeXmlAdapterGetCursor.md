@@ -1,0 +1,1 @@
+﻿Retrieves an indivdual cursor from a loaded XmlAdapter object.

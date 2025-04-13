@@ -1,0 +1,1 @@
+﻿Base Page link for Pager operation. Appends &Page=lnX to page to a specific page

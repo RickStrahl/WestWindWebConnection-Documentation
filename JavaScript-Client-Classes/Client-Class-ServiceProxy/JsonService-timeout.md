@@ -1,0 +1,1 @@
+﻿The timeout for the the xhr request. Default is 20,000 milliseconds.

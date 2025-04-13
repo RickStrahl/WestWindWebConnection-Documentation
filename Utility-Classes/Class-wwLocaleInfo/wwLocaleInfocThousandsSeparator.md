@@ -1,0 +1,1 @@
+﻿Separator for numbers in the thousands.

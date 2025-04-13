@@ -1,0 +1,3 @@
+﻿Downloads a file directly from disk to the client and displays it on the client using FileOpen dialog rather than opening in the browser. This function specifically provides a file name to the browser and forces the browser to open the file rather than displaying it.
+
+This method uses the same mechanism as [TransmitFile()](vfps://Topic/_1O80YQ3HG), which bypasses the Web Connection infrastructure when streaming the file to the client, which makes it very efficient and allows for very large files to be transferred including files larger than 16mb.

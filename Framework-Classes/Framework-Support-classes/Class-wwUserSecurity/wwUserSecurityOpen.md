@@ -1,0 +1,1 @@
+﻿Opens the user file and/or selects it into cAlias. If the table is already open this method only selects the Alias.

@@ -1,0 +1,1 @@
+﻿Adds JavaScript code to an attribute based script event like onclick. This method allows appending script so that scripts are added cumulatively.

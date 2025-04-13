@@ -1,0 +1,1 @@
+﻿Creates a SOAP error response using fault codes and string.

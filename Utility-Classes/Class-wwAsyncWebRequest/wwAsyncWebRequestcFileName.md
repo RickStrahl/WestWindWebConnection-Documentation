@@ -1,0 +1,1 @@
+﻿The name of the events table. This filename should not include a path or extension.

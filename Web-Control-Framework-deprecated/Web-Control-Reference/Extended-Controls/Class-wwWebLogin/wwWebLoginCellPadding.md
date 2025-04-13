@@ -1,0 +1,1 @@
+﻿Cell padding for the login table.

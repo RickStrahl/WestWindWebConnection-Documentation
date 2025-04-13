@@ -1,0 +1,1 @@
+﻿Checks to see if IIS Express is installed by checking for the IIS Express binary in the installation folder.

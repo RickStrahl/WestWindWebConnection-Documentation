@@ -1,0 +1,1 @@
+﻿Displays an XML string in a Web browser for quick viewing.

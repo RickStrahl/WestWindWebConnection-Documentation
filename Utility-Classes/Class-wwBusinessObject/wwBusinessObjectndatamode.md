@@ -1,0 +1,1 @@
+﻿Data access mode for the business object. 0 - Fox Data native, 2 - ODBC (SQL Server)

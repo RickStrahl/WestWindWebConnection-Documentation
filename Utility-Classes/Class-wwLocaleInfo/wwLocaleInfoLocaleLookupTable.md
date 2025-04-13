@@ -1,0 +1,1 @@
+﻿Returns a cursor __Locales that contains a fixed set of Locales from a default Win2003 Server installation.

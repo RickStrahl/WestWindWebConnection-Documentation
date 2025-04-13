@@ -1,0 +1,1 @@
+﻿This method reverts the impersonated user back to the original user that the application was started under. Useful to rever the user after having called ImpersonateUser.

@@ -1,0 +1,1 @@
+﻿The input script code saved to a variable.

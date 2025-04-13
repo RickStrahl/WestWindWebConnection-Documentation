@@ -1,0 +1,1 @@
+﻿An ODBC connectstring that can be used on the server side to connect to the data-source.

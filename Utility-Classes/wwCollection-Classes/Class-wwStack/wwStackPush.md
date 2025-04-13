@@ -1,0 +1,1 @@
+﻿Pushes an item onto the stack.

@@ -1,0 +1,7 @@
+﻿XML is a text based format so it has problems with some data because it assumes all data to be text performing markup on non-text data. The following data is problematic:
+
+**Carriage Returns and Linefeeds**  
+XML doesn't translate CR LF combinations completely. In fact XML translates every LF/CR combination into a single LF (CHR(10)). This means any data that has carriage returns in them will possibly change after XML conversion and re-import into cursors or objects. If you care about CR LF combinations you should run an explicit post import routine to convert CHR(10)'s into whatever format you need in your application. As a suggestion you should think about starting to use CHR(10) as your standard CRLF delimiter for stored data - this works fine as VFP recognizes CHR(10) as a CRLF combination and displays it correctly in memos and edit fields.
+
+**Binary Data**  
+Any data that contains CHR(0) or any other low ASCII values will not work with XML unless the data is encoded into Base64. wwXML will detect binary VFP 9 datatypes (varbinary, Blob) and automatically convert these to proper binary types. However any other field that contains binary data will have to be manually  converted. If you have binary data in your fields you can use STRCONV(,13) to encode strings to Base64 which is safe for XML.

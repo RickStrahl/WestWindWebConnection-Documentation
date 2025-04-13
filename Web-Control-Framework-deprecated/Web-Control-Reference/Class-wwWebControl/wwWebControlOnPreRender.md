@@ -1,0 +1,3 @@
+﻿Fires just before the Render() method and after Events have fired, so you can make any last minute changes to the page state before rendereing.
+
+OnPreRender() is very useful for code that need to run for every path through the application and is particular useful for state based control assignments in complex pages. Often it can be used to do the final control assignments that are collected in the OnLoad or Event methods.

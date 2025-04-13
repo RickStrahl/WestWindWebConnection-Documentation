@@ -1,0 +1,1 @@
+﻿Determines whether the checkbox is checked or not

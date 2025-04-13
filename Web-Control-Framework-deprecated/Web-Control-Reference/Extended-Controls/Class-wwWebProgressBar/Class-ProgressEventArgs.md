@@ -1,0 +1,1 @@
+﻿This class can be used on the server to send Progress information back to the client if you are using AJAX for messaging. By returning this object to the client you can provide the client the information to decide what to do when each progress or completion event occurs.

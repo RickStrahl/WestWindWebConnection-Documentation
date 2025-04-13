@@ -1,0 +1,1 @@
+﻿This method create standard format XML from an ADO recordset. The XML format is identical to that of [CursorToXML](vfps://Topic/wwxml%3A%3ACursorToXML).

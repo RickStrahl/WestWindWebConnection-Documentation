@@ -1,0 +1,1 @@
+﻿Connects to a datasource via connection or connect string.

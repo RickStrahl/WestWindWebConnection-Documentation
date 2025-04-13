@@ -1,0 +1,1 @@
+﻿The default value when the account should time out in days. Leave this value at 0 to force the account to never timeout.

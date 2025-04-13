@@ -1,0 +1,1 @@
+﻿Contains the result value of the last executed command if the call succeeded. Typically you don't need to check this value since it will be returned as part of the method call so you can use it directly.

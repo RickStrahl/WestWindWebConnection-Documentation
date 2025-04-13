@@ -1,0 +1,1 @@
+﻿Executes a fully qualified **raw SQL statement** against the database depending on the `nDataMode`. Can be used for any backend data command using either VFP syntax or SQLExec() style SQL commands and is meant to return a result set.

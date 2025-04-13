@@ -1,0 +1,1 @@
+﻿Table used to generate new PK Ids.

@@ -1,0 +1,1 @@
+﻿Adds an HTTP header that provides for Maximum Caching Capabilities

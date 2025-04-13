@@ -1,0 +1,1 @@
+﻿Clears any attachments previously added with AddAttachment().

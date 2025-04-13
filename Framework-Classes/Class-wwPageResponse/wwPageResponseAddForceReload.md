@@ -1,0 +1,1 @@
+﻿Adds maximum Cache Expiration headers to the current HTTP request. Essentially this forces the request to always be reloaded rather than cached.

@@ -1,0 +1,1 @@
+﻿If an error occurs this property holds an error messages. Errors can be captured by checking return values of the various methods.

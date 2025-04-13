@@ -1,0 +1,1 @@
+﻿Creates a JSON string from a .NET object or value passed in.

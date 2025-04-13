@@ -1,0 +1,1 @@
+﻿Determines if a control is visible. Invisible controls are not rendered at all!

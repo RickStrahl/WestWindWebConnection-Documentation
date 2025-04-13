@@ -1,0 +1,1 @@
+﻿Configures security rights for a Local Server (EXE server) COM object. Provides similar functionality that DCOMCNFG provides for setting the Impersonation Level of a component. Be sure to also set the DCOMLaunchPermissions.

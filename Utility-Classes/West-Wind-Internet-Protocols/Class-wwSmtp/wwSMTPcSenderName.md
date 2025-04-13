@@ -1,0 +1,1 @@
+﻿The display name of the sender that displays in the mail client's Sender display. Optional.

@@ -1,0 +1,1 @@
+﻿Adds a Cookie to the HTTP header

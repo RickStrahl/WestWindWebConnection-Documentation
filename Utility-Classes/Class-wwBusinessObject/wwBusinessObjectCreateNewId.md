@@ -1,0 +1,3 @@
+﻿Creates a new Primary Key ID number for the table using an ID table.
+
+The ID Table is configured via the cIDTable property. The table must contain a TableName(character) and an ID (Integer or Numeric) field and a record that has the tablename set. If you call CreateNewId() or New() which indirectly calls this method and this record doesn't exist yet it is inserted into the ID table with a value of 1.

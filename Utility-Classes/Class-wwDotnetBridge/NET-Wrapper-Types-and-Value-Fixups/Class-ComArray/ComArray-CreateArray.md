@@ -1,0 +1,1 @@
+﻿Creates a new array instance with size number of items pre-set. Elements are unassigned but array is dimensioned. Use 0 for an empty array.Use SetItem() to assign values to each array element

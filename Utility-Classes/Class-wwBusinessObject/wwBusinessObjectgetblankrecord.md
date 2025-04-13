@@ -1,0 +1,1 @@
+﻿Retrieves an empty record and creates an empty oData member. Note no defaults are set.

@@ -1,0 +1,1 @@
+﻿Returns an XMLTable object by name which is not supported natively in the XML Adapter.

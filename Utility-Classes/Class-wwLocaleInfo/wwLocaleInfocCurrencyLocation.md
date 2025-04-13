@@ -1,0 +1,1 @@
+﻿Determines where the Currency Symbol goes.

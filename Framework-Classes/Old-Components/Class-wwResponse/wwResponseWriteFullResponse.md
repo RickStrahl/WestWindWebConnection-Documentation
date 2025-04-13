@@ -1,0 +1,1 @@
+﻿Writes a full response into the output stream, and clears any previously written output.

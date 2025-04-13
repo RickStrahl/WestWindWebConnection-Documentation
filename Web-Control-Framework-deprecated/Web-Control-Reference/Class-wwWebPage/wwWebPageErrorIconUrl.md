@@ -1,0 +1,1 @@
+﻿The URL to an image file that is used to display the error icon.

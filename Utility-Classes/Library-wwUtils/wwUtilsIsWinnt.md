@@ -1,0 +1,1 @@
+﻿Checks to see if app is running under Windows NT.

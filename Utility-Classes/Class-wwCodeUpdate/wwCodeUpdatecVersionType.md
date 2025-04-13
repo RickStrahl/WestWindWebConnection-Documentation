@@ -1,0 +1,1 @@
+﻿Type of the version to be retured in vOnlineVersion, vOnlineMinVersion and as the return value from GetVersionInfo().

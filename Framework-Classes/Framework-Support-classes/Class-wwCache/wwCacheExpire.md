@@ -1,0 +1,1 @@
+﻿Removes all expired entries from the cache data file.

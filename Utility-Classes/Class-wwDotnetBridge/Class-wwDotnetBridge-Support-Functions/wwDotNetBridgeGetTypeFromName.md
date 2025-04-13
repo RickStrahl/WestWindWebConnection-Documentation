@@ -1,0 +1,1 @@
+﻿Returns a .NET type reference for a type by its fully qualified .NET type name (ie. namespace.classname).

@@ -1,0 +1,5 @@
+﻿This is the top level entry point for external COM code calling the Web Connection server that's passing binary (`byte[]`) data for request data and receiving blob data in return.
+
+This method is called by COM servers from the Web Connection ASP.NET Handler or ASP.NET Core Middleware component. It receives `byte[]` input data and returns a `BLOB` (`byte[]`) result back to the caller and converts these values into the traditional string parameters expected by the `ProcessHit()`  method that handles the request processing. 
+
+By adding this method to receive and return binary data COM string encoding, which can cause encoding problems as strings are converted by ANSI and Unicode character sets. By using binary data COM never treats the data as a string and can directly output it into the HTTP output stream or pass it in as raw data from the request buffer. This also improves throughput as data doesn't isn't needlessly converted into Unicode strings first, reducing memory usage and processing overhead especially on large binary inputs.

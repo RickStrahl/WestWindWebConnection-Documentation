@@ -1,0 +1,1 @@
+﻿If .T. handles `<% %>` script blocks in a special way by stripping them out of the document and then adding them back in after Markdown rendering. This preserves the original code and allows the script to stay embedded in the document as is.

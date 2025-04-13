@@ -1,0 +1,1 @@
+﻿The methods in this group are typically not called directly by external applications, but they are available to customize operation of the server. These methods are internally used by the wwServer class and are listed here merely for completeness of the interface and special situations.

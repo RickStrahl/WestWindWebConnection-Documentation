@@ -1,0 +1,5 @@
+﻿This global function takes Markdown text and turns it into HTML. 
+
+This function is a shortcut helper function uses the MarkdownParser/Extended classes to turn Markdown into HTML. The function supports both the basic Markdown parser and extended parser via the **lnMode** parameter. The extended parser provides link, code and FontAwesome font parsing features not provided in the base parser.
+
+This function by default **caches** the Markdown parser instance, using the **lnMode** options you provide in the parameter. The caching ensures best performance and avoidance of reloading of the underlying parser each time the function is called which results in very fast operation. It's recommended that you call this function once on application startup to establish the 'initial configuration' based on the **lnMode** parameter which is then cached. You can use the **llReload** parameter to force reloading with new settings.

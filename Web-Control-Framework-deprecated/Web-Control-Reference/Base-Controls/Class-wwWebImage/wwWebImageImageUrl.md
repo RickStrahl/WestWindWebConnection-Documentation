@@ -1,0 +1,1 @@
+﻿The Url of the image that is displayed.

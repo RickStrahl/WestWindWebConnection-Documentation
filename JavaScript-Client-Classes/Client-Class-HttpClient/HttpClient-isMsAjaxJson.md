@@ -1,0 +1,1 @@
+﻿Flag that determines whether the called service is an ASP.NET ASMX or WCF service that returns 'wrapped objects'. If set HttpClient will unwrap the object and return only the actual result value.

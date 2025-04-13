@@ -1,0 +1,1 @@
+﻿Internally this value is set by the various SetXXX methods. It's of type objcect but set to the appropriate .NET subtype.

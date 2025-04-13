@@ -1,0 +1,1 @@
+﻿Low level method used to open the session table.

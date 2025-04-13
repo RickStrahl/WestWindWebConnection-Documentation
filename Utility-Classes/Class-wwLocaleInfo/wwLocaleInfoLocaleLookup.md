@@ -1,0 +1,1 @@
+﻿Returns the numeric LocaleId from a string Locale Id (en-US)

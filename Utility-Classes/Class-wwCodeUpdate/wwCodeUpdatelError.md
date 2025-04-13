@@ -1,0 +1,1 @@
+﻿Error flag. Check cErrorMsg if .T.

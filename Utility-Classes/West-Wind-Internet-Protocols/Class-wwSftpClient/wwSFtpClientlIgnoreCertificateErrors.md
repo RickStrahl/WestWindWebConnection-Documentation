@@ -1,0 +1,1 @@
+﻿Allows you to ignore certificate errors **NOT RECOMMENDED: Fix your Certs!**

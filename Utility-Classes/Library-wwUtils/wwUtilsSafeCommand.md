@@ -1,0 +1,1 @@
+﻿Evaluates a single FoxPro command dynamically and wraps it into a TRY/CATCH block. Uses a macro (&) operation to execute the command so anything you can do with  & operation is valid with the exception of LOCAL and THIS scoped variables.

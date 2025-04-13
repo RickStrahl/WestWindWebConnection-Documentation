@@ -1,0 +1,1 @@
+﻿Creates a VFP strict date string that can be used in literal SQL strings. Simplifies creating dynamic SQL statements that are date safe. Optional pass the llSQL flag as .T. to have a SQL Server compatible date string returned.

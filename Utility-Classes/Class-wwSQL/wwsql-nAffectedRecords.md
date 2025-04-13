@@ -1,0 +1,1 @@
+﻿Returns the number of records affected by the last operation. For a query this is the number of records returned. For a non-query operation this is the number of records updated.

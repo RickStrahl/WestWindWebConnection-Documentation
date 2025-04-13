@@ -1,0 +1,1 @@
+﻿A light wrapper class around the XMLAdapater class that provides easier access to cursors and XML content.

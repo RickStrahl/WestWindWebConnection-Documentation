@@ -1,0 +1,1 @@
+﻿Encodes a string in URL encoded format for use on URL strings or when creating a POST buffer.

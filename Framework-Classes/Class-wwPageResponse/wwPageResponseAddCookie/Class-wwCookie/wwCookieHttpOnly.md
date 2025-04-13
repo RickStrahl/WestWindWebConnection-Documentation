@@ -1,0 +1,1 @@
+﻿Optional - If set cookie can not be accessed programmatically on the client.

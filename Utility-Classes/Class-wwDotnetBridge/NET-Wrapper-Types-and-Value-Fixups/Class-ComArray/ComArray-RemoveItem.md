@@ -1,0 +1,1 @@
+﻿Removes an item from the collection.Depending on the item is a List style item (Array, List, HashSet, simple Collections) or a Key Value type collection (Dictionary or custom key value collections like StringCollection), you specify an index (lists), value (Hash tables/collections), or a key (Dictionary).

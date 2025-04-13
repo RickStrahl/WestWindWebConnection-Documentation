@@ -1,0 +1,1 @@
+﻿Cursor to send the result to. If the cursor exists it's overwritten otherwise it's created.

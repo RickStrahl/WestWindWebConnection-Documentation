@@ -1,0 +1,1 @@
+﻿The Id of the area inside of the dialog that is used to display the content.

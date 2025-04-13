@@ -1,0 +1,1 @@
+﻿Generates the Captcha value from the CaptchaChars and submits the Captcha value to Session state. This method is automatically called by the control when running in Web Control Framework page. If running in a Process method you should call this manually.

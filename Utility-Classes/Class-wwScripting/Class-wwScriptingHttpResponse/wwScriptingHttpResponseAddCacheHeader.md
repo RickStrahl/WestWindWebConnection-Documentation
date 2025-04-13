@@ -1,0 +1,1 @@
+﻿Adds a  maximum Caching HTTP header to the Response

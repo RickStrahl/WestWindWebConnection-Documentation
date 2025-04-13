@@ -1,0 +1,1 @@
+﻿This method adds an item to the cache.

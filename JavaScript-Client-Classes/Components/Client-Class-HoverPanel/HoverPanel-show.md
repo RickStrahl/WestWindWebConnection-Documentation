@@ -1,0 +1,1 @@
+﻿Makes the panel visible at its last known position.

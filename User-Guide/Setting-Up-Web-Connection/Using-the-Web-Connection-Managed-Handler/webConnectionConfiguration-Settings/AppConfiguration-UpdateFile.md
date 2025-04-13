@@ -1,0 +1,1 @@
+﻿The Update EXE file from which the Exe file can be hot swapped

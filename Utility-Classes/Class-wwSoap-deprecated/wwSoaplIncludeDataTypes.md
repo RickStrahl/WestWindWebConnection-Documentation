@@ -1,0 +1,1 @@
+﻿Determines whether SOAP packages are created with XML data typing (dt: namespace).

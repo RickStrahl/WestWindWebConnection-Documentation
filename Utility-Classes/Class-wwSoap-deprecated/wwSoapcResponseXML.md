@@ -1,0 +1,1 @@
+﻿Holds the SOAP Response XML in a SOAP call. This result always holds the raw HTTP response from the server.

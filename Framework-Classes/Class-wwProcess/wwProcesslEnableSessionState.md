@@ -1,0 +1,3 @@
+﻿Turns on Session Handling for this request.
+
+This code eliminates the need to call this.InitSession explicitly and assigning it to the Session object instance. This eliminates the need to call InitSession() in the right place - with this property you can simply set the value anywhere and it just works eliminating the need to understand how the Session object works beyond getting and setting values.

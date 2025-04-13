@@ -1,0 +1,1 @@
+﻿The constructor allows you to pass in an existing object reference that is then extended with any properties you assign.

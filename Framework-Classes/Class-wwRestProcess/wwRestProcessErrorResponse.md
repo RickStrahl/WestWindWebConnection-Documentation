@@ -1,0 +1,1 @@
+﻿Creates an error response formatted into the proper output format depending on the Accept header of the request. Defaults to JSON, if no Accept header is provided.

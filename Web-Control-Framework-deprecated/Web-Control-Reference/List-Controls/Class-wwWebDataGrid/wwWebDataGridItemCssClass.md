@@ -1,0 +1,1 @@
+﻿The CSS Class used for displaying normal rows. By default no Class is applied so the default table class/styles are used.

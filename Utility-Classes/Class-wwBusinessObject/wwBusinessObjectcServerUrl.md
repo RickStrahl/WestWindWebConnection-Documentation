@@ -1,0 +1,1 @@
+﻿A URL on the server that's running the wwHTTPSQLServer component to process client requests.

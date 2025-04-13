@@ -1,0 +1,1 @@
+﻿The alternate text that is displayed when hovering the image or spoken in accessibility.

@@ -1,0 +1,1 @@
+﻿The CSS class for the 'row' (it's actually a div that wraps the label and text).

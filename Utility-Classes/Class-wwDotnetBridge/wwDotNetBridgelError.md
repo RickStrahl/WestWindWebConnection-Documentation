@@ -1,0 +1,1 @@
+﻿Error flag that can be checked after certain method calls.

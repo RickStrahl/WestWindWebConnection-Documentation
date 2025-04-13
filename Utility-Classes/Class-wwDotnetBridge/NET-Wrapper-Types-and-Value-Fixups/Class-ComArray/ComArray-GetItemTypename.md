@@ -1,0 +1,1 @@
+﻿Returns the .NET typename for the array's items (if there are items). Otherwise value is empty.

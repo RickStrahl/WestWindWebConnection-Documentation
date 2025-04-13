@@ -1,0 +1,1 @@
+﻿Optional text property for the Image button. If specified displays to the right of the image.

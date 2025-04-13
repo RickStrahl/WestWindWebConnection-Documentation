@@ -1,0 +1,1 @@
+﻿The interval of the time in File based mode that determines how frequently to check for new request files.

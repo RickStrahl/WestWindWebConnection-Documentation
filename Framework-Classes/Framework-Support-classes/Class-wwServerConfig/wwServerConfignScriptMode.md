@@ -1,0 +1,1 @@
+﻿The scripting mode setting

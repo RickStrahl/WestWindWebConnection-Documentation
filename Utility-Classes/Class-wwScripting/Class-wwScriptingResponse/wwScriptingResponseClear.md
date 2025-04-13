@@ -1,0 +1,1 @@
+﻿Clears all the output in the current response.

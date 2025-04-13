@@ -1,0 +1,1 @@
+﻿Hot swaps an EXE file by running a Zip Exe file that unzips the update files.

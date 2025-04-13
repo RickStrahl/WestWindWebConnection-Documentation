@@ -1,0 +1,1 @@
+﻿Click event for the CheckBox when the value is clicked and AutoPostBack is true.

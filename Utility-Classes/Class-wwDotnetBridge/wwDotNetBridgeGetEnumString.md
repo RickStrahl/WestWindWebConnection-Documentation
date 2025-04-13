@@ -1,0 +1,1 @@
+﻿Retrieves the string enum field name from a .NET Enum value. Enums are stored as numeric values internally. This function

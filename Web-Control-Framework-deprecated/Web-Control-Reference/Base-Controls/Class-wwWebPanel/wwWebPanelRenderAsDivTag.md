@@ -1,0 +1,1 @@
+﻿Determines whether the control renders as a DIV tag. If .F. the Panel doesn't render an HTML container and only renders the inner items.

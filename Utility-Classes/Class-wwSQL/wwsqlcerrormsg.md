@@ -1,0 +1,1 @@
+﻿Contains an error message if an error occurs. cErrorMsg2 contains more error info.

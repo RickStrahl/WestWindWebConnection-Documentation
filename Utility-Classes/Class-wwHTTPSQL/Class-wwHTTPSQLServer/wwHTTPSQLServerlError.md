@@ -1,0 +1,1 @@
+﻿Error Flag set when an error occurs.

@@ -1,0 +1,1 @@
+﻿A programmable image control that embeds an HTML <img> tag into the page.

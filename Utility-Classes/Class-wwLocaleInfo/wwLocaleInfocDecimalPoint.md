@@ -1,0 +1,1 @@
+﻿Decimal point character.

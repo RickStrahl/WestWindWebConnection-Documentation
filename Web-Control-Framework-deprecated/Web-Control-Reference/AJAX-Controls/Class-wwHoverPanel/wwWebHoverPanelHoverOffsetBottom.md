@@ -1,0 +1,1 @@
+﻿Vertical Offset of the hover window from the mouse position. Can be negative to indicate positions above the mouse cursor.

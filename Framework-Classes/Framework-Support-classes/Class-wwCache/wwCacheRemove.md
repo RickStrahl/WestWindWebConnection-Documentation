@@ -1,0 +1,1 @@
+﻿This method removes an entry from the Cache.

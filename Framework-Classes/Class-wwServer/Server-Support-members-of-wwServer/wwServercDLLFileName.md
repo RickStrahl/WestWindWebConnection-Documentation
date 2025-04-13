@@ -1,0 +1,1 @@
+﻿This property contains the full path the wc.dll file after the first hit fully qualified hit on the server.

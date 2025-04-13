@@ -1,0 +1,1 @@
+﻿Like [MergeText](vfps://Topic/_S8X02FE4U) except the content is loaded from a file.

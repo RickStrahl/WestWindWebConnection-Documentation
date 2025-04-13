@@ -1,0 +1,1 @@
+﻿Determines whether the control displays the text message above the bar

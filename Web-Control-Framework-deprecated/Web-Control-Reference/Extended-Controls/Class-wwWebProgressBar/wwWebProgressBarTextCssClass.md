@@ -1,0 +1,1 @@
+﻿The CSS class used for the message

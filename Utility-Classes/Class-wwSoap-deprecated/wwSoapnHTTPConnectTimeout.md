@@ -1,0 +1,1 @@
+﻿Sets the timeout on the HTTP connection were applicable. Currently only applies if using nHTTPMode = 1 (HTTPGetLight).

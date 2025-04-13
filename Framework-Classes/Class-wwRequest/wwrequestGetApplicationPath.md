@@ -1,0 +1,3 @@
+﻿Returns the physical OS path of the virtual directory of this Web Server application. In short it maps the virtual directory defined in IIS to a physical path. Can be used as a 'base url' for Web applications to base relative URls on.
+
+This is an IIS5 and later feature only and it returns the value of the `APPL_PHYSICAL_PATH` `server variable if available (only in the ASP.NET Handler or .NET Core Middleware Server). If the variable is not available the Processes configuration `Process.oConfig.cHtmlPagePath` value is used for the base path.

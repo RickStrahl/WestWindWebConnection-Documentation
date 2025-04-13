@@ -1,0 +1,1 @@
+﻿Returns a form variable as a date on post back operations or returns the specified value on a non-POST operation or if the value is not part of the POST buffer.

@@ -1,0 +1,1 @@
+﻿Set to turn off output that follows called by the Write method. This flag is set by Response.End() so you usually should not have to set this explicitly. However, you can use it to check whether the Response object is active.

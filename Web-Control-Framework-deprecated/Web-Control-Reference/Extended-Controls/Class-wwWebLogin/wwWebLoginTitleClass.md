@@ -1,0 +1,1 @@
+﻿The CSS class for the header title text.

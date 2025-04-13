@@ -1,0 +1,1 @@
+﻿Activates the Window specified by Window Title or Window Handle.

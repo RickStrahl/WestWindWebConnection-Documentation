@@ -1,0 +1,1 @@
+﻿Returns a setting from the application's INI file.

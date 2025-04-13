@@ -1,0 +1,1 @@
+﻿This function writes an image into an existing image by overlaying it. This allows either merging of two images or if the new image has a tranparent background of overlaying.

@@ -1,0 +1,1 @@
+﻿Determines whether this panel is draggable

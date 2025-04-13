@@ -1,0 +1,1 @@
+﻿Displays an HTML string in the browser for quick viewing.

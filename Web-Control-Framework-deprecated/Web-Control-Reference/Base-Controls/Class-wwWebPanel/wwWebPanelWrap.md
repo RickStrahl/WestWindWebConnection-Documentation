@@ -1,0 +1,1 @@
+﻿Determines whether white space wraps.

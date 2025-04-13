@@ -1,0 +1,1 @@
+﻿Adds an item to the array manually. This should be an object either from a SCATTER NAME or from CREATEOBJECT("SomewwBusiness subclass").

@@ -1,0 +1,1 @@
+﻿Saves each of the items in the collection to disk using individual item `.Save()` calls. Loads the oData member for each operation then performs a `.Save()` for each if the object is a business object.

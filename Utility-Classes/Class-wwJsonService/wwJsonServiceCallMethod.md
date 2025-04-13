@@ -1,0 +1,1 @@
+﻿Generic call that is passed through and executes the remote method based on the information contained in the wwRequest object passed as input. The method is processed and the result returned as a JSON string. An error produces a JSON error object.

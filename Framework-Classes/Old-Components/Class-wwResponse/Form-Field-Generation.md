@@ -1,0 +1,1 @@
+﻿The following methods serve to insert HTML form fields into the HTTP output. Note that you still have to manage the <FORM> tag manually to wrap the individual fields.

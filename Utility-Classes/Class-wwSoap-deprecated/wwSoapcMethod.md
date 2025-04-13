@@ -1,0 +1,1 @@
+﻿Method to call on the SOAP server.

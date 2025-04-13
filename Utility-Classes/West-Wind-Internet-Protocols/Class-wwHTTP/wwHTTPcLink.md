@@ -1,0 +1,1 @@
+﻿HTTP Link to visit on a site. Site relative URL. Example: /default.asp, /, /wconnect.dll?wwDemo~TestPage

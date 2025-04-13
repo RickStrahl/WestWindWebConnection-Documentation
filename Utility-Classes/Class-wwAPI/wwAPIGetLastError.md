@@ -1,0 +1,1 @@
+﻿Returns the last Windows API error code. Should be called immediately after an API function if an error occurred to retrieve the error code.

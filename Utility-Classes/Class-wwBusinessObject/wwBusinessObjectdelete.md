@@ -1,0 +1,1 @@
+﻿Deletes the specified record from the underlying table. If no PK is passed the current PK of the loaded object is used.

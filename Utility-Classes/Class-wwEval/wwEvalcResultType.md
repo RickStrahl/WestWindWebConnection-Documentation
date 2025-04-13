@@ -1,0 +1,1 @@
+﻿On return from an execution method this property contains the type of the result value.

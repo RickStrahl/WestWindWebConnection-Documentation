@@ -1,0 +1,1 @@
+﻿A VFP 8/9 Exception object which is set when an error occurs. Usually you don't need to look at this as the cErrorMesage

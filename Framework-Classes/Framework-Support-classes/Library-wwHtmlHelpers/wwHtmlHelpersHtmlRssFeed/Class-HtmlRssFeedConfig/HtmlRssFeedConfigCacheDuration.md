@@ -1,0 +1,1 @@
+﻿Specifies that the output from the RSS feed is cached using `wwCache` if the value is greater than 0. The value is specified in seconds.

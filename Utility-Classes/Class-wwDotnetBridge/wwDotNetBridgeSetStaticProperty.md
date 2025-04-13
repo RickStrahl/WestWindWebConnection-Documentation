@@ -1,0 +1,1 @@
+﻿Sets a static property or Enum value. Same behavior as SetProperty() but with static properties.

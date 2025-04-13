@@ -1,0 +1,1 @@
+﻿Read Profile String information from a given text file using Windows INI formatting conventions

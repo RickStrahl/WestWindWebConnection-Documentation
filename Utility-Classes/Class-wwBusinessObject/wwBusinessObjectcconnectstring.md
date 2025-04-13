@@ -1,0 +1,1 @@
+﻿SQL ConnectString if DataMode=2

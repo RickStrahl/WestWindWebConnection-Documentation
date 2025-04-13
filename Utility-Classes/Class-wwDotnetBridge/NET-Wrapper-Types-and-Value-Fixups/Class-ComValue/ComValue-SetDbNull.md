@@ -1,0 +1,1 @@
+﻿Sets a DbNull value from FoxPro. DbNull is a value type and can't be accessed directly in FoxPro.

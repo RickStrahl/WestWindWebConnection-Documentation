@@ -1,0 +1,1 @@
+﻿Overrides the current SessionID's value to a new value.

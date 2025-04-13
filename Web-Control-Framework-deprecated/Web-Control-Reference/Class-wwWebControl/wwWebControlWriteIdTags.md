@@ -1,0 +1,1 @@
+﻿Writes only the Name and ID tags.

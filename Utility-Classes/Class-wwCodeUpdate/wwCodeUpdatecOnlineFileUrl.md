@@ -1,0 +1,1 @@
+﻿The URL to the update file to download. Set after a successful call to GetVersionInfo().

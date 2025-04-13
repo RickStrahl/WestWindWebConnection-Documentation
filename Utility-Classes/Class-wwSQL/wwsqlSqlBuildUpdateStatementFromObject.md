@@ -1,0 +1,1 @@
+﻿This method builds a SQL UPDATE string to be sent to the backend application from a `SCATTER NAME` type object. The object must contain a key field in order for this method to work.

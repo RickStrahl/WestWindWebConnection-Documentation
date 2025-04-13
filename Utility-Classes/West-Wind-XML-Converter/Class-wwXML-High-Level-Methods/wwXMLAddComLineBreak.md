@@ -1,0 +1,1 @@
+﻿Adds a linebreak at the end of the node content followed by optional indentation on the next line. Use this if you add nodes to a document and you want to maintain formatting.

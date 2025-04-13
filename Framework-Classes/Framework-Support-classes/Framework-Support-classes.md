@@ -1,0 +1,1 @@
+﻿The framework support classes handle support to the core classes that the Web Connection framework provides. For the most part these are utility classes, that provide useful functionality ontop the base features, but several like the wwConfig and wwSession objects are actually tightly linked to the framework as support classes.

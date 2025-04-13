@@ -1,0 +1,1 @@
+﻿The width of the TextBox controls on the Login form.

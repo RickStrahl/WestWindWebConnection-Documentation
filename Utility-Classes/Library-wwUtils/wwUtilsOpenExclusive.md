@@ -1,0 +1,1 @@
+﻿Opens a table exclusively if possible.

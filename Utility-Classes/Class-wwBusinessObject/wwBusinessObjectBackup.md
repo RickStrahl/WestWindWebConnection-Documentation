@@ -1,0 +1,1 @@
+﻿Takes the full content of the table and backs it up into the specified directory.

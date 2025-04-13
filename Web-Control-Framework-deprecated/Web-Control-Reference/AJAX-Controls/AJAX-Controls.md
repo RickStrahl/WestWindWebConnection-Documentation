@@ -1,0 +1,5 @@
+﻿The Web Control Framework includes a number of AJAX related features and controls. These controls are made up of a mixture of client side and server side controls. The client side components make use of the popular <a href="http://www.jquery.com/" target="top">jQuery Javascript Library</a> and provides a host of additional Javascript client functionality on top of jQuery.
+
+For an introduction of what jQuery provides and how it works please <a href="http://www.west-wind.com/presentations/jQuery/default.aspx" target="top">check out this article online</a>.
+
+The features of the client side code are provided through ww.jquery.js which file which contains a rich set of jQuery plug-ins, classes and base Javascript extensions that handle the HTTP messaging, JSON serialization window management and many additional utility features.

@@ -1,0 +1,1 @@
+﻿URLDecodes a URLEncoded text string to normal text.

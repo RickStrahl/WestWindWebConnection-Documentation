@@ -1,0 +1,1 @@
+﻿The location of the wwScriptLibrary Script File -  WebResource/EmbeddedInPage or script Url

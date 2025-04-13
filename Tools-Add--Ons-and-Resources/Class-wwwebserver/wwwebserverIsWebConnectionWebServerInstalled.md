@@ -1,0 +1,1 @@
+﻿Determines whether the required .NET Core Runtime components are installed so that the Web Connection Web Server can be installed and run.

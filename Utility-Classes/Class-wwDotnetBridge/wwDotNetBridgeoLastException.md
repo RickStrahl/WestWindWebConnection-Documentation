@@ -1,0 +1,2 @@
+﻿Returns the last .NET exception that was caused by a failed operation. 
+It might be useful to access to the full .NET Exception information from a failure to be able to look at InnerExceptions or additional error info that some Exception types are exposing. For example, SoapExceptions() provide access to the full XML error node of a SOAP request which can be accessed via the custom Detail property.

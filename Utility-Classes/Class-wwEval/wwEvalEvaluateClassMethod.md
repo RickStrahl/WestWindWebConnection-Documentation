@@ -1,0 +1,1 @@
+﻿Executes a method inside of a class.

@@ -1,0 +1,1 @@
+﻿Size of the download HTTP buffer used while downloading dynamically sized requests with HTTPGetEx. This is the size of chunks that will be pulled at a time and also determines how often OnHTTPBufferUpdate is called.

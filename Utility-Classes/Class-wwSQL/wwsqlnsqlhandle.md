@@ -1,0 +1,1 @@
+﻿The ODBC handle you can use directly with VFP's internal SQL Passthrough properties.

@@ -1,0 +1,1 @@
+﻿If true the request is set up for calling a WCF service and performs special date encoding when creating JSON. Required only for WCF services, not for ASMX services.

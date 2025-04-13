@@ -1,0 +1,1 @@
+﻿This is a set of utility function that are used in relation to the client AJAX library.

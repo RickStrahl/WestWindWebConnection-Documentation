@@ -1,0 +1,1 @@
+﻿If `.T.` sanitizes the HTML for XSS attacks by stripping script blocks, `javascript:` directives and removing `onXXX` events from elements.

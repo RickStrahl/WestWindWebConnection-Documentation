@@ -1,0 +1,1 @@
+﻿Returns the Message text for a Win32API error code.

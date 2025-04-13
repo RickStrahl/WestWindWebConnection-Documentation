@@ -1,0 +1,1 @@
+﻿Creates a schema for a single level object.

@@ -1,0 +1,1 @@
+﻿Submits an event to the Event queue. You can pass input data and title for the event and optionally hold off saving the event to set additional properties manually.

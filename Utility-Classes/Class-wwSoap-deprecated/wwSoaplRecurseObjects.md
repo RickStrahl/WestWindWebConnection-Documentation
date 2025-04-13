@@ -1,0 +1,1 @@
+﻿If objects are to be returned this determines whether object properties are hierarchically recursed.

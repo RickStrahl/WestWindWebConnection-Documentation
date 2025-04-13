@@ -1,0 +1,1 @@
+﻿Initializes the cookie with optional name and value.

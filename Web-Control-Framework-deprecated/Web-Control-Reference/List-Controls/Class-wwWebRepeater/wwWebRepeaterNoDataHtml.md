@@ -1,0 +1,1 @@
+﻿Text string/html to display if there's no data to display, ie. the datasource contains no data.

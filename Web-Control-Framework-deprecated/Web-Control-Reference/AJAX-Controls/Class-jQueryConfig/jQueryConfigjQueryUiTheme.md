@@ -1,0 +1,1 @@
+﻿The default Theme used for jQuery UI

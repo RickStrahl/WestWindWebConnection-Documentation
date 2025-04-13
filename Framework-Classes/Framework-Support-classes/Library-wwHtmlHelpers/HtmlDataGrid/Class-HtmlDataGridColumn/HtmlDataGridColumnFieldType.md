@@ -1,0 +1,1 @@
+﻿FoxPro Type identifier

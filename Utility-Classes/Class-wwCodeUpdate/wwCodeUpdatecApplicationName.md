@@ -1,0 +1,1 @@
+﻿Name of the application. Used for display in dialogs.

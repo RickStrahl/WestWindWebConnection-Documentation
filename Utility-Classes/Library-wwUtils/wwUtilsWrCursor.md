@@ -1,0 +1,1 @@
+﻿Creates a Writable cursor from a SELECTed cursor by creating a copy with a new name.

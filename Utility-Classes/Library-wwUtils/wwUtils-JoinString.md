@@ -1,0 +1,1 @@
+﻿Joins a collection of strings back into a single string.

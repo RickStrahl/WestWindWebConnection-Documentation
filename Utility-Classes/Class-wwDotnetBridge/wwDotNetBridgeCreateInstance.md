@@ -1,0 +1,1 @@
+﻿Creates an instance of a .NET class and passes it back to Visual FoxPro as a COM reference.Types need to be loaded as fully qualified class names (ie. Namespace.Class).Before you load the class specified make sure any required assemblies are loaded first with [LoadAssembly()](vfps://Topic/_24N1CFW6D).

@@ -1,0 +1,1 @@
+﻿The number of items that are currently on the stack.

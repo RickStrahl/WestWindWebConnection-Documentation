@@ -1,0 +1,1 @@
+﻿Error number if an error occurs.

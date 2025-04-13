@@ -1,0 +1,1 @@
+﻿HTTP Connection type that matches the [wwIPStuff::nHTTPConnectType](vfps://Topic/wwHTTP%3A%3Anhttpconnecttype) property. Applies only when using nHTTPMode of 0 (wwHTTP).

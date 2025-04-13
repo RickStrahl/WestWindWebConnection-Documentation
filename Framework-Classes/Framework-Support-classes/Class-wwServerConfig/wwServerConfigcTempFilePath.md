@@ -1,0 +1,1 @@
+﻿Temp file path location used for file based messaging. Set this even if you're running COM mode exclusively.

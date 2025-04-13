@@ -1,0 +1,1 @@
+﻿Auto width by default

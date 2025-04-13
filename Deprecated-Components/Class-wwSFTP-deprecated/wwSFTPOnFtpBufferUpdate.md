@@ -1,0 +1,1 @@
+﻿This event handler can be used to provide progress information and cancel long running downloads or uploads.

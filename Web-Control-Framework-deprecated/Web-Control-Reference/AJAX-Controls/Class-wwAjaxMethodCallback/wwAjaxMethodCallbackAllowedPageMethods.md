@@ -1,0 +1,1 @@
+﻿Specify a comma delimited list of methods you allow to be called remotely. Leave blank to allow any method (not recommended)

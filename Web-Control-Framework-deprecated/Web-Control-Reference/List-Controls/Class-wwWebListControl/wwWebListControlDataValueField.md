@@ -1,0 +1,1 @@
+﻿The cursor/table field used for the value of the list item. If not provided the DataTextField value is used for the value.

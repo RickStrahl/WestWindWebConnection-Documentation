@@ -1,0 +1,1 @@
+﻿Connects to an FTP site and allows passing of a user name and password. Any FTPConnect calls should be balanced by a matching call to FTPClose. FTPClose is called automatically when the object goes out of scope.

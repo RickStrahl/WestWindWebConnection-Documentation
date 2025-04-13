@@ -1,0 +1,1 @@
+﻿The name of the cookie.

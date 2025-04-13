@@ -1,0 +1,1 @@
+﻿Returns a byte value which is similar to Int16.

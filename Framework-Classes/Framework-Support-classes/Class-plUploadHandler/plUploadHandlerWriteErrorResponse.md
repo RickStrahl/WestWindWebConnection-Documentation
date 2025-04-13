@@ -1,0 +1,1 @@
+﻿This method is used to return an error response while processing a chunk of the uploaded file. Any error results should use this method to communicate error messages.

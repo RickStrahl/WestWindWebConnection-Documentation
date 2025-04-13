@@ -1,0 +1,1 @@
+﻿Releases the specified session by removing expiring and clearing the session cookie and deleting the session record.

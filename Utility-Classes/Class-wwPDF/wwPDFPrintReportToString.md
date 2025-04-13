@@ -1,0 +1,1 @@
+﻿This method works like the [PrintReport](vfps://Topic/wwPDF40%3A%3APrintReport) except that the final output is not a file, but rather a string.

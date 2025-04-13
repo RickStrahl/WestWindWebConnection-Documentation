@@ -1,0 +1,1 @@
+﻿A global wwCache instance that can be used to cache string data. Useful for caching responses for a period of time so it doesn't have to be re-generated.

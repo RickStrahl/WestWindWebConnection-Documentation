@@ -1,0 +1,1 @@
+﻿The Url used to access the server. This Url is set through the constructor typically but you can override it explicitly with this property.

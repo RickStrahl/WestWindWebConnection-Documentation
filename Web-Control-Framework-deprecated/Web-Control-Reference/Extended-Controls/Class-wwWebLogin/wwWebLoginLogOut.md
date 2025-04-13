@@ -1,0 +1,1 @@
+﻿This method is used to logout a user. It basically kills the Session vars set and resets the LoggedIn and IsAdmin properties.

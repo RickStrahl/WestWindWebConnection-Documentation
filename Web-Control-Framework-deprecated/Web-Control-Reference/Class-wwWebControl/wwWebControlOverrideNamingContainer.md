@@ -1,0 +1,3 @@
+﻿This property can be set on a container control to force it to NOT generate an additional naming container for its UniqueId property. This can avoid contained control names like panelContent_txtName and instead generate the field as plain old txtName.
+
+This property can be applied to any container control, which always generate a new naming container by default. Simply set the property to true on the control to force the container to generate a name that is simply its id without the hierarchy prefixes.

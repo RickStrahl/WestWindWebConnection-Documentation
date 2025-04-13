@@ -1,0 +1,1 @@
+﻿Returns the content of the log captured when lLogSession is .T.

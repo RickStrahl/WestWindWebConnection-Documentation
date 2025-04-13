@@ -1,0 +1,1 @@
+﻿A collection of row objects that contains one object for each element. Each object is created with SCATTER NAME from the LoadFromCursor() method.

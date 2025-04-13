@@ -1,0 +1,1 @@
+﻿Installs a printer on the system by the printer driver's descriptive name. If the printer driver name is not specified this routine will guess based on the operating system and install a PostScript Printer.

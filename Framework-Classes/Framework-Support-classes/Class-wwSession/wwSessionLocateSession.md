@@ -1,0 +1,1 @@
+﻿Low level method that tries to load a session and set the oData member. If found the oData member is set. If not found the oData member is set to a blank record. This is a low level method and it should usually not be called directly. Use IsValidSession instead which calls this method and then updates the timestamp and browser info.

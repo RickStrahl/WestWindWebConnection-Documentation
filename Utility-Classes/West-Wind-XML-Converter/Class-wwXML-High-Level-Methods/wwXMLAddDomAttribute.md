@@ -1,0 +1,1 @@
+﻿Creates or modifies an attribute on an XMLDOM node.

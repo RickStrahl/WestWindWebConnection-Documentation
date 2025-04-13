@@ -1,0 +1,1 @@
+﻿Loads local properties with Locale specific info for a given Locale ID. Locale Ids are either numeric values (0x0409 for US for example) or string values (en-US, de-AT etc). You can use LocaleLookup to get a LocaleId from an string based LocaleID.

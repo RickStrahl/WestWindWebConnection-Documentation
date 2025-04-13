@@ -1,0 +1,1 @@
+﻿Determines whether the server form is visible or not.

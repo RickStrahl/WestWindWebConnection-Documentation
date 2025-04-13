@@ -1,0 +1,1 @@
+﻿Style that is applied to each cell in this column. Applied to the individidual TD tag in the table.

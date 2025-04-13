@@ -1,0 +1,1 @@
+﻿Whether the request has been completed

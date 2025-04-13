@@ -1,0 +1,1 @@
+﻿The main CSS class for the HTML Table

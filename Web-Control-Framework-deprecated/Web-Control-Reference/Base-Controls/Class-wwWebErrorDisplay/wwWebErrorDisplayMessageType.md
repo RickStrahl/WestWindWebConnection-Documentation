@@ -1,0 +1,1 @@
+﻿Determines how the icon is rendered either as Error or Info/Message.

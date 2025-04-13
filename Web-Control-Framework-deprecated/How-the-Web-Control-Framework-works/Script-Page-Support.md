@@ -1,0 +1,5 @@
+﻿The control architecture provides the base functionality for the framework and it's entirely responsible for rendering a page. A page is essentially rendered by dropping controls that each render their own portion of the page. The process is based on containership and an event pipeline that causes operations to fire on each of the controls of the page.
+
+You can also drive the controls through script code that looks and feels a lot like ASP.NET code. In fact you can use many ASP.NET native controls directly with the framework. Basically any ASP.NET control that has a direct match in the Web Connection framework can be used although you have to realize that the functionality is not necessarily one to one. 
+
+The script engine works through code generation and works by parsing the script page and generating Web Connection Page Controls from the HTML document containing the script and control markup. The *WebPageParser class* performs this job and can do this job on the fly in development mode. Once generated the code become completely independent of the original script page as the code is pure PRG code that is executed inside of Visual FoxPro.

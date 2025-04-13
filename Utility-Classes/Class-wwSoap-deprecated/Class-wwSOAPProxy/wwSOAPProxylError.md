@@ -1,0 +1,1 @@
+﻿Check this property to see if an error occurred.

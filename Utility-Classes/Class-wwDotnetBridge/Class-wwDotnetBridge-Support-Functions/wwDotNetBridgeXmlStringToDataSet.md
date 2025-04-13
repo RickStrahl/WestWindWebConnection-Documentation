@@ -1,0 +1,1 @@
+﻿Creates a .NET DataSet from an XML String that is exported from XmlAdapter or CursorToXml.

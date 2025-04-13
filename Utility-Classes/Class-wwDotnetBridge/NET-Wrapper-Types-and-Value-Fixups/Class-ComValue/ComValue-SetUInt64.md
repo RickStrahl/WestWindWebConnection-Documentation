@@ -1,0 +1,1 @@
+﻿Sets a 64 bit unsigned integer value from a FoxPro number.

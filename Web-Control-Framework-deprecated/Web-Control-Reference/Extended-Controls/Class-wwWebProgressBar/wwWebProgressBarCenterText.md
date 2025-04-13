@@ -1,0 +1,1 @@
+﻿determines whether the Message text is centered in the progress display

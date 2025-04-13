@@ -1,0 +1,1 @@
+﻿Main method that fires the actual request to the server. The serverUrl must be set at minimum before this method should be called.

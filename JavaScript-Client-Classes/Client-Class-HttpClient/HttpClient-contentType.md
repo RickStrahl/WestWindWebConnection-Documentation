@@ -1,0 +1,1 @@
+﻿The content type for any POST data that might be sent. Defaults to: application/x-www-form-urlencoded

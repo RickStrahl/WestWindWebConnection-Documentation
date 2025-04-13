@@ -1,0 +1,1 @@
+﻿Flag that if .T. causes errors to stop rather than get handled by the TRY/CATCH handler for error reporting.

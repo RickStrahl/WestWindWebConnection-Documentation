@@ -1,0 +1,1 @@
+﻿Closes an open SQL connection if one is still open. The connection is also automatically closed if the wwSQL object is destroyed.

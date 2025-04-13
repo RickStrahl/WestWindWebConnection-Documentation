@@ -1,0 +1,1 @@
+﻿Allows setting of the Value property from the result of an object instantiation.Useful when instantiating types that can't be accessed in VFP such as Generic types or Value types. Using this mechanism you can create an instance of the type.

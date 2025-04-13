@@ -1,0 +1,1 @@
+﻿Comma delimited list of SQL commands that are allowed when handling SQL commands.

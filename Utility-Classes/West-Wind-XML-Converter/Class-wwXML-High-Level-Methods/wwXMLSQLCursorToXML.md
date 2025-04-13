@@ -1,0 +1,3 @@
+﻿This method allows you to directly query an ODBC/OleDB data source and return XML for a query or stored procedure result. The data is returned as an XML string in standard format.
+
+If you run a stored procedure and multiple resultsets are returned, all resultsets are encoded into the single XML document below the document element. The naming will be 'name', 'name1', 'name2' and so on for each subsequent resultset. The structures for the result sets may vary, but the table and row names will be the same for each. Field names will vary.

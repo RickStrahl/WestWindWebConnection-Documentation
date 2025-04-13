@@ -1,0 +1,1 @@
+﻿Determines whether the application is currently running under a 64 bit OS.

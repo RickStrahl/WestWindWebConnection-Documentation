@@ -1,0 +1,1 @@
+﻿The class that Web Connection creates when to do request processing. Keep in mind that this may vary depending on whether you use ASP or plain Web Connection processing.

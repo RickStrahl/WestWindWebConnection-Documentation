@@ -1,0 +1,1 @@
+﻿The Session ID of the currently accessed session.

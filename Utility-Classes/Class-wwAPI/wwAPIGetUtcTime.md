@@ -1,0 +1,1 @@
+﻿Returns UTC time from a local time.

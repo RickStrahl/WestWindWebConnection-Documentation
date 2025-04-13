@@ -1,0 +1,1 @@
+﻿Determines whether the the selected item in the list will be automatically focused.

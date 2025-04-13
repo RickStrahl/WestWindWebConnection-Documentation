@@ -1,0 +1,1 @@
+﻿Sets the server type: IIS4, IIS3, PWS4, PWS3, WEBSITE, COMMERCE, APACHE. Note, PWS for NT Workstation should use the IIS settings.

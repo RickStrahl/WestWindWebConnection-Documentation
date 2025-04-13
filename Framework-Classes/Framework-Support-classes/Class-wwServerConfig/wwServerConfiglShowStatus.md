@@ -1,0 +1,1 @@
+﻿Determines whether the status window shows each request. There's slight overhead in displaying this information, so if speed is of utmost importance turn this option off.

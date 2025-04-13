@@ -1,0 +1,1 @@
+﻿Flag to determine whether admin email is sent on errors.

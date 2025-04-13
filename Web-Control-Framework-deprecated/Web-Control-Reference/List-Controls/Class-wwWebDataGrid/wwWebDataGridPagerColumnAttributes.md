@@ -1,0 +1,1 @@
+﻿Any custom attributes you might need to set on the page column.

@@ -1,0 +1,1 @@
+﻿Fired when the Code Display Button is clicked. You can use this method to override the stock behavior of the control and dynamically assign CodeFile and DisplayMode properties.

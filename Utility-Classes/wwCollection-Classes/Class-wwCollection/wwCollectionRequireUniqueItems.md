@@ -1,0 +1,1 @@
+﻿When .T. insures that all items in the collections are unique **when added**.

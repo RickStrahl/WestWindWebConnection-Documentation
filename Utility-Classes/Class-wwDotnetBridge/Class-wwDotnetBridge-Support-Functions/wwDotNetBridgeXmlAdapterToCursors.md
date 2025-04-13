@@ -1,0 +1,1 @@
+﻿Helper method that generates one cursor for each of the XmlAdapter's Tables. Cursors are created with the names defined in the XML document's item nodes (ie. the DataSet Table names).

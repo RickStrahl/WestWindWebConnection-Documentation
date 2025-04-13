@@ -1,0 +1,1 @@
+﻿Easily creates a Collection from a FoxPro cursor. Creates either a FoxPro Collection or a [wwCollection instance](vfps://Topic/_1O11ESK6R).

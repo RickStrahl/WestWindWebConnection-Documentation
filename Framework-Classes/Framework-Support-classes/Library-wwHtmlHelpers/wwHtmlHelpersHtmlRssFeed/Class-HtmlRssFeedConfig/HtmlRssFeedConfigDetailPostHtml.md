@@ -1,0 +1,1 @@
+﻿Any HTML that is injected after each detail item in the feed.

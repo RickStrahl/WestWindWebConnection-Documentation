@@ -1,0 +1,1 @@
+﻿Provides various extensions to the JavaScript String class.

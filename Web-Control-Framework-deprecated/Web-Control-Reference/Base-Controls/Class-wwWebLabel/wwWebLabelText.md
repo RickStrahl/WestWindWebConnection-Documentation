@@ -1,0 +1,1 @@
+﻿The text of the label that is displayed.

@@ -1,0 +1,1 @@
+﻿Sets an Internet option on a given connection handle. The handle can be either an Internet handle or the Http handle so this method has to be called after the connection has been opened. It is meant primarily for internal purposes.

@@ -1,0 +1,1 @@
+﻿Retrieves a feed as an RSS Feed from the Web and turns it into an HTML string.

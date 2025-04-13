@@ -1,0 +1,1 @@
+﻿SQL Connect String to use if you want to use SQL Logging and Session objects.

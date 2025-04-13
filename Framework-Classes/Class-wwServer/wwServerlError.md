@@ -1,0 +1,1 @@
+﻿Error flag set to .T. if a request fails. You can check cErrorMsg to see what error actually occurred.

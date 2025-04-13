@@ -1,0 +1,1 @@
+﻿Name of the table. Note this should be just the table name. Use cDataPath for explicit pathing on the table.

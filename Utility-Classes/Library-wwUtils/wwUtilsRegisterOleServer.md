@@ -1,0 +1,1 @@
+﻿Registers an OLE server or OCX control

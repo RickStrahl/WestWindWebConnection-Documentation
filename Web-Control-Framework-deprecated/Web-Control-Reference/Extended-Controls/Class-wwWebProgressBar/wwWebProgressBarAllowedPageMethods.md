@@ -1,0 +1,1 @@
+﻿Methods that are allowed on the embedded wwWebAjax controls

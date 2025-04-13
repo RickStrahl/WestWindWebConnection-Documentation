@@ -1,0 +1,1 @@
+﻿Converts an XML value into a FoxPro value based on an XML type you specify.

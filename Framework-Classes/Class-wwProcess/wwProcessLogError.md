@@ -1,0 +1,1 @@
+﻿Method that is used to log an error into the Web Connection Error Log. This method should be called from the OnError event of this class.

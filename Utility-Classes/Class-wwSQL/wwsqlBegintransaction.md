@@ -1,0 +1,1 @@
+﻿Begins a SQL transaction.

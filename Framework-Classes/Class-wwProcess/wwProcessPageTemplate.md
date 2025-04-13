@@ -1,0 +1,1 @@
+﻿Renders a complete page template into which you can embed HTML template. It uses the template stored at `Views\_PageTemplate.html` to render the default template and you can customize this template

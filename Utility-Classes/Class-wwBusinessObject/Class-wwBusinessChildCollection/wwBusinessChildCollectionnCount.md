@@ -1,0 +1,1 @@
+﻿Number of items in the list.

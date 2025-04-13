@@ -1,0 +1,1 @@
+﻿Retrieves a user by the `Validate` field value. Use this when validating a user account or for password recovery.

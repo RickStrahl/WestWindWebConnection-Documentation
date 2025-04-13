@@ -1,0 +1,1 @@
+﻿The value of the List Item. If not set the item uses Text.

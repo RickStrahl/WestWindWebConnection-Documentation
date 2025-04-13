@@ -1,0 +1,1 @@
+﻿FoxPro class used as a callback handler for Asynchronous operations like `InvokeMethodAsync()` and `InvokeStaticMethodAsync()`.

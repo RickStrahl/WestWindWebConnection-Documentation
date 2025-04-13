@@ -1,0 +1,1 @@
+﻿The CellPadding for the HTML table.

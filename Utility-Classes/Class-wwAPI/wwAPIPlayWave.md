@@ -1,0 +1,1 @@
+﻿Plays a WAV file synchronously or asynchronously.

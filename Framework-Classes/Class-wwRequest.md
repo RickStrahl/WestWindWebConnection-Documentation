@@ -1,0 +1,1 @@
+﻿The wwRequest class'  purpose is to allow your programs to receive information from the web server and the HTML page that generated a Web request. It retrieves Form and QueryString variables, Cookies and ServerVariables - it basically acts as your input source for a request.

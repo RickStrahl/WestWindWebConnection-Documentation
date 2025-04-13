@@ -1,0 +1,1 @@
+﻿Like the [GetUser()](vfps://Topic/_1P30TA7ND) method but retrieves a user by username rather than by PK.

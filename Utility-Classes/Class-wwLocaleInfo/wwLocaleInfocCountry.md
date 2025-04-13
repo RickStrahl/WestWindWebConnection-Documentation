@@ -1,0 +1,1 @@
+﻿The name of the Country in the native language.

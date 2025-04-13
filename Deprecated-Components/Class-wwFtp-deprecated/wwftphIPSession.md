@@ -1,0 +1,1 @@
+﻿Internally used handle for the Internet connection.

@@ -1,0 +1,1 @@
+﻿Determines whether items are using alternating colors

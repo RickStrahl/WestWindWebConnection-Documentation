@@ -1,0 +1,1 @@
+﻿Admin Email address used for notifications and errors using the wwProcess::SendErrorEmail() method.

@@ -1,0 +1,1 @@
+﻿If set to a non-zero value adds a drop shadow to the panel. Note: Adding a drop shadow makes the panel absolute positioned.

@@ -1,0 +1,7 @@
+﻿The wwWebUserControl class is the base class that is used for visual User Controls that can be visually designed and then be dragged and dropped onto page canvas for visual resusability. User Controls are essentially mini forms and behave very similar to forms and provide a container for other visual controls.
+
+This class by itself doesn't do anything - it's a shell implementation that inherits and derives all of its functionality from the wwWebControl class. The class acts as a marker interface to the Page Parser to identify externally loaded User Controls and provides the container needed to parse the User Control contents.
+
+Functionally user controls act just like wwWebPage objects with the difference that they don't contain a form. User Controls provide visual subclassing by allowing you to create User Controls that contain other controls, providing a visual mechanism for building Composite classes.
+
+This is a very powerful reusability mechanism that lets you design page components, like page headers, footers, menus and side bars that are reused on other pages. User Controls are full class controls so you can expose properties on the control class and set these properties via control markup or code.

@@ -1,0 +1,1 @@
+﻿Event fired after a user has successfully logged out through the Web UI interface.

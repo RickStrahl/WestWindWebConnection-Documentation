@@ -1,0 +1,1 @@
+﻿An expiration header tag in minutes. Typically -1 is used to signifiy that this request should not be cached.

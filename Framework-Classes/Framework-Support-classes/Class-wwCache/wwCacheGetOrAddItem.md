@@ -1,0 +1,1 @@
+﻿This method is a combination of `GetItem()` and `AddItem()` which retrieves a value if it exists, or sets a value if it doesn't. In either case the value (existing or new) is returned.

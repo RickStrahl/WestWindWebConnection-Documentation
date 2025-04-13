@@ -1,0 +1,1 @@
+﻿The base CSS Theme path (use the base folder of the themes)

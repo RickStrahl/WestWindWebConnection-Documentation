@@ -1,0 +1,1 @@
+﻿Optional Image used for close box if ShowCloseBoxOnDragHandle is true.

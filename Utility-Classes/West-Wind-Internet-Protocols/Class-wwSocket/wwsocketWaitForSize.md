@@ -1,0 +1,1 @@
+﻿Reads a socket until the specified number of bytes are received.

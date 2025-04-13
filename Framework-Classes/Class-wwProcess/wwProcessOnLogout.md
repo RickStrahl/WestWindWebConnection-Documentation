@@ -1,0 +1,3 @@
+﻿Hook method that is called after a user has been logged out with a call to `Authenticate("LOGOUT")`.
+
+This functionality allows you to hook up additional logic to clear session values or other stateful data associated with a logged in user more easily. Previously this required taking over either the `Authenticate()` method or creating a custom `Logout()` process class method that explicitly logged users out.

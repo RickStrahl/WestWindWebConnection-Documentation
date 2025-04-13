@@ -1,0 +1,1 @@
+﻿Allows you to add HTTP headers to the HTTP request sent to the server. Headers can be of the standard HTTP header kind like Content-encoding or Cache, or custom headers specific to your application.

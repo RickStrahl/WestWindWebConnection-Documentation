@@ -1,0 +1,1 @@
+﻿Imports data from an XML Dataset into a Fox cursor. As of now the cursor must be pre-created and  you must specify which cursor you want to import from the dataset if multiple cursors are contained within it.

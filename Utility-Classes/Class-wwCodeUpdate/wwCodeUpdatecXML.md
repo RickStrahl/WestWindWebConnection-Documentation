@@ -1,0 +1,1 @@
+﻿Contains the full XML resource string after a call to GetVersionInfo().

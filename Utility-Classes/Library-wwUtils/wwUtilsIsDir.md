@@ -1,0 +1,1 @@
+﻿Checks to see if a directory exists. Unlike Directory() this method works on Windows 2000.

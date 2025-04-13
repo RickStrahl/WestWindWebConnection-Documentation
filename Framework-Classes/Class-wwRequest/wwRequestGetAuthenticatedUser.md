@@ -1,0 +1,3 @@
+﻿Returns the name of a user if he has been authenticated by the Web server. This variable gets set and stays set once a user has entered a valid username into the browser dialog box when prompted. The username is valid for a given Web server path and down and once set cannot be unset until the browser is shut down or another authentication request is made for the same user.
+
+This method can check both Basic and Windows Auth values either seperately or combined.

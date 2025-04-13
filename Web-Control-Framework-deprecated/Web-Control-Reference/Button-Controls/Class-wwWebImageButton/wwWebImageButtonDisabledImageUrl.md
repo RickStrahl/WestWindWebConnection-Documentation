@@ -1,0 +1,1 @@
+﻿Image displayed when the control is disabled (enabled=.F.). If not set the ImageUrl is used.

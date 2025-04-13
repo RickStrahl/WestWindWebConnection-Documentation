@@ -1,0 +1,1 @@
+﻿The field used as the primary key in the table. This field must be an integer or numeric field.

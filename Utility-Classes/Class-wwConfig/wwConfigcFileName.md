@@ -1,0 +1,1 @@
+﻿The filename to persist or read the configuration information from. Doesn't apply if you're using the Registry.

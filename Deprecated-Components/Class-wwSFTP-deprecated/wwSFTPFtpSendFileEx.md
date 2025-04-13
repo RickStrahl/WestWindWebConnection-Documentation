@@ -1,0 +1,1 @@
+﻿Sends a file to the server on an already open connection. Make sure you have called `FtpOpenConnection()` before calling this method.

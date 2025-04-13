@@ -1,0 +1,1 @@
+﻿Determines whether child controls are databound in item templates. Set to false to improve performance when you don't have Web Controls that require DataBind() to fire inside of a template and want to improve rendering speed.

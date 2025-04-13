@@ -1,0 +1,1 @@
+﻿Retrieves a value from the Web Connection ISAPI/CGI configuration file. Most useful for retrieving the AdminUser value.

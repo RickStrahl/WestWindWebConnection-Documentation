@@ -1,0 +1,1 @@
+﻿Retrieves a dynamic property set. Properties are stored in XML format in the Properties field of the Event record and can contain any simple data types of any size. For example you can store XML strings to be passed from the client app to the server app.

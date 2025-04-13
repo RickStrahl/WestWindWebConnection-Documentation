@@ -1,0 +1,1 @@
+﻿Returns a date from a form variable by trying to convert the string date input to a date time value. Supports ISO date conversion for native `type="date"` and `type="datetime-local"` inputs as well as default locale parsing using `CTOT()`.

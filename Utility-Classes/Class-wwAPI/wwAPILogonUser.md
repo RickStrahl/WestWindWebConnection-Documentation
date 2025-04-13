@@ -1,0 +1,1 @@
+﻿Allows checking whether a username and password are valid with Windows security.

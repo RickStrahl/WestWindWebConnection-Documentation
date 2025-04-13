@@ -1,0 +1,1 @@
+﻿Sets a block of data into the allocated heap, or if no prior call to `.Allocate()` was made, also allocates the heap for the size of the block of data.

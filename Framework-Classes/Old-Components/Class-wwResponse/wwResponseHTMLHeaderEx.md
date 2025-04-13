@@ -1,0 +1,1 @@
+﻿This method allows you to create custom HTMLHeader and HTTPHeader objects and pass it to this method for output creation.

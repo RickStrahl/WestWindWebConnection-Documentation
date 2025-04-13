@@ -1,0 +1,1 @@
+﻿Optional handler called when the call completes. Receives a string parameter that is the result of the HTTP request.This property can be overridden if passed in the send() method.

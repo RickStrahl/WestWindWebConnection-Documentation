@@ -1,0 +1,1 @@
+﻿The delay when typing into the textbox before auto-complete fires lookups to the server.

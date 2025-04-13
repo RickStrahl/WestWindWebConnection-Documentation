@@ -1,0 +1,1 @@
+﻿Most mail server's these days require authentication and this property specifies the password.

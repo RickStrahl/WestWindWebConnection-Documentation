@@ -1,0 +1,1 @@
+﻿The Text for the caption of the Tab page. This value is displayed as HTML so if you choose you can embed HTML markup into this text expression.

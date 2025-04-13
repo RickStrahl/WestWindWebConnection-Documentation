@@ -1,0 +1,1 @@
+﻿Flag that determines whether the last request information is saved to a file that can be reviewed.

@@ -1,0 +1,1 @@
+﻿Converts a binary 4 byte (Double Word) expression into VFP number.

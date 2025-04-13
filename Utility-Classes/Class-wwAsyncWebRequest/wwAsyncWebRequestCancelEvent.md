@@ -1,0 +1,1 @@
+﻿Cancels an event in the table by setting the Cancel flag on the oEven object/table.

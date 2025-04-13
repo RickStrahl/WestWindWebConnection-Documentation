@@ -1,0 +1,1 @@
+﻿Size of the Page to display. If non-zero causes the DataGrid to add a Pager band to the bottom of the list that allows the user to select a different page.

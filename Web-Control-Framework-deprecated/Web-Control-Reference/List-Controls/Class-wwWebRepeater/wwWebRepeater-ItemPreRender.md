@@ -1,0 +1,1 @@
+﻿Called just before a data item is rendered. This event occurs after control state - if any - has been restored

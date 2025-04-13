@@ -1,0 +1,1 @@
+﻿An ODBC connection string. Either a DSN or full SQL Connect String.

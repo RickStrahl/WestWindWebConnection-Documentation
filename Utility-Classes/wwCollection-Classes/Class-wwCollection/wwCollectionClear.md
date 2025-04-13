@@ -1,0 +1,1 @@
+﻿Clears all of the collection's items.

@@ -1,0 +1,3 @@
+﻿Checks to see if the Captcha code entered valid. This is automatically called in Web Control pages. For Process methods you can call this method to check validity. 
+
+Note: In Process methods make sure you call this method BEFORE you generate a new CAPTCHA image and ID using SubmitCaptcha() as that method will generate a new id and store it in Session state. This is not an issue if you use the control on a Web Control form.

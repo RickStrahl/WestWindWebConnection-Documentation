@@ -1,0 +1,1 @@
+﻿Retrieves the user's current SessionId. This value is valid only after you've made a call to IsValidSession, NewSession or LocateSession.

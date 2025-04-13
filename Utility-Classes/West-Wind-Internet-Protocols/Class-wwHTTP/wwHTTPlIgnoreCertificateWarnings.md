@@ -1,0 +1,1 @@
+﻿When .T. ignores warnings about invalid certificates. If the server responds with warnings rather than a complete revoked and out of date certificate, these warnings are ignored and the request continues as normal. The default behavior is that any warning causes an error.

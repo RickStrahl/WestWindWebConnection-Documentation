@@ -1,0 +1,1 @@
+﻿Determines the width of the border for the panel area.

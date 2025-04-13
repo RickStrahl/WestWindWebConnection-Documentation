@@ -1,0 +1,1 @@
+﻿This method is not really required, but it physically deletes an event record. When events are completed they are not explicitly deleted, but rather the Completion timestamp is set. This method explicitly removes the event record.

@@ -1,0 +1,1 @@
+﻿Removes a UTF-8 BOM marker from a UTF-8 encoded file.

@@ -1,0 +1,1 @@
+﻿Takes an ADO created XML recordset saved with rs.Save(<filename>,1) and converts it into a VFP cursor. This operation can be slow due to pure XMLDOM usage to parse the XML.

@@ -1,0 +1,1 @@
+﻿The wwWebPage class is the top level container for a WebControl page. This container acts as the entry point for event processing and provides the HTML Document for page generation.

@@ -1,0 +1,1 @@
+﻿The CSS Class used on Alternating Rows.

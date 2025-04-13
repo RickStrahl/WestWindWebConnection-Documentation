@@ -1,0 +1,4 @@
+﻿Allows overriding the default `.oHttp` instance used to send a request to the server. The default `CreatewwHttp()` is called during class `Init()` and ensures that `.oHttp` is always ready to be accessed. This method allows you to overide this behavior, as well as set the `.oHttp` property.
+
+### Override in Custom Classes
+Use this method if you want to perform repetitive configuration tasks on the `oHttp` instance on every request in your custom service. For example, you might add a Token property to keep track of a bearer token captured during Authentication, and then add the `Authorization` header with the Bearer token on each request.

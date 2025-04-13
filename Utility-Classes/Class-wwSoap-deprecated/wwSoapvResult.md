@@ -1,0 +1,1 @@
+﻿This value is set on completion of the SOAP request and holds the final result value. If the result value includes data type information the return value is typed.

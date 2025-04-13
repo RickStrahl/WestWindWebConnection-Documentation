@@ -1,0 +1,1 @@
+﻿Sets a Decimal value. Turns any FoxPro numeric value to a .NET decimal value.This can actually be done in FoxPro explicitly with CAST(val as Currency) but this method can be used with pre-VFP 9 and is used internally to convert numerics to decimal.

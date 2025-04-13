@@ -1,0 +1,1 @@
+﻿If `.T.` doesn't process raw HTML inside of the Markdown. Instead the HTML is HTML Encoded and embedded into the documented as text.

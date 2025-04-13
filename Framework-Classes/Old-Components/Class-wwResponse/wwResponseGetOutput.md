@@ -1,0 +1,3 @@
+﻿This method retrieves the currently accumulated HTTP stream output as a string and clears the output stream with a call to the [Clear()](vfps://Topic/wwResponse%3A%3AClear) method.
+
+This method is used internally to retrieve content from Response objects directly into string values that can be displayed. When using the wwResponseString object especially GetOutput is the primary mechanism for retrieving the HTTP output.

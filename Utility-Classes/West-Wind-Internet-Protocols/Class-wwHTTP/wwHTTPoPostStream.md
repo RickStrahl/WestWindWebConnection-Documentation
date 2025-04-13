@@ -1,0 +1,1 @@
+﻿Internal `wwFileStream` instance that holds large string data when `.lUseLargePostBuffer` is used.

@@ -1,0 +1,1 @@
+﻿Determines whether the clock is 12 or 24 hours

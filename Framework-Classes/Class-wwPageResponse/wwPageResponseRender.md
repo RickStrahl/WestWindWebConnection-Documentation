@@ -1,0 +1,1 @@
+﻿This method is called to return the output of the Response object. It combines the headers and the body together and returns the entire response.

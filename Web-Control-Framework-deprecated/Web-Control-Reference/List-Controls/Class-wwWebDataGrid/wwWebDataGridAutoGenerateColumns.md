@@ -1,0 +1,1 @@
+﻿Automatically generates all columns if set to .t.

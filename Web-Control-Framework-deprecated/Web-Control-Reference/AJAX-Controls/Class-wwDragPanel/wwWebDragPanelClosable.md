@@ -1,0 +1,1 @@
+﻿Flag that determines whether a closebox is rendered into the <div> specified as a drag handle.

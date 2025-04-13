@@ -1,0 +1,1 @@
+﻿The characters that are used to make up the CAPTCHA expression displayed. The default is all uppercase letters and numbers except 0 and O. You can use any characters you chose.

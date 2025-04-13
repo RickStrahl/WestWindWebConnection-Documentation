@@ -1,0 +1,1 @@
+﻿Determines if a string starts with a given character substring.

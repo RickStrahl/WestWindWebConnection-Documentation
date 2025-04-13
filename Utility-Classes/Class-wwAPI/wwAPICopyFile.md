@@ -1,0 +1,1 @@
+﻿Copies File. Faster than Fox Copy and handles errors internally without throwing a Fox error.

@@ -1,0 +1,1 @@
+﻿Optional log file that receives ftp log output

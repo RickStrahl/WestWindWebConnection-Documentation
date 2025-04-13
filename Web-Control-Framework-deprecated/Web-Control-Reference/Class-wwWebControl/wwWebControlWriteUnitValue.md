@@ -1,0 +1,1 @@
+﻿Writes a measurement value as a string. If a numeric value is passed it's turned into a string with a px postfix for pixel size. String values are passed through and all others are transformed into a string.

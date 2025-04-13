@@ -1,0 +1,1 @@
+﻿Ends response output. When called all further calls to the response object do nothing.

@@ -1,0 +1,1 @@
+﻿The filesize retrieved from the XML resource file, so you can display info about the size of the file before actually grabbing it.

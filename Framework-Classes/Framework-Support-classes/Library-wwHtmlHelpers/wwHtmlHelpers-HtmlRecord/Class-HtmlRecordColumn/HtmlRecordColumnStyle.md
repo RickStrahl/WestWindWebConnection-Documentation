@@ -1,0 +1,1 @@
+﻿The style to apply to the column

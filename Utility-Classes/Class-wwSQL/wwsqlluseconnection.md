@@ -1,0 +1,1 @@
+﻿.T. if a connection was used to connect, .f. if a DSN, UID, PWD was used. Used internally in reconnection.

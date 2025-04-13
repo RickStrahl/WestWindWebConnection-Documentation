@@ -1,0 +1,1 @@
+﻿Width for the control. This value can be a numeric or string value - string is preferred. This value is mirrored by the Protected cWidth property which can be more efficient.

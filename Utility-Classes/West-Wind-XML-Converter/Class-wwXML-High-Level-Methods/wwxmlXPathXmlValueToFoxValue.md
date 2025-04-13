@@ -1,0 +1,1 @@
+﻿Works like XMLValueToFoxValue except that rather than accepting a string parameter it takes an XPATH expression and rootnode to retrieve a value from an XML document and translate it directly.

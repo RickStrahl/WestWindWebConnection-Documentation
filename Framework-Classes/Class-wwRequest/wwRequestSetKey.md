@@ -1,0 +1,3 @@
+﻿Sets a form variable to the specified value from the existing POST data block. 
+
+This method is useful for operations where the program needs to make changes to existing POST variable provided by the client application. An example might be stripping out a password the user passed before redisplaying a DHTML form that contains this data. After the display operation is complete the original value can be reset.

@@ -1,0 +1,5 @@
+﻿The Write and FastSend methods are used for all output that is sent to the HTTP output stream. They are the low level methods through which all output from the wwResponse object flows. All other methods of this object call into Write or FastSend to send their output into the HTTP stream. This centralized access makes this object flexible and able to serve different output mechanisms such as File or String or ASP Response object output by changing only a few methods.
+
+Write sends output as is without a trailing carriage return or other formatting.
+
+The optional lNoOutput parameter is used to avoid sending output to the HTTP stream, returning a string as a result of the method instead. This lNoOutput option is available on most  other wwResponse methods and passed through to this method. This makes it possible to use wwResponse methods to generate output strings directly.

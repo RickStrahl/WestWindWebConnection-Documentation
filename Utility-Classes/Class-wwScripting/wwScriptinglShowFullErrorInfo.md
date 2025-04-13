@@ -1,0 +1,1 @@
+﻿If .T. displays full error information on the page if possible

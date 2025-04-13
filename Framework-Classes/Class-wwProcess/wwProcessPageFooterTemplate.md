@@ -1,0 +1,1 @@
+﻿Renders a default footer template that is found in `Views\_PageFooterTemplate.html`.

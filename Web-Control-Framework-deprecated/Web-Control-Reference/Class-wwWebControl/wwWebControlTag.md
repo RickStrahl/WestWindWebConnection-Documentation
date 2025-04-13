@@ -1,0 +1,1 @@
+﻿Generic string property that can be used to attach some state to a control.

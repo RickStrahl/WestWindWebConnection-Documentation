@@ -1,0 +1,1 @@
+﻿The library also includes a handful of global functions that are provided as wrappers for other functionality in easy to use single line command style syntax.

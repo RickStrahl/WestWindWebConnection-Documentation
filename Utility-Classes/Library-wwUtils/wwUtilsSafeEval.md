@@ -1,0 +1,1 @@
+﻿Evaluates a FoxPro expression without blowing up by wrapping the EVALUATE() operation into an internal TRY/CATCH block.

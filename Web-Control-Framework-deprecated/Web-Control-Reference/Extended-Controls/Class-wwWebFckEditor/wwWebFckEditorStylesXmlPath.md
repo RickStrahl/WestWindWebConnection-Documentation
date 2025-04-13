@@ -1,0 +1,1 @@
+﻿Path to an XML file that contains styles displayed in the style dialog. See FCK editor documentation and look at the default fckStyles.xml to see how you can add custom style selections.

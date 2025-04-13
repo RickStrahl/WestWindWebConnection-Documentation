@@ -1,0 +1,1 @@
+﻿When authenticated holds the users display name.

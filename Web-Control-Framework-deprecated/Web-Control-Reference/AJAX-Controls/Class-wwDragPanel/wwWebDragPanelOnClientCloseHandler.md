@@ -1,0 +1,1 @@
+﻿Optional client script handler called when the window is closed.

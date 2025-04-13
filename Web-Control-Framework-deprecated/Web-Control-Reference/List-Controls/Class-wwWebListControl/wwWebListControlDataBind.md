@@ -1,0 +1,1 @@
+﻿DataBind on a list control performs ControlSource binding only that sets the SelectedValue. List based binding occurs at Render() time.

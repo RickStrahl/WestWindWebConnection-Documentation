@@ -1,0 +1,1 @@
+﻿Retrieves an HTTP once the Response has been returned. Requires that a successfull call to HttpGet or HttpGetEx was made that returns a header in cHttpHeaders.

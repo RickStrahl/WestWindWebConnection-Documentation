@@ -1,0 +1,1 @@
+﻿Adds an item to the internal list, array or single item collection.The list or collection has to exist or an exception is thrown.

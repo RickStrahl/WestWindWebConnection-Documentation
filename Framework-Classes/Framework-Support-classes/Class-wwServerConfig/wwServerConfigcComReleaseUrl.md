@@ -1,0 +1,1 @@
+﻿The URL used to release the Web Connection application server. By default: wc.dll?_maintain~release.

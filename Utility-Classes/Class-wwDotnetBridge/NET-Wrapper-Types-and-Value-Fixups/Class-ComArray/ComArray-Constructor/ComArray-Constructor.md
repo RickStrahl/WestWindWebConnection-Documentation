@@ -1,0 +1,1 @@
+﻿Creates a new COM Array instance from an existing collection instance

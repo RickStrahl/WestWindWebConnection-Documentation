@@ -1,0 +1,1 @@
+﻿This property is set when calling HTTPGetEx and contains the entire HTTP header of a request. This property is a result property only after an HTTP request completes. Use cExtraHeaders to specify custom headers when sending requests to the Web server (or the parameter in HTTPGetEx).

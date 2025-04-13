@@ -1,0 +1,1 @@
+﻿Converts a DWORD value in binary string form back into a numeric value.

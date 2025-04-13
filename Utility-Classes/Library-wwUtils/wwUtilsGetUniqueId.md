@@ -1,0 +1,1 @@
+﻿Creates a unique ID based off of a partial GUID string. Result string can be between 15 and 32 characters with 32 characters representing an entire GUID (guaranteed unique across all devices).

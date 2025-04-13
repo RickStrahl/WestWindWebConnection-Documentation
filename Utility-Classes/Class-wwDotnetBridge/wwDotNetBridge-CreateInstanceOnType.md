@@ -1,0 +1,1 @@
+﻿Allows creation of a new .NET type and assigning that type to a .NET object property without ever going through Visual FoxPro. This allows for creation on non-COM visible types in .NET and indirect manipulation of them.

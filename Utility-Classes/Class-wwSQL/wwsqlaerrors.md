@@ -1,0 +1,1 @@
+﻿Contains full error information after an error occurs.

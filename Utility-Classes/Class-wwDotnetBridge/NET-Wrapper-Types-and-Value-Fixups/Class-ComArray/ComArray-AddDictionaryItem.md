@@ -1,0 +1,1 @@
+﻿Adds an item to the dictionary by key and value.**The list or collection has to exist or an exception is thrown.**

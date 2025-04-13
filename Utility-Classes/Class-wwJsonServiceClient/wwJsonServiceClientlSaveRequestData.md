@@ -1,0 +1,1 @@
+﻿If enabled saves request and response data - if any - in the respective `cRequestData` and `cResponseData` properties.

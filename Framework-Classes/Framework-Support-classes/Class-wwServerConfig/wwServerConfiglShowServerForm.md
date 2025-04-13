@@ -1,0 +1,1 @@
+﻿Flag that determines whether the server form shows. Not available while running in the IDE - only works in compiled applications.

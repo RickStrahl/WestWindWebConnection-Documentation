@@ -1,0 +1,1 @@
+﻿Shows the IFrame in the various IFrame modes. You can use the regular hide methods to clear the window.

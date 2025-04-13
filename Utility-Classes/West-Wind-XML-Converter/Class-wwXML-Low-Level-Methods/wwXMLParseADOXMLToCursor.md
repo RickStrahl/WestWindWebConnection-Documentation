@@ -1,0 +1,1 @@
+﻿Low level method that parses the content of an ADO XML recordset to a VFP cursor. Cursor must already exist and the parameter passed in must point at the rows XML DOM collection when passed in.

@@ -1,0 +1,1 @@
+﻿Use this property to pass in a pre-configured HTTP object to allow you configure the HTTP operation of wwSOAP.

@@ -1,0 +1,1 @@
+﻿Closes the currently open master table or releases the SQL connection.

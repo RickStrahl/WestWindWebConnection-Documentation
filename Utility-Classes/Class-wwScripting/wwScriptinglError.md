@@ -1,0 +1,1 @@
+﻿Error flag that can and should be checked after running a script or template. You can also check the cErrorMsg property for a string error message.

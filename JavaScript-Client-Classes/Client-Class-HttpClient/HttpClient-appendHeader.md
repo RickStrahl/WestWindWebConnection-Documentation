@@ -1,0 +1,1 @@
+﻿Appends an HTTP header to the current request.

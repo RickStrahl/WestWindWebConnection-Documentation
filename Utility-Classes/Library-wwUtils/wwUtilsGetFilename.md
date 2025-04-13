@@ -1,0 +1,1 @@
+﻿Returns just the file name of a path. Unlike `JUSTFNAME()` this method leaves the case of the file intact.

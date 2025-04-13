@@ -1,0 +1,1 @@
+﻿Creates an array of objects of the currently open  cursor. The result is an object that has two properties the count and the array of objects that contain the records. The object has properties for each field value (except general fields)

@@ -1,0 +1,1 @@
+﻿Parses an XML string into a .NET object. This method requires that you provide either .NET type object, or a fully qualified type name (namespace.classname or fully qualified GAC name).

@@ -1,0 +1,1 @@
+﻿Error code set on the last method that was called, if the method fails.

@@ -1,0 +1,1 @@
+﻿Use this property to override internet service connection flags used by WinINet. Used in the call to InternetConnect().

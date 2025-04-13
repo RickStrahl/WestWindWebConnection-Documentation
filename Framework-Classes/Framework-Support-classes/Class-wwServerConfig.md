@@ -1,0 +1,3 @@
+﻿This class is used to configure the Web Connection application and holds the main server's configuration settings which are read and written to the startup INI file.
+
+This class uses Save() and Load() methods of the [wwConfig class](vfps://Topic/_S8103HQW9) to load the Server's INI file settings. You can use the Reload method to automatically cause COM Server instances to reload and re-read these settings.

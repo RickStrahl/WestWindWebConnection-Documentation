@@ -1,0 +1,1 @@
+﻿Allows copying an image from one file format to another. Simply specify the name of the input file and a name of the output file. Based on the extension the new image format is created. Supported formats include gif,jpg,png,tif,bmp.

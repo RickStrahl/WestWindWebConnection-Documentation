@@ -1,0 +1,1 @@
+﻿Determines whether the close button is shown at the top or bottom

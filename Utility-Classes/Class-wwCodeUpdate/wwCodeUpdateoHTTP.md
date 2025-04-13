@@ -1,0 +1,1 @@
+﻿Reference to an wwHTTP object that can be configured after a call to CreateHTTPClient().

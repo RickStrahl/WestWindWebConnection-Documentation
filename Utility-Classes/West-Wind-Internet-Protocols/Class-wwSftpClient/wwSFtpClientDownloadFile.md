@@ -1,0 +1,1 @@
+﻿Downloads a file from the FTP server to a local file.

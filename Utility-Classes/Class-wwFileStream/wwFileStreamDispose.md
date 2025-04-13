@@ -1,0 +1,1 @@
+﻿Clears the stream and deletes the underlying file that buffers the string data.

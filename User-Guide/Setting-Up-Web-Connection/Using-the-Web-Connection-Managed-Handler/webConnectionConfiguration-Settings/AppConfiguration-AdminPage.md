@@ -1,0 +1,1 @@
+﻿The adminstration page in the application. Allows use of ~ for the application path.

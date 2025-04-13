@@ -1,0 +1,1 @@
+﻿Css class applied to the header

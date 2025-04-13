@@ -1,0 +1,1 @@
+﻿Low level method that opens and selects the event table. Used internally to get the table ready.

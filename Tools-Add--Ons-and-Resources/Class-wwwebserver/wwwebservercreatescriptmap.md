@@ -1,0 +1,1 @@
+﻿Creates a script map on the Web server. Pass script extension and a full path to the executable.

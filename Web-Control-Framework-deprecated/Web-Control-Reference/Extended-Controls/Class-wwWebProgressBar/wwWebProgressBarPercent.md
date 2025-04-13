@@ -1,0 +1,1 @@
+﻿Percentage to display on the control

@@ -1,0 +1,1 @@
+﻿Returns the currently logged on user.

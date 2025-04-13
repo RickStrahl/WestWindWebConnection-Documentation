@@ -1,0 +1,1 @@
+﻿Determines how data requests are returned for `Query` or `ConvertData()` calls. Results are always returned in the `vResult` property.

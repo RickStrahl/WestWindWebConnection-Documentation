@@ -1,0 +1,1 @@
+﻿Same as Write() but provided for ASP.NET compatibility.

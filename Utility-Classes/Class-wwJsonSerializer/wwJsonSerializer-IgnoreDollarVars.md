@@ -1,0 +1,3 @@
+﻿Specialty property that when `.T.` ignores properties that start with `$` in the name. The properties are not included in the output in that case.
+
+Variables with `$` can be generated internally for internally generated types (like generics) by .NET and leak out into the serialization interface. Since these types are generally not meant to be in the public interface, this flag allows you to easily blend them out.

@@ -1,0 +1,1 @@
+﻿Writes a value into an INI file.

@@ -1,0 +1,1 @@
+﻿Message displayed underneath the login button. Can be used for informational messages or other markup.

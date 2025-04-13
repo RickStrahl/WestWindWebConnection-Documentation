@@ -1,0 +1,1 @@
+﻿Adjust the position of the window so that the window bumps up if it runs off the bottom or left if runs off the right to keep the content visible.

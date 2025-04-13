@@ -1,0 +1,1 @@
+﻿Generates linefeed separated string of validation errors.

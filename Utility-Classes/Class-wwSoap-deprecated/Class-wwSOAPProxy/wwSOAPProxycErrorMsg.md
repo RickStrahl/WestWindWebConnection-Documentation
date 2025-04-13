@@ -1,0 +1,1 @@
+﻿Error message set after a Proxy method call if it fails. Check lError first for error condition.

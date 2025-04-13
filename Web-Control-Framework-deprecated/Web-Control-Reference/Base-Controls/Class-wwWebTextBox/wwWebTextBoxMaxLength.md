@@ -1,0 +1,1 @@
+﻿Maximum number of characters allowed in the textbox. Renders the MaxLength textbox attribute into HTML.

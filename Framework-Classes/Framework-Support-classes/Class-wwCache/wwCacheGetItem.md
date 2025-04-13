@@ -1,0 +1,1 @@
+﻿Retrieves an item by key from the cache. Item is returned if it exists and not expired.

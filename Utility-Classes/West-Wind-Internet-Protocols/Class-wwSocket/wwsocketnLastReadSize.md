@@ -1,0 +1,1 @@
+﻿The size of the data returned on the last Receive() method call. Use this if you're reading binary data that might contain NULLS and might not fill the buffer fully.

@@ -1,0 +1,1 @@
+﻿The width of the table that is displayed containing the error message.

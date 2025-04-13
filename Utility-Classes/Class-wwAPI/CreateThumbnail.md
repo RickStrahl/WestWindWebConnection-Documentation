@@ -1,0 +1,1 @@
+﻿Creates a thumbnail image from a normal sized image by specify source and thumbnail filenames and Width and Height values.

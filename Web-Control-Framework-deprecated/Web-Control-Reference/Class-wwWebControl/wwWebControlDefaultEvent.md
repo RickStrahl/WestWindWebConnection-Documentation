@@ -1,0 +1,1 @@
+﻿The Default Event that is fired for a given control if no event argument can be found.

@@ -1,0 +1,1 @@
+﻿Reads binary data from a SQL Server Image field and returns it as a Fox string.

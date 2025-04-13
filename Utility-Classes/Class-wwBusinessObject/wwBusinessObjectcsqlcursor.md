@@ -1,0 +1,1 @@
+﻿Requests that return a Fox cursor will use this name for the cursor name.

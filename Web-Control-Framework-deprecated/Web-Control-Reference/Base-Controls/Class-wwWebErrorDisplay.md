@@ -1,0 +1,1 @@
+﻿The wwWebErrorDisplay control can be used to display error messages to the user. The control is closely tied to the page's BindingErrors collection and allows for easy display of these errors.

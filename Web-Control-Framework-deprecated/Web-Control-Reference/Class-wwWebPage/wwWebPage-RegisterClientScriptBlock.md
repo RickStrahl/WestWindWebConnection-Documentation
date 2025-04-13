@@ -1,0 +1,1 @@
+﻿Adds a client script block to the page. The block is added at the top of the page and typically used for adding functions.

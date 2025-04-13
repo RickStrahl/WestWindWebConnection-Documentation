@@ -1,0 +1,1 @@
+﻿Pops an item off the stack by removing and returning the last item on the stack.

@@ -1,0 +1,1 @@
+﻿The path where the Event table sits. Defaults to a blank path (ie. in the Fox path).

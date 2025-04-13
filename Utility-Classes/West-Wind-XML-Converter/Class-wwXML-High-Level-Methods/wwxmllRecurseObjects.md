@@ -1,0 +1,3 @@
+﻿Allows to recurse child objects hierarchically. When .T. any object member willl be parsed and embedded hierarchically in the XML document.
+
+Be very careful with this however since this can result in deadlock situations where objects reference themselves lower in the hierarchy. It's highly recommended that you use [cPropertyExclusionList](vfps://Topic/wwxml%3A%3AcPropertyExclusionList) to exclude any objects that might recurse onto themselves.

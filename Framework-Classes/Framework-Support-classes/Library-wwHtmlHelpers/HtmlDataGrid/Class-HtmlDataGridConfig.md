@@ -1,0 +1,1 @@
+﻿Configures the HtmlDataGrid function's operation with customizations. This object serves as a configuration manager on which you can set properties and override methods.

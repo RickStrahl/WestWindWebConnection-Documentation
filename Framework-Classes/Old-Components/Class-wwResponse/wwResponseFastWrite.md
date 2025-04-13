@@ -1,0 +1,1 @@
+﻿This method is very similar to the [Write](vfps://Topic/wwResponse%3A%3AWrite) method, but is more efficient as it doesn't perform any error checking on the string and doesn't handle the lNoOutput parameter.

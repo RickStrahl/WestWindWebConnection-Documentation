@@ -1,0 +1,1 @@
+﻿Returns the Timezone offset from GMT in minutes.

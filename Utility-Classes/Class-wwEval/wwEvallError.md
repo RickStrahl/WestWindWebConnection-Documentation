@@ -1,0 +1,1 @@
+﻿Error flag set when an error occurs. cErrorMessage and nErrorNo contain further info on the error.

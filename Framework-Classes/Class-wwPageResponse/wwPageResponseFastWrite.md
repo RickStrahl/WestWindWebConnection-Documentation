@@ -1,0 +1,1 @@
+﻿Direct write to the output stream. This method directly writes into the response stream and bypasses any checks and flags. So it doesn't check for the ResponseEnded flag for example.

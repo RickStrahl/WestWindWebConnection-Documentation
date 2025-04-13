@@ -1,0 +1,1 @@
+﻿Like InvokeMethod, but allows passing an arbitrary number of parameters in an array rather than as a named parameter. The array is translated into individual parameters passed into the method called.Use this method if you need more than 15 parameters to pass to the .NET method. This method allows to get around wwDotnetBridge's 15 parameter and FoxPro's 26 parameter limits.

@@ -1,0 +1,1 @@
+﻿Error flag for the previous operation. Note this property must be managed by the developer for custom methods.

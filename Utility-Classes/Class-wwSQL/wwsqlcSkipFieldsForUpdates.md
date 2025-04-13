@@ -1,0 +1,3 @@
+﻿Comma delimited list of properties/fields that are skipped for Insert and Update statements built on the fly using `SqlBuildInsertStatementFromObject()` and `SqlBuildUpdateStatementFromObject()`. 
+
+Use this if your local object structure for record updates holds extra fields that are part of the SQL table, but shouldn't be updated on insert/update operations (ie. read-only values like Ids or initial values).

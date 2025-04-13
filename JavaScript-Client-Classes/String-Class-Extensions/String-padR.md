@@ -1,0 +1,1 @@
+﻿Pads a string on the right with a given pad character.

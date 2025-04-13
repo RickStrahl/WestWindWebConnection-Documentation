@@ -1,0 +1,1 @@
+﻿Returns a WinInet or Win32 API error message.

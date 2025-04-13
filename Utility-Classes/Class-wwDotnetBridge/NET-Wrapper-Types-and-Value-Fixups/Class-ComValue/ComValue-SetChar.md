@@ -1,0 +1,1 @@
+﻿Converts a FoxPro string or number to a .NET char value on the Value structure.

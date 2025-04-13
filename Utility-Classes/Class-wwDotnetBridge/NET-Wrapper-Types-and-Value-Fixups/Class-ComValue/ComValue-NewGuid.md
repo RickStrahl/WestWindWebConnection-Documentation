@@ -1,0 +1,1 @@
+﻿Creates a new GUID and stores it in the Value and also returns the new Guid as a string.

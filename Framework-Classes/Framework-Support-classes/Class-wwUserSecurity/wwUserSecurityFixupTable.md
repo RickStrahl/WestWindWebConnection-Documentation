@@ -1,0 +1,1 @@
+﻿Method used to fix up the wwUserSecurity table by stripping trailing spaces from text fields and encoding all passwords if `cPasswordEncryptionKey` is set.

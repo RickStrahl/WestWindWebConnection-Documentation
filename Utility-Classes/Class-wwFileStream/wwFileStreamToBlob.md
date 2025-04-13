@@ -1,0 +1,1 @@
+﻿Returns the content of the file stream as a blob object.

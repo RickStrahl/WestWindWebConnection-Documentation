@@ -1,0 +1,1 @@
+﻿A default footer message displayed on the bottom of the Module's generic messages

@@ -1,0 +1,1 @@
+﻿ShellExecute wrapper that starts any associated program or URL. You can launch URLs, mailto: links, as well as any file like .txt, doc,.ini etc. If an association exists GoUrl() will launch the associated application with the specified document.

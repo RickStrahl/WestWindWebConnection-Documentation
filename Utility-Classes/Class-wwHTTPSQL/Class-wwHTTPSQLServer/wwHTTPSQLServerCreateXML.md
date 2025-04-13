@@ -1,0 +1,1 @@
+﻿This low level method creates the result XML from the ExecuteSQL call. Method always creates [XML output](vfps://Topic/XML%20Response%20Format).

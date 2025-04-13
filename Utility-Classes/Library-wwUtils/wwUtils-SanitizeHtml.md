@@ -1,0 +1,1 @@
+﻿A rudimentary HTML Sanitizer that removes scriptable content from HTML. You can use this to clean up user captured HTML and rendered Markdown to avoid XSS attacks.

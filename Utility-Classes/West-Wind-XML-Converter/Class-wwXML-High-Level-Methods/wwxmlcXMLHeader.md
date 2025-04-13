@@ -1,0 +1,1 @@
+﻿The default XML document header. By default this is just the plain XML header without DTD. Used only when creating a document - not set when writing. You may add additional headers to the default or overwrite it .

@@ -1,0 +1,1 @@
+﻿A one dimensional array that holds the stack items and can be accessed directly for performance if necesary.

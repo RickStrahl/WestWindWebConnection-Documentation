@@ -1,0 +1,1 @@
+﻿Last Error Message Text for the last operation. Implemented only for SMTP and HTTP operations.

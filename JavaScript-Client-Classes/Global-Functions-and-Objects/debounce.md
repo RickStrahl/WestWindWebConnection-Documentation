@@ -1,0 +1,3 @@
+﻿Debounces/throttles an event by waiting for at maximum firing a request once in a wait timeout period. Fires an even only after a timeout has expired and then only the last one since the last one was fired. Effectively this throttles the event frequency to once in the timeout period.
+
+Useful for reducing the amount of events fired for very chatty interfaces. For example, window resizing or auto-complete key acceptance.

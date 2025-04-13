@@ -1,0 +1,1 @@
+﻿An instance of the Westwind.wwSmtp .NET component.

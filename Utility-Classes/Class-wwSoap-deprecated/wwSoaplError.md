@@ -1,0 +1,1 @@
+﻿Error flag set when an error occurs during any method calls. You can check this value after any method call to see if an error occurred.

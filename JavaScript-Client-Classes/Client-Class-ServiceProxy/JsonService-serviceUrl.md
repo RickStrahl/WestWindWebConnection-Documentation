@@ -1,0 +1,1 @@
+﻿The url to the WCF or ASMX JSON service to be called. Can also be set via the constructor. This value needs to be set prior to calling invoke().

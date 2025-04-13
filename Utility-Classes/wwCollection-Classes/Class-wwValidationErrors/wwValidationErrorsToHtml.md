@@ -1,0 +1,1 @@
+﻿Generates an HTML `<ul>` list from the validation errors in the collection.

@@ -1,0 +1,1 @@
+﻿A base property used for partials, and layout pages with ~/ is used in the path. Set this value to the path that identifies ~/.

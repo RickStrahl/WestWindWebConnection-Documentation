@@ -1,0 +1,1 @@
+﻿Determines whether an item exists in the cache or not.

@@ -1,0 +1,1 @@
+﻿This jQuery filter allows searching for strings without case sensitivity that start with the provided text

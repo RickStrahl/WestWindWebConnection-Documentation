@@ -1,0 +1,1 @@
+﻿Cancel flag that can be set in OnFTPBufferUpdate to let wwFTP know to stop downloading a file from the Internet.

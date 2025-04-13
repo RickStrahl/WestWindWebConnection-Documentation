@@ -1,0 +1,1 @@
+﻿Closes out a pending event by setting it's completion timestamp. You can also pass a parameter that specifies the ReturnData to set for the client app.

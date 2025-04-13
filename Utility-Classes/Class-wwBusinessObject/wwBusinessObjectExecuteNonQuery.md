@@ -1,0 +1,1 @@
+﻿Executes a fully qualified raw SQL statement through the class that **doesn't return a cursor**. Can be used for backend commands like `INSERT`, `Update` or stored procedure calls etc.

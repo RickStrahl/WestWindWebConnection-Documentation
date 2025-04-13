@@ -1,0 +1,1 @@
+﻿Sets the error flag and error message properties.

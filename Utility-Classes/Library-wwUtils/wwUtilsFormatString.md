@@ -1,0 +1,1 @@
+﻿Uses the .NET `string.Format()` function to format text strings using .NET based string formatting logic. This provides sophisticated string embedding similar to TextMerge without the overhead of textmerge.

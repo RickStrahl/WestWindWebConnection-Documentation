@@ -1,0 +1,1 @@
+﻿The default url to the ww.jquery.js location. ww.jquery.js provides the Web Connection AJAX features as well a number of jQuery helper plug-ins all based on jQuery.

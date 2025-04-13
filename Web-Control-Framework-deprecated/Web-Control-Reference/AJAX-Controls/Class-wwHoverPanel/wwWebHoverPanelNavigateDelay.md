@@ -1,0 +1,1 @@
+﻿Determines if the navigation is delayed by a small hesitation delay. Useful for link hovering to avoid uncontrollable popups from accidental hoverings.

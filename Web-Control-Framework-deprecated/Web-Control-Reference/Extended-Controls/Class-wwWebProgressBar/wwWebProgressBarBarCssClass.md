@@ -1,0 +1,1 @@
+﻿Css class used to display the percentage bar

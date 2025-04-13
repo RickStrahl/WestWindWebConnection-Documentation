@@ -1,0 +1,1 @@
+﻿Loads the jQuery Javascript library into the page. Meant to be used by controls that require jQuery as a resource.

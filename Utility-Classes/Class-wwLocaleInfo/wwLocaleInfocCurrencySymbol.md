@@ -1,0 +1,1 @@
+﻿The Currency Symbol for the Locale.

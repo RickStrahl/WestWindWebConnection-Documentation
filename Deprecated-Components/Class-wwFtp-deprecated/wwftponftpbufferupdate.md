@@ -1,0 +1,1 @@
+﻿Event that fires whenever the buffer is updated by FTPGetFileEx(). This method is passed the current download total and the number of chunks retrieved already. You can set lCancelDownload to .T. to force FTPGetEx to stop the file download.

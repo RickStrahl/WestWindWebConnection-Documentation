@@ -1,0 +1,1 @@
+﻿Number of characters to display for each feed

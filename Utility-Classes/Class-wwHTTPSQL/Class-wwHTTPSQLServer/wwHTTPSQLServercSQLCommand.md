@@ -1,0 +1,1 @@
+﻿Contains only the SQL command keyword (select,delete,execute etc) as opposed to the full SQL statement.

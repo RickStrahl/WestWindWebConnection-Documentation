@@ -1,0 +1,1 @@
+﻿The Background Color for the control.

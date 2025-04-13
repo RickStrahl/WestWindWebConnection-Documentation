@@ -1,0 +1,1 @@
+﻿Authenticates username and password against Windows System accounts.

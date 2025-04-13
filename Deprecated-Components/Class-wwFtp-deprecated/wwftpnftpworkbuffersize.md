@@ -1,0 +1,1 @@
+﻿The size of the FTPGetEx download buffer. For each buffer chunk the OnFTPBufferUpdate event is fired to allow you to cancel and display status information

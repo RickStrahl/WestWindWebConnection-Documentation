@@ -1,0 +1,1 @@
+﻿An optional SortExpression that is applied to a column if it is the currently sorted column.

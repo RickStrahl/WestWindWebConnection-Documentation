@@ -1,0 +1,1 @@
+﻿This flag determines whether the component is running under Active Server Pages. If so the server changes its behavior to use a different request class and sets up the appropriate Request and Response objects that map to the ASP objects.

@@ -1,0 +1,1 @@
+﻿CSS Class used for the title if `ShowBlogTitle` is set to `.t.`

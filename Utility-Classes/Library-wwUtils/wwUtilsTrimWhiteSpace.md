@@ -1,0 +1,1 @@
+﻿Trims whitespace of the end of a string using a pre-set of characters that you optionally provide. By default CHR(13), CHR(10), Spaces and Tabs are cleared.

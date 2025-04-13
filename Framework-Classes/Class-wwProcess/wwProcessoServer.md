@@ -1,0 +1,3 @@
+﻿Object reference to a ready to use [wwServer](vfps://Topic/Class%20wwServer) object, which is passed down from the wwServer Process method which calls into your wwProcess subclass. This object is preset by the Init method of this class. When Process or your custom methods get control the oServer object is already set.
+
+The default Process method also exposes this object as a PRIVATE variable *Server*.

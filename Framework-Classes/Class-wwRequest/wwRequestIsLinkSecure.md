@@ -1,0 +1,1 @@
+﻿Checks to see if the user is coming in over the SSL port.

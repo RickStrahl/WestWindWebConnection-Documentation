@@ -1,0 +1,1 @@
+﻿Creates a SQL INSERT string from a `SCATTER NAME` or `EMPTY` object.

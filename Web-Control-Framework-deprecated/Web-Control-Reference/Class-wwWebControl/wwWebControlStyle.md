@@ -1,0 +1,1 @@
+﻿A CSS Style string that is applied to the control.

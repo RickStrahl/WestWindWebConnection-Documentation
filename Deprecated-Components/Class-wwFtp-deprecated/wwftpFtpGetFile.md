@@ -1,0 +1,1 @@
+﻿Simple FTP retrieval method. This method retrieves a file from an FTP server with a single method call. This method is synchronous and does not fire any events.

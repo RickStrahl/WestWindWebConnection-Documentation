@@ -1,0 +1,1 @@
+﻿The wwScriptingHTTPResponse class is used to create an HTTP response. When this class is specified in the [wwScripting::cScriptResponseClass](vfps://Topic/_1VO08O3JL) property this class is used and wwScripting uses this class to add an HTTP header to the script output.

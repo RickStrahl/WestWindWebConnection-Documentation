@@ -1,0 +1,1 @@
+﻿This section describes how to create Visual FoxPro based Web Services with wwSOAP. Although these examples uses Web Connection it's possible to use the wwSOAP classes with any Visual FoxPro based server implementation.

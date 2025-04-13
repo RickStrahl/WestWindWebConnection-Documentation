@@ -1,0 +1,1 @@
+﻿The timeout in seconds before mail sending is considered to have failed.

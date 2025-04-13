@@ -1,0 +1,1 @@
+﻿The wwHTTPSQLServer class is an XML based SQL Command handler that takes XML inputs and generates XML outputs for the requested commands. It is the server side handler for the [wwHTTPSQL class](vfps://Topic/Class%20wwHTTPSQL).

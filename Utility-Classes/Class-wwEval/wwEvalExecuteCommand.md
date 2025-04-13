@@ -1,0 +1,1 @@
+﻿Excecutes a single FoxPro command safely.

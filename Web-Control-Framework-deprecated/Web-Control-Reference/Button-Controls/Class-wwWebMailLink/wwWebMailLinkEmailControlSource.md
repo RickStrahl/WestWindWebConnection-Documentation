@@ -1,0 +1,1 @@
+﻿Control Source that binds the Email address. This property is used in combination with the plain ControlSource which binds the Text property.

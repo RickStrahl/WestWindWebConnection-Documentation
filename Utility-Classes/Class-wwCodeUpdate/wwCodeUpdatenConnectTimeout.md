@@ -1,0 +1,1 @@
+﻿The HTTP timeout before a request is considered cancelled. Applies to wait time connecting and downloading.

@@ -1,0 +1,1 @@
+﻿Semi-colon delimited list of high level format styles (h1;h2;pre etc.). Note this list is limited to standard HTML formats and cannot include styles

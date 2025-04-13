@@ -1,0 +1,1 @@
+﻿Internal property used to keep track which column name is currently sorted. The value is the name of the column.

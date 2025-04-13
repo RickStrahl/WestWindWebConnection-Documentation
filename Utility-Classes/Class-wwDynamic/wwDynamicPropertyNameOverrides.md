@@ -1,0 +1,1 @@
+﻿If using `AddProperty()` to add properties the property name is added to this property. This property is used during JSON serialization to automatically provide proper casing.

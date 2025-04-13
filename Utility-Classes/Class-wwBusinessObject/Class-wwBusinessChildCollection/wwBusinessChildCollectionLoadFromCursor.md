@@ -1,0 +1,1 @@
+﻿Loads the `oRows` collection with the contents of the active cursor. The active cursor should reflect the business object you are loading into.

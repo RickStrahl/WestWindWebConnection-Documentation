@@ -1,0 +1,1 @@
+﻿Fallback Url if CDN jquery Url doesn't work

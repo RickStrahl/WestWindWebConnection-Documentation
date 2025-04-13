@@ -1,0 +1,1 @@
+﻿Determines whether the file download displays a progress dialog.

@@ -1,0 +1,1 @@
+﻿Custom jQuery filter that behaves like the :contains() filter, but is case insensitive.

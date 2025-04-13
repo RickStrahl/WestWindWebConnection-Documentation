@@ -1,0 +1,1 @@
+﻿The user agent (x-mailer header) that is sent with the email request. Defaults to West Wind Smtp X.0 where X is the major version number.

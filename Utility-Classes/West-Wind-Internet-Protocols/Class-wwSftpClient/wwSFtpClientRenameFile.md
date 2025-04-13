@@ -1,0 +1,1 @@
+﻿Renames a file on the server which allows for fast copying.

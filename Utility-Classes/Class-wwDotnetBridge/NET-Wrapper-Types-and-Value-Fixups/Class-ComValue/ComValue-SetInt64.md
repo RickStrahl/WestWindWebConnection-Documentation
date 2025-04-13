@@ -1,0 +1,1 @@
+﻿Sets a Int64 value from a FoxPro numeric value. Since FoxPro doesn't have a cast to 64 bit values natively you can use decimal or float values in Fox or 32 bit integers.

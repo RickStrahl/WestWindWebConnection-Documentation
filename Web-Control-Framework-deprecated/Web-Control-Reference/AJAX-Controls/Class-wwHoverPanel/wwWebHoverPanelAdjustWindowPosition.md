@@ -1,0 +1,1 @@
+﻿Determines if hovered windows automatically are moved up if the display their content outside fo the browser's client area

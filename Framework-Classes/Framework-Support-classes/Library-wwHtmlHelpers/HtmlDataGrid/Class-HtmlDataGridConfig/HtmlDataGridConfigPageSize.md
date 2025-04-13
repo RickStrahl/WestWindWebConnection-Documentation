@@ -1,0 +1,1 @@
+﻿If PageSize > 0 a pager is displayed

@@ -1,0 +1,3 @@
+﻿Retrieves HTTP using a standard URL into a string. Use this method to download XML from a server quickly and easily without having to instantiate other objects.
+
+This method simply performs passthrough calls to HTTPGet. If you need to more functionality and control over the HTTP request such as special proxy modes or special POST content types, use the wwHTTP class's HTTPGet or HTTPGetEx methods. This includes if you need to configure things such as proxies or timeouts.

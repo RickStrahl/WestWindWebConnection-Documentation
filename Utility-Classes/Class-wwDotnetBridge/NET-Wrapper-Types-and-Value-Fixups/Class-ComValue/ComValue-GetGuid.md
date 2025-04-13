@@ -1,0 +1,1 @@
+﻿Returns a Guid stored in the Value property. This is necessary because Guids are Value types that cannot be passed into or be accessed by FoxPro code at all.You will most likely use this method on a `ComValue` instance returned when you use `InvokeMethod()` to call a method that return a Guid, or using `GetProperty()` to access a property.

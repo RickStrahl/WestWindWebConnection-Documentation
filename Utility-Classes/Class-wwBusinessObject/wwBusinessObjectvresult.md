@@ -1,0 +1,1 @@
+﻿Variable result property. Used at this point only for ADO recordsets returned as a result from queries.

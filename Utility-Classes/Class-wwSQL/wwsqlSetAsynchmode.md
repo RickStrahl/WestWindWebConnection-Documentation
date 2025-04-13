@@ -1,0 +1,1 @@
+﻿Sets the connection into Async operation.

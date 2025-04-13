@@ -1,0 +1,1 @@
+﻿Determines wheter usernames and passwords are case sensitive. The default is .F.

@@ -1,0 +1,1 @@
+﻿Returns a fully qualified path for the executing Windows Process executable. Note this can be either `Vfp9.exe` or your own application like `MyApp.exe`.

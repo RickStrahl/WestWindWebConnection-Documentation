@@ -1,0 +1,1 @@
+﻿Creates an instance of the VBScript.RegExp object and caches this instance in a PUBLIC variable reference. If already loaded the existing instance is returned.

@@ -1,0 +1,1 @@
+﻿CSS Class for the standard item row. Not set by default (ie. Document color)

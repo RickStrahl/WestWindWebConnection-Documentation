@@ -1,0 +1,1 @@
+﻿Executes a block of code using ExecScript() providing exception handling and error information.

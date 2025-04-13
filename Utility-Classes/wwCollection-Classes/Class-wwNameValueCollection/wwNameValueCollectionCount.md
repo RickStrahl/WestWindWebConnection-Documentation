@@ -1,0 +1,1 @@
+﻿The count of items in this collection.

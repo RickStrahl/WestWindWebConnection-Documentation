@@ -1,0 +1,1 @@
+﻿SQL Result value from SQLExecute or any other command executed.

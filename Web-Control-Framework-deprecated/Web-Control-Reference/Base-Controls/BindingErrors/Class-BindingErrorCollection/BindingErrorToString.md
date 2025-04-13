@@ -1,0 +1,1 @@
+﻿Returns a CR/LF delimited string of binding error messages

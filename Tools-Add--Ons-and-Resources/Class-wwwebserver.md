@@ -1,0 +1,1 @@
+﻿Administration class that handles server configuration tasks for various Web servers. Supported servers include IIS 10-7, Apache 2.1 and later.

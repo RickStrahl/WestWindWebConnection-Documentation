@@ -1,0 +1,1 @@
+﻿The Date Separation Character.

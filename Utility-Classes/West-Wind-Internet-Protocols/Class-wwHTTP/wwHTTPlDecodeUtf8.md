@@ -1,0 +1,1 @@
+﻿If .T. (default) automatically decodes UTF-8 encoded content from the server. Looks for the `charset=utf-8` in the `Content-Type`.

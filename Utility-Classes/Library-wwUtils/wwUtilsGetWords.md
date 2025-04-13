@@ -1,0 +1,1 @@
+﻿Takes an input string and breaks it out into a collection of words separated by spaces or line breaks.

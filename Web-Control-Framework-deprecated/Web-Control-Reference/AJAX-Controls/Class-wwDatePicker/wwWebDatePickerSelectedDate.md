@@ -1,0 +1,1 @@
+﻿The Selected Date as a date value

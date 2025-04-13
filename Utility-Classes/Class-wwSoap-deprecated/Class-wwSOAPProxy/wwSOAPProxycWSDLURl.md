@@ -1,0 +1,1 @@
+﻿The URL to the WSDL file.

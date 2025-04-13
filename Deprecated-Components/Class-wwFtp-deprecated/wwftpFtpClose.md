@@ -1,0 +1,1 @@
+﻿Closes a connection with an FTP Site. This method is called automatically when the object goes out of scope.

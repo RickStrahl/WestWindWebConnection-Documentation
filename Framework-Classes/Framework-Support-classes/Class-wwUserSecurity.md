@@ -1,0 +1,1 @@
+﻿The wwUserSecurity class provides a base interface for implementing FoxPro table and Windows Auth user authentication. The class includes user retrieval and non-visual management features like adding deleting etc.

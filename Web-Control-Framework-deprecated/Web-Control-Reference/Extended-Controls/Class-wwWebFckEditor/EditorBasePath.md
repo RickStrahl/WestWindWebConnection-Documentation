@@ -1,0 +1,3 @@
+﻿The base path where the FCK Editor library and support files are found. This is a virtual path to the FCK Editor installation.
+
+By default this points at ~/fckEditor which is a folder underneath your Web directory, but you can also point it any related path on your site. For example if it's in the root Web you can point it at /fckEditor instead and then reuse the single editor library in each Web application.

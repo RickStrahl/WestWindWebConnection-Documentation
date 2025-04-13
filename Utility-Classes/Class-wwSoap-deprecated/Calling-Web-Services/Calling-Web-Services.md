@@ -1,0 +1,1 @@
+﻿This section describes how you can call Web Services with wwSOAP. The main focus is on using WSDL based Web Services.

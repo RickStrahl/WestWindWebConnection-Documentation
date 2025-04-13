@@ -1,0 +1,1 @@
+﻿Retrieves a static property from a .NET type.

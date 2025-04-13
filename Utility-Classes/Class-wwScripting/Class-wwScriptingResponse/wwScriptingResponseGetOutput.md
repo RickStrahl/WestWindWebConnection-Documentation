@@ -1,0 +1,1 @@
+﻿Returns the output from the Response object or the full script Response.

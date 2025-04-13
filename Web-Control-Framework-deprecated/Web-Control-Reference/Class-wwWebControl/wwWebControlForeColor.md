@@ -1,0 +1,1 @@
+﻿ForeColor for this control if it applies.

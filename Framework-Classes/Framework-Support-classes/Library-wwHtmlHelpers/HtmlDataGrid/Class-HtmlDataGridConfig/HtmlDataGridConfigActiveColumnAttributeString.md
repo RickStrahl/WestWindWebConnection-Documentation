@@ -1,0 +1,1 @@
+﻿Attribute string for each column as it's rendered - available in rendering expressions

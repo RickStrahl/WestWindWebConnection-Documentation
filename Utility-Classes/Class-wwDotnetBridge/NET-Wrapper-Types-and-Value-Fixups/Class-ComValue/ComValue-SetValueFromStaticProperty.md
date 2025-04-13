@@ -1,0 +1,1 @@
+﻿Sets the value property from a static property retrieved from .NET. Useful to transfer value in .NET that are marshalled incorrectly in FoxPro such as Enum values (that are marshalled as numbers)

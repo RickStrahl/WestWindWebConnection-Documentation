@@ -1,0 +1,1 @@
+﻿CSS Class for the regular button display. Determines how the tab renders.

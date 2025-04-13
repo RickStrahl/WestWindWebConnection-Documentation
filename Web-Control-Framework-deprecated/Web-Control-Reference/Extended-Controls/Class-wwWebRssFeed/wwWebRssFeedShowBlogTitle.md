@@ -1,0 +1,1 @@
+﻿determines whether hte header is displayed

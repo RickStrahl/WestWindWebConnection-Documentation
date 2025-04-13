@@ -1,0 +1,1 @@
+﻿The text property sets and returns the value for the Editor control.

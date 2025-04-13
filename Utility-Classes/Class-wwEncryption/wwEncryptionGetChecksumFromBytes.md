@@ -1,0 +1,1 @@
+﻿Calculates a CheckSum from a binary blob using MD5 or SHA256.

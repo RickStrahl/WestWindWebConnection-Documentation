@@ -1,0 +1,1 @@
+﻿flag that stops all further output into response

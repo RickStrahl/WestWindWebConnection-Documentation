@@ -1,0 +1,1 @@
+﻿Retuns a short time string that shows like 07:52am.

@@ -1,0 +1,1 @@
+﻿This method allows easy display of an entire table, simply by having a table or cursor selected and calling this method. You can optionally pass an array of headers as well as a title and the option to automatically sum all numeric fields.

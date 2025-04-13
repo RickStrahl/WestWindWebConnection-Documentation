@@ -1,0 +1,1 @@
+﻿Sets the value to a .NET Guid by passing in either a GUID string, a ComGuid object, or a null (which creates a new Guid).> This method isn't really necessary as you can never effectively get a Guid reference into FoxPro. Instead always use `InvokeMethod()` or `GetProperty()` to retrieve Guid values which are then returned as `ComValue` instances you can call `GetGuid()` on.

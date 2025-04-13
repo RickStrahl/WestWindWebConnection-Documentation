@@ -1,0 +1,1 @@
+﻿Basic Authentication password. Not needed unless the SOAP implementation on the server uses Basic Auth internally.

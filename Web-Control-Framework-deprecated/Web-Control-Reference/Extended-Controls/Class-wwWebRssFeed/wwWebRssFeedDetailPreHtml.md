@@ -1,0 +1,1 @@
+﻿Any HTML to inject before the detail text of the feed item

@@ -1,0 +1,1 @@
+﻿The jquery UI them applied to the CssBasePath. Default is Redmond.

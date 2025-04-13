@@ -1,0 +1,1 @@
+﻿Allows for overriding of the `wwJsonSerializer` instance that is loaded on `Init()` by this class in subclasses to provide custom serializer functionality. `.oSerializer` is always available, but you can customize this method to specify the create a customized instance of a serializer that can be used instead.

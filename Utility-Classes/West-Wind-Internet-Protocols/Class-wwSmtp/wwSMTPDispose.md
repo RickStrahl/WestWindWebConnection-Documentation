@@ -1,0 +1,1 @@
+﻿Cleans up this object instance by removing the .NET SMTP reference and wwDotNetBridge instance. Can be called explicitly, but is also called internally off the object's Destroy() event.

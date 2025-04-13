@@ -1,0 +1,1 @@
+﻿A Url to an image that is used as a background image

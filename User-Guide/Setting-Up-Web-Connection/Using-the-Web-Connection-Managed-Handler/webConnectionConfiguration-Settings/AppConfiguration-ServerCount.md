@@ -1,0 +1,1 @@
+﻿Determines how many Com instance of the server are loaded in Com messaging mode.

@@ -1,0 +1,3 @@
+﻿Adds named parameters that can be used in SQL statements or commands.
+
+Parameters are marshalled to the server and recreated on the server running the SQL statement on the server. SQL Server will use SQL Passthrough syntax for parameters (using ? syntax) while Fox data will use straight parameters. Output parameters in stored procedures should be prefixed by both the ? and the @ in SQL Server (Execute someSP  'parm1',?@pnID).

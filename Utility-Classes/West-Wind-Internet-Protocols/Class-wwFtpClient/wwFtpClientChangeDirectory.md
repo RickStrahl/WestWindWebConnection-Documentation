@@ -1,0 +1,1 @@
+﻿Changes the active directory on the FTP server. This affects how relative paths are handled.

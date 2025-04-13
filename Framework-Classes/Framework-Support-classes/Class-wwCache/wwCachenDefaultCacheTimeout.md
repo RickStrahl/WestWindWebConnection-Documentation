@@ -1,0 +1,1 @@
+﻿The default timeout for the cache in seconds.

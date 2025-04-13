@@ -1,0 +1,1 @@
+﻿This method prints a report to a PDF file. It sets the printer driver to the PDFWriter software, writes out the temporary files that the PDF software generates and renames these files to the one you specify. In other words, it abstracts the entire process of generating the output file.

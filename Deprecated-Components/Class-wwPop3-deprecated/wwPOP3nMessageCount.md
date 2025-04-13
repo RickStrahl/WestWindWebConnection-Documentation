@@ -1,0 +1,1 @@
+﻿Holds the number of messages that are in the mail box. This value is set by the Connect() method.

@@ -1,0 +1,1 @@
+﻿Opens the data source or remote connection. For ODBC commands the oSQL member holds the SQL connection.

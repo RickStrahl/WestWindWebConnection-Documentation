@@ -1,0 +1,1 @@
+﻿Extends the JavaScript Date class.

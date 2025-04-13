@@ -1,0 +1,1 @@
+﻿Writes a string to the stream buffer.

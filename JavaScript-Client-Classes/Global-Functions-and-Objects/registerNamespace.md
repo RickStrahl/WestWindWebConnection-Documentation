@@ -1,0 +1,1 @@
+﻿Registers a namespace by creating an object hierarchy. This makes it super easy to create uniquely identified objects.```javascriptjQueryWeb.Services = registerNamespace("jQueryWeb.Services");jQueryWeb.Services.dataService = new serviceProxy("/service.svc")jQueryWeb.Services.dataService.invoke("getCustomers",getCustomersCallback);```

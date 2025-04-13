@@ -1,0 +1,1 @@
+﻿Configures an individual column that can be added to the HtmlDataGridConfig object.

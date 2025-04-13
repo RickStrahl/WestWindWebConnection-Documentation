@@ -1,0 +1,1 @@
+﻿Hook class that is called to create an instance of wwJsonService which is responsible for making the actual method call.

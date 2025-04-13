@@ -1,0 +1,1 @@
+﻿Closes an HTTP Session opened with HTTPConnect(). This method is automatically called during DESTROY.

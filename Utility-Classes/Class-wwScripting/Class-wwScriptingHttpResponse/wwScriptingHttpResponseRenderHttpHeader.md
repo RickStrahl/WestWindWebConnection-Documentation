@@ -1,0 +1,1 @@
+﻿Returns the collective HTTP header including the final CRLF.

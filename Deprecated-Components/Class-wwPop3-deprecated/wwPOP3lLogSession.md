@@ -1,0 +1,1 @@
+﻿When .T. the POP3 session is logged and you can retrieve it with loPop.oIP.GetLog(), which returns all the client and server communication.

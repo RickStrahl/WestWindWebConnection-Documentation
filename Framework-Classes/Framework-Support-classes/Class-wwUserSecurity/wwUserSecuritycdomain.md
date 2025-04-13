@@ -1,0 +1,1 @@
+﻿Domain name when using NT Authentication for request.

@@ -1,0 +1,1 @@
+﻿Default jQUery UI CDN Url

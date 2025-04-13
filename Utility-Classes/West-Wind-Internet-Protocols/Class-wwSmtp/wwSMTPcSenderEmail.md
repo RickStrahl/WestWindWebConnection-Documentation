@@ -1,0 +1,1 @@
+﻿The sender's email address that displays in the mail client's sender information.

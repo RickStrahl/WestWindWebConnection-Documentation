@@ -1,0 +1,1 @@
+﻿Assigns a .NET collect to this ComArray Instance. Has to be passed as a base instance (ie. parent instance of the array) and the name of the array because once the array hits VFP code it's already been converted into a VFP array so only internal reflection will allow getting the actual reference into ComArray.

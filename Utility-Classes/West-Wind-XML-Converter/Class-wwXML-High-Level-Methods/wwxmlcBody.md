@@ -1,0 +1,3 @@
+﻿Internal buffer that is used to hold XML text. If a document is to be parsed (simple) body will hold the full document including the header. 
+
+This buffer is not necessarily set when parsing occurs. It's provided here mainly to allow you to store XML text with the XML object and pass the XML around along with the object. Several internal properties will use this value as their default, most notably [GetObjVar](vfps://Topic/wwXML%3A%3AGetObjVar).

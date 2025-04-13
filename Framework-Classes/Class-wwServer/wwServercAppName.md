@@ -1,0 +1,1 @@
+﻿The application's name. This value typically will be the server's class name, which is used in the INI file as the root reference. Note this should be more of an ID type value rather than a descriptive name, although either will work.

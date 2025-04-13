@@ -1,0 +1,1 @@
+﻿Removes an item from the oRows collection.

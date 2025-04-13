@@ -1,0 +1,1 @@
+﻿Retrieves a message from the POP3 mailbox.

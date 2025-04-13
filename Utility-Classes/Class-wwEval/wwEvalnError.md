@@ -1,0 +1,1 @@
+﻿The error number if an error occurred. Only valid if lError is .T.

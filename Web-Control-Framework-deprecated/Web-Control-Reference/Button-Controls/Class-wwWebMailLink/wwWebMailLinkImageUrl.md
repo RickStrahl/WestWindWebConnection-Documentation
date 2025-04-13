@@ -1,0 +1,1 @@
+﻿An optional Image Url. If an image is specified the Text property is ignored.

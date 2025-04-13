@@ -1,0 +1,1 @@
+﻿Displays a date in colloquial English text like `just now`, `10 minutes ago`, `2 weeks ago`  or `3 months ago` etc.

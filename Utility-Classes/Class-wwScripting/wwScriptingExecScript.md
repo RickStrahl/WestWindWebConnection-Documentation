@@ -1,0 +1,1 @@
+﻿This method is used to execute a script template using the FoxPro ExecScript command. This method can accept input from a file or from a string that holds the ASP style template.

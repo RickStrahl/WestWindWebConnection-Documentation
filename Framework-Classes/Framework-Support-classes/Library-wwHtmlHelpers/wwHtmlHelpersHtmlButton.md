@@ -1,0 +1,1 @@
+﻿Creates a non-submit HTML button. Use this button for JavaScript link handling.

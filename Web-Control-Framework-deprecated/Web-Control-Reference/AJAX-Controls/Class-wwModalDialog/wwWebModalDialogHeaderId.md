@@ -1,0 +1,1 @@
+﻿The id of the dialog header.

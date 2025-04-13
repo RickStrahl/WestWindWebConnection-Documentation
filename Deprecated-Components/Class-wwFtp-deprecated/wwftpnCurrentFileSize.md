@@ -1,0 +1,1 @@
+﻿Holds the size of the file currently being downloaded or uploaded. This value is set at the start of the of FTPGetFileEx and FTPSendFileEx and is only applied to those methods.

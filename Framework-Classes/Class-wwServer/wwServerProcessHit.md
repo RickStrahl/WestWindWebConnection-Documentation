@@ -1,0 +1,3 @@
+﻿This is Web Connection's mainline entry routine that is entered by the server. Each of the server mechanisms calls this method first to activate Web Connection and pass forward the Web server request information.
+
+This method can only be called after the server has been constructed properly. The majority of the construction code occurs in the server's Init along with calls to the user customizable SetServerEnvironment and SetServerProperties methods.

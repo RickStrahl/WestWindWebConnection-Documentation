@@ -1,0 +1,1 @@
+﻿Adds text to the current SQL String in cSQL. Pass CLEAR to clear the cSQL property.

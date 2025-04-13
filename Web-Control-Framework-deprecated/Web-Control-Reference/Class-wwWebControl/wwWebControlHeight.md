@@ -1,0 +1,1 @@
+﻿The height of the control. This value is either numeric or string with string preferrable.

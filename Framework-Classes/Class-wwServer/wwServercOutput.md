@@ -1,0 +1,1 @@
+﻿This property receives the HTTP output from your code when operating under COM. The wwProcess class handles assignment of the HTTP output to this property when the wwProcess object is released in its Destroy. For this reason, if you decide to write to this property it must occur outside of the process object.

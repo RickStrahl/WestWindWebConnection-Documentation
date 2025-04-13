@@ -1,0 +1,1 @@
+﻿Retrieves the fixed up value from the `.Value` property. The call is returned by calling `.GetProperty()` to retrieve the value which automatically converts problem types to the appropriate wrapper types (ie. Array/Collections to ComArrays, DbNulls to Nulls etc.).

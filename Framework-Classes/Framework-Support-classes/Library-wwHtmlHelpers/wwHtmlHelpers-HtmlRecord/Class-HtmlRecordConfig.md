@@ -1,0 +1,1 @@
+﻿Configuration object used to configure the HtmlRecord function.

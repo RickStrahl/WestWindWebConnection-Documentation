@@ -1,0 +1,1 @@
+﻿Internal reference to a wwXML object. This object is not protected and can be treated as a 'global' reference to a wwXML object accessible through wwRequest.oXML.

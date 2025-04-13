@@ -1,0 +1,1 @@
+﻿Returns the value of contained ComValue instance value as a string. Same as `loComValue.Value.ToString()` but doesn't require the implicit InvokeMethod() call.

@@ -1,0 +1,5 @@
+﻿Property that allows you to specify that no further page events should fire, but that rendering should still proceed.
+
+Similar in behavior to Response.End() except that this property will still render the page, where Response.End() doesn't generate any further output.
+
+This method is useful to short circuit page processing for things like error display. For example, you might have a page where you check for a specific query string value. if the value is missing you might want to display an error so you update ErrorDisplay.ShowError() to display the error on the error control. However, you might not want to continue processing OnLoad() and OnPreRender() events which have code to load data and other code that is not applicable or would fail without the query string value. Setting the StopEventProcessing=.T. allows you to simply return and effectively jump straight to the page's Render() method which will now render the error control and otherwise empty data (or whatever other settings you apply to the page before returning).

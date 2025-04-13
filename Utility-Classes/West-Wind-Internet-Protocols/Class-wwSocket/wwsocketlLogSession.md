@@ -1,0 +1,1 @@
+﻿Allows you to log the entire TCP/IP session and retrieve the log via the GetLog() method.

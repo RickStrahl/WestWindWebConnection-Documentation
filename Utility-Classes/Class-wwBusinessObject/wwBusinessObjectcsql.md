@@ -1,0 +1,1 @@
+﻿SQL String for a query

@@ -1,0 +1,1 @@
+﻿Official name of the Locale including sub-locale.

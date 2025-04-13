@@ -1,0 +1,1 @@
+﻿Returns a session variable from the Session object.

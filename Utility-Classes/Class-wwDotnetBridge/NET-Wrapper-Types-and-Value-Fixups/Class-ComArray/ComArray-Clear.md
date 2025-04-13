@@ -1,0 +1,1 @@
+﻿Clears out the collection's content.

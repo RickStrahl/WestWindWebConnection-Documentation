@@ -1,0 +1,1 @@
+﻿Open file dialog that prompts for a file name. Unlike `GetFile()` this function returns the file name and path in proper case and uses the latest Windows dialogs.

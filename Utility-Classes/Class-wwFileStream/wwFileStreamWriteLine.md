@@ -1,0 +1,1 @@
+﻿Like the [Write()](VFPS://Topic/_56G0MQO8R) method but appends a `CRLF` to the end of the line.

@@ -1,0 +1,1 @@
+﻿Use this method in OnUploadComplete() to send a message back to the client. Typically this will be the URL of the file uploaded so it can be viewed or shows as part of the UI.

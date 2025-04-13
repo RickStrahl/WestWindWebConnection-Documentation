@@ -1,0 +1,1 @@
+﻿This flag determines whether the server is running under COM based messaging as opposed to file based processing.

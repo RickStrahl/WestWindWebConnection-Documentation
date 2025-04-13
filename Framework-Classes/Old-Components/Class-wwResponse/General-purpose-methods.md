@@ -1,0 +1,1 @@
+﻿The following methods are generic methods that write to the HTTP output stream. These methods use the base class abstract methods (mainly Send/FastSend) to send output to the HTTP stream and thus do not need to be implemented by output specifc subclasses (such as wwResponseFile, wwResponseString).

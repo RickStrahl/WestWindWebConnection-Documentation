@@ -1,0 +1,1 @@
+﻿Downloads a file from the Ftp server to a local folder. Make sure to call `FtpConnect()` before calling this method.

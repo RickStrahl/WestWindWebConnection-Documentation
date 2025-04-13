@@ -1,0 +1,1 @@
+﻿Horizontal Offset of the hover window from the mouse position. Can be negative to indicate locations to the left of the mouse cursor.

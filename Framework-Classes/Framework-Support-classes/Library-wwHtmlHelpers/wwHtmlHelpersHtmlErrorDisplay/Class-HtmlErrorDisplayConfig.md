@@ -1,0 +1,1 @@
+﻿A configuration object that can be used to configure an HtmlErrorDisplay method call. Also useful for holding error information in Web Connection form processing.

@@ -1,0 +1,1 @@
+﻿Serializes a .NET object to an XML string.

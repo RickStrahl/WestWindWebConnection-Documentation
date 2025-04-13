@@ -1,0 +1,1 @@
+﻿The Css Class applied against the table. The default is LoginDisplay.

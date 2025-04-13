@@ -1,0 +1,1 @@
+﻿Checks to see if a given string ends with a given substring.

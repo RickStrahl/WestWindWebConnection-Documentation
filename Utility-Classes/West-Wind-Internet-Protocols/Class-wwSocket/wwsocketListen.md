@@ -1,0 +1,3 @@
+﻿Puts a socket into server mode to listen for incoming connections on a given port. If a connection is made the socket is opened for reading and writing using the regular Send/Receive etc. methods. 
+
+This method returns .T. if a connection is made, as soon as somebody connects. If no connection occurs and the timeout is reached the method returns .F. Typically you'll run the listener in a loop or off a timer to check the port.

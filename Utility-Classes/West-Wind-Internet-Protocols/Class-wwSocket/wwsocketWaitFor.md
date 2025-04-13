@@ -1,0 +1,3 @@
+﻿Receives data until either the provided string is found or the request times out based on the nTimeout property setting.
+
+This method is very useful for long data streams that usually would require multiple Receive() requests. Since TCP/IP buffering determines how much data Receive() returns retrieving large data streams or data when the connection is bad usually requires a loop. Using this method avoids writing the loop syntax in your application code and wraps this functionality into this method.

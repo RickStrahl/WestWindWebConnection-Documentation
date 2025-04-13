@@ -1,0 +1,1 @@
+﻿Returns the file's last udpate DateTime value.

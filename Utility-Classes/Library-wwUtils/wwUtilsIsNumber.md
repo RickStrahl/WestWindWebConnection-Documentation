@@ -1,0 +1,1 @@
+﻿Determines whether the value is either a numeric number, or a text based string that only contains numbers and decimal and thousands separators.

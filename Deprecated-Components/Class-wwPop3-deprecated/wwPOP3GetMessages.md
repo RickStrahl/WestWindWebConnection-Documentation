@@ -1,0 +1,1 @@
+﻿High level method that retrieves all the messages on the POP3 server into the internal aMessages array.

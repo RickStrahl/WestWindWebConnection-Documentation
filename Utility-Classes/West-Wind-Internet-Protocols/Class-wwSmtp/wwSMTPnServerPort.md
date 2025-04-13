@@ -1,0 +1,1 @@
+﻿The port on which to send email. Can also be overridden in the cMailServer string by appending a : and port number.

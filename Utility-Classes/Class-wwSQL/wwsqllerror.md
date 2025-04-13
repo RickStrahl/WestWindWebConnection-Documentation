@@ -1,0 +1,1 @@
+﻿Error flag set .t. if an error occurs.

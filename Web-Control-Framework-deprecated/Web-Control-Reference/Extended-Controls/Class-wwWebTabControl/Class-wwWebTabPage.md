@@ -1,0 +1,1 @@
+﻿The wwWebTabPage class holds the state for each individual TabPage and is the class for [wwWebTabControl::TabPages](vfps://Topic/_23V138HOZ). Its job is to associate the specific Tab with an HTML control that is to be displayed when the Tab is activated.

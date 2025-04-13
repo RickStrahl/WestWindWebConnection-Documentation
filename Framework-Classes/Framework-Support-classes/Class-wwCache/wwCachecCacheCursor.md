@@ -1,0 +1,1 @@
+﻿The name of the cursor used for caching.

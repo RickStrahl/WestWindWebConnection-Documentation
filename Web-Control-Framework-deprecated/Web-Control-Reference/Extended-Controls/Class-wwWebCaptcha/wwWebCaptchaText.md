@@ -1,0 +1,1 @@
+﻿Text displayed next to the CAPTCHA display

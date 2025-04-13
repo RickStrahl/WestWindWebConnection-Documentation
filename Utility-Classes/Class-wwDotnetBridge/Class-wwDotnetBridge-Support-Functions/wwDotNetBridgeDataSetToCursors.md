@@ -1,0 +1,1 @@
+﻿Converts a .NET DataSet to cursors that match the tables in the DataSet's Tables collection.

@@ -1,0 +1,1 @@
+﻿Stores the input SOAP XML when a SOAP call is made.

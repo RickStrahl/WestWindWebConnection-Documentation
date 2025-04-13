@@ -1,0 +1,1 @@
+﻿Returns the key for a specified index into the collection.

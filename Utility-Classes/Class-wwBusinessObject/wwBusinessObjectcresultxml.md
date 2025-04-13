@@ -1,0 +1,1 @@
+﻿Methods returning XML will return the XML in this property.

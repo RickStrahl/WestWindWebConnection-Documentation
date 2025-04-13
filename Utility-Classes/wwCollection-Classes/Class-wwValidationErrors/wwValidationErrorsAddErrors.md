@@ -1,0 +1,1 @@
+﻿Adds an existing wwValidationErrors collection to this collection. Useful for merging errors from multiple sources into a single collection.

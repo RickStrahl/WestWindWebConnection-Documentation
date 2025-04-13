@@ -1,0 +1,1 @@
+﻿Removes an item out of the collection by index or key.

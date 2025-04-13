@@ -1,0 +1,1 @@
+﻿Connection Timeout and time to wait for request completion.

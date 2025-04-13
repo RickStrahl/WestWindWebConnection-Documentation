@@ -1,0 +1,1 @@
+﻿Sets the opacity of a shadow if ShadowOffset is set to a non-zero value. The opacity is given in a fractional percentage.

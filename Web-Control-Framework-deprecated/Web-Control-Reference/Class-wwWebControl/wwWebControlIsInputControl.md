@@ -1,0 +1,1 @@
+﻿Determines whether a control is used as an INPUT control and requires a NAME tag to be rendered.

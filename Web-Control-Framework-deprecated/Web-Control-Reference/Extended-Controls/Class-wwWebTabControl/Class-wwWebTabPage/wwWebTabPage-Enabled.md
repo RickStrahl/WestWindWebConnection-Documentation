@@ -1,0 +1,3 @@
+﻿Determines whether a tab is enabled or not. The disabled tab is shown with the disabledtabbutton CssClass.
+
+Note a tab that is disabled through server code cannot be enabled through client code as the click handler is not attached when the page is rendered. You can enable a page and manually hook up a click handler and set the click of the tabbutton to javascript:ActivateTab("TabStripId",tabIndex).

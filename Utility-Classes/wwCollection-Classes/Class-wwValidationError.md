@@ -1,0 +1,1 @@
+﻿Class that holds validation error information. Contains a message and object name to identify the control that this error is associated with.

@@ -1,0 +1,1 @@
+﻿This function retrieves the height and width and resolution of an image.

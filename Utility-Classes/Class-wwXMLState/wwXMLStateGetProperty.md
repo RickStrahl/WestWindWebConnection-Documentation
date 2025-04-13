@@ -1,0 +1,1 @@
+﻿Retrieves a property from the XML state store string stored in cXML.

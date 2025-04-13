@@ -1,0 +1,1 @@
+﻿Determines whether the user is logged in. This property

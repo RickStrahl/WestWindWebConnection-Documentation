@@ -1,0 +1,1 @@
+﻿The internally maintained array of items added. This array is one dimensional and contains only the values added.

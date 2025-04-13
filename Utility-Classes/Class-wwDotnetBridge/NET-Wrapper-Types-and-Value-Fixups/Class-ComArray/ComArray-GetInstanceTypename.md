@@ -1,0 +1,1 @@
+﻿Returns the .NET type name of the array/collection instance.

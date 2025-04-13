@@ -1,0 +1,1 @@
+﻿Returns the length of the .NET array contained in Instance

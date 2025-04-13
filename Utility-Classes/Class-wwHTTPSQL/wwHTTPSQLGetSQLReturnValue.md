@@ -1,0 +1,1 @@
+﻿Returns a named parameter that was sent in as an output parameter in AddSQLParameter.

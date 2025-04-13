@@ -1,0 +1,1 @@
+﻿Any WinInet service flags to be applied to the FTP connection.

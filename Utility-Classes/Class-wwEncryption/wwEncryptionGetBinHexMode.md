@@ -1,0 +1,1 @@
+﻿Retrieves the **global setting** for output mode of binary string values  for `ComputeHash()` and `EncryptString()`. Returns `.T.` if using **binHex** mode, or `.F` if using the default **base64**.

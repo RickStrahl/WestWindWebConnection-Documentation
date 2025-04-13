@@ -1,0 +1,1 @@
+﻿Unzips the complete contents of a Zip file into a folder. If the Zip file contains folder structure, the output is created using that structure. If the folder doesn't exist it is created.

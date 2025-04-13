@@ -1,0 +1,1 @@
+﻿The default jQuery CDN Url

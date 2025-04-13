@@ -1,0 +1,1 @@
+﻿Databinds the DataGrid. Unlike some other list controls you should always call DataBind() to ensure that internal settings get updated properly for binding. This includes page counts, sort orders etc.

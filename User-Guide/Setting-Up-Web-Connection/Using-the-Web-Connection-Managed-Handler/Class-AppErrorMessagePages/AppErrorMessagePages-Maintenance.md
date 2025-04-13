@@ -1,0 +1,1 @@
+﻿Page displayed when the server is in maintenance mode and not accepting requests while the MaintMode flag is set.

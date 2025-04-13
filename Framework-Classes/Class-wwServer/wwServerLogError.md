@@ -1,0 +1,1 @@
+﻿Logs an exception into the error log stored in the database (typically in wwRequestLog in the app folder).

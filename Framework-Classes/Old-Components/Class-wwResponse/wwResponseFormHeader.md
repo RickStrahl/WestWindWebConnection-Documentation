@@ -1,0 +1,1 @@
+﻿Creates a <FORM...> tag. Note you're responsible for creating the closing tag at the end of the form.

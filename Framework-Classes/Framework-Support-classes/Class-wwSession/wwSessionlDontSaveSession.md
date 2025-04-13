@@ -1,0 +1,3 @@
+﻿You can set this flag to cause an active Session not write out the session content when the object goes out of scope.
+
+This method is provided for performance enhancement features on applications that use InitSession() which automatically read the session and then save it when the object goes out of scope. You can use this property to keep methods that don't actually use the session object from writing the session data back to the database when the session is not actually used during a process method call.

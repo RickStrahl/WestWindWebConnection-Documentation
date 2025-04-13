@@ -1,0 +1,1 @@
+﻿Determines whether the current request is being sent via an HTTP POST operation. Useful when checking for first time display or submit handling of requests.

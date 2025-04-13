@@ -1,0 +1,1 @@
+﻿The authenticated user id after the user has been authenticated by either a success call to Authenticate() or OnCheckForAuthentication().

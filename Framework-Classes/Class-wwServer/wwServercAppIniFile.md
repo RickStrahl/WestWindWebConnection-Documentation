@@ -1,0 +1,1 @@
+﻿This is the name of the INI file that the application will lookup to read configuration values from. This value is pre-set in the Initialization of the server, prior to accessing SetServerEnvironment. You can modify this value in SetServerEnvironment as needed. The value is then used by ReadConfiguration() to actually read the data from the INI file.

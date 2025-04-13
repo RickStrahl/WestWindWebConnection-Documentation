@@ -1,0 +1,1 @@
+﻿Marker Interface Property that lets you check for the control being a WebPage object.

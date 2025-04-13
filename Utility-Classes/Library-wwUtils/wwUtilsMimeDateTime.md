@@ -1,0 +1,1 @@
+﻿Converts DateTime values to Mime strings or Mime Date strings to DateTime values.

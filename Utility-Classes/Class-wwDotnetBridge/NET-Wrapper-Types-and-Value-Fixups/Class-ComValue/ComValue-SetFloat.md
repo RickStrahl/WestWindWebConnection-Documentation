@@ -1,0 +1,1 @@
+﻿Sets the value of this object to a .NET Single/float based on a FoxPro number passed in.

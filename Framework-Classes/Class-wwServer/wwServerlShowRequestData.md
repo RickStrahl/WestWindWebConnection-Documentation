@@ -1,0 +1,1 @@
+﻿Flag that can be passed forward to a wwProcess object to determine whether to show the current request data at the end of the current request. Note that this flag is not automatically respected in wwProcess - it's only used as a 'global' guideline.

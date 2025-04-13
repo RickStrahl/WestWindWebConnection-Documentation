@@ -1,0 +1,1 @@
+﻿Imports data from a Fox cursor into a matching SQL table, provided the structures match and data types are compatible.

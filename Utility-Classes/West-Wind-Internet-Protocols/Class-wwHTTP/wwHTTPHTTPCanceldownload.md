@@ -1,0 +1,1 @@
+﻿Cancels a download if OnHttpBufferUpdate are hooked up to do incremental URL downloads. When called cancels the current download.

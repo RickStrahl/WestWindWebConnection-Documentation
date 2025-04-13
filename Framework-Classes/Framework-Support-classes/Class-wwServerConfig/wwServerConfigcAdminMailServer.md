@@ -1,0 +1,1 @@
+﻿Mail server used to send Admin email  used for notifications and errors using the wwProcess::SendErrorEmail() method.

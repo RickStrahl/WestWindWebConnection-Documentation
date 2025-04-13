@@ -1,0 +1,1 @@
+﻿Instance of the SSH.NET SftpClient object. Accessible here to allow additional configuration options.

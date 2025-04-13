@@ -1,0 +1,1 @@
+﻿The class used for Authentication when the [cAuthenticationMode](vfps://Topic/_S8X02FE4U) is set to *UserSecurity*.

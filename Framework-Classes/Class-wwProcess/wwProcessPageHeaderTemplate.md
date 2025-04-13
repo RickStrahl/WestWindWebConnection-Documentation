@@ -1,0 +1,1 @@
+﻿Renders a standard page header based on the default header template located in `Views\_PageHeaderTemplate.html`.

@@ -1,0 +1,1 @@
+﻿If you use the [InitSession()](vfps://Topic/wwProcess%3A%3AInitSession) method the oSession object will be loaded for you during the call to that method. Once loaded you can access the oSession object to retrieve and store session variables.

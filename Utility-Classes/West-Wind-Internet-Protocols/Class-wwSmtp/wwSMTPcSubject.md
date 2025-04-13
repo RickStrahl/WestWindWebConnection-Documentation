@@ -1,0 +1,1 @@
+﻿The title or subject header for the message to send. This message should be provided in plain text (ie. no formatting or HTML markup for HTML messages).

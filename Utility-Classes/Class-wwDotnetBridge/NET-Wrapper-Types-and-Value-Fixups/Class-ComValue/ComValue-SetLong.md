@@ -1,0 +1,1 @@
+﻿Turns a FoxPro number to a Long 64 bit integer value in .NET. Note that FoxPro doesn't support casting to a 64 bit value, so you can pass a 32 bit integer or numbers that are decimal or floats to this function to achieve 64 bit Long values.

@@ -1,0 +1,1 @@
+﻿Cancels the currently running SQL request if running in Async mode.

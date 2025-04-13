@@ -1,0 +1,1 @@
+﻿An error message that is sent when an error occurs in the server's error method. This value is valid only when [wwServer::lError](vfps://Topic/wwServer%3A%3AlError) = .T.

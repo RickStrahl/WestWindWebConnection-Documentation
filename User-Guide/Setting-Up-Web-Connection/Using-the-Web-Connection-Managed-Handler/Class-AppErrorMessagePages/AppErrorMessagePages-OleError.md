@@ -1,0 +1,1 @@
+﻿Exception fired when a COM Server call fails. This is specific to a failure in the COM server operation - typically this will be  an Invokation error or a COM security error.

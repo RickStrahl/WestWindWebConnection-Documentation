@@ -1,0 +1,1 @@
+﻿Script location for jQuery.js. Use Default for default location in ~/scripts/jquery.js.

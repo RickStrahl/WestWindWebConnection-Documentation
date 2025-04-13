@@ -1,0 +1,3 @@
+﻿This method parses an object type into a Fox object if a type definition exists in the WSDL file.
+
+This method is used internally by CallWSDLMethod to take object parameters and return generic Fox objects that contain the structure of the embedded XML. The objects are data only objects and return the full hierarchy as long as the child object definitions exist as WSDL definitions which are used to create objects on the fly.

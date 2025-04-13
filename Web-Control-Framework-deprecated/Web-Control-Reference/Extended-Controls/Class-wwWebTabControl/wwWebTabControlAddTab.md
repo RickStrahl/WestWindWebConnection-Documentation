@@ -1,0 +1,1 @@
+﻿This method is used to programmatically add tabs to the Tab control. It sets base settings and returns the tab so you can further customize the individual tab.

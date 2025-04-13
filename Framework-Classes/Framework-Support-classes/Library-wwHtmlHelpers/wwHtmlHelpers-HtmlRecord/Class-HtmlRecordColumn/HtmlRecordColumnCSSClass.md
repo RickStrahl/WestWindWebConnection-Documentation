@@ -1,0 +1,1 @@
+﻿The CSS Class to apply to for the top level table.

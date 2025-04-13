@@ -1,0 +1,1 @@
+﻿Attributes assigned to each row that is rendered

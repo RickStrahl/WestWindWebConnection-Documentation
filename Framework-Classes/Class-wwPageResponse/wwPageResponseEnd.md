@@ -1,0 +1,1 @@
+﻿Ends the current response. Any further output send to the Response object is ignored.

@@ -1,0 +1,1 @@
+﻿Deletes a directory from the FTP server.

@@ -1,0 +1,1 @@
+﻿Converts a .NET DataSet object instance to a Visual FoxPro XmlAdapter object that can be turned easily into cursors.

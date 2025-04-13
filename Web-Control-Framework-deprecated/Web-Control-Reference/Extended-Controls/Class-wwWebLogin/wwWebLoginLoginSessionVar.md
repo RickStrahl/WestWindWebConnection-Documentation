@@ -1,0 +1,1 @@
+﻿The name of the Session Variable that is set when a user is authenticated. Once set the control retrieves Login information by looking at this Session Varaible and to set the *LoggedIn* property. In addition another var is set which appends Admin to this value to retrieve the *IsAdmin* property.

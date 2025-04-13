@@ -1,0 +1,1 @@
+﻿Retrieves the physical DOS path for the virtual root of the server. Works with IIS 4, 3, PWS only.

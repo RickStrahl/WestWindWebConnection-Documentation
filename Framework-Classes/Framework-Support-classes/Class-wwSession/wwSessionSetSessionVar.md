@@ -1,0 +1,1 @@
+﻿Sets a Session variable to a specified value. All values must be passed in as strings.

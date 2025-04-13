@@ -1,0 +1,1 @@
+﻿Minimum length of the password.

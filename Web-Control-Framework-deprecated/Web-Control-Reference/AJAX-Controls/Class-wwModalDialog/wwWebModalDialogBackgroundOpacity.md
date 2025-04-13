@@ -1,0 +1,1 @@
+﻿The background Opacity for the overlay

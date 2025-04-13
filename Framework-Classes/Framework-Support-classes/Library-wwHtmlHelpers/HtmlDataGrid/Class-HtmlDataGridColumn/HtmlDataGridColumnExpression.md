@@ -1,0 +1,1 @@
+﻿Any FoxPro Expression (field, private var, UDF(), function) used to evaluate field

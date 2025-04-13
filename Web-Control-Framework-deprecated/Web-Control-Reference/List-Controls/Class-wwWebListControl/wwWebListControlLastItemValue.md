@@ -1,0 +1,1 @@
+﻿Adds a last item and sets its value.

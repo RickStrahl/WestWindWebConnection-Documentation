@@ -1,0 +1,1 @@
+﻿A stack provides a Last In First Out list. It's based on an array of items that contains the actual items. Use `Push()` and `Pop()` to move items on and off the stack.

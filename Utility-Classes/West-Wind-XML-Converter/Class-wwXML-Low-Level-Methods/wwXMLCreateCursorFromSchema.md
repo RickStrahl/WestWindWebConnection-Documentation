@@ -1,0 +1,1 @@
+﻿Creates a cursor from a Schema definition in wwXML's schema format.

@@ -1,0 +1,1 @@
+﻿This function is a combination of STREXTRACT() and STRTRAN() that allows you to search for a string between a pair of delimiters and then replace that string with another value. Replaces the full matched text including the delimiters.

@@ -1,0 +1,1 @@
+﻿FormatExpression. Can be FoxPro format expression or =UDF. UDF must accept single parameter

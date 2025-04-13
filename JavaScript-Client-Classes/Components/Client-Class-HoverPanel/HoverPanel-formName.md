@@ -1,0 +1,1 @@
+﻿The name of the form that is serialized and sent to the server when the postbackMode is POST. If not specified all form variables items are sent.

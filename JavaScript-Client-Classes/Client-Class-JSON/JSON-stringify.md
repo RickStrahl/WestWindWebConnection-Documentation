@@ -1,0 +1,1 @@
+﻿Serializes a JavaScript object into a JSON string.

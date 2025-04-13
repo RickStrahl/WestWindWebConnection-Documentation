@@ -1,0 +1,1 @@
+﻿Error Flag. True when an error occurs during any operation. Set but not required as most methods return True or False.

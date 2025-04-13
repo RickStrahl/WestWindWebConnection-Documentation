@@ -1,0 +1,1 @@
+﻿The table style to be applied

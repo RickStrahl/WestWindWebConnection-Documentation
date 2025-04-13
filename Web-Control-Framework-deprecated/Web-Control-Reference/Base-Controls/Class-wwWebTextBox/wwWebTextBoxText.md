@@ -1,0 +1,1 @@
+﻿The Text property is the key value property for the TextBox. It's the default ControlSource Property as well.

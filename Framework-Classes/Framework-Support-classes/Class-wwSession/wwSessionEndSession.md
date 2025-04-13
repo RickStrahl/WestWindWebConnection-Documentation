@@ -1,0 +1,1 @@
+﻿Shuts down the current session for the user.

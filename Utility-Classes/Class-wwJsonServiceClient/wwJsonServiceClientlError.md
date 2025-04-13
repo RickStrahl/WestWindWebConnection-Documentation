@@ -1,0 +1,1 @@
+﻿Flag that is set if either the HTTP request or JSON Serialization failed. If `.T.` the `.cErrorMsg` is also set.

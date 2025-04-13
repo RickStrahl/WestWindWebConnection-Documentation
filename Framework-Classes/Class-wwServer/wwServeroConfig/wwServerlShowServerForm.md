@@ -1,0 +1,1 @@
+﻿Determines whether the server form is shown. If false the form is hidden and invisible when running outside of the IDE.

@@ -1,0 +1,1 @@
+﻿Disposes a .NET object instance. Only works with objects that support `IDisposable`.An `IDisposable` implementation indicates that an object has dependencies that need to be released in order for the object to cleanly release. This method only works on `IDisposable` objects - it passes through for any other objects.

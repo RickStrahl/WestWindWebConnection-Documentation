@@ -1,0 +1,1 @@
+﻿This low level method executes the actual SQL statement. This method also processes the XML parameters and any return values from stored procedures or wwHTTPSQLServer custom method calls.

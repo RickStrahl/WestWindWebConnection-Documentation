@@ -1,0 +1,1 @@
+﻿Returns a collection of all the Locales on the system. The collection returns both the string and numeric Locale Ids.

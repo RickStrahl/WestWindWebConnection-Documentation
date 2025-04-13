@@ -1,0 +1,1 @@
+﻿Determines the filename where requests are logged to when lLogToFile is set to .T. Default file is RequestLog.dbf.

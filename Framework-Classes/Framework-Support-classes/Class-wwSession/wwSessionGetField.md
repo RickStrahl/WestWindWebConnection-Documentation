@@ -1,0 +1,3 @@
+﻿Retrieves a value from a field in the session table. This method mainly exists for your own custom fields that you might add to the session table for performance or query purposes. Since fields can be queried directly via SQL commands and VPF data commands they perform much better than Session variables. 
+
+I suggest that for frequently used fields that require statistical queries later on you add a field instead of using a session var.

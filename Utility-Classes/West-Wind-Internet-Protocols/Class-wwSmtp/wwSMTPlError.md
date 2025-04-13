@@ -1,0 +1,1 @@
+﻿True if a method call fails

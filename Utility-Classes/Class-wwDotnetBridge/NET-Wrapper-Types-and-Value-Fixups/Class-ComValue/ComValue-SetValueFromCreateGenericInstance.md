@@ -1,0 +1,1 @@
+﻿This method creates an instance of a generic type on the ComValue structure by allowing you to specify a generic type name, the generic type parameters (as a ComArray) and optional constructor parameters (as a ComArray.)

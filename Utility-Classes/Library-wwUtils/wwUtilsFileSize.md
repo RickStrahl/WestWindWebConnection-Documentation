@@ -1,0 +1,1 @@
+﻿Returns the size of a file on disk.

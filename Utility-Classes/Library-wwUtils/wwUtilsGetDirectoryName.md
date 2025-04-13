@@ -1,0 +1,1 @@
+﻿Returns just the path portion of a given file. Unlike `JUSTPATH()` this method preserves the casing of the path.

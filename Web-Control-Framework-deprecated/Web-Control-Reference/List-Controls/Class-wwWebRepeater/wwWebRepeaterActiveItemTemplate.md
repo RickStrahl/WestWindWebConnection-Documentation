@@ -1,0 +1,1 @@
+﻿The currently active Item template instance while iterating over items. You can use this object in ItemDataBind() to grab the current template object if necessary.

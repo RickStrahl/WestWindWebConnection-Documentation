@@ -1,0 +1,1 @@
+﻿Deletes all sessions that have timed out.

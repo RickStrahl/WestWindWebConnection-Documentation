@@ -1,0 +1,1 @@
+﻿Calculates a Checksum from a file using MD5 or SHA256.

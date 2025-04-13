@@ -1,0 +1,1 @@
+﻿Determines whether a column is sortable. If it is sortable a SortExpression is applied to the column.

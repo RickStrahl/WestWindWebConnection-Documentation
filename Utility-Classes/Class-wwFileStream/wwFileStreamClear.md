@@ -1,0 +1,1 @@
+﻿Clears the stream's buffer and leaves an empty buffer.

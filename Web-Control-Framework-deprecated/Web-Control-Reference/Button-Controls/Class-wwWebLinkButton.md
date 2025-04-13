@@ -1,0 +1,1 @@
+﻿The wwWebLinkButton is similar to a wwWebButton, but displays as a link rather than a button. The Button posts back to the current page and can trigger an event on the current page.

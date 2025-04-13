@@ -1,0 +1,1 @@
+﻿The font used for the CAPTCHA image

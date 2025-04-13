@@ -1,0 +1,1 @@
+﻿Writes out the </body> and </html> tags at the end of an HTML page. Optionally allows to write out a block of HTML prior to these tags.

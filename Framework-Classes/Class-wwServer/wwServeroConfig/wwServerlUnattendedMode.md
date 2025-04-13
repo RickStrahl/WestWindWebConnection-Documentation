@@ -1,0 +1,1 @@
+﻿Determines whether to run unattended mode SYS(2035,1) when in COM mode. Ignored if not running under COM.

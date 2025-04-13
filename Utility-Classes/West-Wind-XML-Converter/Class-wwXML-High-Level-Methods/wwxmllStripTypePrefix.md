@@ -1,0 +1,1 @@
+﻿When this value is set to True the first letter is stripped from all property names for cleaning up the XML tag names. So properties like cName are turned into Name and lIsSafe turns into IsSafe.

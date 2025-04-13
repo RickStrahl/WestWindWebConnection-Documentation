@@ -1,0 +1,1 @@
+﻿Trims white space off the beginning of a string.

@@ -1,0 +1,1 @@
+﻿Compiles an ASP script template into PRG and FXP files if needed. If the FXP file exists and is newer than the script file, no compilation is performed.

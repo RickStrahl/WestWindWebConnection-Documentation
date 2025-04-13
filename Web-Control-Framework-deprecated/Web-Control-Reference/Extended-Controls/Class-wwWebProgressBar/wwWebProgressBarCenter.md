@@ -1,0 +1,1 @@
+﻿determines if the control is centered

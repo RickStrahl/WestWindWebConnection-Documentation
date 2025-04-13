@@ -1,0 +1,1 @@
+﻿The display message for the error. This message is generated as part of the ControlUnbind event and either shows the message you've set on the control or a generic message that fieldname can't be blank or invalid value for fieldname.

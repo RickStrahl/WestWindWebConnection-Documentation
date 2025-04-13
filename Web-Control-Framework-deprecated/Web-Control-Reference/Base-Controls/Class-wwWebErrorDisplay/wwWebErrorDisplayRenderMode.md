@@ -1,0 +1,1 @@
+﻿Determines the type of text you assign which can be either Text or HTML

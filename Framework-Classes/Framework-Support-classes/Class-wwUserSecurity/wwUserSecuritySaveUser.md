@@ -1,0 +1,1 @@
+﻿Saves the currently active user to file. Saves the oUser member to the database.

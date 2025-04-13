@@ -1,0 +1,1 @@
+﻿User message retrieved from the XML resource file.

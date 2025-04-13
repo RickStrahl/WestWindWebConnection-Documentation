@@ -1,0 +1,1 @@
+﻿Retrieves a property out of the XML field. Properties can be written with SetProperty.

@@ -1,0 +1,1 @@
+﻿Determines whether the user is an admin user (based on wwUserSecurity::oUser::Admin)

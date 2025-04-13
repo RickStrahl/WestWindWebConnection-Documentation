@@ -1,0 +1,1 @@
+﻿Extends the JavaScript Number class with methods that act on the the number instance.

@@ -1,0 +1,1 @@
+﻿Maximum number of items to display in this list. 0 means display all.

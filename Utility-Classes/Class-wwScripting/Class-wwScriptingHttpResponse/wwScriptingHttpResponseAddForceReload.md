@@ -1,0 +1,1 @@
+﻿Sets maximum cache expiration headers for the HTTP response.

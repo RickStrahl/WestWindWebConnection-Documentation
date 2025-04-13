@@ -1,0 +1,1 @@
+﻿Flag to determine whether every request is logged to file.

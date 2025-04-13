@@ -1,0 +1,1 @@
+﻿Adds an attribute to the Attributes collection with the optional ability to append to the existing attribute value if one exists by using the llAppend parameter.

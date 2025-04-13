@@ -1,0 +1,1 @@
+﻿Retrieves all sections of an INI File.

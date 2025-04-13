@@ -1,0 +1,1 @@
+﻿The frequency in milliseconds the timer fires for file based messaging.

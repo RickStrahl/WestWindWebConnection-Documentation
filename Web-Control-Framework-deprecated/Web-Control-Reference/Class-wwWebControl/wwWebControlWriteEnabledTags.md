@@ -1,0 +1,1 @@
+﻿Writes the Enabled and ReadOnly tags if they are set.

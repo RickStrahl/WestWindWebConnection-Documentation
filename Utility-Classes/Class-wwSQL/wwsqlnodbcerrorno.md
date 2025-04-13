@@ -1,0 +1,1 @@
+﻿ODBC Error if an error occurs.

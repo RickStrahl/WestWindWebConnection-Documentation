@@ -1,0 +1,1 @@
+﻿The borderwidth of the image. The value is a string and defaults to "0".

@@ -1,0 +1,1 @@
+﻿Retrieves a query string value from the current or provided query string.

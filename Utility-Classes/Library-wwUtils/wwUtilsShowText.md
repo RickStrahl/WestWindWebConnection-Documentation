@@ -1,0 +1,1 @@
+﻿Shows a text string and displays it in Notepad (or other configured editor)

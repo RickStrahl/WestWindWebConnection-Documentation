@@ -1,0 +1,3 @@
+﻿Use this method to return more than a single result value to the client before calling [CreateSoapResponseXML](vfps://Topic/wwSoap%3A%3ACreateSoapResponseXML). If you return a single return value you don't need this method.
+
+This method adds return values to the aReturnValues array. The first return value you create should be the actual request return value - any ByRef result values should be added afterwards.

@@ -1,0 +1,1 @@
+﻿The name of  a cursor or table that we are binding to.

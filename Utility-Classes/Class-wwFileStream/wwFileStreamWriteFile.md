@@ -1,0 +1,1 @@
+﻿Writes a file from disk into the memory stream. The file can be a text file or binary file.

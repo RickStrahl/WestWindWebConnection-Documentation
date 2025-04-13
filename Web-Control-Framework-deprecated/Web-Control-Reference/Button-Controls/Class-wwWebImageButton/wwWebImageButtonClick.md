@@ -1,0 +1,1 @@
+﻿Occurs when you click on the image link. Note this event does NOT fire if you have specified a NavigateUrl in which case the image doesn't post back and just navigates to the new URL.

@@ -1,0 +1,1 @@
+﻿This method allows you to call a static .NET method such as `System.Windows.Forms.MessageBox.Show()` for example. Because the methods are static you can't create an instance and pass it back to FoxPro, instead this method has to be used to invoke a method by using a fully qualified type name instead of an instance.

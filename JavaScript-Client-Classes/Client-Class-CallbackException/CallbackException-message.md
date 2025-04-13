@@ -1,0 +1,1 @@
+﻿The error message for the error that occurred. This message can be the result of the operational processing (XmlHttp), or Javascript parsing of the response, or more likely contain the result of a server side exception.

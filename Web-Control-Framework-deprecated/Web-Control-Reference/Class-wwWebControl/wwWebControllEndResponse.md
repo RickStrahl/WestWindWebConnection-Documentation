@@ -1,0 +1,1 @@
+﻿Flag that is set to tell that the Response output has completed. No further rendering needs to take place.

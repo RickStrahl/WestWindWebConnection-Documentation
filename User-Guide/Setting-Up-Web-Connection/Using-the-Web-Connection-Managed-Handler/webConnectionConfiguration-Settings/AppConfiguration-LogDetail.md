@@ -1,0 +1,1 @@
+﻿Determines whether request data is logged in detail.

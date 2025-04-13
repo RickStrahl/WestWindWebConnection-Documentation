@@ -1,0 +1,1 @@
+﻿Returns the current direction of the Sorting that might be active. Either empty or "DESC".

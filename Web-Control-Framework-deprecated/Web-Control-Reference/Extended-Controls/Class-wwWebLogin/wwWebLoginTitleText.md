@@ -1,0 +1,1 @@
+﻿The title text to display at the top of the login dialog.

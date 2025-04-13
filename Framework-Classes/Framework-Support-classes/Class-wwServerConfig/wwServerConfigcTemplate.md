@@ -1,0 +1,1 @@
+﻿The file prefix used in file based messaging. The form polls for files of this extension in the temp path. Default: WC_\

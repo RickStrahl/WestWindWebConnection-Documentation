@@ -1,0 +1,1 @@
+﻿Username to access the proxy specified in HttpProxyName

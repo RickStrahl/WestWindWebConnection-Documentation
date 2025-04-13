@@ -1,0 +1,1 @@
+﻿Sets the Value property from a method call that passes it's positional arguments as an array.Note that the array of parameters must be passed in as a COM Array.

@@ -1,0 +1,1 @@
+﻿The method used to authenticate requests. Supported methods: Basic, UserSecurity, Custom

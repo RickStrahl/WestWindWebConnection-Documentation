@@ -1,0 +1,1 @@
+﻿Internal wwAPI object. The object is not protected to allow persistent access to an API object through the Request.oAPI member.

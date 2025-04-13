@@ -1,0 +1,1 @@
+﻿Method called when an error occurs during an async callback operation. The method is called with error information.

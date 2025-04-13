@@ -1,0 +1,1 @@
+﻿This section describes how to use various of the AJAX features of Web Connection in action.

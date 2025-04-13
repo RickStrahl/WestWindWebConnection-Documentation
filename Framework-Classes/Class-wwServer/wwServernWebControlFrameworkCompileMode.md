@@ -1,0 +1,1 @@
+﻿Determines how pages are run when the WebControlFramework operates. Runs either in compiled mode or in 'always' parse mode.

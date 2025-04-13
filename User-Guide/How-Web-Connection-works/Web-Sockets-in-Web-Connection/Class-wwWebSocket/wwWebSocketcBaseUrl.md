@@ -1,0 +1,1 @@
+﻿The base URL to the Web Site to send to. Needs to be set when sending outside of Web Connection. Inside of Web Connection this value is automatically set based on the incoming request of the Web site.

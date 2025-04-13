@@ -1,0 +1,1 @@
+﻿This low level method takes the XML input and parses the XML into the properties of the object. This allows you to check and possibly filter you SQL statements before the command runs.

@@ -1,0 +1,1 @@
+﻿Evaluates an expression. This method simply does an EVALUATE() with some provisions for error handling.

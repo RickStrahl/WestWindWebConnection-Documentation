@@ -1,0 +1,1 @@
+﻿Deletes a message by message number or full message id.

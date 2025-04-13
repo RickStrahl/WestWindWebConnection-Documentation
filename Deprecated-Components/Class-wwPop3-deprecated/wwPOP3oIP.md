@@ -1,0 +1,1 @@
+﻿The wwSocket object that's used to access the mail server. This object is passed through so you can access the TCP session logging features, but also allows you straight socket access.

@@ -1,0 +1,1 @@
+﻿Determines if the current user is running in a Windows Administrative context.

@@ -1,0 +1,1 @@
+﻿By default wwXML creates XML output that does not contain data or object structure information. The data structure information includes type information that allows objects and cursors to be re-created on the client side of the XML connection. When this value is .T. the export methods create a DTD.

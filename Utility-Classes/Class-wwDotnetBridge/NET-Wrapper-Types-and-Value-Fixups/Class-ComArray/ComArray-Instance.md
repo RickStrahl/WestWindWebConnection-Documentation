@@ -1,0 +1,1 @@
+﻿The actual array instance returned as an object. This instance is set and passed to and from .NET calls made with InvokeMethod and explicit property assignments with Set/GetProperty.

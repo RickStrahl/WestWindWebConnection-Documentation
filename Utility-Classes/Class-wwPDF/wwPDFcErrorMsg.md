@@ -1,0 +1,1 @@
+﻿Contains any error messages if PrintReport returns .F. or PrintReportToString returns an empty string.

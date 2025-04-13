@@ -1,0 +1,1 @@
+﻿This method is used to display informational messages on a page. The messages are displayed with the informational icon displayed if provided.

@@ -1,0 +1,1 @@
+﻿Sets the value of this object to a Single based on a FoxPro number passed in.

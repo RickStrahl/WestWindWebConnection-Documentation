@@ -1,0 +1,1 @@
+﻿IP address or domain of the mail server that hosts the POP3 box.

@@ -1,0 +1,3 @@
+﻿Creates a Schema string from the currently active cursor/alias. The schema is generated as separate schema string.
+
+Note that the schema created is for the cursor fragment only and does not include the document root. This makes it possible to create multiple schemas into a single document and link them in from within the document. CursorToXML handles creation of embedded schemas that take advantage of this fact through thte nCreateDataStructure=1 flag.

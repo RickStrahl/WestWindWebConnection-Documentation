@@ -1,0 +1,1 @@
+﻿Returns a properly upper and lower cased operating system file name from a full or relative filename or path. Returns files and paths in proper case and converts short filenames to long.

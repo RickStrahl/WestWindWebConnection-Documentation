@@ -1,0 +1,1 @@
+﻿Password to log on to server (applies to FTP and HTTP)

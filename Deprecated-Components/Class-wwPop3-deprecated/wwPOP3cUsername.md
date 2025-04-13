@@ -1,0 +1,1 @@
+﻿Username to access the POP3 mailbox.

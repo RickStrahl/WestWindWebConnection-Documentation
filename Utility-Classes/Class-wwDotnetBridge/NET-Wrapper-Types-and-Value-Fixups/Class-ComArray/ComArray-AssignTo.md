@@ -1,0 +1,1 @@
+﻿Assigns this ComArray's array instance to the specified property

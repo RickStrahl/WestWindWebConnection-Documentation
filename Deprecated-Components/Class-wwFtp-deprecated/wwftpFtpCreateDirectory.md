@@ -1,0 +1,1 @@
+﻿Creates a new directory on the FTP server. You have to use FTPConnect first to establish a connection to the server.

@@ -1,0 +1,1 @@
+﻿Performance operation that skips the check for the file's existence before opening it when set to .T. Since sessions are accessed on every hit, if you know you have the table already in place there's no need to check for it.

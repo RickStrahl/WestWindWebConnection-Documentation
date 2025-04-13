@@ -1,0 +1,1 @@
+﻿The FTP Session handle used in Internet Access. One of two (hIPSession is the other)

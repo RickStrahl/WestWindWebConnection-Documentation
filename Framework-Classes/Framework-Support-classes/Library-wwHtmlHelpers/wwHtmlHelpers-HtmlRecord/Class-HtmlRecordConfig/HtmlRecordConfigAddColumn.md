@@ -1,0 +1,1 @@
+﻿Allows adding columns to be added to this HTML record.

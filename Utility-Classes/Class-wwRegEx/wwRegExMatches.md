@@ -1,0 +1,1 @@
+﻿A collection of matches after the Match method is called.

@@ -1,0 +1,1 @@
+﻿If .t. doesn't delete the generate VFP source code after compiling

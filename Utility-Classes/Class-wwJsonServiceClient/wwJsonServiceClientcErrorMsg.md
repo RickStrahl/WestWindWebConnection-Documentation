@@ -1,0 +1,1 @@
+﻿An error message if an error occurs and `.lError` is `.T.`

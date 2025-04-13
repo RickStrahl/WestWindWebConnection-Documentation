@@ -1,0 +1,1 @@
+﻿The text property contains that value of the hidden field.

@@ -1,0 +1,1 @@
+﻿Css class used for the Pager

@@ -1,0 +1,1 @@
+﻿Determines if .NET Core Runtime is installed and gives the latest version that's available.
