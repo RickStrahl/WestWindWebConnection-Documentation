@@ -1,4 +1,4 @@
-The Web Connection Framework classes are responsible for passing data between the Web Server and your application code. The base classes consist of the `Server`, `Process`, `Request` and `Response` objects which are all exposed as `PRIVATE` variables in your Process method/Controller code. The `wwServer` and `wwProcess` classes control application flow and mechanics. `wwRequest` and `wwResponse` classes expose incoming Web request data and control output generation for the HTTP response you create on each request.
+﻿The Web Connection Framework classes are responsible for passing data between the Web Server and your application code. The base classes consist of the `Server`, `Process`, `Request` and `Response` objects which are all exposed as `PRIVATE` variables in your Process method/Controller code. The `wwServer` and `wwProcess` classes control application flow and mechanics. `wwRequest` and `wwResponse` classes expose incoming Web request data and control output generation for the HTTP response you create on each request.
 
 ![](IMAGES\FRAMEWORKCLASS.JPG) 
 

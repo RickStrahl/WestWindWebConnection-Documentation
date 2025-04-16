@@ -15,6 +15,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 100,
+      "isExpanded": true,
       "updated": "2025-03-30T12:38:23.3612073-10:00",
       "helpId": "2",
       "classInfo": {
@@ -61,7 +62,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
-          "updated": "2025-03-25T11:57:47.5215931-10:00",
+          "updated": "2025-04-15T19:17:27.103549-10:00",
           "helpId": "1242800",
           "classInfo": {
             "memberName": "",
