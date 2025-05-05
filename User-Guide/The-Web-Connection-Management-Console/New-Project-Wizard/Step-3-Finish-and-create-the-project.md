@@ -1,6 +1,6 @@
-﻿On the final page you get the option to select the type of wwProcess class to create:
+On the final page you get the option to select the type of wwProcess class to create:
 
-![](///images/managementconsole/finishnewproject.png)
+![](/images/managementconsole/finishnewproject.png)
 
 Your choices are:
 
@@ -15,7 +15,7 @@ Use this option if you need to build a **Service** that serves data rather than 
 ### Start your Application
 When the Wizard is done creating your project, it displays a message on the FoxPro desktop with some information on programs and URLs and how to launch your project:
 
-![](///images/managementconsole/newprojectcompletionmessage.png)
+![](/images/managementconsole/newprojectcompletionmessage.png)
 
 The easiest way to launch the application is to run the application with the generated `Launch.prg` command which is customized for your project:
 
@@ -39,7 +39,7 @@ This does the following:
 
 When you run the application with `Launch.prg` it also writes out some information on what it did for troubleshooting and to give you a better idea what's going on during launch:
 
-![](///images/managementconsole/newprojectlaunchmessage.png)
+![](/images/managementconsole/newprojectlaunchmessage.png)
 
 ### What gets created
 Here's a bit more information on what the Wizard actually creates behind the scenes:
@@ -60,15 +60,26 @@ The Wizard also creates a Server configuration file for IIS that can, via code, 
 The Wizard creates a new project for you and adds the dependent source files into it.  
 ![](IMAGES\MANAGEMENTCONSOLE\NEWPROJ_PROJECT.GIF)
 
-  > #### @icon-info-circle Shareware version: No Project Generated
-  > Since the Shareware version is precompiled you cannot successfully build an EXE file from a project. Therefore with the shareware version no project is built and you will see a dialog that points out this fact instead. Even though no project is built, you can still run the project successfully by running the main PRG file for the application: `DO <yourproject>Main.prg`. Other than missing the PJX and EXE files, everything else will be configured as described below.
+  > #### @icon-info-circle No Project Generated?
+  > If no project is generated:
+  >
+  > * **You're running the Shareware Version**  
+  >   Since the Shareware version uses pre-compiled framework files you cannot successfully build an EXE file from a project. Therefore with the shareware version no project is built and you will see a dialog that points out this fact instead.   
+  > * **You're not running `console.exe` from within the FoxPro IDE**   
+  > FoxPro standalone EXEs cannot create a project file via automation, therefore it's a requirement that you **run the exe from within the FoxPro IDE**.
+  > 
+  > Even though no project is built, you can still run the project successfully by running the main PRG file for the application: `DO <yourproject>Main.prg`. Other than missing the PJX and EXE files, everything else will be configured as described below.
+  
+  
    
 * **A Desktop Shortcut**  
-A desktop shortcut that points at the **Deploy** folder is created for you so you can easily start the Web Connection application in the proper folder and configured with the associated config.fpw configuration. I recommend you use this shortcut to launch your project. The config.fpw folder contains path statements that link the project folder back to the Web Connection installation so that the required Web Connection dependencies can be found and are accessible when you run your application.
+A desktop shortcut that points at the **Deploy** folder is created for you so you can easily start the Web Connection application in the proper folder and configured with the associated `config.fpw` configuration. I recommend you use this shortcut to launch your project. The `config.fpw` folder contains path statements that link the project folder back to the Web Connection installation so that the required Web Connection dependencies can be found and are accessible when you run your application.
 
 * **SetPaths.prg**  
-If you don't use the shortcut, you can run `DO SetPaths.prg` to set paths to the Web Connection Installation Folder and its root folder and `.\classes` folder. These paths are generated at project build time, so if that path changes you'll have to adjust it in the PRG.
+If you don't use the shortcut, you can run `DO SetPaths.prg` to set paths to the Web Connection Installation Folder and its root folder and `.\classes` folder. These paths are generated at project build time and are meant for **Development Time**. They are generated once, so if the path changes you'll have to adjust it in the PRG. You can and should add any additional paths you need access to here during development. 
 
+> Note that these paths are meant for development time. For setting paths in that your server needs, we recommend to set them in `YourServer::Onload()` and you should use relative paths if possible, or if using absolute paths make them configurable via one of the configuration objects.
+ 
 * **Launch.prg**  
 This file lets launch your Web Connection application. It calls `SetPaths.prg`, opens up your Web Browser and starts the Web Connection server. It can launch your site either for **full IIS* or for **IIS Express** (by using a parameter of `.T.`).
   

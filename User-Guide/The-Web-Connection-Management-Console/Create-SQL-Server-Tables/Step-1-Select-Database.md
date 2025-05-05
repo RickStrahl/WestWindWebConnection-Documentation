@@ -1,6 +1,6 @@
-﻿The first step takes you through specifying a database. You can either create a new database or add the files to an existing database. 
+The first step takes you through specifying a database. You can either create a new database or add the files to an existing database. 
 
-![](///images/ManagementConsole/SQLConfig1.png)
+![](/images/ManagementConsole/SQLConfig1.png)
 
 
 In most cases you'll want to add the tables to an existing database so you can use a single connection to access your own data as well as let Web Connection share that data connection.

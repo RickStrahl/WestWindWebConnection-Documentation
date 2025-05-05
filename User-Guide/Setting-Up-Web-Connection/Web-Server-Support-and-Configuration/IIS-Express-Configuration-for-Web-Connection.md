@@ -1,4 +1,4 @@
-﻿[IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264) is a small, downloadable, standalone version of IIS. It has its own localized setup for each Web site so there's no global configuration, and most importantly **doesn't require Administrator rights** to configure or run. IIS Express runs the same codebase as IIS 10 (or 7) but runs as a **standalone application** that is manually started.
+[IIS Express](https://www.microsoft.com/en-us/download/details.aspx?id=48264) is a small, downloadable, standalone version of IIS. It has its own localized setup for each Web site so there's no global configuration, and most importantly **doesn't require Administrator rights** to configure or run. IIS Express runs the same codebase as IIS 10 (or 7) but runs as a **standalone application** that is manually started.
 
 ### Quick Start
 
@@ -75,12 +75,12 @@ To do development with the IIS Express Web Server takes two steps:
 
 IIS Express is a standalone Windows executable. Once installed it can just be started via command line. The Web Connection menu includes a convenient shortcut helper that allows you to launch the IIS Web Server and specify the parameters needed to launch IIS Express:
 
-![](///images/launchiisexpress.png)
+![](/images/launchiisexpress.png)
 
 
 When you click the menu option a small launcher form pops up:
 
-![](///images/launchiisexpressform.png)
+![](/images/launchiisexpressform.png)
 
 which you can launch with:
 

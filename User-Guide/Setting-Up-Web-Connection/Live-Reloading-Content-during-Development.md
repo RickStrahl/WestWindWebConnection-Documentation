@@ -1,4 +1,4 @@
-﻿Live Reload is a new feature in Web Connection that can detect when you make changes to any of these types of files:
+Live Reload is a new feature in Web Connection that can detect when you make changes to any of these types of files:
 
 * Static HTML files
 * Static CSS and JavaScript Files
@@ -91,7 +91,7 @@ The Live Reload features of the Web interface apply to static files and Web Conn
 
 The easiest way to enable Live Reload is through the Web Server administration interface in `Administration.wc`:
 
-![](//images/stepbystep/EnableLiveReloadWeb.png)
+![](/images/stepbystep/EnableLiveReloadWeb.png)
 
 This link toggles the feature on and off **on the Web Server** and also tries to toggle the setting in the FoxPro server (the FoxPro server has to be restarted to see the change though).
 
@@ -154,11 +154,11 @@ I can recommend using [Visual Studio Code](https://code.visualstudio.com/) with 
 ### @icon-lightbulb-o Use or Configure the Server's Edit Button
 The server form includes an Edit button on the main form, which when clicked opens up an editor of your choice in the project directory. 
 
-![](//images/stepbystep/ServerFormEditButton.png)
+![](/images/stepbystep/ServerFormEditButton.png)
 
 By default this button is configured to use Visual Studio Code - if that's installed on your machine the Edit button just works.
 
-![](//images/stepbystep/VisualStudioCodeEditorWebDemo.png)
+![](/images/stepbystep/VisualStudioCodeEditorWebDemo.png)
 
 But Visual Studio Code is optional. If you want to use another editor you can do that too. Ideally you'll want an editor that can open a folder, so as above you can open the entire project folder that holds both the FoxPro code and the Web code.
 

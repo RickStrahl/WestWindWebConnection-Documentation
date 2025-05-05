@@ -1,10 +1,10 @@
-﻿The UserSecurity authentication model provides a FoxPro code based mechanism plus a custom HTML form for validating users. It uses the [wwUserSecurity class](VFPS://Topic/_1P30TA7N1), which provides a default implementation **using a simple FoxPro table based security implementation**. 
+The UserSecurity authentication model provides a FoxPro code based mechanism plus a custom HTML form for validating users. It uses the [wwUserSecurity class](VFPS://Topic/_1P30TA7N1), which provides a default implementation **using a simple FoxPro table based security implementation**. 
 
 You can override the `wwUserSecurity` class and create custom authentication schemes that validate against your own data stores or even alternate stores like Active Directory, Azure Entra ID or another OpenId Connect/oAuth provider.
 
 Using the [wwProcess::Authenticate()](VFPS://Topic/_1P10UVIG9) method users can authenticate against this table. The `Authenticate()` method itself contains and manages intercepting the HTTP request and displaying a login page that also validates the user info. If correct the user is forwarded to the required page - otherwise the Login page is redisplayed.
 
-![](IMAGES/misc/logindialog.png)
+![](/images/misc/logindialog.png)
 
 ### The wwUserSecurity Class
 The wwUserSecurity class provides a simple class and cursor based lookup mechanism for retrieving username/password combinations. It supports creation of the table, adding and deleting of records and the familiar business object approach that Web Connection uses to hold registration data. The wwUserSecurity class is a base feature for the following enhancements.
@@ -43,7 +43,7 @@ ENDFUNC
 
 Here's what the authentication request looks like:
 
-![](IMAGES/misc/logindialog.png)
+![](/images/misc/logindialog.png)
 
 > ### @icon-info Customize the Sign In Form
 > The login form by default is loaded from a `views\_login.wcs` and `views\_layoutpage.wcs` template that you can customize to fit your application style.
@@ -157,7 +157,7 @@ ENDFUNC
 ### wwWebLogin Control
 The Page framework also includes a wwWebLogin control that can be dropped onto a page and you can use the control as a page level access validator. When not logged in the control displays as login display:
 
-![](IMAGES/WebControls/LoginControlLogin.png)
+![](/images/WebControls/LoginControlLogin.png)
  
 and you can enter username and password into it. The control has a LoggedIn property you can query from the page:
 
@@ -169,7 +169,7 @@ ENDIF
 
 Based on the on the LoggedIn flag or the IsAdmin flag you can show or hide content as needed based on the users level of authentication. Once you're logged in the control displays as a tag that shows the user's login name:
 
-![](IMAGES\WebControls\LoginControlShowUser.png)
+![](/images/WebControls/LoginControlShowUser.png)
 
 Of course you can also hide the control from the page with:
 

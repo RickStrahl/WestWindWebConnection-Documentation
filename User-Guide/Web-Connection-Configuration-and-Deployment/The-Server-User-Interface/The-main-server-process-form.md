@@ -1,6 +1,6 @@
-﻿The server form provides visual input to your operational server. This form is optional, but serves a functional role in providing visual feedback on your operating server.
+The server form provides visual input to your operational server. This form is optional, but serves a functional role in providing visual feedback on your operating server.
 
-![](IMAGES/stepbystep/serverwindow.gif)
+![](/images/stepbystep/serverwindow.gif)
 
 The main part of the form is made up of the process display which shows the current request running and the time that it took to run it. 
 

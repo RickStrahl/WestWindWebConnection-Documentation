@@ -1,4 +1,4 @@
-﻿Web Connection supports and should be run in production with multiple server instances to allow for multiple requests to be processed simultaneously. Both File and COM modes support multiple server instances.
+Web Connection supports and should be run in production with multiple server instances to allow for multiple requests to be processed simultaneously. Both File and COM modes support multiple server instances.
 
 Multiple instances are necessary so requests can process at the same time. A single instance can only process one request at a time, so if two long requests come it at the same time one has to wait. Multiple instances solve this problem.
 
@@ -12,14 +12,14 @@ For File Mode to run multiple instances you can simply start up multiple instanc
 
 You can also start new instances from the .NET Module Admin Console.
 
-![](//images/ManagementConsole/StartFileBasedInstancesFromAdminConsole.png)
+![](/images/ManagementConsole/StartFileBasedInstancesFromAdminConsole.png)
 
 The `web.config` also includes an `AutoStartServers` flag which applies only to file mode. When `true` it automatically starts servers if they are not already running when the application is first hit. 
 
 ### COM Mode
 COM Mode can only be 'started' through configuration which is done by switching into COM mode and specifying a server count for the number of instances to fire up.
 
-![](//images/ManagementConsole/StartComBasedServersFromAdminConsole.png)
+![](/images/ManagementConsole/StartComBasedServersFromAdminConsole.png)
 
 COM instances are autoamtically started when a hit comes in or you can explicitly launch the servers using the 'load servers' button in the admin form.
 
@@ -48,7 +48,7 @@ If you have a busy application and you want to find the right amount of instance
 * Watch the # of Hits
 * Where the # trails off or goes to 0 is the sweet spot
 
-![](//images/ManagementConsole/LoadInstancesSweetSpot.png)
+![](/images/ManagementConsole/LoadInstancesSweetSpot.png)
 
 Notice that after 8 instances the request count drastically drops off. This likely is because I didn't actually generate enough load to keep the server busy but this is what the simulated load emulates.
 

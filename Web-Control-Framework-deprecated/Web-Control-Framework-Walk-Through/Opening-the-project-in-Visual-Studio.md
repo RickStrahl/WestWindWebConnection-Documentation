@@ -1,4 +1,4 @@
-﻿In the first step we created a new project and configured a Web Virtual directory, and configured it for operation with Web Connection. When you use Visual Studio for the first time with a Web Connection project you'll need to do a one time setup to configure extensions and the toolbox. Here's what you need to do.
+In the first step we created a new project and configured a Web Virtual directory, and configured it for operation with Web Connection. When you use Visual Studio for the first time with a Web Connection project you'll need to do a one time setup to configure extensions and the toolbox. Here's what you need to do.
 
 > **Visual Studio Express Note:**  
 > The free Express editions from Microsoft are stripped down ASP.NET specific version of Visual Studio and provides all the core features described here. However, it does not support Add-ins, so the features of the Web Connection Source and Browse View menu functionality is not available. We recommend you use the newer Visual Studio Community Edition which is a full version of Visual Studio Professional.
@@ -17,13 +17,13 @@ To start Visual Studio and open your directory follow these steps:
 
 Your Solution Explorer should look something like this once you'd done this:
 
-![](IMAGES/WebControls/ControlDemoSolution_1.png)
+![](/images/WebControls/ControlDemoSolution_1.png)
 
 Notice that the bin directory contains a WebConnectionWebControls.dll file. This file contains the Web Connection control definitions that map the FoxPro controls implemented in the Web Connection Framework. Although Web Connection works with some of the basic ASP.NET controls, it's best to use the custom controls as they map more closely to the features supported by Web Connection.
 
 Let's create a new Web Page. Click on the project (the path) and right click select Add New Item. Make sure that Visual C# is selected as the target language to show the Web Connection Page Templates. If you installed a Web Connection project you can select a new Web Connection Page as shown below:
 
-![](IMAGES/WebControls/NewPageDialog.png). 
+![](/images/WebControls/NewPageDialog.png). 
 
 In this case I'm creating a new file called Helloworld.dp. Remember .dp is the scriptmap we configured in the new project wizard and we're using a page with this extension. You can also use a .wcsx extension to get the generic version, while .dp is bound to our specific Process class. In general use the more specific version because it allows you to customize the behavior later on.
 

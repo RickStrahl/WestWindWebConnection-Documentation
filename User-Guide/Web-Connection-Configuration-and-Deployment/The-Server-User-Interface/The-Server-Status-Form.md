@@ -1,6 +1,6 @@
-﻿The server status form serves as the configuration console of the currently running server application. It shows the current settings for the server and allows you to modify them on the fly and save the values persistently.
+The server status form serves as the configuration console of the currently running server application. It shows the current settings for the server and allows you to modify them on the fly and save the values persistently.
 
-![](IMAGES/misc/StatusForm.png)
+![](/images/misc/StatusForm.png)
 
 ## Server Configuration Settings
 The fields on this form represent values that come from the `goWcServer.oConfig` object at runtime, or the `<yourApp>.ini` settings file at startup. Not all values from the underlying object are represented on this form - only the most important and commonly changed values are changeable on this form.
@@ -50,7 +50,7 @@ Determines how Web Connection logs requests in the `wwWebRequestLog.dbf` file. T
 
 You can use the **Display Requests** button to open the [Request Log Viewer](VFPS://Topic/_5ZP0PNXIR) to examine recent requests processed as stored in the log.
 
-![](IMAGES/ManagementConsole/serverstatus_saverequest.png)
+![](/images/ManagementConsole/serverstatus_saverequest.png)
 
 For production it's highly recommended you turn logging off or use **Minimal Request** logging to avoid massive disk usage - log files get large quickly and can easily overrun FoxPro's 2gb size limit. 
 

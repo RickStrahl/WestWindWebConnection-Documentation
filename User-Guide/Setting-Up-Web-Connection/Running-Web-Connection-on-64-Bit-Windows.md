@@ -1,4 +1,4 @@
-﻿Depending on whether you are running the ISAPI module which is a **32 bit** component, or the .NET Managed Handler which **can run** in 64 bit or 32 bit mode, you have to configure the IIS Application Pool hosting your application for operation in 32 bit mode.
+Depending on whether you are running the ISAPI module which is a **32 bit** component, or the .NET Managed Handler which **can run** in 64 bit or 32 bit mode, you have to configure the IIS Application Pool hosting your application for operation in 32 bit mode.
 
 > #### @icon-info-circle Use the .NET Managed Hander
 > Because the ISAPI module is a 32 bit DLL, you **have to** run the ISAPI handler in 32 bit mode. We recommend you use the .NET Managed Handler whenever possible as it can run either in 32 or 64 bit Application Pools, is more stable and efficient, easier to configure and has many more features than the ISAPI module. 
@@ -21,7 +21,7 @@ To set the Application Pool to 32 bit:
 * Find your Application Pool instance
 * Change the Enable 32-bit Application to `True`
 
-![](//images/ManagementConsole/Enable64BitAppPool.png)
+![](/images/ManagementConsole/Enable64BitAppPool.png)
 
 Note that if you are running on a 32 bit server this option is not available.
 

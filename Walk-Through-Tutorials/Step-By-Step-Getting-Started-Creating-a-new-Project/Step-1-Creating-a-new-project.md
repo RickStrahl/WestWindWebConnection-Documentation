@@ -1,14 +1,15 @@
-﻿The first step to create a brand new application is by creating a new project for your application. To do so start the West Wind Management Console from the VFP command window:
+The first step to create a brand new application is by creating a new project for your application. To do so start the West Wind Management Console from the VFP command window:
 
-![](//images/managementconsole/consolemain.png)
+![](/images/managementconsole/consolemain.png)
 
+> **Note**: Make sure you run `console.exe` from within the Visual FoxPro IDE to create a new project! If you don't, FoxPro can't create a new project file and will only create the source files. 
 
 Click on the Create New Project button to create a new Visual FoxPro project that includes the base Web Connection framework classes and the startup code.
 
 ### Step 1
 Start by naming the project and the main process class. The project name should be the filename of the project you want to create. Use a **single string value without spaces** for this setting. In this case I'll create a project named `WebDemo` and a process class named `WebProcess`.
 
-![](IMAGES/ManagementConsole/NewProj1.png)
+![](/images/ManagementConsole/NewProj1.png)
 
 A Process is the actual request handler class, where you will write your logic to handle Web 
 requests. A single project can contain several Process classes. `WebProcess` contains methods for each of the Web operations we want to handle. To make it real obvious which pieces I'm talking about in this demo  I'll name the project `WebDemo` and the process `WebProcess`.
@@ -33,7 +34,7 @@ For local development we recommend you use either **IIS Express** or the **Web C
 ### Step 2
 Step 2 of the Wizard lets you specify the location of the project and how to reference it from the Web. 
 
-![](IMAGES/ManagementConsole/NewProj2.png)
+![](/images/ManagementConsole/NewProj2.png)
 
 
 #### Project Folder Path
@@ -53,7 +54,7 @@ This is where all your Web files go: Html, CSS, JS and any Web Connection Templa
 
 Here's what the generated project structure looks like in Explorer:
 
-![](IMAGES/ManagementConsole/NewProj2_1.png)
+![](/images/ManagementConsole/NewProj2_1.png)
 
 > #### @icon-info-circle Web Connection Folder Location
 > The project layout **does not include Web Connection**, but rather it references Web Connection via `SET PATH` set in `config.fpw` and when `Launch.prg` runs. The project generates a `Launch.prg` file that adds the Web Connection folders to your current path.

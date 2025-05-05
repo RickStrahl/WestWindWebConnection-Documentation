@@ -1,8 +1,8 @@
-﻿By default Visual Studio only understands certain file types that it knows about. Web Connection tends to use custom file extensions for script files so for example the script map I use for my message board is `.wwt` for my blog it's `.blog`. If I open these script files in Visual Studio without mapping extensions, they are displayed as plain text without syntax coloring because Visual Studio has no idea that these files are HTML files.
+By default Visual Studio only understands certain file types that it knows about. Web Connection tends to use custom file extensions for script files so for example the script map I use for my message board is `.wwt` for my blog it's `.blog`. If I open these script files in Visual Studio without mapping extensions, they are displayed as plain text without syntax coloring because Visual Studio has no idea that these files are HTML files.
 
 In order to make these files show HTML syntax coloring I can add them by going to **Tools -> Options -> Text Editor -> File Extension** which brings you to this dialog:
 
-![](IMAGES/misc/VisualStudioFileExtensionsOptions.png)
+![](/images/misc/VisualStudioFileExtensionsOptions.png)
 
 Here you can map an extension to one of the many editors that are available in Visual Studio. For Scripts and Templates you generally want the **Html Editor**. 
 

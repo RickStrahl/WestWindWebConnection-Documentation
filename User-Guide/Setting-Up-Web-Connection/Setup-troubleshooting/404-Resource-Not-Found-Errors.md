@@ -1,4 +1,4 @@
-﻿IIS often throws 404 (Resource Not Found) errors in response to configuration issues. 404 errors are primarily meant to indicate that an invalid URL was referenced pointing to a script or page that doesn't exist. However, IIS also uses this error message if some resource is not configured correctly with permissions.
+IIS often throws 404 (Resource Not Found) errors in response to configuration issues. 404 errors are primarily meant to indicate that an invalid URL was referenced pointing to a script or page that doesn't exist. However, IIS also uses this error message if some resource is not configured correctly with permissions.
 
 Here are a few things that can trigger 404 errors
 
@@ -7,7 +7,7 @@ A 404 error is the correct and obvious error result for this. If you get a 404 t
 
 * **ISAPI Handler Not Registered**  
 ISAPI extensions in IIS must be registered as allowed executables as does ASP.NET as a feature. You can find this feature in the IIS Management Console on the server page in **ISAPI and CGI Restrictions**:
-![](IMAGES/misc/ISAPIRestrictions.png)
+![](/images/misc/ISAPIRestrictions.png)
 If you're using ASP.NET make sure that your ASP.NET version (4.x most likely) is allowed. If you're using ISAPI make sure you explicit DLL is allowed (highlighted in the example).
 
 * **IIS Request Filtering**  

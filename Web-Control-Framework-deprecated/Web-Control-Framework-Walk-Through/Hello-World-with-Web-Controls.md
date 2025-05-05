@@ -1,4 +1,4 @@
-﻿Up to this point we've added controls to the page, but we haven't updated the page nor written any code. That's about to change. Let's take the page we created in the last topic and lets add logic to do the obligatory Hello World code.
+Up to this point we've added controls to the page, but we haven't updated the page nor written any code. That's about to change. Let's take the page we created in the last topic and lets add logic to do the obligatory Hello World code.
 
 Let's start by handling the Click event of the button. To do this go to Design View and select the button then enter "btnSubmit_Click" into the Click property of the property sheet in the Web Connection Events section. 
 
@@ -37,7 +37,7 @@ Enter a color:
 
 The form should now look like this in the designer:
 
-![](IMAGES/WebControls/FirstControls2.png)
+![](/images/WebControls/FirstControls2.png)
 
 Then hook up this code in the FoxPro class:
 
@@ -84,11 +84,11 @@ So any preservation of properties is declarative, but it's really easy to do wit
 ### What happens on Errors?
 What if you made an error in your code? If it worked go back and put some garbage into the above click method and run the request again. Here's what you should see:
 
-![](IMAGES/WebControls/FoxCodeError_1.png)
+![](/images/WebControls/FoxCodeError_1.png)
 
 The error stops right in your FoxPro code. Cool - you can fix the problem, go back to the command window start right back up. The code stops when the Server.lDebugMode flag is set to .T. which is on by default. You can change this flag in the application's startup INI file (DevDemo.ini - DebugMode flag) or on the Web Connection Status form. If lDebugMode = .F. the error displays in the browser like this instead:
 
-![](IMAGES/WebControls/Html%20Error%20Page.png)
+![](/images/WebControls/Html%20Error%20Page.png)
 
 This default error page can be overridden by subclassing your Process class and overriding the OnError method. Alternately you can use BindEvent to route the OnError method to your own handler and override the logic there. To see the default logic look at wwWebPageProcess::OnError() in wwProcess.prg.
 

@@ -1,4 +1,4 @@
-﻿Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 7.10 -> 7.12 for example).
+Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 7.10 -> 7.12 for example).
 
 > #### @icon-warning Updating from the Shareware Version
 > If you are updating from the Shareware version or you had previously installed the Shareware version, or you have already installed and are seeing shareware version prompts we recommend a **full delete of all files** in the Web Connection installation folder followed by a full reinstall as a **Fresh Install** as described below.
@@ -80,7 +80,7 @@ The easiest way to update projects is to use a new utility in Web Connection 7.1
 * Choose components to update
 * Finish
 
-![](//images/ManagementConsole/UpdateprojectResources.png)
+![](/images/ManagementConsole/UpdateprojectResources.png)
 
 
 Alternately you can use a Console Command like this:

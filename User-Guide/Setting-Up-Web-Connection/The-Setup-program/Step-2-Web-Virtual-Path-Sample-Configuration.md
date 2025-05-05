@@ -1,6 +1,6 @@
-﻿The next step is to configure the Web Connection installation and set up the samples so that you can run the sample Web Connection server. To do this you specify the local folder where the samples and Web virtual directory are installed.
+The next step is to configure the Web Connection installation and set up the samples so that you can run the sample Web Connection server. To do this you specify the local folder where the samples and Web virtual directory are installed.
 
-![](///images/managementconsole/setup2.png)
+![](/images/managementconsole/setup2.png)
 
 ### Web Files Path
 This path points at the local installation folder for the HTML files and templates, CSS, JavaScript and other support resources. For the demo this folder is not configurable as it points of the pre-created `.\Web` folder.

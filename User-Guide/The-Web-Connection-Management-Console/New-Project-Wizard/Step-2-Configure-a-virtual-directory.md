@@ -1,6 +1,6 @@
-﻿This step deals with configuring a virtual directory and script map for your new Web application.
+This step deals with configuring a virtual directory and script map for your new Web application.
 
-![](IMAGES/ManagementConsole/NewProj2.png)
+![](/images/ManagementConsole/NewProj2.png)
 
 ### Virtual Directory and Path
 A virtual directory is an IIS mapping to a folder that maps a physical operating system path to a 'virtual' path in IIS. You can also leave the virtual path blank to designate you want to configure the root Web site. The Project path is the physical path on disk to the folder, while the virtual is the path that is created in IIS and that IIS will use to reference that path. For the example above the URL represented is `http://localhost/WebDemo` for example.

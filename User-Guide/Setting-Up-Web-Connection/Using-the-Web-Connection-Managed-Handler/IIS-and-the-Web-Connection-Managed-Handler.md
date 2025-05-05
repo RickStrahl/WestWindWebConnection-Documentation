@@ -1,4 +1,4 @@
-﻿Setting up IIS 7 for using with the managed module is easy by using the Integrated pipeline. With IIS 7 this model permits true XCOPY deployment with no additional configuration needs - you can simply copy the WebConnectionModule.dll in your BIN directory as part of your Web directory and make a couple of changes in web.config to enable to the module.
+Setting up IIS 7 for using with the managed module is easy by using the Integrated pipeline. With IIS 7 this model permits true XCOPY deployment with no additional configuration needs - you can simply copy the WebConnectionModule.dll in your BIN directory as part of your Web directory and make a couple of changes in web.config to enable to the module.
 
 Here's how to set up a new project and switch to the Managed Module:
 
@@ -8,7 +8,7 @@ Here's how to set up a new project and switch to the Managed Module:
 * Select the West Web Connection Application Pool
 * Click Basic Settings and ensure that the Managed Pipeline Mode is set to Integrated
 
-![](IMAGES/misc/IIS7CreateApplicationPool.png)
+![](/images/misc/IIS7CreateApplicationPool.png)
 
 By default the web.config file that installs with the new project has the module hook ups commented out which in turn results in the ISAPI DLL being used. To switch to using the module open web.config and edit the following section:
 ```xml

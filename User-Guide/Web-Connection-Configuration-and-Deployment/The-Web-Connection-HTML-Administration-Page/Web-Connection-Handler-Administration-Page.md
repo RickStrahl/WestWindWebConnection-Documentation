@@ -1,10 +1,10 @@
-﻿The Web Connection Handler Administration page and the Web Connection Middleware Administration pages show you the Web Server configuration. The .NET or ISAPI modules provide the low level interface to the Web Server and this page shows all the configured settings as well as the running servers. 
+The Web Connection Handler Administration page and the Web Connection Middleware Administration pages show you the Web Server configuration. The .NET or ISAPI modules provide the low level interface to the Web Server and this page shows all the configured settings as well as the running servers. 
 
 The page also allows you to manage the servers loaded by loading and unloading of servers, switching the operations mode and putting the server into maintenance mode.
 
 Here's what the Web Connection Module Administration page looks like (.NET module version):
 
-![](IMAGES/ManagementConsole/ModuleAdministrationPage.png)
+![](/images/ManagementConsole/ModuleAdministrationPage.png)
 
 As you can see the admin form displays the active servers running (both in File mode and COM mode) as well as list of configuration settings that largely match the configuration settings in `web.config` (for the .NET module) or `wc.ini` for the ISAPI module.
 
@@ -56,12 +56,12 @@ Depending on whether you run in COM or File Mode this list is compiled different
 
 * **COM Mode**
 In COM Mode the Web Connection Module tracks the attached COM server in the Thread pool and the server list simply reflects the request stats accumulated in this server list. Because Web Connection manages the list it is quite accurate and Web Connection can easily start and stop servers.
-![](IMAGES/ManagementConsole/ServerListModulePage.png)
+![](/images/ManagementConsole/ServerListModulePage.png)
 
 
 * **File Mode**   
 In File Mode Web Connection gets a list of processes that match the server's EXE file name and uses the Windows Process APIs to retrieve all running processes with that file name as well as retrieving process information for each of the running processes. Web Connection does not have an active list of the running processes, so it can't directly monitor these instances. The start and stop operations are limited to effectively killing existing instances and restarting them.
-![](IMAGES/ManagementConsole/ServerFileListModules.png)
+![](/images/ManagementConsole/ServerFileListModules.png)
 
 As you can see the two lists for file and COM servers look slightly different but overall the behavior is similar.
 

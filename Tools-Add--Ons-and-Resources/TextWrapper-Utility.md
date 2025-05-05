@@ -1,6 +1,6 @@
-﻿To access the utility click on the Web Connection Menu once you've started Web Connection. If the menu doesn't exist DO WCSTART to get it loaded. Choose Tools|Text Wrapper. You'll see a simple interface that shows you a block of text from the clipboard to be wrapped line by line with enclosing text tags provided at the top of the form.
+To access the utility click on the Web Connection Menu once you've started Web Connection. If the menu doesn't exist DO WCSTART to get it loaded. Choose Tools|Text Wrapper. You'll see a simple interface that shows you a block of text from the clipboard to be wrapped line by line with enclosing text tags provided at the top of the form.
 
-![](IMAGES/misc/textwrapper.gif)
+![](/images/misc/textwrapper.gif)
 
 The above text in the edit window will be converted into a string delimited piece of code that you can easily paste into a code snippet of a PRG/Class:
 

@@ -1,4 +1,4 @@
-﻿In this example we use the `wwBusinessObject` class to create a customer editing solution similar to the one demonstrated in the Core Step by Step walk-through. Instead of direct data access we'll use the `wwBusinessObject` class to create a class and manage all data access through this business layer. This example then also uses scripts to handle displaying of data more efficiently than the Core Step by Step walk through.
+In this example we use the `wwBusinessObject` class to create a customer editing solution similar to the one demonstrated in the Core Step by Step walk-through. Instead of direct data access we'll use the `wwBusinessObject` class to create a class and manage all data access through this business layer. This example then also uses scripts to handle displaying of data more efficiently than the Core Step by Step walk through.
 
 ## Creating a Business Object
 Let's start by creating a new business object for the customers that we used in the Core Step By Step example. A business object is meant to represent a logical abstraction of thing you work with in an application. It could be a customer or an invoice. Often business objects map one to one to a table, but in some cases like an invoice the business object might manage multiple tables such as invoice header, lineitems and the customer the order applies to.
@@ -20,7 +20,7 @@ and select the Create New Business Object option.
 
 Once you run the wizard you see a form that lets you select a class name and file location, as well as a table to map to. Here's what this looks like for our customers table:
 
-![](//images/stepbystep/BusBuilder.png)
+![](/images/stepbystep/BusBuilder.png)
 
 On this form you specify the class to inherit from - typically the core `wwBusinessObject` class or a subclass that you create yourself - and specify a name and location where to create the new class. `wwBusinessObject` is a PRG class and the generated class will be `cCustomer.prg`.
 

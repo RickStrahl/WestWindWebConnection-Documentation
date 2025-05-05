@@ -1,16 +1,16 @@
-﻿The first step in this walk through is to set up a new Web Connection project. To do so let's start with the Management Console and the [New Project Wizard](vfps://Topic/_S7R0OXD9T). If you're unfamiliar with Web Connection you might want to quickly review how the NewProcess Wizard works at the link above. Here's the short version. 
+The first step in this walk through is to set up a new Web Connection project. To do so let's start with the Management Console and the [New Project Wizard](vfps://Topic/_S7R0OXD9T). If you're unfamiliar with Web Connection you might want to quickly review how the NewProcess Wizard works at the link above. Here's the short version. 
 
 Let's create a project with the following characteristics:
 
-![](IMAGES/WebControls/ProjectWizard_1.png)
+![](/images/WebControls/ProjectWizard_1.png)
 
 Set up a Project called DevDemo (which will have DevDemoMain.prg) as it's startup and a process named DevProcess. We won't actually use this process class in this demo, but it's a good idea to set up a new project anyway in case you decide later you want to override the default page handling behavior.
 
-![](IMAGES/WebControls/ProjectWizard_2.png)
+![](/images/WebControls/ProjectWizard_2.png)
 
 Next create a virtual directory. Notice the checkbox for Web Control Support. When checked this copies some additional files into your Web Directory. A couple of files to configure Visual Studio specifically. Copy a separate copy of wc.dll into this directory so this app is free standing.
 
-![](IMAGES/WebControls/ProjectWizard_3.png)
+![](/images/WebControls/ProjectWizard_3.png)
 
 Finally configure a scriptmap for the new Process class. In this case I'll choose .DP (for DevProcess), which will be the extension used for the demos. Note that you can also use the generic .WCSX extension, but using a custom script map allows you to associate a specific Process class with your project, so you can override Application wide settings. Using .WCSX is easier, but using a custom extension gives you more control.
 

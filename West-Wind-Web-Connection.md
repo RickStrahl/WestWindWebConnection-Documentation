@@ -1,4 +1,4 @@
-﻿![](IMAGES/WebConnection_Code_Banner.png)
+﻿![](/images/WebConnection_Code_Banner.png)
 
 Welcome to West Wind Web Connection.
 

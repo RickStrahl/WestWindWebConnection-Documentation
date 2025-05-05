@@ -1,4 +1,4 @@
-﻿In the previous step we captured the form variable manually, one at a time and we didn't check for errors in binding. Let's take a look and see how to simplify the capture process and do some basic error tracking and displaying of errors.
+In the previous step we captured the form variable manually, one at a time and we didn't check for errors in binding. Let's take a look and see how to simplify the capture process and do some basic error tracking and displaying of errors.
 
 ### Capturing Form Data with Request.UnbindFormVars()
 If you are binding to objects - as I recommend you do using SCATTER NAME and GATHER NAME - you can unbind form variables into objects more easily by using the [Request.UnbindFormVars()](VFPS://Topic/_4FH15YHRR) method. This method takes an object as an input and reads form variables with the same name as its properties, assigning property values and doing automatic type conversion. The function also captures binding errors (invalid numeric or date values for example) and returns you an error collection.
@@ -60,7 +60,7 @@ Alternately I can simply this a little more using a `wwHtmlHelpers` helper funct
 ```
 Both of these actually render just about the same output:
 
-![](IMAGES/stepbystep/ValidationSummary.png)
+![](/images/stepbystep/ValidationSummary.png)
 
 Note that the name of the fields is based on the names of the ControlIds. This may or may not work for and it's controlled by the .T. parameter in the `loErrors.ToHtml(.T.)` call. Unfortunately there's no good way for the UnbindFormVars() to automatically discover a proper name for a control so let's look at another way that you can display control errors.
 
@@ -80,7 +80,7 @@ I'm using an `HtmlTextBox()` in this case, but that's optional. The important pa
 
 Here's what this looks like:
 
-![](IMAGES/stepbystep/HtmlBindingError.png)
+![](/images/stepbystep/HtmlBindingError.png)
 
 To make this work we'll also want change the code slightly, so we set the pcErrorMsg with just a generic message letting the control messages deal with the errors.
 
@@ -112,7 +112,7 @@ Response.ExpandTemplate()
 
 When you run this now you should see the following:
 
-![](//images/stepbystep/ValidationErrorsAll.png)
+![](/images/stepbystep/ValidationErrorsAll.png)
 
 #### Adding Application Validation Errors
 The above handles binding errors. That is errors that occur when you bind data back from controls into FoxPro data and there's a problem with the type conversions or other issues.
@@ -172,7 +172,7 @@ To display these errors more efficiently there's an `HtmlErrorDisplay(poError)` 
 
 With all this in place we can now get all the binding errors displayed and linked to the appropriate fields (based on id attributes):
 
-![](//images/stepbystep/ValidationErrorsAll2.png)
+![](/images/stepbystep/ValidationErrorsAll2.png)
 
 
 > #### @icon-lightbulb-o wwBusiness Validation Errors
@@ -199,7 +199,7 @@ Just make sure that each control you want to display a validation error on has a
 ### Date and Time Display
 You may have noticed that in the original example I used a nice date picker control to display the date time value:
 
-![](//images/stepbystep/datetimeentry.png)
+![](/images/stepbystep/datetimeentry.png)
 
 This input control uses a third party JavaScript Bootstrap add-in that provides this functionality. In order to use this component you need to use markup that is a bit more complex.
 

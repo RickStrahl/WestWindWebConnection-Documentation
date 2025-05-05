@@ -1,4 +1,4 @@
-﻿The Web Connection .NET and ISAPI modules include a built-in mechanism for hot swapping an existing COM server while the server is running. This mechanism allows updating of an executable on a live server without taking the server offline first a process which takes a few seconds at most. 
+The Web Connection .NET and ISAPI modules include a built-in mechanism for hot swapping an existing COM server while the server is running. This mechanism allows updating of an executable on a live server without taking the server offline first a process which takes a few seconds at most. 
 
 The process works like this:
 
@@ -26,13 +26,13 @@ Using the Web Connection Module Administration page, there are three links that 
 
 You can find it on the Admin page in the highlighted area:
 
-![](IMAGES/misc/UpdateExe.png)
+![](/images/misc/UpdateExe.png)
 
 Click one of the Upload links to upload your updated EXE to the server. This is simply a file upload. 
 
 Once files have been uploaded you can hotswap, by copying the file specified in the `UpdateExeFile` configuration setting to the file specified in `ExeFile`. Web Connection will try to put the server into **Server Hold** mode that disables incoming requests, then unload all COM servers or file serve
 
-![](IMAGES/misc/HotSwappedFileComplete.png)
+![](/images/misc/HotSwappedFileComplete.png)
 
 ### Server Links
 There are three different links:

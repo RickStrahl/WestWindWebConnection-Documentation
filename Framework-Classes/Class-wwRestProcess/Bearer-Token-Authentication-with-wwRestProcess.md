@@ -1,4 +1,4 @@
-﻿Unlike standard `wwProcess` classes, `wwRestProcess` does not work with standard session cookies and by default all session support is turned off. However, you can enable session support via Bearer Token authentication which reads a user supplied identity token from the `Authorization` HTTP header.
+Unlike standard `wwProcess` classes, `wwRestProcess` does not work with standard session cookies and by default all session support is turned off. However, you can enable session support via Bearer Token authentication which reads a user supplied identity token from the `Authorization` HTTP header.
 
 Before jumping into Bearer Token Authentication let's discuss traditional Session based Authentication for HTML applications using Cookies.
 
@@ -156,18 +156,18 @@ Here's what all that looks like in a series of REST requests using [West Wind We
 
 **Signing in to retrieve a Token**
 
-![Sign In For Token](IMAGES/misc/REST-SignInForToken.png)
+![Sign In For Token](/images/misc/REST-SignInForToken.png)
 
 
 Once you have a valid token you can add it to a request in the `Authorization` header (in WebSurge you can add an empty header (`Authorization Bearer `) and  it will auto-fill from the saved token).
 
 **Accessing a request with a valid Bearer Token**
 
-![](IMAGES/misc/REST-AccessRequestWithValidation.png)
+![](/images/misc/REST-AccessRequestWithValidation.png)
 
 **Accessing a request with invalid or missing Bearer Token** 
 
-![](IMAGES/misc/REST-UnauthorizedSignin.png)
+![](/images/misc/REST-UnauthorizedSignin.png)
 
 The above provides the **core functionality** of mapping a Bearer Token to a session record which works for simple authentication where you don't need to track a user, only if a user is signed in. If you want to also map to a `wwUserSecurity` user record so you can access user information that is mapped between `wwSession` and a user record, then you can add `Authenticate()`.
 

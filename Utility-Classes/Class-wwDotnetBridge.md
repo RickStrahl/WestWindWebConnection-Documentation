@@ -1,4 +1,4 @@
-﻿<small>
+<small>
 
 **Shortcuts:**  
 
@@ -29,14 +29,13 @@ Because there are many incompatible types in .NET that don't have equivalents in
 A lot of modern .NET Code uses async functionality via `Task` based interfaces, and wwDotnetBridge includes a `InvokeTaskMethodAsyc()` helper that lets you call these async methods and receive results via Callbacks asynchronously. You can also run **any** .NET synchronous method and call it asynchronously using `InvokeMethodAsync()` using the same Callback mechanism.
 
 ### Getting Started
-The first step in using wwDotnetBridge is to load it for the first time, which instantiates the .NET Runtime. We recommend that you do this somewhere in your application startup sequence so as to avoid any potential version ambiguities. Somewhere in the startup of your application call `InitializeDotnetVersion()`:
-
+The first step in using wwDotnetBridge is to load it for the first time, which instantiates the .NET Runtime. We recommend that you do this somewhere in your application startup sequence so as to avoid any potential version ambiguities. 
 ```foxpro
 DO wwDotnetBridge               && Loads dependencies
-InitializeDotnetVersion("V4")   && Loads .NET Runtime and caches it
+InitializeDotnetVersion()   && Loads .NET Runtime and caches it
 ```
 
-Note that `InitializeDotnetVersion()` is *optional*. You can use `GetwwDotnetBridge()` or `CREATEOBJECT("wwDotnetBridge")`, but using `InitializeDotnetVersion()` ensures a reliable and predictable load of .NET **on startup**.
+`InitializeDotnetVersion()` is *optional*. You can use `GetwwDotnetBridge()` or `CREATEOBJECT("wwDotnetBridge")` which do the same thing, but using `InitializeDotnetVersion()` explicitly describes the purpose which is to reliably and predictably load .NET **on startup**. Additionally it ensures if there's some problem with .NET runtime loading you know about it before the app starts.
 
 > #### @icon-warning  Unable to load CLR Instance Errors
 > If you get an  <b>Unable to CLR Instance</b> error when creating an instance of wwDotnetBridge, you probably need to unblock the wwdotnetbridge.dll or need to ensure that the wwdotnetbridge.dll and wwipstuff.dll are in your FoxPro path. Please see <%= TopicLink([Unable to load CLR Instance],[_3RF12JTMA]) %> for more info.

@@ -1,4 +1,4 @@
-﻿The first step in configuring Web Connection is to pick the Web server to run on. This choice is very important as it will determine how to configure the server as well copying the appropriate files. The setup expects the Web Server and support environment to be already configured. When you make a selection it will attempt to check for the installed server and if it doesn't find it send you to the documentation for the installation of that particular server.
+The first step in configuring Web Connection is to pick the Web server to run on. This choice is very important as it will determine how to configure the server as well copying the appropriate files. The setup expects the Web Server and support environment to be already configured. When you make a selection it will attempt to check for the installed server and if it doesn't find it send you to the documentation for the installation of that particular server.
 
 Once you're sure your Web Server is installed you can run the Setup program.
 
@@ -6,7 +6,7 @@ Once you're sure your Web Server is installed you can run the Setup program.
 
 This brings up three step Wizard:
 
-![](///images/ManagementConsole/setup1.png)
+![](/images/ManagementConsole/setup1.png)
 
 
 ### Web Server Choices
@@ -28,7 +28,7 @@ The Web Connection Web Server is a self-contained, .NET Core based Web server th
 ### Non-default IIS Web Site Selection
 If you're installing to full IIS, you can optionally choose the **Web Site to install to**. By default the *Default Web Site* and `localhost` is used, but you can pick from the drop down to select to install on any of the sites available on your machine:
 
-![](///images/ManagementConsole/SelectWebSite.png)
+![](/images/ManagementConsole/SelectWebSite.png)
 
 > Note: If you choose this option you'll need to fix up the URLs used to access the site to match the alternate domain name. You should also edit the startup URLs in `Launch.prg` and in `wcdemo.ini` (or `MyApp.ini` for any of your own projects).
 

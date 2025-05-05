@@ -1,4 +1,4 @@
-﻿Now that we have a business object and a new process class we're ready to access data and use it on the Web.
+Now that we have a business object and a new process class we're ready to access data and use it on the Web.
 
 ### Startup Configuration
 To use the business object we need to do a couple of admin tasks first before we can start creating data access code. We need to make sure that the `wwBusiness` and `cCustomer` classes are visible from our process class. 
@@ -88,7 +88,7 @@ ENDFUNC
 ```
 The result from this simple bit of code is:
 
-![](IMAGES/stepbystep/CustomerList.png)
+![](/images/stepbystep/CustomerList.png)
 
 And voila - you have your very first request that is served using a business object. 
 

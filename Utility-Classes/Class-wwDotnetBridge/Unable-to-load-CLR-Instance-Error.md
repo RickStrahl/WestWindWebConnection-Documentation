@@ -1,4 +1,4 @@
-﻿If you get the error:
+If you get the error:
 
 **Unable to load wwDotnetBridge: Unable to load Clr Instance. 0x80131515**
 
@@ -26,11 +26,11 @@ Another common problem is that `wwDotnetBridge.dll` is **locked down** by Window
 
 If you need explicitly unblock the DLL you can right click on the `wwDotnetBridge.dll` in Explorer and set the Unblock checkbox:
 
-![](//images/misc/unblockwwdotnetbridge2.png)
+![](/images/misc/unblockwwdotnetbridge2.png)
 
 Older versions of Windows 10 and prior Windows versions used a button instead:  
 
-![](IMAGES/misc/UnblockwwDotnetBridge.png)
+![](/images/misc/UnblockwwDotnetBridge.png)
 
 You can also use this Powershell command to unblock:
 

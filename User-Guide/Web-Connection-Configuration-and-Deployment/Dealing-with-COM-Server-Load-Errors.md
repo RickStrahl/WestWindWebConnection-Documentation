@@ -1,4 +1,4 @@
-﻿Handling startup errors in live applications - especially COM servers - can be tricky. Startup errors are special in Web Connection in that there are no active requests yet. Unlike Web Connection's normal error pipeline which manages request errors and logs them and goes on to the next request, startup errors occur before the server is full initialized, so a different approach is needed.
+Handling startup errors in live applications - especially COM servers - can be tricky. Startup errors are special in Web Connection in that there are no active requests yet. Unlike Web Connection's normal error pipeline which manages request errors and logs them and goes on to the next request, startup errors occur before the server is full initialized, so a different approach is needed.
 
 
 ## COM Server Registration Errors
@@ -57,7 +57,7 @@ The easiest way to ensure COM servers can be launched with the appropriate right
 
 To set up User Impersonation for the IIS Application Pool:
 
-![](IMAGES/misc/ApplicationPoolIdentity.png)
+![](/images/misc/ApplicationPoolIdentity.png)
 
 DCOM's User Identity defaults to the **Launching User** which means it inherits the User Identity from the calling process which is the IIS Application Pool as configured above.
 

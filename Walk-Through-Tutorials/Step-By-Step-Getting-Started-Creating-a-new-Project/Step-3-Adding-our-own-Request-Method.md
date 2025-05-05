@@ -1,4 +1,4 @@
-﻿The TestPage request lives in the `WebProcess` class which handles the request routing to the method for us based on the `TestPage.wp` Url. 
+The TestPage request lives in the `WebProcess` class which handles the request routing to the method for us based on the `TestPage.wp` Url. 
 
 `WebProcess.prg` is called from `WebDemoMain.prg` and is loaded via a small loader stub that creates the `WebProcess` class. This class then kicks of a state machine that fires through a series of operations that eventually routes the request to the method that maps the URL: In this example `Testpage.wp` maps to the `TestPage()` method in the class.
 
@@ -129,7 +129,7 @@ ENDFUNC
 
 When you hit the URL (IIS with a virtual path here) you should see:
 
-![](//images/stepbystep/CustData.png)
+![](/images/stepbystep/CustData.png)
 
 
 and you should see that simple message.

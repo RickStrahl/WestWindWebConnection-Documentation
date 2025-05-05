@@ -1,4 +1,4 @@
-﻿Creates an HTML error display 'bar' using the stock bootstrap Alert box that can be easily embedded into a page. 
+Creates an HTML error display 'bar' using the stock bootstrap Alert box that can be easily embedded into a page. 
 
 Pass in a message along with an error icon to render the control, or leave the value empty and render nothing. You can also use an [HtmlErrorDisplayConfig](VFPS://Topic/_4GJ0LR1OQ) object instead of passing parameters.
 
@@ -11,7 +11,7 @@ Embedding the control into a template is super easy:
 
 Now if pcErrorMessage is empty nothing renders. But when the value is filled it display an error box:
 
-![](IMAGES/misc/HtmlMessageDisplay.png)
+![](/images/misc/HtmlMessageDisplay.png)
 
 ```html
 <%= HtmlErrorDisplay(pcErrorMessage,"info",
@@ -19,7 +19,7 @@ Now if pcErrorMessage is empty nothing renders. But when the value is filled it 
                      "Header",.t.) %>
 ```
 
-![](IMAGES/misc/HtmlMessageDisplay2.png)
+![](/images/misc/HtmlMessageDisplay2.png)
 
 Some of the formats and icons supported are:
 

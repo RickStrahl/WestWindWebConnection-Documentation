@@ -5,19 +5,18 @@ This is the built-in Windows Web Server which is typically used to run productio
 `launch("IIS")`
 
 * **[IIS Express](VFPS://Topic/_3NJ01RJ5N)** <small>(dev only)</small>  
-IIS Express is a small (5mb), **installable version of IIS** that runs as a standalone application. It doesn't use global configuration and doesn't require Administrative rights, doesn't run as a service and has to be explicitly installed and started up manually.  
+IIS Express is a small (5mb), **installable version of IIS** that runs as a standalone application. It doesn't use global configuration and doesn't require Administrative rights, doesn't run as a service and has to be explicitly installed and launched manually.  
 `launch("IISEXPRESS")`
 
 * **[Web Connection Web Server](VFPS://Topic/_5LW0YSXQ9)** <small>(dev, optional production)</small>  
 This is a **self-contained, Web Connection specific Web Server built with .NET Core**, that ships as part of a Web Connection project. It's **redistributable** and allows you to run Web Connection applications without a Web Server installed. Like IIS Express it runs as a standalone application. This Web Server is a great choice for local development.  Requires the .NET Core Runtime and the server has to be explicitly started. This server can also be hosted inside of IIS.
 `launch("WEBCONNECTIONWEBSERVER")`
 
-* **[Apache for Windows](VFPS://Topic/_1EM0YFUTX)** <small>(not recommended)</small>  
-There is minimal support for Apache for Windows (2.2 & 2.4+). Web Connection provides the Apache interface modules, but configuration support for Apache is minimal meaning it requires manual configuration and Apache know-how. *Not recommended but supported*.
+Once your preferred server(s) is installed Web Connection can automatically handle starting the application and the Web server if it's not already running via the `Launch.prg` file that is provided for the demo, and for newly generated projects. 
 
 
 ### Which server is best?
-It's important to note that **all** of the supported servers have the same operational behavior and applications will run in a similar fashion.  There are no major differences in operation of applications. Rather the different servers are mainly about **how** the Web server is run, and what best matches your environment. It's also possible to easily switch between installed Web Servers during development using the Web Connection `launch()` command.
+It's important to note that **all** of the supported servers have the same core operational behaviors in regards to running your Web Connection application. There are no major differences in operation of your applications. Rather the different servers are mainly about **how** the Web server is run and administered, and what best matches your environment. It's also possible to easily switch between installed Web Servers during development using the Web Connection `launch()` command.
 
 Some general recommendations:
 

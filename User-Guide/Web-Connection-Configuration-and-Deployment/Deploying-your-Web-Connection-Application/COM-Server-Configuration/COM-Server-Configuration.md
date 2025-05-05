@@ -38,7 +38,7 @@ DEFINE CLASS wcDemoServer AS WWC_SERVER OLEPUBLIC
 
 To compile your FoxPro application, chose the **Win32 executable/COM Server (exe)**:
 
-![](///images/misc/CompileToCom.png)
+![](/images/misc/CompileToCom.png)
 
 or use
 
@@ -51,12 +51,14 @@ DO build.prg
 
 Make sure the COM server is compiled as a **Single Use** COM Server which is the default for an EXE server.
 
-![](///images/misc/MiscSingleUseComServer.png)
+![](/images/misc/MiscSingleUseComServer.png)
 
-**It's important you do not use Multi Use** - we need to have a single instance that gets loaded. Multi-uses re-uses a single instance for multiple COM instantiations which is compatible with the multi-threaded Web Server environment.
+**It's important you do not use Multi Use** - we need to have a single instance server that gets loaded. Multi Use re-uses a single instance for multiple COM instantiations, which is incompatible with the multi-threaded Web Server environment that Web Connection uses for EXE servers.
+
+> Web Connection also supports in-process COM servers (STA COM - Multiuser Dll), but **it's not recommended** as you lose many of the administrative and recovery features that EXE COM servers provide. Unless you know what you're doing, don't use Web Connection with DLL servers.
 
 ### Automatic Project Configuration
-When you work in the **FoxPro development environment** your COM server is **automatically registered** when you compile your project as long as you run as an Administrator (required for the server to be registered in the registry).
+When you work in the **Visual FoxPro development environment** your COM server is **automatically registered** when you compile your project as long as you run as an Administrator (required for the server to be registered in the registry).
 
 On a **deployed server**, the easiest way to register your COM server is as part of your application's **Server Configuration Script** generated with your project, which includes COM server registration.
 
@@ -156,8 +158,11 @@ $server =  new-object -comObject 'yourProject.yourProjectServer'
 # prints a simple HTML page HTTP Response (ie. it works!)
 $server.ProcessHit("query_string=wwMaint~FastHit")
 
-# or point at a valid physical page url
-# $server.ProcessHit("&PHYSICAL_PATH=c:\webconnection\web\wconnect\TestPage.wwd")
+# or point at a valid page Url in the Web folder
+# $server.ProcessHit("&PHYSICAL_PATH=c:\wconnect\web\TestPage.wwd")
+#
+# or point at a maintenance endpoint
+# $server.ProcessHit("&PHYSICAL_PATH=d:\webconnection\fox\web\wconnect\fasthit.wwmaint")
 
 # release the server (optional)
 [System.Runtime.Interopservices.Marshal]::ReleaseComObject($server) | Out-Null
@@ -174,7 +179,7 @@ http://localhost/wconnect/Administration.wc
 
 where `/wconnect` or the root site is your virtual directory of your application. Then click **Web Connection Module Adminstration** and scroll down to the **Server Administration -> Messaging Mechanism** and switch it to COM. It should look like this:
 
-![](///images/misc/SwitchToComMode.png)
+![](/images/misc/SwitchToComMode.png)
 
 The link toggles between **File** and **COM** modes. 
 

@@ -1,8 +1,8 @@
-﻿Now it's time to actually edit and add customers. This process basically consists of two main operations - displaying the data initially when a user accesses the page in edit mode and then accepting the changes and writing them to the database.
+Now it's time to actually edit and add customers. This process basically consists of two main operations - displaying the data initially when a user accesses the page in edit mode and then accepting the changes and writing them to the database.
 
 Here's the initial form we'll create in this step:
 
-![](IMAGES/stepbystep/EditCustomer_script.png)
+![](/images/stepbystep/EditCustomer_script.png)
 
 The first step then is to be able to display the data, which is essentially the same code we used previously for displaying a customer. For now let's create a placeholder Controller method that allows us to at least display the customer information. We then add the update code later on. Here's the initial EditCustomer Controller method:
 

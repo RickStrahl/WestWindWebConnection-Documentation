@@ -1,4 +1,4 @@
-﻿`wwBusinessObject` supports SQL Server natively for all the implemented base methods, so you can switch data sources on the fly as long as the SQL tables exist.
+`wwBusinessObject` supports SQL Server natively for all the implemented base methods, so you can switch data sources on the fly as long as the SQL tables exist.
 
 ### SQL Server Configuration
 As of Web Connection 6.0 there is no explicit configuration if you use the [Business Object builder](VFPS://Topic/_0GZ1C88OH). When you run the Wizard to create a new business object the required ID table and stored Procedure are automatically created as part of the configuration process.
@@ -39,7 +39,7 @@ Hey, that's your responsibilility. Create a SQL Server database first.The FoxPro
 ### Setting up the business object using the Wizard
 The easiest way to create new business objects is to use the [Business Object Wizard](VFPS://Topic/_0GZ1C88OH).
 
-![](IMAGES/misc/BusObjectBuilder.png)
+![](/images/misc/BusObjectBuilder.png)
 
 
 For the Fox data paths just put in the filename if you won't have fox data files. Check the SQL data option and put in a connection string such as:

@@ -1,4 +1,4 @@
-﻿Web Connection automatically configures itself for operation with Visual Studio when you install Web Connection. Web Connection does the following:
+Web Connection automatically configures itself for operation with Visual Studio when you install Web Connection. Web Connection does the following:
 
 * Installs a Web Connection Addin to Visual Studio
 * Installs Web Connection Page Templates for Add New Project Item
@@ -44,7 +44,7 @@ Each extension must be manually configured once in Visual Studio so Visual Studi
 * For Script or Templates Pages use **Html Editor**
 * For Web Control Pages set it to **Web Forms Editor**
 
-![](IMAGES/misc/VisualStudioFileExtensionsOptions.png)
+![](/images/misc/VisualStudioFileExtensionsOptions.png)
 
 
 Note that the New Project and Process Wizards in Web Connection automatically add WCSX and the custom scriptmap configured for your process into the provided web.config file so this step is optional. If you decide later to add additional script maps or change an existing map in your application these maps have to be manually configured by adding the editor association.

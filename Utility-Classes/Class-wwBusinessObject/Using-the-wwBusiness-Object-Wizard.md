@@ -1,4 +1,4 @@
-﻿To facilitate the process of creating specific subclasses for your business objects Web Connection provides the **Business Object Wizard** which connects a table to a business object. Note that although a table is the most common scenario, tables are not required for the business object.
+To facilitate the process of creating specific subclasses for your business objects Web Connection provides the **Business Object Wizard** which connects a table to a business object. Note that although a table is the most common scenario, tables are not required for the business object.
 
 To start the Wizard do:
 
@@ -11,7 +11,7 @@ DO Console WITH "BUSOBJECT"
 
 which brings up the Wizard form:
 
-![](//images/misc/BusObjectBuilder.png)
+![](/images/misc/BusObjectBuilder.png)
 
 **Base Class**  
 You can specify a base class for the new class that is to be created. By default this will be `wwBusinessObject` in `wwBusinessObject.prg` and that's the recommended base class. You can also use `wwBusiness.vcs` and `wwBusiness` or choose any base class you subclassed yourself (an application base business object.)

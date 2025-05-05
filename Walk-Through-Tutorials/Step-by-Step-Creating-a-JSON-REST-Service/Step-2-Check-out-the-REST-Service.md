@@ -1,4 +1,4 @@
-﻿At this point you have a new REST service. On the surface things look very similar to a regular project. You get a new Process class and a simple sample HTML page.
+At this point you have a new REST service. On the surface things look very similar to a regular project. You get a new Process class and a simple sample HTML page.
 
 Go to the local project page now and open:
 
@@ -6,11 +6,11 @@ Go to the local project page now and open:
 
 And you're greeted by a familiar sample page:
 
-![](IMAGES/stepbystep/CustomerDemo_HomePage_REST.png)
+![](/images/stepbystep/CustomerDemo_HomePage_REST.png)
 
 However, now that you've created a REST service when you click the *Hello World Test Page* link, you won't get the familiar HTML page, but instead see a JSON result:
 
-![](IMAGES/stepbystep/RestServiceHelloWorldJson.png)
+![](/images/stepbystep/RestServiceHelloWorldJson.png)
 
 > ### @icon-info-circle Viewing JSON in your Browser
 > Most browsers don't preview JSON natively and you need to add a plug-in or make some setting changes. For Chrome and Firefox consider adding the <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US" target="top">JsonViewer plugin for Chrome</a> (shown in the screen shot) or <a href="https://addons.mozilla.org/en-us/firefox/addon/jsonview/" target="top">JsonView plugin for FireFox</a>. Internet Explorer requires a <a href="http://weblog.west-wind.com/posts/2011/apr/01/displaying-json-in-your-browser" target="top">registry tweak</a>. Microsoft Edge natively displays JSON as raw text.
@@ -52,4 +52,4 @@ As with HTML based Web Connection Process methods the name of the method maps to
 
 > ### @icon-info-circle Testing JSON APIs with <a href="http://websurge.west-wind.com/" target="top">West Wind Websurge</a>
 > Once you start creating a JSON API one thing you likely want to test the API endpoints. There are a number of ways you can do this, but if you want a nice GUI to let you test and store your API requests check out **West Wind Websurge**. Websurge is a load and API testing tool and it makes it very easy to create or capture API requests and then play them back on demand either individually, in batch or even under heavy load.
-> ![](IMAGES/stepbystep/WebSurgeRESTTesting.png)
+> ![](/images/stepbystep/WebSurgeRESTTesting.png)

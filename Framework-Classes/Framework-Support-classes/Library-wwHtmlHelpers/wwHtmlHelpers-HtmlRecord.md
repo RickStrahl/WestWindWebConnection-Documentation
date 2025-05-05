@@ -1,6 +1,6 @@
-﻿Displays a single record or object as an HTML form from a **cursor** or **object** as a string:
+Displays a single record or object as an HTML form from a **cursor** or **object** as a string:
 
-![](IMAGES/stepbystep/CustData2.png)
+![](/images/stepbystep/CustData2.png)
 
 You can also generate an input form using [HtmlRecordConfig.DisplayMode](VFPS://Topic/_3AS14YCBZ).
 

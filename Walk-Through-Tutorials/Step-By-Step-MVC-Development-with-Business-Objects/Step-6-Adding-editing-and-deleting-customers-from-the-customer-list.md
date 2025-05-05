@@ -1,8 +1,8 @@
-﻿Now let's provide the functionality to edit, add and delete customers. 
+Now let's provide the functionality to edit, add and delete customers. 
 
 First let's modify the list display so that we have edit and remove buttons for all items listed:
 
-![](IMAGES/stepbystep/CustomerList_Script_EditDelete.png)
+![](/images/stepbystep/CustomerList_Script_EditDelete.png)
 
 Notice the last column that now shows buttons to edit and delete customers.
 

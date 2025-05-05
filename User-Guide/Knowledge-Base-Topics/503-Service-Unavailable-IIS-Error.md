@@ -1,10 +1,10 @@
-﻿If you get the following IIS error:
+If you get the following IIS error:
 
 **503 Service Unavailable**
 
 you are likely running into a problem with an IIS Application Pool that is stopped and has to be manually restarted:
 
-![](IMAGES/misc/ApplicationPoolStopped.png)
+![](/images/misc/ApplicationPoolStopped.png)
 
 Application Pools are the IIS Hosting processes that host your Web applications and the host process can either be shut down manually and be manually taken down by stopping it individually.
 
@@ -14,7 +14,7 @@ Application Pools are the IIS Hosting processes that host your Web applications 
 ### Setting Rapid-Fail Protection
 If you didn't manually stop the service it's possible that IIS explicitly shut down the Application Pool based on repeated failures which is determined by the **Rapid-Fail Protection** features in the Advanced Application Pool Settings configuration.
 
-![](IMAGES/misc/RapidFailProtection.png)
+![](/images/misc/RapidFailProtection.png)
 
 You can try bumping these numbers up  bit to avoid having IIS shutting down your Application Pool due to repeated failures. Once stopped due to hitting these limits the Application Pool has to be manually restarted explicitly - even an IIS Reset will not start the App Pool.
 

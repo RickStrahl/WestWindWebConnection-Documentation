@@ -1,4 +1,4 @@
-﻿So now let's do something a little bit more useful. Let's use the data from the Developer Registry Sample walk through and present it as a list. Then we'll drill into the data, display it for editing and saving for a simple application.
+So now let's do something a little bit more useful. Let's use the data from the Developer Registry Sample walk through and present it as a list. Then we'll drill into the data, display it for editing and saving for a simple application.
 
 Let's create a new page and call it DeveloperList.wcsx. The process is going to be very much the same as the last sample. To review:
 * Create a new page in Vs.net and call it DeveloperList.wcsx
@@ -17,7 +17,7 @@ Up this point everything's pretty much just like before. So let's have some fun 
 
 Go over and drag and drop a wwWebDataGrid underneath the Message Label. Your page should now look like this:
 
-![](IMAGES/WebControls/DeveloperListVsNet.png)
+![](/images/WebControls/DeveloperListVsNet.png)
 
 Actually I jumped ahead a little bit here - I set a number of properties on the wwWebDataGrid. Specifically I applied various styles from westwind.css, set AutoGenerateColumns to true and set the data source to TDevelopers. The DataSource is a cursor that we'll read from.
 
@@ -92,7 +92,7 @@ ENDDEFINE
 
 Go ahead and run the page now and you should see a result like this:
 
-![](IMAGES/WebControls/DeveloperListHtmlView_1.png)
+![](/images/WebControls/DeveloperListHtmlView_1.png)
 
 It works! In the screen shot I passed no parameters so I get a list back of all customers. Because I set the PageSize to 10 I only see the first 10 items. If you put a filter into the Company field you'll see that that works as well, returning only a couple of items.
 
@@ -222,7 +222,7 @@ Note also the Format Expression - you can assign any VFP format expression to th
 
 Our display now looks like this:
 
-![](IMAGES/WebControls/DevelopListHtmlView_WithFormat.png)
+![](/images/WebControls/DevelopListHtmlView_WithFormat.png)
 
 Notice the PK field is missing, the State field shows in red and is centered and the Name field has a little breathing space.
 
@@ -261,7 +261,7 @@ loCol.Expression = ['<a href="ShowDeveloper.wcsx?id=' + TRANSFORM(pk) + '">' +TR
 
 Our grid now looks like this:
 
-![](IMAGES/WebControls/DevelopListHtmlView_WithLinks.png)
+![](/images/WebControls/DevelopListHtmlView_WithLinks.png)
 
 ### Adding Sorting
 A final excercise for you with might be to add sorting to the grid. Let's say we want to allow sorting by Company and by Name. 
@@ -282,7 +282,7 @@ loCol.Sortable = .t.
 Sorting makes the column headers clickable as links and shows a * next to the sorted column to indicate that it's the sort key.
 
 The final result of sorting applied looks like this:
-![](IMAGES/WebControls/DeveloperListHtmlView_WithSorting.png)
+![](/images/WebControls/DeveloperListHtmlView_WithSorting.png)
 
 <small><blockquote>**Note on Sorting and Expressions:**  
 Sorting is based on SortExpressions that are applied by running another query against the cursor specified in the datasource. It does a SELECT * and adds the sort expression, then uses ORDER BY on it. This has two issues: There's some additional overhead as a new cursor is created. It also means that the cursor used for expressions changes. As a result it's highly recommended that your column field expressions are not using Cursor.Field syntax, but just the Field name for any references to data source fields.</blockquote></small>
@@ -308,7 +308,7 @@ In the example here I started with Auto-generated columns because we actually wa
 
 You can also create columns declaritively inside of VS.NET. You can use the Columns collection in the designer. Click on the Columns collection and start adding columns declaratively:
 
-![](IMAGES/WebControls/DeveloperList_VisualColumnEdit.png)
+![](/images/WebControls/DeveloperList_VisualColumnEdit.png)
 
 Using this in the VS.NET IDE gives you a reasonably close approximation as to what the data grid will look like when rendered. Realize that it's not exact, as the .NET code rendering is only minmal and abstract and basically duplicates what the Fox control does behind the scenes. 
 

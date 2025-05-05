@@ -1,4 +1,4 @@
-﻿This function renders an error message based on a control id and validation error collection. If a validation error is found for the control the error is rendered.
+This function renders an error message based on a control id and validation error collection. If a validation error is found for the control the error is rendered.
 
 Add this control after the control that it is displaying the error for.
 
@@ -16,4 +16,4 @@ If there's an error in the billrate text field unbinding process, or you've expl
 
 Here's what a rendered error looks like by default:
 
-![](IMAGES/stepbystep/HtmlBindingError.png)
+![](/images/stepbystep/HtmlBindingError.png)

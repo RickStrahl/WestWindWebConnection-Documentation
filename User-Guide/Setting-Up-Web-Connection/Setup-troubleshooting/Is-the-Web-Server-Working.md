@@ -1,4 +1,4 @@
-﻿The first thing to check is to see whether the Web Server and Web Connection are running.
+The first thing to check is to see whether the Web Server and Web Connection are running.
 
 >The following assumes you're working with the Web Connection sample application at http://localhost/wconnect, but these steps can apply to your own applications in your own virtual directory and/or server.
 
@@ -20,7 +20,7 @@ If this page doesn't come up your Web server is not functioning correctly. Check
 **Filebased/COM**  
 Next, check to see whether the Web Connection module is actually working. You can do this by hitting the **Web Connection Module Administration** link from the Administration page. 
 
-![](IMAGES/misc/ModuleStatusAdminPaths.png)
+![](/images/misc/ModuleStatusAdminPaths.png)
 
 The URL for this operation is:
 

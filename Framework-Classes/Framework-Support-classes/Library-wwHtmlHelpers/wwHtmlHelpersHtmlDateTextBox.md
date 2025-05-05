@@ -1,4 +1,4 @@
-﻿Creates a date entry control that allows automatic date capture and conversion. 
+Creates a date entry control that allows automatic date capture and conversion. 
 
 In auto modes the control will render a <a href="https://eonasdan.github.io/bootstrap-datetimepicker/" target="top">BootStrap DateTimePicker</a> or - on mobile devices - a native date time picker control. Values are retrieved properly regardless.
 
@@ -23,13 +23,13 @@ In auto modes the control will render a <a href="https://eonasdan.github.io/boot
 ### Rendered Examples
 
 ##### Date Time Picker (BootStrap DateTimePicker):  
-![](IMAGES/HtmlControls/DateTimePicker.png)
+![](/images/HtmlControls/DateTimePicker.png)
 
 ##### Time Picker (BootStrap DateTimePicker):  
-![](IMAGES/HtmlControls/DateTimePicker_Time.png)
+![](/images/HtmlControls/DateTimePicker_Time.png)
 
 ##### Native (Chrome):  
-![](IMAGES/HtmlControls/DateTimeChrome.png)
+![](/images/HtmlControls/DateTimeChrome.png)
 
 ##### Native Mobile (iOS):  
-![](IMAGES/HtmlControls/DateTimePickeriOs.png)
+![](/images/HtmlControls/DateTimePickeriOs.png)

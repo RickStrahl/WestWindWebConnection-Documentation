@@ -1,10 +1,10 @@
-﻿**toastr** is a small UI library that shows pop up notifications that pop up, display a message in a variety of styles and then goes away. It's small, convenient and is a great way to display transient error and information messages that warn you of things going on in the application.
+**toastr** is a small UI library that shows pop up notifications that pop up, display a message in a variety of styles and then goes away. It's small, convenient and is a great way to display transient error and information messages that warn you of things going on in the application.
 
 **<a href="https://github.com/CodeSeven/toastr" target="top">Toastr on GitHub</a>**  
 
 Here's what a Toast looks like:
 
-![](IMAGES/misc/toastr.png)
+![](/images/misc/toastr.png)
 
 ### Examples
 To use toastr you can then simply call the `toastr` object to display messages from JavaScript code:

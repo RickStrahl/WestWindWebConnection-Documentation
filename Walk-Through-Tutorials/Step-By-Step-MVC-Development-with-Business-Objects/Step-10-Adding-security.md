@@ -1,4 +1,4 @@
-﻿Security is a basic feature for most applications. In most applications you need to ensure that access to certain features or maybe even all the features of an application are restricted. Web Connection provides a basic security system that makes it easy to restrict access to either selected requests, or all requests. Although the provided feature set is very basic in that it only provides simple password authentication checks and user based restrictions, the system is extensible so that you can plug in your own user validation and authentication rules.
+Security is a basic feature for most applications. In most applications you need to ensure that access to certain features or maybe even all the features of an application are restricted. Web Connection provides a basic security system that makes it easy to restrict access to either selected requests, or all requests. Although the provided feature set is very basic in that it only provides simple password authentication checks and user based restrictions, the system is extensible so that you can plug in your own user validation and authentication rules.
 
 ### Restricting Access to the Editing Functions
 Let's assume for a minute that all users have access to the application to view info and add information. But editing and deleting is allowed only for users that are logged in. 
@@ -35,7 +35,7 @@ ENDDEFINE
 
 Using Basic or Windows authentication will validate users against the Windows users available on the server, and the browser will pop up a standard Authentication Box:
 
-![](IMAGES/stepbystep/BasicAuth.png)
+![](/images/stepbystep/BasicAuth.png)
 
 Once you authenticate against a Windows account, the browser then resends the appropriate credentials on subsequent requests. If authentication fails the code above displays an error page. Alternately, you can just redirect to the home page or some other page with `Response.Redirect("Homepage.wc")`.
 
@@ -70,7 +70,7 @@ ENDFUNC
 ```
 Now re-run the EditCustomer page again and you should see the stock HTML based login page:
 
-![](IMAGES/stepbystep/LoginForm.png)
+![](/images/stepbystep/LoginForm.png)
 
 This page is rendered from a template in `views\_Login.wcs` and you can customize this template for a custom look and feel of your login page.
 
@@ -199,11 +199,11 @@ Next add a `RenderPartial()` expression into the `~\Views\_LayoutPage.wcs` page 
 
 If you now re-render the page here's what you get in the left header of the page when you're not signed in:
 
-![](IMAGES/stepbystep/NotSignedIn.png)
+![](/images/stepbystep/NotSignedIn.png)
 
 and this when you are signed in:
 
-![](IMAGES/stepbystep/SignedIn.png)
+![](/images/stepbystep/SignedIn.png)
 
 
 And there you have - a basic security and login solution that keeps out users that aren't registered. You can override the default behavior easily by adding new authentication methods simply by overriding a few methods. 

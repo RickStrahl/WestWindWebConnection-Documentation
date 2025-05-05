@@ -9,7 +9,7 @@ DO Console
 
 Then click on the *Create New Process Class* link. Fill out the Wizard as follows:
 
-![](IMAGES/stepbystep/BusStep1.png)
+![](/images/stepbystep/BusStep1.png)
 
 First select your main program file which is `WebDemoMain.prg` (or whatever your main project's name is). This is used to attach another process class to the main server.
 
@@ -17,7 +17,7 @@ Next enter a name for your new Process class. We're working with customers so I'
 
 Next, we want to add a new virtual directory and script map (.cd) for this sub application.
 
-![](IMAGES/stepbystep/busStep2.png)
+![](/images/stepbystep/busStep2.png)
 
 Click Finish to let the Wizard create the class, the virtual directory and copy the files into it.
 

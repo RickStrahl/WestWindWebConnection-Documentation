@@ -1,4 +1,4 @@
-﻿Markdown Pages is a new feature in Web Connection 7.0 that lets you simply drop any `.md` file into a Web site and render that file as an HTML page in your site's UI context - using the default layout page.
+Markdown Pages is a new feature in Web Connection 7.0 that lets you simply drop any `.md` file into a Web site and render that file as an HTML page in your site's UI context - using the default layout page.
 
 This is a great feature for quickly creating static HTML content like documentation, a simple blog, documents like about or terms of service pages and so on. Rather than creating HTML pages you can simple create a markdown document and drop it into the site and have it rendered as HTML.
 
@@ -9,7 +9,7 @@ http://west-wind.com/wconnect/Markdown/posts/2018/09/25/FixWwdotnetBridgeBlockin
 
 to access the page which looks like this:
 
-![](///images/misc/markdownpagerendered.png)
+![](/images/misc/markdownpagerendered.png)
 
 Notice the rich formatting of the topic, as well as the stock site chrome which is derived from the site's Layout page.
 
@@ -17,7 +17,7 @@ This page is a previous Blog post I created for my Web Connection blog and which
 
 All that needs to happen to render this HTML content in this fashion is to drop a Markdown file into the folder along with any dependent relative resources - images in this case:
 
-![](///images/misc/markdownfileinfolder.png)
+![](/images/misc/markdownfileinfolder.png)
 
 
 ### How it works

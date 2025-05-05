@@ -38,7 +38,7 @@ Any account other than these, requires **explicit DCOM permission configuration*
 
 If the DCOM permissions are not lax enough, and you try to invoke an application that is running in COM mode you might get the following error:
 
-![](IMAGES/Howitworks/ComLoadError.png)
+![](/IMAGES/Howitworks/ComLoadError.png)
 
 There are other errors like *COM Server ProgId not found* which may also be due to the fact that the registry can't be accessed to retrieve the COM server id.
 
@@ -64,7 +64,7 @@ This identity is configured in the IIS Application Configuration dialog in the I
 * Advanced Settings (on sidebar on the right)
 * Scroll to **Process Model->Identity**
 
-![](IMAGES/misc/ApplicationPoolAdvanced.png)
+![](/IMAGES/misc/ApplicationPoolAdvanced.png)
 
 You can pick from several standard system identities or provide an explicit existing user account with user name and password.
 
@@ -95,7 +95,7 @@ To use the 32 bit version type the the following into the **Windows Run box** (a
 MMC comexp.msc /32
 ```
 
-![](IMAGES/misc/DcomCnfgMain.png)
+![](/images/misc/DcomCnfgMain.png)
 
 > #### @icon-info-circle DCOM Server Names
 > If you have multiple COM objects marked as `OLEPUBLIC` in your project it's possible that the name of this object will pop up instead of <MyApp>.<MyApp>Server.
@@ -120,7 +120,7 @@ As mentioned DCOM servers have an Identity associated with them when they are la
 * Under Server Properties
 * Go to the Identity Tab and set the **Identity** to the desired account 
 
-![](IMAGES/misc/dcomcnfg1.png)
+![](/images/misc/dcomcnfg1.png)
 
 The default for this setting is **The launching user** and we recommend that **you don't change this setting**, which uses the Identity passed down from the IIS Application Pool. Unless **you explicitly need to set an Identity that is different from the Application Pool** it's more consistent use pass-through security.
 
@@ -164,7 +164,7 @@ This gives you most control as you can control each component individually and a
 
 Here's what this looks like for the component level DCOM configuration:
 
-![](IMAGES/misc/dcomcnfg2.png)
+![](/images/misc/dcomcnfg2.png)
 
 Once this is set, the account you selected should now be able to launch from IIS. 
 
@@ -188,11 +188,13 @@ The following permissions are needed by your Web Connection application server t
 * Read/Write Access in any Data or Document Folders your app uses
 * DCOM permissions (depends on account)
 
-### Accounts
+### Accounts for the Application Pool
 There are a few accounts that are of note for the purposes of Security:
 
 #### SYSTEM - Local System
-This is a **full rights** account on the local machine and this is the default that Web Connection creates. This is easiest account to use with Web Connection because **it just works** without further configuration. But it's also **insecure** because it has full rights on the machine and if your application should get compromised this would allow full access to the machine.
+This is a **full rights** account on the local machine and this is the default that Web Connection assigns when it creates a new application and configuration script.
+
+This is easiest account to use with Web Connection because **it just works** without further configuration in most scenarios. But it's also **insecure** because it has full rights on the machine and if your application should get compromised this would allow full access to the machine.
 
 SYSTEM is a built in fixed account and you can't customize permissions for it. It's great for quick get up and go, but if you need to customize permissions, use a Custom Account.
 
@@ -202,14 +204,14 @@ SYSTEM is a built in fixed account and you can't customize permissions for it. I
 * Doesn't require DCOMCnfg
 
 #### NETWORK SERVICE
-Network service is a low rights built-in Windows account. By default it has no access to to local folders, and it requires explicit DCOM configuration. Web Connection by default configures `NETWORK SERVICE` disk permissions for Web Connection projects and the Configuration Wizard (which you can customize).
+Network service is a low rights built-in Windows account. By default it has no access to local folders, and it requires explicit DCOM configuration. Web Connection by default configures `NETWORK SERVICE` disk permissions for Web Connection projects and the Configuration Wizard (which you can customize).
 
 If you want to use a generic account and explicitly give additional rights, this is a good account to use. Because Web Connection has some default configuration for this account it's also easy to work with - Web Connection automatically sets folder access permissions as well as can automatically register for DCOM Configuration using Server Config functionality (requires a small configuration change).
 
 * Generic Windows Account 
 * Secure by default
 * Requires setting disk permissions
-* Requires DCOMCnfg in order to Access Registry for COM Launch
+* Requires DCOMCnfg in order to Access Registry for COM Launch (recommand machine level DCOM permissions)
 
 #### Administrator Account or Non Admin Account.
 For deployed applications it's generally best to create a brand new local account specifically for the application and set the explicit permissions required for the application. You can pretty much remove all disk rights from that user and then add in just those folders that the application has access to - typically the Web Connection Project folder plus any data folders. This will limit your potential exposure to security issues.
@@ -223,7 +225,7 @@ For deployed applications it's generally best to create a brand new local accoun
 **Non-Admininstrator Account**
 
 * Secure by default
-* Requires setting disk permissions
+* Requires explicitly setting disk and other access permissions
 * Requires DCOMCnfg
 
 ### Auto-Registration for DCOM via Configuration Script Customization

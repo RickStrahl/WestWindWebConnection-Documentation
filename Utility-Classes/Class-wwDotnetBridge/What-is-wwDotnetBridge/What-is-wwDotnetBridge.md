@@ -1,4 +1,4 @@
-﻿wwDotNetBridge provides an easy way to open up most of .NET's functionality to Visual FoxPro applications. While it relies on COM Interop to handle the interactions between FoxPro and .NET, wwDotnetBridge uses its own runtime hosting and .NET assembly to manage the .NET runtime in FoxPro.
+wwDotNetBridge provides an easy way to open up most of .NET's functionality to Visual FoxPro applications. While it relies on COM Interop to handle the interactions between FoxPro and .NET, wwDotnetBridge uses its own runtime hosting and .NET assembly to manage the .NET runtime in FoxPro.
 
 This provides a number of functionality improvements over using COM Interop (ie. CreateObject("myApp.MyDotNetObject")) by greatly extending the range of what .NET features you can access with Visual FoxPro. Native COM Interop is severely limited by components that are exposed to COM explicitly in .NET [ComVisible(true)] and to components that can be instantiated from Visual FoxPro via CreateObject() (explicitly exported to COM). wwDotnetBridge - because it operates inside of .NET - can circumvent most of these limitations and provide access to a much wider range of features in .NET. For example, using wwDotNetBridge you can access static classes and their members, enum types, value types, generic types, Collections, interface based values as well as providing easier access and manipulation of arrays and collections from within FoxPro.
 
@@ -16,7 +16,7 @@ Contains a small shim that loads the .NET Runtime into Visual FoxPro. Supports .
 * **wwDotnetBridge.dll**  
 A .NET component that acts as a proxy inside of .NET to perform extended tasks on the behalf of your FoxPro code. The FoxPro wwDotnetBridge class interacts with this .NET component to provide interaction with .NET. 
 
-![](IMAGES/wwDotNetBridge/wwDotnetBridgeArchitecture.png)
+![](/images/wwDotNetBridge/wwDotnetBridgeArchitecture.png)
 
 
 ### A short Example

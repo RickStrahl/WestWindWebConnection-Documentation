@@ -1,7 +1,9 @@
-﻿IIS is the built-in Web Server service in Windows. Although built into Windows, it's **an optional Windows Component** and  has to be explicitly enabled and configured requiring Administrator rights. IIS is a global server installation that runs as a service and can serve many Web Sites simultaneously and is generally what's used for running production Web Connection Web sites.
+IIS is the built-in Web Server service in Windows. Although built into Windows, it's **an optional Windows Component** and  has to be explicitly enabled and configured requiring Administrator rights. IIS is a global server installation that runs as a service and can serve many Web Sites simultaneously and is generally what's used for running production Web Connection Web sites.
 
 > #### @icon-info-circle IIS Alternatives: Web Connection Web Server or IIS Express
-> Don't have Administrative rights, or don't want to install, configure and manage full IIS? You can use [IIS Express](VFPS://Topic/_3NJ01RJ5N) or the .NET Core based [Web Connection Web Server](VFPS://Topic/_5LW0YSXQ9) instead. Both are low impact, locally installed and explicitly executed Web Servers that don't run as system components that work great for local development. 
+> Don't have Administrative rights, or don't want to install, configure and manage full IIS? You can use [IIS Express](VFPS://Topic/_3NJ01RJ5N) or the .NET Core based [Web Connection Web Server](VFPS://Topic/_5LW0YSXQ9) instead. Both are low impact, locally installed Web Servers that are explicitly started and don't required Administrative rights or complex installation. They work great for local development. 
+> 
+> For local development I recommend using the [Web Connection Web Server](dm-topic://_5lw0ysxq9) as it's optimized for Web Connection out of the box.
 
 This topic describes configuration through the Web Connection Console UI, using programmatic tools and manually configuring IIS and Web Connection by hand.
 
@@ -55,11 +57,11 @@ Here are the required components for Web Connection shown in both the Client and
 
 **On Windows Clients**:
 
-![](///images/misc/IISFeatures.png)
+![](/images/misc/IISFeatures.png)
 
 **On Windows Server** (in Server Manager):
 
-![](///images/misc/IISFeatures_Server.png)
+![](/images/misc/IISFeatures_Server.png)
 
 The important and required settings for Web Connection are highlighted:
 
@@ -76,7 +78,7 @@ Once the base components have been installed you can use Web Connection's automa
 
 In all cases you should use the IIS  server setting from the server type drop down or list.
 
-![](IMAGES/ManagementConsole/setup1.png)
+![](/images/ManagementConsole/setup1.png)
 
 These tools automatically create virtual directories, application pools, script maps, set permissions and get your application ready to work. Generally this is the easiest way to start Web Connection applications on a development set up.
 
@@ -167,7 +169,7 @@ To create an Application Pool in IIS:
 * Create with the name of your choice (West Wind Web Connection)
 * Choose .NET Framework **4.0** and **Integrated** Managed Pipeline Mode
 
-![](IMAGES/misc/CreateApplicationPool.png)
+![](/images/misc/CreateApplicationPool.png)
 
 Once you've created the Application Pool select it in the list and click on Advanced Settings. 
 
@@ -176,7 +178,7 @@ In the Application Pool settings set the Identity for the Application Pool to `L
  
 By default the user identity you choose here also is passed to your your Web Connection FoxPro server, so make sure you use an account that has the rights your application needs.
 
-![](IMAGES/misc/ApplicationPoolAdvanced.png)
+![](/images/misc/ApplicationPoolAdvanced.png)
  
 You can also configure various other settings such as the process recycling, idle timeout and various other flags. 
 > #### @icon-exclamation-circle Enabling 32 bit Applications on 64 bit Machines for ISAPI
@@ -330,16 +332,16 @@ When you install your site on a live server it's **vitally** important that you 
 
 Start by enabling security on your Web site or Virtual:
 
-![](IMAGES/misc/enableauthentication.png)
+![](/images/misc/enableauthentication.png)
 
 Next lock down the **Admin** folder. Remove or set **Deny** permissions for any unauthenticated users in the Admin folder and specifically the `IUSR` account.
  
-![](IMAGES/misc/windowsauthenticationadminlockdown.png)
+![](/images/misc/windowsauthenticationadminlockdown.png)
 
 > #### @icon-info-circle Remote Access to the Adminstration Page only works Authenticated
 > Starting with Web Connection 6.19 the admin page no longer displays for unauthenticated users when accessing the site remotely. Instead an error message is displayed. Local access - useful for development - continues to work without authenitication but also displays the error message, along with the actual admin links
 >
-> ![](IMAGES/misc/adminpageaccessdenied.png)
+> ![](/images/misc/adminpageaccessdenied.png)
 
 ### Temp File Path Permissions
 If you are running Web Connection in file based mode for development (or in production) using IIS, make sure that the temp folder configured in the *Configuration/WebConnectionConfiguration/TempPath* setting in web.config (.NET Handler) or the *Path* setting in wc.ini (ISAPI) exists and that it **has full read and write access for the Application Pool's user account**. IIS typically runs in a system context and you need to make sure both IIS and the Web Connection server application can access the temp file folder with full access.

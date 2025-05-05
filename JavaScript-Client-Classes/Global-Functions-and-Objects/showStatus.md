@@ -1,6 +1,6 @@
-﻿Global function that displays a status bar at the bottom of a Web page. The status bar can slide up from the bottom and slide down after a specified timeout to get out of the way. Alternately the statusbar can display in 'highlighted' mode and then revert to a less distinctive view or revert back to a fixed 'afterTimeoutText' message.
+Global function that displays a status bar at the bottom of a Web page. The status bar can slide up from the bottom and slide down after a specified timeout to get out of the way. Alternately the statusbar can display in 'highlighted' mode and then revert to a less distinctive view or revert back to a fixed 'afterTimeoutText' message.
 
-![](//images/jQuery-Statusbar.png)
+![](/images/jQuery-Statusbar.png)
 
 The status bar can be formatted with CSS styling and the options allow configuring exactly which CSS classes are used.
 
@@ -72,4 +72,4 @@ The default styling provided looks like this:
 {
    opacity: 1;
 }
-```</div>
+```

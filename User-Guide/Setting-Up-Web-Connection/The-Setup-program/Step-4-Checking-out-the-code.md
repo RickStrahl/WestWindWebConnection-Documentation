@@ -1,4 +1,4 @@
-﻿When Setup completes it automatically starts your Web Connection server and opened the demo page so you can play around with the application.
+When Setup completes it automatically starts your Web Connection server and opened the demo page so you can play around with the application.
 
 The Web Connection Server started with the `DO LAUNCH` command that runs your FoxPro server and launches the Web Browser. This launches the main program file `wcDemoMain.prg` that is the entry point to the FoxPro server. You can also `DO wcDemoMain` to start your server without opening a browser.
 
@@ -29,7 +29,7 @@ The demo application is also a PRG file that you can edit.
 
 If you go back to Visual FoxPro now you should find the debugger popping up on the SET STEP code that we just inserted:
 
-![](IMAGES/stepbystep/debugger.gif)
+![](/images/stepbystep/debugger.gif)
 
 You can now happily step through the code line by and see the operation of each request as it happens. For example, you can now see the content of the request variables as returned by the request:
 
@@ -50,7 +50,7 @@ loErrObject = CREATEOBJECT("NonExistingObject")
 
 Guess what will happen here? The code fails because this object doesn't exist and a VFP error occurs. VFP pops up an error dialog ontop of the editor with the code highlighted:
 
-![](IMAGES/stepbystep/Crasherror.gif)
+![](/images/stepbystep/Crasherror.gif)
 
 This is great for debugging - certainly beats typical COM debugging that doesn't allow you to debug a compiled object at runtime, right.
 
@@ -70,7 +70,7 @@ To change the setting in your app:
 
 Now re-run the request. You'll find that Web Connection now handles the error and passes back an error page that describes the error on the Web page:
 
-![](IMAGES/stepbystep/Crashhtml.gif)
+![](/images/stepbystep/Crashhtml.gif)
 
 This is obviously much nicer than the server crashing and hanging situation we encountered before. What happens behind the scenes is that the Web Connection error methods kick in and generate this HTML output page. 
 

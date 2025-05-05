@@ -1,10 +1,10 @@
-﻿Web Connection's user security implementation allows a lot of customization including taking over the user validation, displaying the form and for handling requests after a user has logged in by way of a few events that let you replace small chunks or the entire process of Authentication.
+Web Connection's user security implementation allows a lot of customization including taking over the user validation, displaying the form and for handling requests after a user has logged in by way of a few events that let you replace small chunks or the entire process of Authentication.
 
 The following is a sample implementation that completely customizes the authentication pipeline to demonstrate each of the hooks you can plug into. Please note that you can choose which parts to override - you can override just validation and use the rest of the UI, override the UI and use the default validation logic, or completely override everything and do your own thing.
 
 The following example uses a custom form login:
 
-![](IMAGES/misc/CustomUserSecurityLogin.png)
+![](/images/misc/CustomUserSecurityLogin.png)
 
 Let's get started.
 
@@ -244,7 +244,7 @@ ENDFUNC
 
 The HTML for the the form you are using can be anything you choose. For the sample above the relative form markup might look like this:
 
-![](IMAGES/misc/CustomUserSecurityLogin.png)
+![](/images/misc/CustomUserSecurityLogin.png)
 
 To get an idea what layout to use you can use the `views\_login.wcs` page as a starting point.
 

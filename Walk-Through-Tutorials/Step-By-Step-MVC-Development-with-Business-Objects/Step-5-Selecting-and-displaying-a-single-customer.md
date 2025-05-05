@@ -1,4 +1,4 @@
-﻿Let's start by selecting a single customer and displaying customer information about this customer. As with the Customer List in the previous step, we'll use a controller method to create the code to load the customer, and we then use a view to display the data.
+Let's start by selecting a single customer and displaying customer information about this customer. As with the Customer List in the previous step, we'll use a controller method to create the code to load the customer, and we then use a view to display the data.
 
 The controller code very simple:
 
@@ -28,7 +28,7 @@ We simply use the business object to look up the ID passed on the query string c
 
 The View we'll be generating looks like this:
 
-![](IMAGES/stepbystep/CustomerDisplay_Script.png)
+![](/images/stepbystep/CustomerDisplay_Script.png)
 
 As you can see there are a few interesting features in this View - it uses a couple of social links to display the users picture based on a **[Gravatar](VFPS://Topic/_S8X02FE4U)** which displays an image for a registered email address - anybody registered with the service will display an image. Otherwise a static image displays. If there's an address the address is mapped based on the address. You can click the map to jump directly to Google maps.
 

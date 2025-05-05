@@ -1,14 +1,20 @@
 ## Version 8.3
-<small>not released yet</small>
+<small>May 2nd, 2025</small>
 
 * **wwJsonSerializer Support for Output larger than 16mb**  
-wwJsonSerializer can now serialize JSON to strings larger than FoxPro's 16mb string limit. While now supported it's still not recommended to generate JSON this large. It's both slow and eventually will hit FoxPro's internal memory limits. 
+wwJsonSerializer can now serialize JSON to strings larger than FoxPro's 16mb string limit. While now supported it's still not recommended to generate JSON this large. It's both slow and eventually will hit FoxPro's internal memory limits allocated to the current process. 
 
 * **Fix: File Uploads with extended file names in wwHttp and wwRequest**  
 Fix issue where filenames that contain extended characters where not properly UTF-8 encoded both when sending with [wwHttp.AddPostFile()](VFPS://Topic/_0JJ1AFXK3) and receiving on the Web Connection end in [wwRequest.GetMultipartFile()](VFPS://Topic/_S861BQM4E) and [wwRequest::GetMultipartFiles()](VFPS://Topic/_4H80RRA9J)
 
+* **Fix: wwhttp::AddPostFile without an Explicit download Filename**  
+Fix issue where if you didn't specify the explicit filename in the parameter list the upload fails with some servers. Fix adds the filename implicitly based on the uploaded filename. Note: if you send binary/string buffers you stil need to explicitly provide the file name both in `AddPostFile()` and `AddPostKey()` when uploading files. Fixed.
+
 * **Fix: MemUsed Configuration Setting Applied in wwServer**  
 The `MemUsage` configuration setting in `yourApp.ini` was not automatically read and used `SYS(3050,2,THIS.oConfig.nMemUsage)`. Uses this memory value or use 0 to bypass. Fixed.
+
+* **Fix: Unattended COM Mode Setting Ignored**  
+Fix issue where the `Unattended Mode=On` setting in the `YouApp.ini` config file was not being respected and applied. The server now properly sets `SYS(2030,0)` when the flag is set **and** when you're running in COM mode. In non-COM mode this flag is explicitly set off `SYS(2030,1)`. Fixed.
 
 
 ## Version 8.2

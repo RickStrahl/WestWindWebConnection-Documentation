@@ -1,8 +1,8 @@
-﻿The following is an example using the HtmlDataGrid() function in a Process class using code only. This example uses custom column configuration to configure the DataGrid and then renders it straight into the Response.Write() output.
+The following is an example using the HtmlDataGrid() function in a Process class using code only. This example uses custom column configuration to configure the DataGrid and then renders it straight into the Response.Write() output.
 
 The output produced by this example looks like this:
 
-![](IMAGES/stepbystep/HtmlDataGrid.png)
+![](/images/stepbystep/HtmlDataGrid.png)
 
 This example demonstrates:
 

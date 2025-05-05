@@ -1,4 +1,4 @@
-﻿Ok, now that we know how to look at data, the next step is to edit and update data and save it to disk. But before we do that, let's look at externalizing the HTML into scripts or templates to make it easier to create HTML and edit it efficiently.
+Ok, now that we know how to look at data, the next step is to edit and update data and save it to disk. But before we do that, let's look at externalizing the HTML into scripts or templates to make it easier to create HTML and edit it efficiently.
 
 ### Html Creation with Templates
 Up to this point we've done everything in code including HTML creation, which is not really optimal. For simple things, and highly dynamic applications that drive the UI entire with data, writing HTML in code is fine. It's an option.
@@ -42,7 +42,7 @@ To start using Visual Studio, start by opening the project in Visual Studio:
 * Point at the project's `/web` Folder
 * Save by using **File | Save Solution As | WebDemo.sln**
 
-![](//images/stepbystep/OpenVisualStudioWebFolder.png)
+![](/images/stepbystep/OpenVisualStudioWebFolder.png)
 
 This opens the project and you can now edit documents. To enable syntax highlighting for custom extensions you need to explicitly add the extensions in the options. The extensions we'll want to add are `.wc .wcs .wp` for this project:
 
@@ -54,7 +54,7 @@ To do this go to:
 * Press **Apply**
 * If not already there, repeat for `wc` and `wcs` and any other extensions you might use
 
-![](//images/stepbystep/VisualStudioAddExtension.png)
+![](/images/stepbystep/VisualStudioAddExtension.png)
 
 You can now use the rich HTML editor in Visual Studio to edit your Web Connection scripts and templates with full syntax coloring, Intellisense and autocomplete support.
 
@@ -65,11 +65,11 @@ To create the `EditCustomer.wp` page:
 * Click **Add -> Add New Item**
 * In the dialog select Visual C#
 
-![](//images/stepbystep/CreateEditCustomerTemplate.png)
+![](/images/stepbystep/CreateEditCustomerTemplate.png)
 
 Which opens the document in the editor with syntax coloring:
 
-![](//images/stepbystep/OpenEditCustomerTemplate.png)
+![](/images/stepbystep/OpenEditCustomerTemplate.png)
 
 ## [Visual Studio Code](https://code.visualstudio.com/) 
 Visual Studio Code is a text editor from Microsoft and although it has Visual Studio in the name it's not anything like Visual Studio: It's small and light weight, with support for lots of file formats and tons of extensions to provide language/markup specific features. It's not as visual as Visual Studio - a lot of the interactions are through menus or 'command palettes'. But it's also very fast - both as an editor as well as navigating the UI. It's awesome as a general purpose editor, and it also works great with Web Connection.
@@ -115,7 +115,7 @@ For this walk-through the interesting snippets are the `wc-tmp-` snippets which 
 
 So when you use the `wc-tmp-page` template you get the following script page:
 
-![](//images/stepbystep/VisualStudioCodeEditorOpen.png)
+![](/images/stepbystep/VisualStudioCodeEditorOpen.png)
 
 And with that we're ready adding and editing templates in the next topic.
 

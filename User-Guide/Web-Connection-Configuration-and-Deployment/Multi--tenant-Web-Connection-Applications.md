@@ -1,4 +1,4 @@
-﻿Multi-tenant applications are Web applications that use a single Web Connection server instance to service multiple Web clients using a separate Web site or Web virtual. Each **tenant** perceives that they are running their own Web site while in fact all the logic is handled by a single backend that switches the execution context at runtime based on the site or virtual or other tenant identifier.
+Multi-tenant applications are Web applications that use a single Web Connection server instance to service multiple Web clients using a separate Web site or Web virtual. Each **tenant** perceives that they are running their own Web site while in fact all the logic is handled by a single backend that switches the execution context at runtime based on the site or virtual or other tenant identifier.
 
 ### Understanding Web Connection Servers in IIS Applications
 IIS segments Web sites or Virtual Directories into **Applications**. IIS segments into isolated application domains with their own private memory and execution space. This space isn't a process, but rather a sub-process using logical separation inside of a single process. You can have many applications in a single IIS Application Pool which is the host process (w3wp.exe) that can host one or more Web sites or virtuals. Each Site or Virtual is separate even though they may be running inside of the same process/Application Pool.
@@ -59,7 +59,7 @@ Although the .NET COM scenario spanning multiple virtuals isn't directly support
 #### Multiple Host Headers for a Single Web Site
 IIS has support for host headers that allow you to assign multiple Domain names to a single Web site. You can assign each tenant their own domain and then check and map the domain name to each specific tenant in your application using `Request.GetServerName()` to retrieve the host-header domain name. To configure, host headers you assign multiple domain names to a single IIS Web site as this example demonstrates:
 
-![](IMAGES/misc/IISHostHeaderMultiTenant.png)
+![](/images/misc/IISHostHeaderMultiTenant.png)
 
 In this scenario every request goes through to a single Web site instance, but the domain name for each is different which allows you to effectively simulate multiple sites being served by a single IIS Application. 
 
@@ -70,7 +70,7 @@ IIS Applications are scoped to a site or virtual boundary, but you can fool IIS 
 
 Each subfolder can be tenant specific and you can extract the folder out of the request path with `Request.GetLogicalPath()`. Each folder can then contain tenant specific templates, style sheets etc that customize the application.
 
-![](IMAGES/misc/IISMultitenent_folders.png)
+![](/images/misc/IISMultitenent_folders.png)
 
 
 ### Workable

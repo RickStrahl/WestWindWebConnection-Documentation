@@ -1,4 +1,4 @@
-﻿Web Connection works under Windows 10, 8, 7 and Vista as well as under Windows Server 2016, 2012 and 2008. When installing Web Connection automatically configures itself for operation under these Windows versions. These versions use **IIS7**,**IIS8** and **IIS10** all of which use the same configuration interface and features. If you see a reference to IIS 7 assume it'll work in versions 7 through 10 as well.
+Web Connection works under Windows 10, 8, 7 and Vista as well as under Windows Server 2016, 2012 and 2008. When installing Web Connection automatically configures itself for operation under these Windows versions. These versions use **IIS7**,**IIS8** and **IIS10** all of which use the same configuration interface and features. If you see a reference to IIS 7 assume it'll work in versions 7 through 10 as well.
 
 This topic describes configuration through the Web Connection Console UI, using programmatic tools and manually configuring IIS and Web Connection by hand.
 
@@ -34,7 +34,7 @@ On **Windows Clients** the IIS configuration features can be found under the **T
 
 Once you are there the required components for Web Connection are as follows:
 
-![](IMAGES/misc/IISFeatures.png)
+![](/images/misc/IISFeatures.png)
 
 The figure above highlights the critical components that are used by Web Connection and are absolutely required. 
 
@@ -55,7 +55,7 @@ Once the base components have been installed you can use Web Connection's automa
 
 In all cases you should use the IIS  server setting from the server type drop down or list.
 
-![](IMAGES/ManagementConsole/setup1.png)
+![](/images/ManagementConsole/setup1.png)
 
 These tools automatically create virtual directories, application pools, script maps, set permissions and get your application ready to work. Generally this is the easiest way to start Web Connection applications on a development set up.
 
@@ -129,7 +129,7 @@ To create an Application Pool in IIS:
 * Create with the name of your choice (West Wind Web Connection)
 * Choose .NET Framework **4.0** and **Integrated** Managed Pipeline Mode
 
-![](IMAGES/misc/CreateApplicationPool.png)
+![](/images/misc/CreateApplicationPool.png)
 
 Once you've created the Application Pool select it in the list and click on Advanced Settings. 
 
@@ -138,7 +138,7 @@ In the Application Pool settings set the Identity for the Application Pool to `L
  
 By default the user identity you choose here also is passed to your your Web Connection FoxPro server, so make sure you use an account that has the rights your application needs.
 
-![](IMAGES/misc/ApplicationPoolAdvanced.png)
+![](/images/misc/ApplicationPoolAdvanced.png)
  
 You can also configure various other settings such as the process recycling, idle timeout and various other flags. 
 > #### @icon-exclamation-circle Enabling 32 bit Applications on 64 bit Machines for ISAPI
@@ -277,16 +277,16 @@ When you install your site on a live server it's **vitally** important that you 
 
 Start by enabling security on your Web site or Virtual:
 
-![](IMAGES/misc/enableauthentication.png)
+![](/images/misc/enableauthentication.png)
 
 Next lock down the **Admin** folder. Remove or set **Deny** permissions for any unauthenticated users in the Admin folder and specifically the `IUSR` account.
  
-![](IMAGES/misc/windowsauthenticationadminlockdown.png)
+![](/images/misc/windowsauthenticationadminlockdown.png)
 
 > #### @icon-info-circle Remote Access to the Adminstration Page only works Authenticated
 > Starting with Web Connection 6.19 the admin page no longer displays for unauthenticated users when accessing the site remotely. Instead an error message is displayed. Local access - useful for development - continues to work without authenitication but also displays the error message, along with the actual admin links
 >
-> ![](IMAGES/misc/adminpageaccessdenied.png)
+> ![](/images/misc/adminpageaccessdenied.png)
 
 
 ### Temp File Path Permissions

@@ -1,15 +1,21 @@
-﻿The Web Connection Web Server is a self-contained, non-admin, local Web Server that lets you to run Web Connection application without a dependency on an explicit external Web Server like IIS. 
+The Web Connection Web Server is a self-contained, non-admin, local Web Server that lets you to run a Web Connection application without a dependency on an explicit external Web Server like IIS. 
 
-The server is specifically built for Web Connection so it includes everything it needs to run Web Connection applications from **a standalone EXE that you can distribute with your application** and that you run run locally **from any machine**. 
+The server is ideally suited to run for local Web Connection development while creating your applications.
 
-It's ideally suited to run for local Web Connection development while creating your applications.
+The server is specifically built for Web Connection, so it includes everything it needs to run Web Connection applications from **a standalone EXE in a folder that you can distribute with your application** and allows you to run Web Connection applications locally **on any machine**. 
 
 > #### @icon-info-circle Requires .NET Core Runtime Installation
-> The Web Connection Web Server is .NET Core based and requires a .NET Core Runtime to run. You have to ensure an appropriate .NET Core Runtime or SDK is installed *(v5 < 7.26, v6 > 7.26, v8 >= 7.40)*. To see which version is or needs to be installed you can run the `\WebConnectionWebServer\install-dotnet.ps1` PowerShell script. [more info below](#webconnection-web-server-installation-and-configuration)
+> The Web Connection Web Server is .NET Core based and requires a .NET Core Runtime to run. You have to ensure an appropriate .NET Core Runtime or SDK is installed *(latest version > v7.36 uses .NET 8.0)*. 
+> 
+> Web Connection comes with a helper `dotnetruntimeinstaller.exe` Console application that automatically checks and downloads and installs the appropriate .NET Runtime for use with the Web Connection Web Server. You can run it from a Command or Powershell prompt:
+> ```ps
+> .\dotnetruntimeinstaller.exe
+> ```
+> This installer also runs automatically during setup, or if you create a new project and choose the Web Connection Web Server as your default server. [more info below](#webconnection-web-server-installation-and-configuration)
 
-Using this server also allows you to create 'no-install' Web sites that can run on a local machine or local network servers **without any additional Web Servers** other than a .NET Core Runtime. Assuming your site is set up and configured you can start the server `.exe` and your site is up and running - from any machine.
+Using this server also allows you to create 'no-install' Web sites that can run on a local machine or local network servers **without any additional Web Servers** other than a .NET Core Runtime. Assuming your site is set up and configured you can start the server `.exe` and that will get your site up and running - from any local machine or local network (if ports are properly exposed).
 
-![](IMAGES/misc/WebConnectionWebServer.png)
+![](/images/misc/WebConnectionWebServer.png)
 
 For traditional server hosting the Web Connection Web Server **can also run inside of IIS using the ASP.NET Core Hosting Module**, where it runs as a high performance, in-process server module. This allows you to use the standalone server for development, and IIS hosted for deployed applications running the exact same server in development and production.
 

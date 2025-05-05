@@ -1,4 +1,4 @@
-﻿Adding a new customer is actually quite easy. In fact the existing code we have already provides for this functionality for the most part and we only need very minor changes.
+Adding a new customer is actually quite easy. In fact the existing code we have already provides for this functionality for the most part and we only need very minor changes.
 
 To make this work we'll need to:
 
@@ -52,7 +52,7 @@ To add a new customer we need to access the `EditCustomer.ctd` page without a pa
 
 which looks like this:
 
-![](IMAGES/stepbystep/NewButton.png)
+![](/images/stepbystep/NewButton.png)
 
 When you click that button you now come up with an empty customer form. Note that the Entered date an bill rate fields are pre-filled.
 

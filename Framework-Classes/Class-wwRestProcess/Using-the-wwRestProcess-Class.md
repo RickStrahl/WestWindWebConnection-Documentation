@@ -1,4 +1,4 @@
-﻿Implementing the wwRestProcess class is easy:
+Implementing the wwRestProcess class is easy:
 
 * Create a new Process class with the Console Wizard
 * Choose **Rest API Service Process Class** on the Finish page
@@ -13,7 +13,7 @@
 ### Create the REST Service
 You create a `wwRESTProcess` class like any other process class - by using the Web Connection Console and the **Create New Process Class** Wizard . On **Step 2** choose **REST API Service Process class**. In this example, I'm also going to create a *MusicStoreProcess* (see Web Connection Sample) with a script map of *.ms*.
 
-![](//images/ManagementConsole/CreateRestProcessClass.png)
+![](/images/ManagementConsole/CreateRestProcessClass.png)
 
 This produces:
 
@@ -263,7 +263,7 @@ Postman is a flexible Chrome plug-in and Chrome App that allows you to create re
 * **<a href="https://websurge.west-wind.com" target="top">West Wind Web Surge</a>**  
 Although West Wind WebSurge is billed as a load testing tool it also works as an excellent HTTP testing tool that lets you capture URLs and play them back either one by one for testing or under load for stress testing a Web site.
 
-<a href="http://west-wind.com/websurge" target="top">![](IMAGES/WebSurgeApiTesting.png)</a>
+<a href="http://west-wind.com/websurge" target="top">![](/images/WebSurgeApiTesting.png)</a>
 
 
 ### Example Service Implementation

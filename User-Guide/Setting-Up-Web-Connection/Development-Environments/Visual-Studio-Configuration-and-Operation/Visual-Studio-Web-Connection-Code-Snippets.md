@@ -1,4 +1,4 @@
-﻿Web Connection also ships with a set of Intellisense snippets for Visual Studio which help embedding common Web Connection directives and HTML/BootStrap constructs into HTML pages.
+Web Connection also ships with a set of Intellisense snippets for Visual Studio which help embedding common Web Connection directives and HTML/BootStrap constructs into HTML pages.
 
 The snippets all have a `wc-` prefix.
 
@@ -32,4 +32,4 @@ It's very easy to create snippets in an XML editor like VS Code (or Visual Studi
 
 Unfortunately Intellisense for custom code snippets in the HTML editor is spotty and doesn't show snippets reliably. However, there's an explicit Visual Studio hotkey `Ctrl-K-X` which brings up a navigation list of all installed Snippets. You can navigate to `My HTML Snippets\Web Connection` to find the Web Connection snippets available.
 
-![](////images/visualstudiocodesnippetsctrlkx.png)
+![](/images/visualstudiocodesnippetsctrlkx.png)

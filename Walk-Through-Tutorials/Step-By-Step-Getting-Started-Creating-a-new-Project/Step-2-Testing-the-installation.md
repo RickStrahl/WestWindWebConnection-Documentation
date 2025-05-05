@@ -1,4 +1,4 @@
-﻿Once the project's been created you can start running the application right away. The first thing you need to do is start the Web Connection server. The server is a FoxPro program you can run.
+Once the project's been created you can start running the application right away. The first thing you need to do is start the Web Connection server. The server is a FoxPro program you can run.
 
 There are two ways to launch the Web Connection Server:
 
@@ -31,8 +31,11 @@ Launch("None")                    && Launches just Fox server - same as `<yourAp
 Behind the scenes this does the following:
 
 * Launches the FoxPro Server with `DO WebDemoMain.prg`
-* If running IIS Express launches IIS Express in the Web Folder on port `7001`
-* Navigates to `http://localhost/webdemo/` (IIS) or `http://localhost:7001` (IIS Express)
+* If running IIS Express launches IIS Express in the Web Folder on port `7000`
+* If running the Web Connection Web Server it'll be port `5200`
+* Navigates to `http://localhost/webdemo/` (IIS)  
+or `http://localhost:7000` (IIS Express)  
+or `http://localhost:5200` (Web Connection Web Server)
 * You can optionally change the port in the generated `launch.prg`
 
 Once the browser is up and running you can also run only the server without launching a server or browser:
@@ -63,16 +66,24 @@ This launches the Web Connection server - which is just a FoxPro application. Th
 
 Here's what you should see:
 
-![](//images/ManagementConsole/NewProject_WebConnectionServerWindow.png)
+![](/images/ManagementConsole/NewProject_WebConnectionServerWindow.png)
 
 
 Now switch over to the Web browser default page that was opened for you and hit the `Hello World Test Page` link (http://localhost/webdemo):
 
-![](//images/ManagementConsole/NewProject_HelloWorld.png)
+![](/images/ManagementConsole/NewProject_HelloWorld.png)
+
+
+> #### @icon-warning-color:darkred Watch out for Http Page Caching
+> Because Web Connection by default re-uses Http ports (`5200` for the Web Connection Server and `7000` for IIS Express) it's possible that the `default.htm` Home page **is cached in the browser and displays old data** if you previously ran a different Web site on the same port. 
+>
+> For example, if you ran the Web Connection demo before creating the new project you might still see the Web Connection demo home page instead of your new project home page.
+> 
+> To be sure, refresh the browser with `Ctrl-F5` to force a hard refresh of the page. Alternately you can also update your `launch.prg` to use a different Http port to avoid possible conflicts.
 
 The Hello World request is nothing more than a ping to ensure that the server application is working and serving requests:
 
-![](//images/ManagementConsole/NewProject_TestPage.png)
+![](/images/ManagementConsole/NewProject_TestPage.png)
 
 And voila, you have just fired your first Web Connection request.
 
@@ -152,11 +163,11 @@ which is perfectly valid as well. We'll look at other more high level approaches
 ### Server Status
 If you look back at the server window in FoxPro, you should see a request be written out to the server window as it's fired. The request shows the name of the script that executes and how long it took to process in seconds.
 
-![](//images/ManagementConsole/ServerRequests.png)
+![](/images/ManagementConsole/ServerRequests.png)
 
 You can also click on the Status button to bring up the Web Connection Status form which shows some basic configuration setting for the server.
 
-![](IMAGES/ManagementConsole/serverstatus.png)
+![](/images/ManagementConsole/serverstatus.png)
 
 The settings in this window should look familiar - the settings match the settings I made in the first step when running the New Project Wizard. The most important values are the Startup directory which should be the current directory, the temp directory and the template setting, which are used for the file based messaging that we are currently using to run our server. 
 
@@ -167,7 +178,7 @@ Note that you can capture recent request data via the logging. This captures req
 
 You can view the requests in the **Captured Request Viewer** that lets you review the most recent requests:
 
-![](IMAGES/ManagementConsole/DisplayRequestStatus.png)
+![](/images/ManagementConsole/DisplayRequestStatus.png)
 
 
 

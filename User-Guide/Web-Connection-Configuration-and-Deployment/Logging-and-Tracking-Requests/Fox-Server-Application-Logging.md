@@ -1,4 +1,4 @@
-﻿Web Connection includes logging support via a `wwRequestLog` that can log every request that hits the Web Connection FoxPro server. The logging is managed through the `wwServer` class and the `wwServer::LogRequest()` method which is fired **at the end of each request**. This same logging mechanism is also used to log errors.
+Web Connection includes logging support via a `wwRequestLog` that can log every request that hits the Web Connection FoxPro server. The logging is managed through the `wwServer` class and the `wwServer::LogRequest()` method which is fired **at the end of each request**. This same logging mechanism is also used to log errors.
 
 Whether logging occurs and what is logged is controlled via the `nLogFormat` configuration setting in `YourApp.ini`:
 
@@ -28,7 +28,7 @@ The valid values for `nLogFormat` are:
 
 You can set the `LogFormat` setting on the Web Connection Status form:
 
-![](///images/ManagementConsole/LoggingStatusForm.png)
+![](/images/ManagementConsole/LoggingStatusForm.png)
 
 
 Make sure to **Save Settings** after changing this value.
@@ -53,19 +53,19 @@ For a production application you can use the Web interface to clear the log (see
 
 It can be extremely useful to review Web Requests to see exactly what data the client sent or exactly what output the request generated. You can use the Request Browser using the the **Display Requests** button on the status form. This form shows the last few request and lets you review the request in an easy to use form.
 
-![](///images/ManagementConsole/RequestBrowser1.png)
+![](/images/ManagementConsole/RequestBrowser1.png)
 
 This form shows the last 35 requests and you can look at the Request and Response data which is captured and displayed on the other tabs.
 
 Here's the Response Tab:
 
-![](///images/ManagementConsole/RequestBrowser2.png)
+![](/images/ManagementConsole/RequestBrowser2.png)
 
 Note that you can click on the **Editor** and **Browse** buttons to open the response in an editor or in the case of HTML you can view the rendered HTML. Note that the rendered HTML may not look great as related resources are not available.
 
 Here's the Formatted Request page which takes all the Server variables and Form variables and shows these values in an easy to view format.
 
-![](///images/ManagementConsole/RequestBrowser3.png)
+![](/images/ManagementConsole/RequestBrowser3.png)
 
 Note that you can click the **Editor** button that will open this document in an editor as an INI file for easier reading.
 
@@ -83,15 +83,15 @@ The **Raw Request** tab shows the original raw, encoded Request data. This is no
 
 The Logs can also be viewed from the Web via the Administration interface. But the log information available via this interface is more basic.
 
-![](///images/ManagementConsole/WebServerFoxProLog.png)
+![](/images/ManagementConsole/WebServerFoxProLog.png)
 
 These links let you view the Request and Error Logs as well as clear out the log to today's date.
 
-![](///images/ManagementConsole/WebServerFoxProLog_Requests.png)
+![](/images/ManagementConsole/WebServerFoxProLog_Requests.png)
 
 And here's the error log:
 
-![](///images/ManagementConsole/WebServerFoxProLog_Errors.png)
+![](/images/ManagementConsole/WebServerFoxProLog_Errors.png)
 
 
 > #### @icon-info-circle Clearing the Log via Web Link

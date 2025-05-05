@@ -1,4 +1,4 @@
-﻿Ok, now that we know how to look at data, let's capture data and save it to disk. 
+Ok, now that we know how to look at data, let's capture data and save it to disk. 
 
 ### Creating our EditCustomer Template
 In the last topic we saw how to create a new page in Visual Studio or Visual Studio code. I'll use Visual Studio Code here and here are the steps to create the new `EditCustomer.wp` page:
@@ -8,7 +8,7 @@ In the last topic we saw how to create a new page in Visual Studio or Visual Stu
 
 This creates a fully formatted HTML page:
 
-![](//images/stepbystep/VisualStudioCodeEditorOpen.png)
+![](/images/stepbystep/VisualStudioCodeEditorOpen.png)
 
 This page has a placeholder block where the main content is injected:
 
@@ -20,7 +20,7 @@ This page has a placeholder block where the main content is injected:
 
 To demonstrate what we're shooting for here's what the edit page will look like initially:
 
-![](//images/stepbystep/CustomerEditForm.png)
+![](/images/stepbystep/CustomerEditForm.png)
 
 This page is accessed with a URL like:
 

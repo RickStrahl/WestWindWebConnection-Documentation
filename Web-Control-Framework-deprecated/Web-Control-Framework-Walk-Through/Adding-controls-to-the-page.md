@@ -1,8 +1,8 @@
-﻿Actually we were already creating a new page in the last step. It's called HelloWorld.dp. Let's open that page in the Visual Studio Editor. If you switch to Design view you'll see a blank page.
+Actually we were already creating a new page in the last step. It's called HelloWorld.dp. Let's open that page in the Visual Studio Editor. If you switch to Design view you'll see a blank page.
 
 At the top of the page type - Hello World Demo and press enter. Highlight the text and use the Styles dropdown to set the text Heading 1. Add some more text like a link back to the Demo Home Page, select the text and use the Hyperlink icon on the toolbar create the link. The whole enchilada should now look something like this:
 
-![](IMAGES/WebControls/VsNetInitialPageNoControls.png)
+![](/images/WebControls/VsNetInitialPageNoControls.png)
 
 Let's first switch to Html Source View. You should now see something similar to this:
 

@@ -1,9 +1,9 @@
-﻿Web Connection is made of two separate components that comprise the full Web Connection framework:
+Web Connection is made of two separate components that comprise the full Web Connection framework:
 
 * An Web Server Connector Component (.NET or ISAPI)
 * A FoxPro Web Connection Server Instance
 
-![](//images/Howitworks/ServerArchitecture.jpg)
+![](/images/Howitworks/ServerArchitecture.jpg)
 
 ### The .NET or ISAPI Web Connector 
 The Web Connector component is a native Web Server component implemented in .NET (or ISAPI) that intercepts all requests routed to your Web Connection application and captures all the request information, which is then packaged and passed to the FoxPro Web Connection Server instance. 
@@ -189,7 +189,7 @@ You can see in this example that a number of FoxPro expressions are evaluated fr
 
 The output generated looks like this:
 
-![](//images/Howitworks/ScriptingPage.png)
+![](/images/Howitworks/ScriptingPage.png)
 
 Note that this page displays a lot more content - the page header and footer - that the template does not directly reference. Rather, the template references a `Layout` page in the header that provides a base layout into which the page above is rendered, which lets you build smaller pages with just the content that's page specific, without having to recreate or copy the same page layout markup into every page.
 

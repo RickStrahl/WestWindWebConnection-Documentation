@@ -1,4 +1,4 @@
-﻿In addition to dealing with application based security you also need to thinK about securing your Web Connection installation. In particular, Web Connection ships with maintenance modules that are accessible through HTML interfaces which are Web accessible. If these interfaces are publicly exposed they can cause serious security risks to your online application.
+In addition to dealing with application based security you also need to thinK about securing your Web Connection installation. In particular, Web Connection ships with maintenance modules that are accessible through HTML interfaces which are Web accessible. If these interfaces are publicly exposed they can cause serious security risks to your online application.
 
 The first step is to understand that Web Connection consists of two components, which both expose administrative functions:
 
@@ -28,7 +28,7 @@ If either of these tools don't work for you for whatever reason, here are manual
 ### Enable Basic and Windows Authentication
 In order to use Web Connection's internal security blocks against access you should enable Basic Authentication and Windows Authentication on the Web Server for the virtual/root directory that your application lives in. Setting the Admin passwords will use Basic Authentication and Windows Security for checking access to these functions.
 
-![](//images/misc/enableauthentication.png)
+![](/images/misc/enableauthentication.png)
 
 > #### Windows Home Editions
 > Note that the various Windows Home Additions don't have support for Windows Authentication that maps logins to Windows accounts. If you are running Windows Home set the `AdminAccount` value to **empty** (ie. no value is set).
@@ -41,13 +41,13 @@ The admin page serves as a central administrative page to all the administrative
 >
 > If you're running an **old version** of the administration page, **please update your version to the latest version shipped with Web Connection**. Older versions could potentially allow access to the Admin interface. The newer version (6.19+) doesn't not display the admin page links when accessing the page remotely without any authentication. 
 >
-> ![](//images/managementconsole/adminhtmlformnoremoteaccess.png)
+> ![](/images/managementconsole/adminhtmlformnoremoteaccess.png)
 
 To secure admin functions your first step should be to restrict access to this page via Windows or ASP.NET Security. 
 
 The simplest is to use Windows Authentication and remove the `IUSR_` account and `Users` or even better only allow Administrators or specific users to access the Administration page.
 
-![](//images/misc/windowsauthenticationadminlockdown.png)
+![](/images/misc/windowsauthenticationadminlockdown.png)
 
 
 ### @icon-warning Windows Authentication Errors for Local Links on Windows Server

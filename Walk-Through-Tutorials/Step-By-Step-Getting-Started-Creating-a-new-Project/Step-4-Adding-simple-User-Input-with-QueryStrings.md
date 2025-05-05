@@ -1,4 +1,4 @@
-﻿The demo from the previous step is cool because it take very little code. But it's also very limited because it's very static: We're running a fixed SQL statement that's returning all records. It would be nice to specify a 'parameter' to search for customers by name.
+The demo from the previous step is cool because it take very little code. But it's also very limited because it's very static: We're running a fixed SQL statement that's returning all records. It would be nice to specify a 'parameter' to search for customers by name.
 
 ### Using parameters via the QueryString
 Let's change the code above to allow us to specify a company search 'parameter' via the brower's URL QueryString. 
@@ -33,7 +33,7 @@ http://localhost:5200/CustomerList.wp?Company=A
 
 You should now get a list back that includes only those companies that start with a 'A':
 
-![](//images/stepbystep/CustomerList_FilterA.png)
+![](/images/stepbystep/CustomerList_FilterA.png)
 
 This code uses the `Request.QueryString()` method to look for a parameter named `Company` and if it finds it returns the value - in this case the letter A. The `lcCompany` variable is then used in the query to effectively filter the list to all customers that start with an `A`.
 
@@ -90,11 +90,11 @@ ENDFUNC
 
 Now you get a customer list with a counter badge at the top:
 
-![](//images/stepbystep/CustomerListWithBadge.png)
+![](/images/stepbystep/CustomerListWithBadge.png)
 
 and if no customers are matched you see an error message instead of an empty grid:
 
-![](//images/stepbystep/CustomerListNoItems.png)
+![](/images/stepbystep/CustomerListNoItems.png)
 
 
 
@@ -185,7 +185,7 @@ ENDFUNC
 ```
 Here's what this form looks like now:
 
-![](//images/stepbystep/CustDataQuery.png)
+![](/images/stepbystep/CustDataQuery.png)
 
 
 Notice that unlike previously the company search parameter **is not part of the URL** as you can see in the address bar. Instead the data from the Search form field is posted to the server. And the code picks up that value with:

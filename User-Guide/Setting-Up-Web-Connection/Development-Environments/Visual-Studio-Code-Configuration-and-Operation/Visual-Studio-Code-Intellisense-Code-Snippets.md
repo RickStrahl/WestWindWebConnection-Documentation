@@ -1,6 +1,6 @@
-﻿Web Connection installs a set of code snippets into Visual Studio code which are accessible via the `wc-` prefix in the editor. If installed you should see something like this:
+Web Connection installs a set of code snippets into Visual Studio code which are accessible via the `wc-` prefix in the editor. If installed you should see something like this:
 
-![](////images/misc/vscodeintellisensesnippets.png)
+![](/images/misc/vscodeintellisensesnippets.png)
 
 Snippets vary in complexity from very simple static text expansions to more complex snippets that ask for input for naming. There are snippets that create entire HTML documents and mimic the full Visual Studio Page templates (use `wc-template-`).
 

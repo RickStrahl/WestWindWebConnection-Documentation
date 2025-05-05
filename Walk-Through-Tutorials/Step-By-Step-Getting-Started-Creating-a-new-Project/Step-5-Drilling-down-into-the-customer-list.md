@@ -1,4 +1,4 @@
-﻿Now that we know how to display a basic list, let's jazz it up a little bit by adding links to the company so we can drill down into the data and display the customer detail.
+Now that we know how to display a basic list, let's jazz it up a little bit by adding links to the company so we can drill down into the data and display the customer detail.
 
 Change the CustomerList SQL to:
 
@@ -14,7 +14,7 @@ SELECT HREF([ShowCustomer.wp?id=] + id,company) as Company, ;
 
 Here's what the list looks like now:
 
-![](//images/stepbystep/CustDataLink.png)
+![](/images/stepbystep/CustDataLink.png)
 
 This also makes the list look a little nicer by displaying less information, cleaning up the labels and more importantly adding hyperlinks for each of the customer entries. 
 
@@ -28,7 +28,7 @@ The hyperlink for drilling into the data by going to another page is generates a
 which points to another page. If you click on noe of the links now you'll find that the request fails:
 
 
-![](IMAGES/stepbystep/ErrorNoMethodFound.png)
+![](/images/stepbystep/ErrorNoMethodFound.png)
 
 This makes perfect sense: We haven't created a `ShowCustomer` method yet. Let's create it.
 
@@ -83,7 +83,7 @@ ENDFUNC
 
 The output from this display using  `HtmlRecord()` looks like this:
 
-![](//images/stepbystep/CustDataDisplay.png)
+![](/images/stepbystep/CustDataDisplay.png)
 
 
 This output is very basic and pretty rough as it just uses the field names for labels. But `HtmlRecord()`  gives you a quick and dirty way to display data from a single cursor record or object. It's a great object to use as a place holder for data that will later be added.
@@ -129,7 +129,7 @@ Response.Write(lcHtml)
 
 This results in a much cleaner and more optimized view of the same data:
 
-![](//images/stepbystep/CustDataDisplayFormattedRecord.png)
+![](/images/stepbystep/CustDataDisplayFormattedRecord.png)
 
 Much cleaner, eh? Using explicit fields and formatting can net you something that might just be usable as is for quick data display.
 
@@ -138,7 +138,7 @@ Note this display is **not actually using an HTML table**, but rather using a **
 
 A small width view looks like this:
 
-![](//images/stepbystep/CustDataDisplaySmallStacked.png)
+![](/images/stepbystep/CustDataDisplaySmallStacked.png)
 
 ---
 [Step 6 - Scripts and Templates and Setting up an HTML Editor](VFPS://Topic/_5TC1BNZMD)

@@ -1,4 +1,4 @@
-﻿# Custom Row and Column Rendering in Web Connection with HtmlDataGrid()
+# Custom Row and Column Rendering in Web Connection with HtmlDataGrid()
 DataGrids are a popular use case for FoxPro developers who seem to be obsessed (in my experience) with using data grids for data display. 
 
 In this post I'll describe using the wwHtmlHelper `HtmlDataGrid()` function which makes it super easy to create grids, and specifically demonstrate how you can create customized displays for rows or columns to highlight content.
@@ -47,7 +47,7 @@ and you can then render the HTML inside of a template or script page:
 
 In either case, this produces a simple table list of all the records:
 
-![](////images/misc/DataGridColumnAndRows/SimpleHtmlDataGrid.png)
+![](/images/misc/DataGridColumnAndRows/SimpleHtmlDataGrid.png)
 
 If you want a little more control you can add a `HtmlDataGridConfig` object to configure a few options like paging and styling of the table:
 
@@ -60,7 +60,7 @@ Response.Write( HtmlDataGrid("TQuery",loConfig) )
 ````
 which turns the grid into a paged grid:
 
-![](////images/misc/DataGridColumnAndRows/SimplePagedGrid.png)
+![](/images/misc/DataGridColumnAndRows/SimplePagedGrid.png)
 
 Auto-column generation is very easy but it's fairly limited. As you can see you can't easily control what fields are displayed (the pks are showing) unless you modify your query to return only the fields you want, and the titles are determined by the field names. 
 
@@ -110,7 +110,7 @@ Response.Write(lcHtml)
 
 which looks like this:
 
-![](////images/misc/DataGridColumnAndRows/ColumnGrid.png)
+![](/images/misc/DataGridColumnAndRows/ColumnGrid.png)
 
 Notice that we have a link and a checkbox embedded into this display - using additional HTML helpers to render these items. You can embed any string expressions - including other HTML helpers which makes it easy to create more complex items in cells.
 
@@ -139,7 +139,7 @@ ENDFUNC
 
 Which now renders a bold green texted link.
 
-![](////images/misc/DataGridColumnAndRows/GreenLinks.png)
+![](/images/misc/DataGridColumnAndRows/GreenLinks.png)
 
 Not very practical, but you get the idea - you can pretty much generate any HTML using a function that creates the HTML string output. It's very powerful.
 
@@ -207,7 +207,7 @@ which applies a light green background to the entire row. The `!important` force
 
 When you now render this grid you get:
 
-![](////images/misc/DataGridColumnAndRows/StripedGridRows.png)
+![](/images/misc/DataGridColumnAndRows/StripedGridRows.png)
 
 Note that you have to **always** set the `RowAttributeString` to a value including the empty value, because when you set it that value stays for all subsequent requests. So effectively you have to reset it for each row.
 

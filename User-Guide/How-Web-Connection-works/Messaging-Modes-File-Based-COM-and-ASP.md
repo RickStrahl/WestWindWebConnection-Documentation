@@ -1,11 +1,11 @@
-﻿The communication layer between the .NET (or ISAPI) Connector and the Web Connection FoxPro server depends on which messaging mechanism is used. The data is passed back and forth using strings, but the data may be either a physical string (in COM messaging), message files (file based messaging).
+The communication layer between the .NET (or ISAPI) Connector and the Web Connection FoxPro server depends on which messaging mechanism is used. The data is passed back and forth using strings, but the data may be either a physical string (in COM messaging), message files (file based messaging).
 
 Both modes **support simultaneous request processing** by managing multiple instances of your FoxPro server application to work around the limitations of Visual FoxPro's single threaded environment.
 
 ### File Based Messaging
 This mechanism is the default mechanism and is used primarily **for development and debugging** applications. It uses semaphore message files to pass information between the Web Server and your FoxPro Web Connection application.
 
-![](IMAGES/HOWITWORKS/FILEBASED.GIF)
+![](/images/HOWITWORKS/FILEBASED.GIF)
 
 In file based operation the Web Connector sends a message file that is picked up by the Web Connection FoxPro server application. The server packages the incoming request data into a `Request` object that the application uses to process that request. The HTTP result is then returned to the server as an output file. Inside of the application framework and user code can use the `Response` object to write output into the HTTP output streamcom which writes to a file.
 
@@ -18,7 +18,7 @@ You can run multiple file based instances to allow for simultaneous request proc
 ### COM Messaging
 COM messaging uses your Web Connection application as an EXE COM Server for communication between the Web Server and your FoxPro Web Connection application. It uses a plain parameter passing using encoded strings and returns values as a binary stream created from string output to pass information between the two.
 
-![](IMAGES/HOWITWORKS/COMBASED.GIF)
+![](/images/HOWITWORKS/COMBASED.GIF)
 
 The FoxPro server is compiled into a COM object and receives the request input as a parameter of one of the COM methods. The HTTP result is returned as a string return value of the method call. 
 

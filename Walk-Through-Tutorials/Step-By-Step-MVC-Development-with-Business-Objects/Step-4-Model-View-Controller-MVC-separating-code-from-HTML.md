@@ -1,4 +1,4 @@
-﻿At this point we've created a code based implementation, meaning we've implemented both our controller code and view display using code. While this works fine for simple page logic, this mixing of code and HTML display logic gets to be a mess very quickly.
+At this point we've created a code based implementation, meaning we've implemented both our controller code and view display using code. While this works fine for simple page logic, this mixing of code and HTML display logic gets to be a mess very quickly.
 
 Web Connection supports an **MVC** (Model View Controller) workflow by way of creating a **Model** via Business Object that provide business logic, **Controller** via wwProcess methods that provide logic, and **View** via [HTML Scripts or Templates](VFPS://Topic/_4DB0VHAQW) that mix HTML and FoxPro expressions and FoxPro control code constructs.
 
@@ -80,11 +80,11 @@ So let's jump over into Visual Studio and open the new project.
 
 Right click on the CustomerDemo Project node and choose *Add* | *Add New Item...* from the context menu:
 
-![](IMAGES/stepbystep/AddNewScript.png)
+![](/images/stepbystep/AddNewScript.png)
 
 Then make sure you choose *Visual CSharp* as the language and choose a template. In this case we're going to add a *Web Connection Template Content Page* which is a content page that uses a common Layout page to handle the base page layout and provides a simple content area the page created.
 
-![](IMAGES/stepbystep/AddContentTemplate.png)
+![](/images/stepbystep/AddContentTemplate.png)
 
 Because the generated page is a 'content' page, it's rather simple and contains only an HTML fragment into which you can add your content:
 
@@ -161,6 +161,6 @@ This page adds HTML with a few FoxPro expressions delimited with `< %= expressio
 
 Here's what the page now looks like:
 
-![](IMAGES/stepbystep/CustomerList_Script.png)
+![](/images/stepbystep/CustomerList_Script.png)
 
 Notice the links generated from the `HREF()` expression. The links are currently non-functional because we don't have a `Customer.ctd` page yet - we'll create that in the next step.

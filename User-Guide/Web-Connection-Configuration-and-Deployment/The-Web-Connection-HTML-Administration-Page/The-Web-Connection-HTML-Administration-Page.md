@@ -1,4 +1,4 @@
-﻿Most administrative features of Web Connection are accessible the Web Connection Administration interface which is available via `/admin/Administration.wc` in your Web Connection application which provides access to most Web Connection configuration features. This pages shows all settings and lets you change a number of them.
+Most administrative features of Web Connection are accessible the Web Connection Administration interface which is available via `/admin/Administration.wc` in your Web Connection application which provides access to most Web Connection configuration features. This pages shows all settings and lets you change a number of them.
 
 > Note: Older version prior to v7.10 and the ISAPI handler do not support this `Administration.wc` as a URL and you'll have to use the `/admin/admin.aspx` page as your launch page and then Access the **Web Connection Module Administration** link.
 
@@ -12,7 +12,7 @@ The Web Connection server supports a number of maintenance requests that run in 
 
 The admin page can be reached with <a href="http://localhost/wconnect/admin/Administration.wc" target="top">/admin/Administration.wc</a> and  looks as follows:
 
-![](//images/ManagementConsole/ModuleAdministrationPage.png)
+![](/images/ManagementConsole/ModuleAdministrationPage.png)
 
 
 > #### @icon-warning Admin Page Security
@@ -20,7 +20,7 @@ The admin page can be reached with <a href="http://localhost/wconnect/admin/Admi
 >
 > If not authenticated, the page displays a warning: Access from a **local machine** just get a warning message, but access from a remote machine not display the admin links.
 >
-> ![](//images/misc/adminpageaccessdenied.png)
+> ![](/images/misc/adminpageaccessdenied.png)
 
 
 

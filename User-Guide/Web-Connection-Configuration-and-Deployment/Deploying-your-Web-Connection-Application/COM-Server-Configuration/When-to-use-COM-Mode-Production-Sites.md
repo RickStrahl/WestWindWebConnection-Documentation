@@ -1,4 +1,4 @@
-﻿Web Connection supports both File based and COM operation. File based is meant for development while COM based is meant for deployed applications, but it's also possible to run file based in production.
+Web Connection supports both File based and COM operation. File based is meant for development while COM based is meant for deployed applications, but it's also possible to run file based in production.
 
 ### COM Advantages
 
@@ -16,11 +16,11 @@ COM operation provides better performance under load as it eliminates the messag
 
 ### COM Disadvantages
 
-* **Requires some Configuration**  
-COM Servers require extra configuration initially. COM servers have to be COM registered (`/regserver`) on the server, and depending on the security context you're running under (non-admin, non-SYSTEM) you have to [configure COM servers or the machine with DCOMCnfg](VFPS://Topic/_4KG0Z4G3P).
+* **Requires additional Configuration**  
+COM Servers [require extra configuration initially](dm-topic://_s901dvuwg). COM servers have to be COM registered (`/regserver`) on the server, and depending on the security context you're running under (non-admin, non-SYSTEM) you may have to [configure COM servers or the machine with DCOMCnfg](VFPS://Topic/_4KG0Z4G3P).
 
 * **Fixing Server Startup Problems**  
-If you have problems with server startup, it's more difficult to find and fix startup errors because typically COM servers run invisibly. Effectively you have to use log tracing to debug and fix errors. here's more info in [Dealing with COM Server Load Errors](VFPS://Topic/_4BZ0UBTI4).
+If you have problems with server startup, it's more difficult to find and fix startup errors because typically COM servers run invisibly. Effectively you have to use log tracing to debug and fix errors. Here's more info in [Dealing with COM Server Load Errors](VFPS://Topic/_4BZ0UBTI4).
   
   The main source for problems tends to be due to changes in permissions, user profile usage or using one of the very few FoxPro features that don't work in COM.
 

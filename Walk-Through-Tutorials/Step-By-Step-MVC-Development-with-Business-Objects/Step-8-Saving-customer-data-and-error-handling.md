@@ -1,4 +1,4 @@
-﻿Now you're ready to save the data when you click the **Save** button. In this step we want to handle the following:
+Now you're ready to save the data when you click the **Save** button. In this step we want to handle the following:
 
 * Capture the POSTed form data
 * Bind the form data back to our business object
@@ -133,7 +133,7 @@ If the error count for the combined collection is greater than 0 there are error
 
 The form then displays the binding errors as a summary as well as associated with the individual controls that have an error:
 
-![](IMAGES/stepbystep/CustomerEdit_BindingErrors.png)
+![](/images/stepbystep/CustomerEdit_BindingErrors.png)
 
 You can then fix the errors and resubmit the form to save the customers.
 

@@ -1,4 +1,4 @@
-﻿The final step of the Wizard asks you to click Finish to run the configuration process. Let 'er rip!
+The final step of the Wizard asks you to click Finish to run the configuration process. Let 'er rip!
 
 Once it's done you need to do the following:
 
@@ -81,7 +81,7 @@ http://localhost/wconnect
 
 Again on first launch this will be automatic. You can also click on the Web Connection Server's status window **Browse Site** button:
 
-![](///images/misc/browstosite.png)
+![](/images/misc/browstosite.png)
 
 The value for this is configurable in `wcdemo.ini` and the `HomeUrl=` key.
 

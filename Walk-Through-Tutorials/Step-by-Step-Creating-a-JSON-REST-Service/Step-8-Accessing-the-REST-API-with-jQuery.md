@@ -1,10 +1,10 @@
-﻿If you want to access your REST API from JavaScript, you can do so quite easily using jQuery or even more easily using the ww.jquery.js library that ships with Web Connection. 
+If you want to access your REST API from JavaScript, you can do so quite easily using jQuery or even more easily using the ww.jquery.js library that ships with Web Connection. 
 
 In this example, I'll use Visual Studio to create the boiler plate HTML page, but you can create the HTML by hand or copy the HTML from the templates in `Fox\VisualStudio\PageTemplates` folder into your application folder.
 
 Lets create a simple example application that displays a drop down list of customers, allows selection of a customer and saving updated customer data back to the server. Here's what the finished result will look like:
 
-![](IMAGES/stepbystep/CustomerDemojQuery.png)
+![](/images/stepbystep/CustomerDemojQuery.png)
 
 ### Creating a new Customer List HTML Page
 Let's start by creating a plain HTML page that uses jQuery. In Visual Studio I'll use the AngularJS template as that creates a pure HTML page that references all the things needed. We won't use the Angular part until the next step but it's a good starting point for this example.
@@ -18,7 +18,7 @@ To start:
 
 The dialog should look like this:
 
-![](IMAGES/stepbystep/jQuerySamplePageTemplate.png)
+![](/images/stepbystep/jQuerySamplePageTemplate.png)
 
 This generates a page called `CustomerDemojQuery.htm` with a matching `CustomerDemojQuery.js` page that is automatically referenced by the Html page:
 

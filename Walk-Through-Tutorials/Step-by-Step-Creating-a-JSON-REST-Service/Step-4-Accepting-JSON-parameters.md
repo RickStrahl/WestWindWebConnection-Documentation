@@ -1,4 +1,4 @@
-﻿In the last step we looked at how to render the list of customers, but we didn't really have a way to constrain the list. If we want to filter the list returned we should be able to pass parameters to the request.
+In the last step we looked at how to render the list of customers, but we didn't really have a way to constrain the list. If we want to filter the list returned we should be able to pass parameters to the request.
 
 There are a couple of ways you can pass 'parameters' to a request
 
@@ -108,7 +108,7 @@ RETURN "cursor:TCustomers"
 
 Here's what this looks like if you test it with West Wind WebSurge:
 
-![](IMAGES/stepbystep/CustomerListRESTQueryWithWebSurge.png)
+![](/images/stepbystep/CustomerListRESTQueryWithWebSurge.png)
 
 The code lets you pass in no filter, or a filter object with any or none of the filter values actually set. The code checks to see if the values are set and if they are they are retrieved. The response then simply returns the results.
 

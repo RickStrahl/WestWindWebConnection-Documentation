@@ -1,4 +1,4 @@
-﻿The Web Connection Visual Studio Add-in provides a number of useful features that makes viewing Scripts and Templates and editing and previewing of Web Control Framework pages easier.
+The Web Connection Visual Studio Add-in provides a number of useful features that makes viewing Scripts and Templates and editing and previewing of Web Control Framework pages easier.
 
 * View in Browser lets you preview Script and Template Pages
 * View FoxPro Code either in VFP editor or an external editor (VS Code)
@@ -11,7 +11,7 @@ Visual Studio has a native feature for
 ### Show FoxPro Code
 When inside of a Web Connection script page you can right click and bring up the shortcut menu which includes a **Show FoxPro Code** option:
 
-![](////images/misc/showfoxprocodeaddin.png)
+![](/images/misc/showfoxprocodeaddin.png)
 
 The option opens a new instance of Visual FoxPro and - if the page has a `SourceFile` assignment at the top - opens the appropriate file in the FoxPro editor.
 
@@ -37,13 +37,13 @@ Supports jumping directly to FoxPro source code in the FoxPro IDE or a pre-confi
 The add-in installs as part of the Web Connection installation if Visual Studio is detected (or you can manually install - see below). Once installed the add-in is available on the Visual Studio shortcut *Tools* menu, or by right clicking in any HTML, Script, Template or Web Control Framework page.
 
 ##### For HTML, Scripts and Templates
-![](IMAGES/misc/AddinScripts.png)
+![](/images/misc/AddinScripts.png)
 
 ##### For Web Control Framework Pages
-![](IMAGES/misc/AddinWebControls.png)
+![](/images/misc/AddinWebControls.png)
 
 ##### On the Main Menu Toolbar
-![](IMAGES/misc/AddinToolbar.png)
+![](/images/misc/AddinToolbar.png)
 
 
 ### Script, Template and HTML File Features
@@ -51,7 +51,7 @@ For HTML and script pages, the add-in offers two features: View in Browser and S
 
 ##### View in Browser
 This option lets you use the Visual Studio configured browser to navigate to the active Web Control Framework Page. The browser is shown on the Visual Studio toolbar and you can change the current browser via the dropdown as well as set the default browser.
-![](IMAGES/misc/AddinBrowser.png)
+![](/images/misc/AddinBrowser.png)
 
 The Web Site navigated to uses the `WebProjectVirtual` key from the `web.config` file, or if possible the designated project Web site (which isn't always available to the Addin) in order to figure out the site in which to open the page in your browser.
 

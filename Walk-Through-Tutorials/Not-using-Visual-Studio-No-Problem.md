@@ -1,4 +1,4 @@
-﻿In these tutorials I use Visual Studio to demonstrate a number of Web Connection and JavaScript features. I prefer using Visual Studio for its many, powerful Intellisense features it provides for HTML, CSS and JavaScript which frankly is much better than any other tool out there. 
+In these tutorials I use Visual Studio to demonstrate a number of Web Connection and JavaScript features. I prefer using Visual Studio for its many, powerful Intellisense features it provides for HTML, CSS and JavaScript which frankly is much better than any other tool out there. 
 
 ### Visual Studio Community is Free
 And now **<a href="https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx" target="top"> Visual Studio Community Edition</a>** is a **free** version of Visual Studio Pro. It is **free** for all but bigger Enterprise customers (over 250 PC and over 1M in revenue).
@@ -27,7 +27,7 @@ I really like <a href="https://code.visualstudio.com" target="top">Visual Studio
 ### Using Page Templates
 One advantage of using Visual Studio is that Web Connection ships a number of default Page Templates that create a predefined HTML layout for you that you can quickly adapt. These are especially useful if you use Script or Template pages with a master Layout page:
 
-![](IMAGES/stepbystep/CustomerDemoAngularProjectDialog.png)
+![](/images/stepbystep/CustomerDemoAngularProjectDialog.png)
 
 If you are not using Visual Studio you can still use these templates, but it'll be a little bit more work.
 

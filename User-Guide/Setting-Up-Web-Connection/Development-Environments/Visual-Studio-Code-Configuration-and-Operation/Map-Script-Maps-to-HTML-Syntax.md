@@ -1,6 +1,6 @@
-﻿If you're using Web Connection in MVC mode and create HTML scripts or templates, you'll want to set up custom editor associations for your script pages. For example, in wwThreads I want to edit my `Thread.wwt` page and have it treated like HTML:
+If you're using Web Connection in MVC mode and create HTML scripts or templates, you'll want to set up custom editor associations for your script pages. For example, in wwThreads I want to edit my `Thread.wwt` page and have it treated like HTML:
 
-![](IMAGES/misc/VSCODEFOLDERMODEOPENED.PNG)
+![](/images/misc/VSCODEFOLDERMODEOPENED.PNG)
 
 Notice that the syntax used is displayed on the toolbar on the status bar on the right. 
 

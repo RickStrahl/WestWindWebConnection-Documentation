@@ -1,4 +1,4 @@
-﻿Once you've decided whether to add tables to an existing SQL Server database or whether to create a new database, you have to let the Wizard know how to connect to the database.
+Once you've decided whether to add tables to an existing SQL Server database or whether to create a new database, you have to let the Wizard know how to connect to the database.
 
 There are two connection options depending on how you want to create the database. In the previous step, if you chose:
 
@@ -8,7 +8,7 @@ In this case you should provide the connection string to the Master database.
 * **Add tables and Stored Procedures to an an existing database**  
 In this case you should provide the connection string to the existing database.
 
-![](///images/ManagementConsole/SQLConfig2.png)
+![](/images/ManagementConsole/SQLConfig2.png)
 
 If you used an existing database you can also use a DSN connection as long as the required login information is provided. If left out, you'll get a SQL server logon dialog. 
 

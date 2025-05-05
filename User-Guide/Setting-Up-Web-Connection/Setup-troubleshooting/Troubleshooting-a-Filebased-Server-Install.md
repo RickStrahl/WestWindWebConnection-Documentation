@@ -1,4 +1,4 @@
-﻿When you install Web Connection it defaults into File based communication and a file based server requires that it can communicate with the Web Server via message files. There are a few things that can go wrong here either because a step was missed during setup or because a service is not running. 
+When you install Web Connection it defaults into File based communication and a file based server requires that it can communicate with the Web Server via message files. There are a few things that can go wrong here either because a step was missed during setup or because a service is not running. 
 
 
 
@@ -26,7 +26,7 @@ Tempfilepath=.\temp\
 **Filebased**
 When using the .NET Module the temp path is set in web.config. You can quickly check the value by accessing the Module Configuration page from the Admin page:
 
-![](IMAGES/misc/ModulePaths.png)
+![](/images/misc/ModulePaths.png)
 
 This path is read from the following web.config settings: 
 
