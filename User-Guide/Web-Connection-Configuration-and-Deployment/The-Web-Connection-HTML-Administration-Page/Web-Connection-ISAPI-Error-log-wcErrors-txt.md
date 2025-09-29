@@ -1,4 +1,4 @@
-﻿Web Connection is an ISAPI DLL that runs inside of IIS. Since it's a system level component errors don't show on the console, so all errors are logged into a file that you can examine. The file is called wcErrors.txt and goes into the Web Connection temporary file path. Note IUSR_ must have Full Access in this directory in order to create the log and write to it.
+Web Connection is an ISAPI DLL that runs inside of IIS. Since it's a system level component errors don't show on the console, so all errors are logged into a file that you can examine. The file is called wcErrors.txt and goes into the Web Connection temporary file path. Note IUSR_ must have Full Access in this directory in order to create the log and write to it.
 
 The maintenance page contains a Show DLL Errors link you can use to view the log. 
 
@@ -20,6 +20,6 @@ These errors relate to crashed or killed Web Connection servers that unloaded wh
 The errors above are all benign and are nothing to worry about even if you see a lot of them. There are also permission errors related to maintenance tasks which also are not crucial. Errors to watch out for are:
 
 **Exception Errors**  
-Unhandled exception errors are caused by system errors (like heap corruption, corrupted memory) and believe it or not code errors <s>. If you have isolated exception errors that occur very rarely it's nothing to be worried about - IIS has been known to get unstable and memory/COM subsystem errors are something that will occur from time to time. In my experience these errors are very few indeed and most don't manifest themselves as serious to require even a Web server shutdown/restart.
+Unhandled exception errors are caused by system errors (like heap corruption, corrupted memory) and believe it or not code errors. If you have isolated exception errors that occur very rarely it's nothing to be worried about - IIS has been known to get unstable and memory/COM subsystem errors are something that will occur from time to time. In my experience these errors are very few indeed and most don't manifest themselves as serious to require even a Web server shutdown/restart.
 
 If you run into consistent exception errors make a note of the error message (the nature of exceptions makes this necessarily vague but some will report a little info) and try to get as much context as you can to report the issue. What is the server doing, what types of requests are you running when the problems occurred etc.

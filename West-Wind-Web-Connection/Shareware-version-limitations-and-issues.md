@@ -1,6 +1,4 @@
-﻿<small>not released yet</small>
-
-Web Connection is available in a Shareware version that allows you to check out Web Connection and build and test your applications locally. It's not suitable for deploying running applications and requires that you run your Web Connection applications from inside of the Visual FoxPro IDE.
+﻿Web Connection is available in a Shareware version that allows you to check out Web Connection and build and test your applications locally. It's not suitable for deploying running applications and requires that you run your Web Connection applications from inside of the Visual FoxPro IDE.
 
 ## Shareware Version Differences
 The shareware version provides most of the features of the full version but there are a number of differences.

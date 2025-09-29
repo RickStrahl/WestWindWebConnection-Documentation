@@ -1,236 +1,43 @@
-﻿Web Connection supports a number of different ways for creating Web applications from very high level approaches like the Web Control Framework to low level approaches where you can use pure code to output every single byte of content sent back over the HTTP connection yourself. Which approach you use depends on your preferences and your application's needs. Here's an overview of some of the approaches available.
+﻿Looking at this documentation you may be feeling overwhelmed with information overload. **Relax!** You don't need to understand nor even read everything that's in this documentation, but when you want to dig deeper and [understand some of the topics](VFPS://Topic/_S8104DGGL) the information is there waiting for you. This topic serves as a roadmap for your startup with Web Connection.
 
-* **Low Level Code Only Development**
-* **Model View Controller (MVC) Scripts and Templates**
-* **REST Services**
+This topic is designed to summarize the things that you should most definitely look at. It gives you an idea on where to start, what to try to get going and where to look for more information.
 
-### Low Level Code Only Development
-Like any Web development framework, Web Connection has **raw HTTP output mechanisms for sending output directly into the HTTP stream**. Web Connection uses these features internally to build core abstractions as well as the higher level frameworks discussed below. The same features are also available to you to use in your application code.
+Use the Help File! It's got tons of information, and if you get stuck the answer is likely in here. It's keyworded and searchable in addition to the Content view, so take advantage of this very rich resource. 
 
-You can use raw `Response.Write()` commands to write out Html from code for example. There are also a number of Html helpers that facilitate generate a few HTML abstractions directly from code. It might be very tempting to build small applications this way. While this works, it generally not a good idea to create Html output purely from code directly in `wwProcess` methods as it ends up creating a lot of extra code that is mixed with your business logic. It's also much harder to edit HTML in code than say in an external HTML editor as you would with MVC for example.
+### Setup and Installation
+The first step in getting Web Connection installed is to install the product from the self-executing ZIP file. Run the file and the following installation program. You can find more info on installation at this topic:
 
-Low level access is useful for many things - if you have requests that return file or image content as part of your application for example, it's useful to create individual methods that specifically use low level `Response.Write()` and header access. If you are building a custom framework on top of Web Connection then too it makes good sense to use the low level access methods. But for typical application code, it's usually not a good choice.
+[Setting up Web Connection](vfps://Topic/Setting%20Up%20Web%20Connection)
 
-#### Pros
-* Logical First Step
-* Easy to understand and write
+### Checking out the demos
+This step serves two purposes: It makes sure that the installation works and lets you see Web Connection in action with demos that you can look at and code you can step through if you choose. Make sure you run the Web Connection server (`DO wcDemoMain.prg`). 
 
-#### Cons
-* Difficult to maintain
-* Have to recompile for each HTML change
-* Can't use sophisticated HTML Editing tools
+<a href="http://localhost/wconnect/" target="top">Go to the demo page</a>
 
-> **As a general rule:** It's OK to experiment with low level output when you get started, but as you build real applications, it's best to choose another pattern for creating output. Unless you are building a custom framework, or a purely meta data driven output engine type application, code based HTML generation is rarely a good idea.
+Most of the examples on the demo pages have links to show you the source code required to create that request by clicking on the [Show Code] link on the bottom of the page. At this time you can also start poking around in the code, making a few adjustments, maybe creating a new method and stepping through the code to get an idea what's involved in writing code for Web functionality.
 
-#### Hello World Example
-Raw HTML output is exactly as you would expect: You write out code using the `Response` object directly from within a Process method in your `wwProcess` subclass:
+### Walk through a Tutorial
+Web Connection ships with several tutorials in the documentation that help you get started. There are four tutorials provided:
 
-```foxpro
-*** wwProcess Method
-FUNCTION HelloWord()
+* **[Step by Step: Getting Started](VFPS://Topic/_0NB1AL6FM)**
+* **[Step by Step: MVC Development with Business Objects](VFPS://Topic/_0I102WSAI)**
+* **[Step by Step: Creating a JSON REST Service and Angular Front End](VFPS://Topic/_4IU1EV8PM)**
 
-lcName = Request.QueryString("name")
+The first gets you started with Web Connection after installation and creating your first new project, and walks through some of the basic features. The second is a bit more advanced and dives into build MVC (Model View Controller) style applications that use script templates that mix HTML and FoxPro expressions and code to render UI and code to drive the templates. The final example demonstrates how to build JSON REST services and consume them in a variety of ways from FoxPro, plain HTML with jQuery and finally in a small Angular application.
 
-TEXT TO lcText NOSHOW TEXTMERGE 
-<html>
-<body>
-   <h1>Hello << lcName >></h1>
-   <hr />
-   Nice to meet 'ya. Time is: << Time() >>
-</body>
-</html>
+### Use the Web Connection Management Console to create a new project
+Once you have familiarized a little bit with how Web Connection works you're probably ready to create your own requests for your own application. To do this you can use the [New Project Wizard](vfps://Topic/New%20Project%20Wizard) by running the [Web Connection Management Console](vfps://Topic/The%20Web%20Connection%20Management%20Console).  To start the management Console type `DO Console.exe` into the command window or run the EXE from Explorer.
 
-Response.Write(lcHtml)
-ENDFUNC
-```
+The new project will set up a new VFP application for you that you can start to write your own requests with. Now it's time to write access your business logic from within these Web requests and create some output to display back in the browser. As you start writing code you likely run into a few situations where you don't know how to do something. I suggest you go back to the demos and see if you can find something there that demonstrates what you're trying to do. Again, the <a href="http://www.west-wind.com/wwThreads/" target="top">message board</a> is a great resource to post questions to if you get stuck or even if you want to bounce some ideas of other developers who have been down the path.
 
-### MVC style Scripts and Templates
-A very common Web development pattern is known as **MVC**:
+### Use the Documentation, Luke
+Once you start your own development you will want to keep this help file or the <a href="http://www.west-wind.com/webconnection/docs/" target="top">online version</a> handy. 
 
-* **Model**  
-This refers to the data in your applications. This can be in the form of data retrieved from tabels, or view model objects that message data into the required data to be ready for display.
+The documentation contains both an extensive user guide as well as a complete reference for all of the supported classes and components. There's a lot of it and the docs are huge - but don't think that you need to know all of it. You'll use small chunks of what's there frequently and many other only occasionally. Being productive with Web Connection really requires only a a small percentage of what is available in this powerful tool. But it's nice to have access to many of those features when the need arises.
 
-* **View**   
-A view is responsible for turning passed in Model data (if any) into output - typically an HTML document. This is done via templates or scripts that typically mix HTML  with code  expressions and bits of control statement code (`if`, `case`, `for`, `while`, `scan` etc.) to produce the final text merged output. In Web Connection this is done via **Scripts and Templates** that let you use FoxPro code within Html templates using ASP like template expansion syntax (`<%= expression %>`).
+The extensive class reference will come in very handy as you start creating requests using the Web Connection framework classes. Most of your development work involves a couple of objects - [ wwRequest](VFPS://Topic/_S850QFR2E), [wwPageResponse](VFPS://Topic/_1O80YQ37Z) and [wwProcess](VFPS://Topic/_S840SSNHB) - take a look at those first and keep them handy - you'll use those a lot.
 
-*  **Controller**  
-The controller is the entry point for an MVC request. In Web Connection it's a Process method that receives a request. The controller receives input via the `Request` object, then runs the logic required to create a **Model** from the Request. Controller code should preferrably defer operations to other objects to perform the heavy application logic responsible for retrieving or updating of data using Business objects or other abstracted data operations. The result that is returned can then be sent to the view for rendering. If necessary the result data can be stored into an explicitly created **View Model** object that further formats and messages the data so it's ready for display in the **View**. 
+### Configuration and Installation
+Once you've built an application you will need to actually install it on a Web server or other server machine. Although this process is not difficult there are a fair number of files and components involved. The [Web Connection Configuration](vfps://Topic/Web%20Connection%20Configuration%20and%20Deployment) topic describes many of the configuration components and the options available in them.
 
-MVC is an attractive strategy for Web development as it results in small bits of Controller code, with the display logic moved into an external HTML template that behaves like a standard HTML document with embedded server logic. Because the file is external, you can use standard HTML editors for editing HTML rather than editing HTML in code. Templates and scripts are **external to your code project**, so you can easily change them without recompiling and redeploying your entire project.
-
-MVC is a commonly used pattern for Web Development so it's familar to developers for other frameworks. If you move to another technology in the future you are likely to find MVC frameworks and might even be able to reuse most of your HTML template content.
-
-[more info on Scripts and Templates](VFPS://Topic/_4DB0VHAQW)
-
-#### Pros
-* Very easy to understand and get started with
-* Efficient and fast executing code
-* Easy to modify templates on the fly
-* Use standard HTML editors
-
-#### Cons
-* Templates and Scripts have some processing overhead
-* Script Compilation at runtime can be confusing
-
-#### Hello World Example
-HTML Markup:
-```html
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>HelloWorld</title>
-    <link href="../westwind.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form id="form1" runat="server" method="POST">
-
-    <h1>HelloWorld</h1>
-    
-    <div class="containercontent">    
-        Enter your name:
-        <input type="textbox" id="txtName" name="txtName" value="<%= pcName %>" />
-        <input type="submit" id="btnSayHello" name="btnSayHello" value="Say Hello" />
-        <hr />
-        <%= pcMessage %>
-    </div>
-    
-    </form>
-</body>
-</html>
-```
-
-The FoxPro Controller code in a Process class method then looks like this:
-
-```foxpro
-FUNCTION HelloWorldTemplate
-PRIVATE pcName, pcMessage
-
-*** Variables to embed in the Template View
-pcName = ""
-pcMessage = ""
-
-*** if we're posting back
-IF Request.IsFormVar("btnSayHello")
-   pcName = Request.Form("txtName")
-   pcMessage = "Hello World " + pcName + ". Time is: " + TIME()
-ENDIF
-
-* **Call the template from Web path (HelloWorldTemplate.wwd)
-* **Alternately you can explicitly point at a path
-Response.ExpandScript( )
-
-*** Some Alternatives
-* Response.ExpandScript(Response.GetPhysicalPath())
-* Response.ExpandScript("~/SomeOtherPage.wwd")
-* Response.ExpandTemplate()
-
-ENDFUNC
-```
-
-#### Links:
-* <a href="http://www.west-wind.com/webconnection/docs?page=_0nb1al6fm.htm" target="top">Walk-Through with Classic Web Connection Templates</a>
-
-
-### REST API
-You can also build API Services quite easily with Web Connection. APIs are non-visual interfaces that return raw data, rather than HTML. You pass data/parameters to a service, the service does some work based on the input and then returns a data result - most commonly in JSON format. You can then use client side frameworks like Vue, Angular, React etc. to build a front end that consumes these JSON services. You can also build other types of application UIs like native mobile apps, desktop apps, that connect to your REST API and retrieve data from it.
-
-The development approach is very similar to the way you build an MVC application except that instead of passing your model to the Template to render, you simply return it and get it turned into a JSON or XML result. 
-
-In a nutshell every REST endpoint is a method in your Process class, with a single input value and a single result value. Each method can take a single POST or PUT JSON parameter as input, or you can use Form and Query variables just as you can in standard wwProcess handlers and it can return a single value, object or collection which is serialized as JSON.
-
-Input and result objects can be complex - objects, nested objects or collections - that allow you to pass in and return multiple results using a single wrapper. These values can be single FoxPro values (ie. string, number, boolean, date, binary data) or a complex and nested object or a collection or even a FoxPro cursor (which renders as a JSON collection).
-
-REST API services work with a custom `wwRestProcess` class (which is the top level 'handler') that handles the routing of requests to the appropriate methods as well as the  de-serializing incoming JSON data to FoxPro value/objects and serializing the return value into JSON. Again, each endpoint becomes a method in your Process class with a single input and a single result value.
-
-
-[More info on REST Services](VFPS://Topic/_5az14azpm.htm)
-
-#### What does a REST API Look like?
-An API endpoint is just a method inside of a `wwProcess` class with a single input parameter and a return value. The input can map an optional single JSON value, object or collection into a FoxPro object. Your code can then use that object to create new output in the form of a result value, object, collection or cursor.
-
-Here's a simple example:
-
-```foxpro
-*********************************************************************
-FUNCTION GetData(lvParm)
-************************
-
-*** Any posted JSON string is automatically deserialized
-*** into lvParm FoxPro object or value 
-
-*** In this example an object with multiple query values
-*** was passed
-lcSearchName = lvParm.searchName
-lcSearchDate = lvParm.searchDate
-
-
-*** Run your business logic...
-select * from customers ;
-    where lastName = lcSearchName AND ; 
-          entered > lcSearchDate ; 
-    into cursor TCustomers
-    
-
-*** Simply create objects, collections, values and return them
-*** they are automatically serialized to JSON
-
-*** Create an object on the fly here to return 'multiple' values
-*** But you can return any object, collection, cursor or value
-loObject = CREATEOBJECT("EMPTY")
-ADDPROPERTY(loObject,"searchFor",lcSearchName)
-ADDPROPERTY(loObject,"serachDate", lcSearchDate)
-
-*** Attach the cursor as a JSON array
-ADDPROPERTY(loObject,"customers","cursor:TCustomers")
-
-
-*** Properties by default serialize to *all lower case*
-*** This allows overriding property case for specific properties
-Serializer.PropertyNameOverrides = "searchFor,searchDate"
-
-*** Return value of this API - serialized to JSON
-RETURN loObject
-```
-
-A client could POST to this API with the following JSON:
-
-```json
-{
-    searchFor: "Strahl",
-    searchDate: "2018-09-27T18:00:00Z"
-}
-```
-
-The method then produces the following output:
-
-```json
-{
-    searchFor: "Strahl",
-    searchDate: "2018-09-27T18:00:00Z",
-    customers: [  
-      {    
-        lastname: "Strahl",
-        firstname: "Rick",
-        company: "West Wind"
-        entered: "2018-09-29T18:00:00Z"
-      },
-      {    
-        lastname: "Doe",
-        firstname: "Jane",
-        company: "Neverland Inc."
-        entered: "2018-09-29T18:00:00Z"
-      },
-        ...
-    ]
-}
-```
-
-In short it's very simple to create APIs using this interface.
-
-#### Pros
-* Very easy to understand and get started with
-* Efficient and fast executing code
-* Great for any sort of Data access from HTTP clients
-
-#### Cons
-* FoxPro JSON conversion issues - casing requires special fix up
-* Huge data sets can be slow
+You can also resort to the [Management Console](vfps://Topic/The%20Web%20Connection%20Management%20Console) and the [Server Configuration Wizard](vfps://Topic/Server%20Configuration%20Wizard) to help you with configuring your Web server with the appropriate virtual directories and script maps as well as copying and registering the Web Connection components for your application.

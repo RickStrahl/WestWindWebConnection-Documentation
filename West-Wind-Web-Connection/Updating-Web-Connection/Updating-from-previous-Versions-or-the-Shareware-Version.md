@@ -1,4 +1,4 @@
-Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 7.10 -> 7.12 for example).
+﻿Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 7.10 -> 7.12 for example).
 
 > #### @icon-warning Updating from the Shareware Version
 > If you are updating from the Shareware version or you had previously installed the Shareware version, or you have already installed and are seeing shareware version prompts we recommend a **full delete of all files** in the Web Connection installation folder followed by a full reinstall as a **Fresh Install** as described below.
@@ -20,7 +20,9 @@ There are potentially some files that you may have customized and you may want t
 
 * `wconnect_override.h`
 * `wwSession` and `WebRequestLog` tables if you need to retain logs/sessions
-* Any other files you've explicitly put in the install folder (not recommended)
+* Any other files you've explicitly put in the install folder **(not recommended!)**
+
+> Always, always put your application specific files into a separate project folder.
 
 Once copied we recommend you also run `setup.exe` again, to update the Visual Studio Addin and Visual Studio and Visual Studio Code templates etc. but this is optional. Setup doesn't touch any of your project files so it's safe to run without breaking existing applications. 
 
@@ -121,8 +123,9 @@ The DLLs in questions include:
 * wwImaging.dll
 
 #### .NET Interop 
-* Markdig.dll
-* Renci.SshNet.dll
+* Markdig.dll  <small>*(markdown)*</small>
+* Renci.SshNet.dll   <small>*(sftp)*</small>
+* FluentFtp.dll    <small>*(ftp, ftps)*</small>
 
 Of these files **wwIPStuff.dll**, **wwDotnetBridge.dll** and **zlib1.dll** are core dependencies that **have to be present** as they are used internally in Web Connection. 
 

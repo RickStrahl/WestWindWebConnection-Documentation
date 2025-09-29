@@ -21,7 +21,7 @@ oHttp.nHttpPostMode = 2
 *** Post a file as a Form variable
 oHttp.AddPostFile("upload","c:\sailbig.jpg",.T.,"image.png","image/png")
 
-*** Optionally there may be other basic form variables on the form
+*** Optionally there may be form variables (ie. text vars) on the form
 oHttp.AddPostKey("notes","Notes about the image uploaded")
 
 lcHTML = oHTTP.Post("http://localhost/wconnect/wcscripts/FileUpload.wwd")
@@ -30,13 +30,11 @@ lcHTML = oHTTP.Post("http://localhost/wconnect/wcscripts/FileUpload.wwd")
 ShowHTML(lcHTML)  && Image is there but not rendering because of relative path
 ```
 
-The important part is to set `oHttp.nPostMode=2` (multi-part forms) which is required in order to upload files via HTTP. Multipart mode is much more efficient than standard URL Encoded format as raw binary data is sent to the server un-encoded which results in smaller files and raw data that doesn't have to be converted first. Most upload operations on the Web use multi-part forms for upload purposes.
+The important part is to set `oHttp.nPostMode=2` (multi-part forms) **before calling `AddPostKey()` or `AddPostFile()`, which is required in order to upload files via HTTP. 
 
-You need to use `.AddPostKey(lcKey,lcFilePath,.T.)` to actually send the file. The last `.T.` parameter specifies that `lcFilePath`  is a filename and loaded from disk rather than a raw string. wwHttp reads the file directly from disk and encodes it. Alternately you can also pass the raw data as a string and leave the parameter at its default of `.F.`. 
+Multi-part uploads are much more efficient than standard URL Encoded forms as raw binary data is sent to the server un-encoded which results in smaller transfers raw data that doesn't have to be encoded into a multi-byte base64 encoding first. Most upload operations on the Web use multi-part forms for upload purposes as part of their APIs.
 
-Files uploaded from disk can exceed 16 megs. Raw string form values cannot exceed 16 megs. 
-
-> Note Web Connection server requests can only receive a POST buffers of up to 16 megs total
+You need to use `.AddPostFile()` to actually send the file. wwHttp reads the file directly from disk and encodes it as part of the multi-part form as it does for plain text variables using `AddPostKey()`. wwHttp basically collects all the parameters, and then creates the upload POST buffer prior to sending the request to the server.
 
 ### Picking up an uploaded file on the Server with Web Connection
 The file must be picked up by a server application running on the Web Server. In the example above a `FileUpload.wwd` handler in a Web Connection application is picking up the file which looks something like this.
@@ -89,10 +87,11 @@ ENDFUNC
 * wwDemo :: FileUpload
 ```
 
-The key here is the Request.GetMultiPartFile() method which retrieves the file by its key name. Pass in an option filename string by reference to also retrieve the file name the browser sent.
+The key here is the `Request.GetMultiPartFile()` method which retrieves the file by its key name. Pass in an option filename string by reference to also retrieve the file name the browser sent.
 
-Note that uploads in Web Connection are limited to 16 megs total content due to FoxPro's 16meg string limit.
 
+> ##### @icon-warning IIS POST Limit Configuration Required for Servers
+> Note that [IIS must be configured for large file uploads](dm-topic://_4lp0zgm9d) in order to accept files of more than a few megabytes. By default the IIS and ASP.NET uploads are limited to  around 2mb.
 
 ### Using an ASP.NET Web Form to receive the File
 Here's another server side example of what C# code in an ASP.Net page might look like to pick up a POSTed file:
@@ -125,49 +124,39 @@ private void Page_Load(object sender, System.EventArgs e)
 }
 ```
 
-### Raw REST Uploads
-Some services also allow uploading of 'files' as raw data. 
+### Raw REST File/Data Uploads
+Some services also allow uploading of 'files' as raw data. To do this you essentially pass the file as a string to `.Post()` method.
 
-So rather than using the multi-part forms protocol, you simply send the raw file data to the server in a `POST` or `PUT` operation. Frequently services will require an additional header to specify a file name or additional information about the file. To do this, set the `.cContentType` property explicitly, or explicitly set the `.nHttpDataMode=4`.
+So rather than using the multi-part forms protocol, you simply send the raw file data to the server in a `POST` or `PUT` operation. Frequently services will require an additional header to specify a file name or additional information about the file. 
 
+> To do this you have to set the `.cContentType` property explicitly.
 
 ```foxpro
 DO wwHttp
 oHttp = CREATEOBJECT("wwHTTP")
 
-*** Set mode to multi-part form
-* oHttp.nHttpPostMode = 4
+*** Explicitly specify the content type
 oHttp.cContentType = "application/json"
 
 *** Add any headers the service might request
-*** this is app specific
+*** this is an app specific way to pass the filename
 oHttp.AddHeader("x-filename","customer.json")
 
+*** retrieve some JSON data - can be data driven or from a file
 lcJson = GetJsonCustomer()
 
-*** Just post the raw data
-oHttp.AddPostKey(lcJson)
-
-*** Call server and receive response string
-lcJson = oHTTP.Post("https://localhost/MyApp/Api/CustomerUpload")
+*** Call server and POST the raw string
+lcJson = oHTTP.Post("https://localhost/MyApp/Api/CustomerUpload", lcJson)
 
 *** Display result from server
 ShowText(lcJson)  
 ```
 
-As an alternative you can also directly post data using the `Post()` method:
+Note that instead of JSON data, you could also post a binary file in this fashion. You'd change the content type to match the appropriate file mime type for the file sent.
 
-```foxpro
-*** Need to set the content type
-oHttp.cContentType = "application/json"
+Note that this mechanism is custom and depends on what the service expects. The above mechanism is the most efficient as you are essentially sending raw data - as is without any encoding - to the server.
 
-*** Call server and receive response string
-lcJsonResult = oHTTP.Post("https://localhost/MyApp/Api/CustomerUpload", lcJson)
-```
-
-If you build your own services I would recommend using this latter approach as it is more efficient and easier to implement for REST clients. However, it does mean that you can only send one thing per HTTP request and that you need to use HTTP headers to send any additional information related to a file which is limited (you can't send multiline content in a header for example).
-
-Pick the right mechanism for the job.
+Other services often ask for data as part of a JSON or XML structure in which case the file or binary data is encoded typically as base64. This should be automatically handled by the XML or JSON serializer as long as the data structure contains the correct binary value. For VFP the binary type would be `BLOB`  (ie. `CAST(FILETOSTR('filename.pdf') as BLOB)`).
 
 ### Posting files larger than 16megs
 FoxPro has a 16 megabyte string limit. However, wwHttp support POST buffers larger than 16 megs. You can use AddPostKey() with a file name that gets loaded directly from disk with files of any size. Individual POST strings must be smaller than 16 megs, but the combined POST buffer may exceed 16 megs.

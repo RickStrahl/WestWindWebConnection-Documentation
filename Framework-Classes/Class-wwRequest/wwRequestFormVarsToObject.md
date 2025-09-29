@@ -1,6 +1,6 @@
 ﻿Parses an object and pulls form variables from the request buffer by matching the property names to the request variables.
 
-> In v7.0 and later, this function replaces the `.aFormVars()` method of older versions.
+> In v7.0 and later, this function is meant to replace the `.aFormVars()` method of older versions. The old method still exists but is not recommended.
 
 Optionally you can pass in a prefix for form variables to allow for potential naming problems for properties of multiple objects.
 

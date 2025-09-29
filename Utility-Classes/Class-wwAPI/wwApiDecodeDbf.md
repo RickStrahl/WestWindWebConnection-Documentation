@@ -1,1 +1,3 @@
 ﻿Takes a string encoded with EncodeDbf() and converts it back into a physical file. If the string contains a DBF with a memo the memo is also restored.
+
+> Note: This is a static function not a class method

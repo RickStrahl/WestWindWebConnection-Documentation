@@ -1,13 +1,17 @@
-﻿Web Connection is licensed per developer and/or per physical or virtual Windows Server instance. Licenses are assigned for a specific **major version** (8.x, 7.x, 6.x etc.) of Web Connection or one of its runtime licenses.
+Web Connection is licensed per developer and/or per physical or virtual Windows Server instance. Licenses are assigned for a specific **major version** (8.x, 7.x, 6.x etc.) of Web Connection or one of its runtime licenses.
+
+All licenses are valid for the major version or any prior version that it was purchased for and updates within the same major version are always free. 
+
+Major version upgrades are available at discounted rates and any old version can be upgraded to a new version.
 
 ## License Types
 Licenses come in two flavors:
 
 * **Full Developer License**  
-At least one full developer license is required in order to add any runtime licenses. The developer license includes 2 license counts for one developer and one server installation.
+At least one full developer license is required in order to add any runtime licenses. The developer license includes 2 license counts: One developer and one server installation.
 
 * **Runtime License**  
-A runtime license can be purchased once a developer license exists. Runtime licenses come in various license counts from 5 to unlimited.
+A runtime license can be purchased once at least a single developer license exists. Runtime licenses come in various license counts from 5 to unlimited.
 
 Runtime Licenses can be used interchangeably for:
 
@@ -19,9 +23,9 @@ A runtime license count can be applied to a single developer working on a Web Co
 
 ### Full Developer License
 
-A **Full Developer License** is required for working with Web Connection during development. Additional developers can be added with Runtime licenses. 
+A **Full Developer License** is required for working with Web Connection during development. Additional developers in an organization can be added with Runtime licenses. 
 
-**At least one Developer License is required** before you can apply any Runtime or additional Developer Licenses.
+**At least one Developer License is required** per organization, before you can apply any Runtime or additional Developer Licenses.
 
 The Full Developer License includes:
 
@@ -54,7 +58,7 @@ For this reason, **at least one developer license is required** before runtime l
 ### Developer Runtime Licensing
 If you have multiple developers on your team, **each of the developers requires a separate Web Connection license**. You can either use additional full developer licenses (which include one dev and one server license each), or you can use one runtime license and apply it to a developer instead of a machine (see below). If you have multiple developers on your team each developer on the team needs either a full developer license or a license count of one of the runtime license packs.
 
-In general any more than 2 developers or 2 deployed installations warrants purchase of a Runtime License for savings.
+In general, any more than 2 developers or 2 deployed installations warrants purchase of a Runtime License for savings.
 
 ### Server Runtime Licensing: Per Windows Instance
 Web Connection Server Licenses are associated with a **Windows Instance** which  means either:
@@ -62,18 +66,20 @@ Web Connection Server Licenses are associated with a **Windows Instance** which 
 * A bare metal server running Windows on hardware directly
 * A Virtual Machine running a virtual instance of Windows on Hyper-V, Virtual Box, Docker etc. 
 
-> Regardless of physical or virtual instance, each Windows installation requires a separate Web Connection runtime license.
+> Regardless of physical or virtual instance, each Windows installation requires a separate Web Connection runtime license. 
+>
+> **Simplified: For every Windows license, you also need a Web Connection license.**
 
 #### Multiple Sites per Windows Instance are allowed
-On that physical or virtual instance, you can however run as many Web sites or Domains as you wish. As long as you stay on a single Windows instance, no additional licenses are needed. Only additional **physical or virtual** machines, whether for production, load balancing, staging or testing all require an additional license each.
+On that physical or virtual instance, you can however run as many Web sites or Domains as you wish. As long as you stay on a single Windows instance, no additional licenses are needed. This means you can host many Web sites running IIS on a single server. Only additional **physical or virtual** machines, whether for production, load balancing, staging or testing require an additional license each.
 
 #### Runtime Distribution
 A run-time license allows distribution of a compiled Web Connection application and distribution of any of the binary files included with Web Connection, but server licensing applies to the distributed application. Either you or your client has to have a license for each Windows Instance the distributed application runs on.
 
-Runtime licenses allow for compiled code only. If you need to distribute source code to your clients, they will need a separate developer license either from your license counts or from their own.
+Runtime licenses allow for compiled code only and you can issue those licenses to customers from your license pool. 
 
 #### Source Code Distribution requires a Developer License
-No portions of the Web Connection framework may be re-distributed as source code without a full developer license. If your application distribution for clients requires that the Web Connection source code any part of it is distributed, your client will need a source code license.
+No portions of the Web Connection framework may be re-distributed as source code without a **full** developer license. If your application distribution for clients requires that the Web Connection source code any part of it is distributed, your client will need a full developer license.
 
 Runtime applications can make use of any of the framework classes supplied by the Web Connection framework including the HTML rendering classes and support tools as long as distributed in compiled form (APP/EXE). 
 
@@ -89,7 +95,7 @@ As a broad rule, if you need more than 2 developers or two deployed sites, **run
 #### Single Developer
 A single developer can purchase a Web Connection developer license and use that license to develop the application on the local machine, and deploy Web applications to a single live Windows server instance. This means if you are a consultant and you need to build an application for a single customer, the single developer license is all you need.
 
-* <a href="https://store.west-wind.com/product/wconnect80" target="top">Single Developer License</a>
+* [Single Developer License](https://store.west-wind.com/product/wconnect80)
 
 #### Single Developer Multiple Servers
 If you're a single developer with multiple deployed physical servers you need to have a single Web Connection developer license, plus additional runtime server licenses for each additional site deployed beyond the first one.
@@ -143,7 +149,7 @@ The following rules apply:
 ## License Upgrades
 All licenses are granted for a specific Web Connection major version (6.x, 7.x, 8.x etc) and moving to a new major version requires a paid upgrade. All upgrade pricing is generally in the neighborhood of 50% of full product pricing.
 
-Major version updates are fairly rare at no less than 5 years, and we grant a 1 year free upgrade window from purchase date for the Full Developer License, and 2 years for Runtime Licenses.
+Major version updates are fairly rare at no less than 5 years, and we guarantee a 1 year free upgrade window from purchase date for the Full Developer License, and 2 years for Runtime Licenses.
 
 For runtime upgrade purchases, you can use a **promo code** of **RUNTIME_UPGRADE** for the runtime upgrade discount. Note that we verify existing versions before any upgrade orders are approved.
 

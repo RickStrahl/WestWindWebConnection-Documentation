@@ -1,59 +1,75 @@
-The Web Connection .NET and ISAPI modules include a built-in mechanism for hot swapping an existing COM server while the server is running. This mechanism allows updating of an executable on a live server without taking the server offline first a process which takes a few seconds at most. 
+﻿The Web Connection .NET and .NET Core modules include a built-in mechanism for **hot swapping an existing COM server while the server is running**. This mechanism allows updating of an executable on a live server without taking the server offline first. The actual hot swapping process takes a few seconds at most. 
 
-The process works like this:
+At a low level hot swapping works like this:
 
 * Upload a new EXE using an upload link
 * File is stored in a known file location: `UpdateExe` config key
+* Once the file is there you can hot swap
 * Put requests on hold
 * Unload running servers
 * Hot swap the new EXE into the running Exe: `ExeFile` config key
 * Take requests off hold
 * Reload file servers - COM servers will auto-restart
 
-This process is automated via two separate HTTP links - one to upload the file and one to swap the servers. The process is automated and managed by two matching links in the Web Connection Administration API for interactive operation, or you can use the wwHttp class to automate the process programmatically.
+That's a lot of steps, but the process is automated in two ways:
+
+* **Web Site Administration Update Buttons**  
+The Server Administration page has a couple of links that allow you to **Upload Exe** and **Update Exe** the server interactively.
+* **A generated `bld_YourServer.prg` Script**  
+This option lets you run a local FoxPro file, to publish your EXE directly from your local machine.
 
 > #### @icon-info-circle Write Permissions and File Paths
-> In order for files to upload and swap, the account that's running the IIS Application Pool has to have full access rights in the `Deploy`. Also make sure that `ExeFile` and `UpdateExe` point to valid files. Both files support `~\` Web relative paths. For example:
+> In order for files to upload and swap, the account that's running the IIS Application Pool has to have full access rights in the `Deploy` folder. Also make sure that `ExeFile` and `UpdateExe` point to valid files. Both files support `~\` Web site relative paths. For example:
 >```xml
-<webConnectionConfiguration>
-    <add key="ExeFile" value="~\..\wcdemo.exe" />
-    <add key="UpdateFile" value="~\..\wcdemo_Update.exe" />
-</webConnectionConfiguration>
-```  
+> <webConnectionConfiguration>
+>    <add key="ExeFile" value="~\..\deploy\wcdemo.exe" />
+>    <add key="UpdateFile" value="~\..\deploy\wcdemo_Update.exe" />
+> </webConnectionConfiguration>
+> ```  
 
+> #### @icon-info-circle Only Updates the Server Exe
+> These two mechanisms only publish the actual EXE file. If you have other files that need to be updated - like support DLLs or secondary executables - you have to figure out some other way to get those published in which case you probably have to manually stop and restart the Web site.
+
+  
 ### Adminstration Web Interface
-Using the Web Connection Module Administration page, there are three links that allow you to upload a new server EXE and then hotswap the EXE:
+Using the Web Connection administration page, there are two links that allow you to upload a new server EXE and then hot swap it.
 
-You can find it on the Admin page in the highlighted area:
+You can find these links `Administrate.wc` page in the middle of the page:
 
-![](/images/misc/UpdateExe.png)
+![Update Exe](/images/misc/UpdateExe.png)
 
-Click one of the Upload links to upload your updated EXE to the server. This is simply a file upload. 
+Make sure the upload EXE file matches your application's actual EXE file. The name has to match because this is the file that will replace your original server. 
 
-Once files have been uploaded you can hotswap, by copying the file specified in the `UpdateExeFile` configuration setting to the file specified in `ExeFile`. Web Connection will try to put the server into **Server Hold** mode that disables incoming requests, then unload all COM servers or file serve
+Click on Upload Server Exe. You are prompted to pick an EXE file to upload. Pick your local compiled Exe and go.
+
+If the upload succeeds the `YourServer_update.exe` now exists on the server. Click on the **Update Server Exe** button to hot swap the update file into the main exe file. The link handles shutting down servers, putting the server briefly on hold and then hot swapping the files. When done the server is then taken off hold and ready to receive new requests.
+
+When it's all said and done you should see a page like this:
 
 ![](/images/misc/HotSwappedFileComplete.png)
 
-### Server Links
-There are three different links:
+### Using the `bld_YourExe.prg` Script
+Another option is to use the `bld_YourServer.prg` script  with a parameter of `.T.`:
 
-* **.NET Handler EXE Upload**  
-This uses the .NET module itself to handle the file upload  
-*UploadExe.wc*
+```foxpro
+do bld_YourServer with .T.
+```
 
-* **ISAPI Handle EXE Upload**  
-This uses the Web Connection server to handle the upload. The ISAPI module doesn't support uploading directly, so this is offloaded to the Web Connection server.  
-*wc.wc?wwMaint~FileUpload*
+This script file was generated when a new project was created and you can modify this file to add additional functionality and update things like passwords and server locations. You have to edit the file to change the default target server and default user name to log into your server to allow the upload to work.
 
-* **Hotswap the ExeFile and UpdateExe**  
-This function is built into both the .NET and ISAPI modules. It works reliably only in COM mode as it shuts down the COM objects, and then and copies the `UpdateExe` file to the `ExeFile`. It can also work in File Mode but all file servers have to be explicitly shut down.  
-*UpdateExe.wc* (.NET handler) or *wc.wc?_maintain~updatedexe* (wc.dll)
+The script performs all the steps we saw in the Web Interface in one continuous operation, uploading the file, and then hotswapping it.
+
+When done you get a confirmation or error page.
+
+> #### @icon-lightbulb Always start with the Web Page!
+> When you run a server update for the first time I recommend you use the Web Page first to ensure that the update process is working. If that works as expected, then and only then should you use the FoxPro script to publish as you get more information on the Web page if something goes wrong.
 
 
 ### Configuration Settings
-The process is controlled via the `ExeFile` and `UpdateExe` configuration settings in the `web.config` and `wc.ini` files. 
+The update process is controlled via the `ExeFile` and `UpdateExe` configuration settings in the `web.config` (.NET Module) and `WebConnectionWebServerSettings.xml` (.NET Core) files. 
 
-**In web.config:**
+**In web.config:** (.NET Module)
+
 ```xml
 <webConnectionConfiguration>
   <add key="ExeFile" value="~\..\deploy\wcdemo.exe" />
@@ -61,19 +77,30 @@ The process is controlled via the `ExeFile` and `UpdateExe` configuration settin
 </webConnectionConfiguration>
 ```
 
-**In wc.ini:**
-```ini
-[Main]
-ExeFile=c:\webconnectionprojects\wwdemo\wcdemo.exe
-UpdateFile=c:\webconnectionprojects\wwdemo\wcdemo_update.exe
+**In WebConnectionWebServerSettings.xml:** (.NET Core Module)
+
+```xml
+<WebConnectionWebServerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ExeFile>~\..\deploy\Wwthreads.exe</ExeFile>
+    <UpdateFile>~\..\deploy\Wwthreads_Update.exe</UpdateFile>
+</WebConnectionWebServerSettings>
 ```
 
-Note that the .ini version requires a full path, while the web.config version understands relative paths relative to the root web folder which makes the values more portable if moved.
+The paths here use Web relative virtual paths via `~\` which map to the project's `Web` folder. You can also use a full path, or a completely relative path, but the above syntax is most portable.
 
-Once these values are set the manual upload process allows you to push a binary to the server, and hot swap it.
 
-### Automating the process with Bld_yourProject.prg
-When you create a new project Web Connection automatically builds a `bld_yourProject.prg` file that builds your server and creates a base template for uploading a new binary to the server.
+### Automating the process with Bld_YourServer.prg
+When you create a new project Web Connection automatically builds a `bld_YourServer.prg`  where `YourServer` is the name of your project. That script compiles your server and if that works sends the file to the server using the same **Upload Exe** and **Update Exe** links we saw on the Web Site.
+
+The script is plain PRG code, so you can review what it does:
+
+* Builds the server
+* Registers the COM server
+* Optionally registers for DCOM
+* Uploads the file
+* Hotswaps the file
+
+If any of these steps fail the process is aborted.
 
 Here's the relevant code from this file (this example assumes the EXE name and virtual are `WebDemo`):
 
@@ -140,17 +167,15 @@ ELSE
 ENDIF
 ```
 
-This code basically goes through and programmatically drives the same two links shown in the figure shown earlier using the [wwHttp class](VFPS://Topic/_0JJ1ABF2K). The first request goes to:
+You can customize this file as needed, and you can perform additional deploy operations. For example, if you need to push additional files up to the server, you can potentially use the FTP publishing tools to publish those extra files as well.
 
-```
-http://localhost/Webdemo/wc.wc?wwmaint~FileUpload
-```
+### Manually?
+You can of course do all of this manually, but if you do you're going to have to go through all the steps described at the top of this article. 
 
-and uploads the local `WebDemo.exe` file to the server. This request hits your Web Connection server to actually capture the file and dump it to disk in `webdemo_update.exe` on the server.
+Doing it manually involves manually copying files to the server, taking the site off line, copying in files, then restarting.
 
-The second request then hits:
+There are timing issues here too because the binaries are locked while the server is running so you have to upload to a temporary file then swap the files when the server is online.
 
-```
-http://localhost/Webdemo/wc.wc?_maintain~UpdateExe
-```
-which hot-swaps the exe by shutting down the COM servers, putting the servers on hold, swapping the `WebDemo_update.exe` to `WebDemo.exe`, taking the servers off hold and then reloading servers. The latter HTTP result is captured and displayed for you. The server code against the .NET module reads out the new server's write date and version and echo's that back so you can see if the update worked.
+While this is all possible the process is very error prone and likely will take a lot longer keeping the server offline for more time than necessary. 
+
+Not recommended, but it's available if you need to do it the hard way or because you need to publish through some Administrative procedures.

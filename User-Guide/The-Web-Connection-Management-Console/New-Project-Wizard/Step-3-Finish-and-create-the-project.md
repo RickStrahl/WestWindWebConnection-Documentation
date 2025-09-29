@@ -1,4 +1,4 @@
-On the final page you get the option to select the type of wwProcess class to create:
+﻿On the final page you get the option to select the type of wwProcess class to create:
 
 ![](/images/managementconsole/finishnewproject.png)
 
@@ -58,7 +58,7 @@ The Wizard also creates a Server configuration file for IIS that can, via code, 
 
 * **Creates a Project File and EXE**  
 The Wizard creates a new project for you and adds the dependent source files into it.  
-![](IMAGES\MANAGEMENTCONSOLE\NEWPROJ_PROJECT.GIF)
+![](/IMAGES/MANAGEMENTCONSOLE/NEWPROJ_PROJECT.GIF)
 
   > #### @icon-info-circle No Project Generated?
   > If no project is generated:

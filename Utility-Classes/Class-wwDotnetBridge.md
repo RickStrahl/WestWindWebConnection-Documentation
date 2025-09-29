@@ -1,4 +1,4 @@
-<small>
+﻿<small>
 
 **Shortcuts:**  
 

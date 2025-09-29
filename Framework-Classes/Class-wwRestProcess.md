@@ -1,4 +1,4 @@
-﻿The `wwRestService` class is a specialized `wwProcess` class that can be used for REST services. This class creates REST services using FoxPro method as HTTP endpoints, with methods receiving a single input parameter that is parsed from a JSON payload, and returning a FoxPro result - a value, object, collection or cursor - which is then turned into a JSON HTTP response. 
+The `wwRestProcess` class is a specialized `wwProcess` class that can be used for REST services. This class creates REST services using FoxPro method as HTTP endpoints, with methods receiving a single input parameter that is parsed from a JSON payload, and returning a FoxPro result - a value, object, collection or cursor - which is then turned into a JSON HTTP response. 
 
 The class also provides for automatic error handling, error response results and Bearer Token Authentication.
 

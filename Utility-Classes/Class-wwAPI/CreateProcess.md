@@ -3,3 +3,5 @@
 This function is a standalone function and not a member of the wwAPI class.
 
 > Note this method **does not support re-routing StdOut to a file**. For that purpose use [CreateProcessEx](vfps://Topic/_1H30VQ01M).
+
+> Note: This is a static function not a class method

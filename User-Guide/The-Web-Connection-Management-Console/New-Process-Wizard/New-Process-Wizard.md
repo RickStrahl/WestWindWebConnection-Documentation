@@ -1,6 +1,4 @@
-﻿Goto [Step 1](vfps://Topic/Step%201%20-%20Pick%20the%20project%20and%20process)
-<hr>
-The new process wizard adds a new process class to an existing application. It does so by adding some code into a main startup file (WebDemoMain.prg) for example, and hooking it to a new PRG file containing the new process class template.
+﻿The new process wizard adds a new process class to an existing application. It does so by adding some code into a main startup file (WebDemoMain.prg) for example, and hooking it to a new PRG file containing the new process class template.
 
 The Wizard also allows you to configure a scriptmap that maps to this sub-application. This allows for script based request routing where the extension (.wpfor WebProcess) is always routed to the new class and the page name (Helloworld.wp goes to WebProcess::HelloWorld). The default wwProcess handler makes this type of request routing automatic.
 

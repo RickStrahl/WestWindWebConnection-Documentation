@@ -1,11 +1,11 @@
-﻿A number of people have asked for offline documentation for the Web Connection documentation and we're making it available as a separate download from here:
+A number of people have asked for offline documentation for the Web Connection documentation and we're making it available as a separate download from here:
 
-* [Web Connection Help File and Pdf for v8.0](https://west-wind.com/files/wconnect-help-8.0.zip)
+* [Web Connection Documentation Offline Viewer](https://webconnection.west-wind.com/docs/WebConnectionDocumentationViewer.exe)
 
-> #### @icon-warning Unblock the CHM File
-> If you use the CHM Help File, it will need to be unblocked as it is considered unsafe from an Internet download. Unzip the CHM, right click and go to Properties. There should be an option to Unblock.
+This tool is a separate single EXE file application that runs the documentation as a local Documentation Viewer:
+
+![Web Connection Documentation Viewer](../images/WebConnectionDocumentationViewer.png)
+
 
 ### Not updated frequently as Online Documentation
-Please note that we don't update these files frequently, so they will always lag behind the online version of the documentation. 
-
-We'll update the file for major versions and occasionally for interim releases, and it's recommended that you use the online documentation for referencing up to date reference information.
+Please note that we don't update the offline viewer as frequently, so it's always going to be slightly out of date. The online docs are updated as soon as changes are made, while the viewer is posted for interim releases.

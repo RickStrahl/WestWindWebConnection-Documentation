@@ -1,4 +1,4 @@
-﻿Creates a <label> control as an HTML string.
+﻿Creates a `<label>` control as an HTML string.
 
 **Example:**  
 ```foxpro

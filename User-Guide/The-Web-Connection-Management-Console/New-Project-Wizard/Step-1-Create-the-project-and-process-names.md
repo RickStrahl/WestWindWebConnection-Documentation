@@ -1,6 +1,6 @@
 ﻿In this step you specify the name of the project and the name of your main process class that will handle requests. You also pick your Web Server to install on. 
 
-![](IMAGES\MANAGEMENTCONSOLE\NEWPROJ1.png)
+![](/images/MANAGEMENTCONSOLE/NEWPROJ1.png)
 
 In Web Connection terms the first two options  create a main program file - a wwServer subclass - and a process class - a wwProcess subclass.
 

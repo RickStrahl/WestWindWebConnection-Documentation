@@ -4,4 +4,4 @@
 lcPath = WinApi_GetEnvironmentVariable("PATH")
 ```
 
-Note: This is a static function not a class method
+> Note: This is a static function not a class method

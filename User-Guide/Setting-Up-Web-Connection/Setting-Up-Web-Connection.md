@@ -1,46 +1,43 @@
-﻿The first step in getting going with Web Connection is to install the product. Web Connection ships as a self-extracting zip file that you download from the Web.
+Looking at this documentation you may be feeling overwhelmed with information overload. **Relax!** You don't need to understand nor even read everything that's in this documentation, but when you want to dig deeper and [understand some of the topics](VFPS://Topic/_S8104DGGL) the information is there waiting for you. This topic serves as a road map for your startup with Web Connection.
 
-### Unzip the Web Connection Install files
-Click on the EXE file and unzip the application into a directory of your choice. The file is a WinZip self-extracting file, so it should ask you to either open the file or extract the content to a directory of your choice. I suggest you extract to a directory. This first step creates the Web Connection application directories, which are where all of the source and support files get installed.
+This topic is designed to summarize the things that you should most definitely look at. It gives you an idea on where to start, what to try to get going and where to look for more information.
 
-Web Connection installs a hierarchy of directories as follows:
+Use the Help File! It's got tons of information, and if you get stuck the answer is likely in here. It's keyworded and searchable in addition to the Content view, so take advantage of this very rich resource. 
 
-```txt  
-c:\wconnect
-	classes*     -	VFP source and direct support files for the framework (required for development)
-	Web          -  HTML sample pages
-	Templates*   -	Templates for new Web projects and various generators
-	Tools        -	several useful support tools and classes
-	VisualStudio -  Visual Studio Addin and Page Templates
-	Samples      -	VFP source for the demos that ship with WWWC
-```
+### Setup and Installation
+The first step in getting Web Connection installed is to install the product from the self-executing ZIP file. Run the file and the following installation program. You can find more info on installation at this topic:
 
-> #### @icon-info-circle Before you start
-> You need to [choose and install a Web Server](VFPS://Topic/_5U10P0FG7) to use with Web Connection and it has to be ready before installation. Setup checks to see if the server is available and if not links to the appropriate topic in the documentation.
-
-### Run the Setup Program
-The next vital step is to run the [Setup program](vfps://Topic/The%20Setup%20program) which is installed into the Application root directory. To run it, start Windows Explorer, go to the Web Connection install directory and double click on Setup.Exe. 
-
-Please go through this topic in the documentation:
-
-* [The Setup program](vfps://Topic/The%20Setup%20program) 
-
-It takes you through the installation steps, shows how to start up the server and run the sample application.
-
-### Go through the Getting Started WalkThrough
-Once you've installed Web Connection and maybe have played with the sample application, you'll probably want to create a new project. To take you through these steps please go through this tutorial:
-
-* [Step by Step: Getting Started Creating a new Project](VFPS://Topic/_0NB1AL6FM)
-
-This walk though demonstrates some of the core functionality of Web Connection and walks you through a few ways you can generate output and capture input in your applications.
-
-### In case of problems
-If something goes wrong during installation and your server won't work you can look at the [Setup Troubleshooting](vfps://Topic/Setup%20troubleshooting) topic, which describes a number of problem scenarios and attempts to take you through them. If these don't work for you you should post a message on the message board at <a href="http://www.west-wind.com/wwThreads/" target="top">http://www.west-wind.com/wwThreads/</a>.
+[Setting up Web Connection](vfps://Topic/Setting%20Up%20Web%20Connection)
 
 ### Checking out the demos
-This step serves two purposes: It makes sure that the installation works and lets you see Web Connection in action with demos that you can look at and code you can step through if you choose. Make sure you run the Web Connection server (`DO wcDemoMain.prg`). You Should be able to navigate to <a href="http://localhost/wconnect/" target="top">http://localhost/wconnect/</a> to get started.
+This step serves two purposes: It makes sure that the installation works and lets you see Web Connection in action with demos that you can look at and code you can step through if you choose. Make sure you run the Web Connection server (`DO wcDemoMain.prg`). 
 
-Most of the examples on the demo pages have links to show you the source code required to create that request by clicking on the `Show Code` link on the bottom of the page. At this time you can also start poking around in the code, making a few adjustments, maybe creating a new method and stepping through the code to get an idea what's involved in writing code for Web functionality.
+<a href="http://localhost/wconnect/" target="top">Go to the demo page</a>
 
-### Go through the Step By Step Guides in the User Guide
-The user guide contains several getting started guides for Web Connection that let you see how Web Connection works. These are walk-throughs that show you common operations and the workflow to create Web requests with Web Connection.
+Most of the examples on the demo pages have links to show you the source code required to create that request by clicking on the [Show Code] link on the bottom of the page. At this time you can also start poking around in the code, making a few adjustments, maybe creating a new method and stepping through the code to get an idea what's involved in writing code for Web functionality.
+
+### Walk through a Tutorial
+Web Connection ships with several tutorials in the documentation that help you get started. There are four tutorials provided:
+
+* **[Step by Step: Getting Started](VFPS://Topic/_0NB1AL6FM)**
+* **[Step by Step: MVC Development with Business Objects](VFPS://Topic/_0I102WSAI)**
+* **[Step by Step: Creating a JSON REST Service and Angular Front End](VFPS://Topic/_4IU1EV8PM)**
+
+The first gets you started with Web Connection after installation and creating your first new project, and walks through some of the basic features. The second is a bit more advanced and dives into build MVC (Model View Controller) style applications that use script templates that mix HTML and FoxPro expressions and code to render UI and code to drive the templates. The final example demonstrates how to build JSON REST services and consume them in a variety of ways from FoxPro, plain HTML with jQuery and finally in a small Angular application.
+
+### Use the Web Connection Management Console to create a new project
+Once you have familiarized a little bit with how Web Connection works you're probably ready to create your own requests for your own application. To do this you can use the [New Project Wizard](vfps://Topic/New%20Project%20Wizard) by running the [Web Connection Management Console](vfps://Topic/The%20Web%20Connection%20Management%20Console).  To start the management Console type `DO Console.exe` into the command window or run the EXE from Explorer.
+
+The new project will set up a new VFP application for you that you can start to write your own requests with. Now it's time to write access your business logic from within these Web requests and create some output to display back in the browser. As you start writing code you likely run into a few situations where you don't know how to do something. I suggest you go back to the demos and see if you can find something there that demonstrates what you're trying to do. Again, the <a href="http://www.west-wind.com/wwThreads/" target="top">message board</a> is a great resource to post questions to if you get stuck or even if you want to bounce some ideas of other developers who have been down the path.
+
+### Use the Documentation, Luke
+Once you start your own development you will want to keep this help file or the <a href="http://www.west-wind.com/webconnection/docs/" target="top">online version</a> handy. 
+
+The documentation contains both an extensive user guide as well as a complete reference for all of the supported classes and components. There's a lot of it and the docs are huge - but don't think that you need to know all of it. You'll use small chunks of what's there frequently and many other only occasionally. Being productive with Web Connection really requires only a a small percentage of what is available in this powerful tool. But it's nice to have access to many of those features when the need arises.
+
+The extensive class reference will come in very handy as you start creating requests using the Web Connection framework classes. Most of your development work involves a couple of objects - [ wwRequest](VFPS://Topic/_S850QFR2E), [wwPageResponse](VFPS://Topic/_1O80YQ37Z) and [wwProcess](VFPS://Topic/_S840SSNHB) - take a look at those first and keep them handy - you'll use those a lot.
+
+### Configuration and Installation
+Once you've built an application you will need to actually install it on a Web server or other server machine. Although this process is not difficult there are a fair number of files and components involved. The [Web Connection Configuration](vfps://Topic/Web%20Connection%20Configuration%20and%20Deployment) topic describes many of the configuration components and the options available in them.
+
+You can also resort to the [Management Console](vfps://Topic/The%20Web%20Connection%20Management%20Console) and the [Server Configuration Wizard](vfps://Topic/Server%20Configuration%20Wizard) to help you with configuring your Web server with the appropriate virtual directories and script maps as well as copying and registering the Web Connection components for your application.

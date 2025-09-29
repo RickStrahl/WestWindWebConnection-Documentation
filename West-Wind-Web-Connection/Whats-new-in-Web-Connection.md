@@ -1,3 +1,42 @@
+## Version 8.5
+
+<small>not released yet</small>
+
+* **[wwSFtpClient::UploadFile](dm-topic://_6wr0zm6jl) and [wwSftpClient::DownloadFile()](dm-topic://_6wr0zm6jk) now preserve File Time**  
+These methods now preserve the uploaded or downloaded file's time stamp on the receiving end when the file is saved. SFTP natively is a streaming API and doesn't support automatic timestamps, but wwSftpClient now explicit calls the server API to match the client and server dates by default. If you need different dates, you can use the new `SetFileTime()` method to explicitly change the date.
+
+* **[wwSftpClient::SetFileTime()](dm-topic://_octus3bcc6)**  
+Added new method to allow setting the file time of a server file more easily. Note that `UploadFile()` and `DownloadFile()` now preserve file dates by default so there should be less need for this method, but it can be used if you different behavior than our new imposed default of time preservation.
+
+## Version 8.4
+<small>July 21st, 2025 &bull;
+[Release Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9179) &bull; 
+[Breaking Changes](#breaking-changes-in-v84)
+
+</small>
+
+* **[wwDotnetBridge: Unblock all DLLs loaded](dm-topic://_3rf12jtma)**  
+wwDotnetBridge has always unblocked its own `wwDotnetBridge.dll`, but now also unblocks any DLLs that are loaded with `LoadAssembly()`. This removes the requirement to explicitly unblock files that are downloaded from the Internet and tagged by Windows as blocked.
+
+* **[OffLine Documentation Viewer](dm-topic://_7240j6si2)**  
+As part of an update to our documentation tooling using our new [Documentation Monster](https://documentationmonster.com) documentation solution, you can now download an offline documentation viewer. It's a self-contained application that you can run that displays the Web documentation **locally** without an Internet connection required.
+
+* **Fix: wwRestProcess - Missing JsonService Variable**  
+Fixed issue with missing `JsonService` variable in `wwRestProcess` endpoint methods. Due to a regression related to scoping the variable was no longer exposed. Fixed.
+
+* **Fix: wwSession Auth Cookie not getting set in nested Virtuals**  
+Fixed an issue with `wwUserSecurity` auth cookie not getting set when running in a nested virtual directory. Even though we set the cookie on root the value was not properly passing through. Extra check now ensures the cookie gets set always.
+
+* **Fix: Bug with [wwHttp::AddPostKey()](dm-topic://_5w50q81ld) with Content Types**  
+Fix a bug where passing the content type would throw an exception due to a missing type check.
+
+
+#### Breaking Changes in v8.4{style="color: firebrick"}
+
+* **Breaking Change: Remove redundant llIsFile parameter from [wwHttp::AddPostFile()](dm-topic://_0jj1afxk3)**        
+When this method was introduced it retained the same syntax as AddPostKey() and was meant to be a direct replacement. That makes little sense however, and the parameter signature is slightly different anyway. The updated syntax only provides the parameters actually needed.  
+<small>`AddPostFile(tcKey, tcFilename, tcPostedFilename, tcContentType, tcExtraHeaders)`</small>
+
 ## Version 8.3
 <small>May 2nd, 2025</small>
 

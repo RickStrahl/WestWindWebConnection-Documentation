@@ -1,4 +1,4 @@
-This step deals with configuring a virtual directory and script map for your new Web application.
+﻿This step deals with configuring a virtual directory and script map for your new Web application.
 
 ![](/images/ManagementConsole/NewProj2.png)
 

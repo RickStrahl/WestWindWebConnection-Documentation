@@ -1,4 +1,4 @@
-﻿A common scenario for modern Web applications is to build REST API services that act as data services for front end applications. This maybe a Web based application running entirely on the front end using a client side framework like AngularJs, Aurelia, Ember or other framework. It might also be a device based application running on a mobile device in iOS, Android or Windows, or even a desktop application that simply loads its data over the Web.
+A common scenario for modern Web applications is to build REST API services that act as data services for front end applications. This maybe a Web based application running entirely on the front end using a client side framework like AngularJs, Aurelia, Ember or other framework. It might also be a device based application running on a mobile device in iOS, Android or Windows, or even a desktop application that simply loads its data over the Web.
 
 Most REST services these days use **JSON (JavaScript Object Notation)** to communicate and the Web Connection [wwRestProcess class](VFPS://Topic/_3I012WDDT) lets you easily build REST services by simply implementing a class and adding methods that receive parameters and return result values, that are marshalled from and to and JSON. Unlike the 'standard' Web Connection HTTP handler implementation, a wwRESTProcess service has additional logic associated with it that knows how to de-serialize JSON data into a parameter, and serialize a result value into JSON.
 
@@ -16,4 +16,4 @@ To expand on the previous examples, we'll choose the latter approach and extend 
 >
 > You can clone the repository, or use <a href="https://bitbucket.org/RickStrahl/webconnection_stepbystep_samples/get/1ffadb1f224c.zip" target="top">Download Button</a> to grab a Zip file of the completed project folder.
 
-<%= ChildTopicsList(oHelp) %>
+{{ Helpers.ChildTopicsList() }}

@@ -1,1 +1,1 @@
-﻿The following methods are general purpose methods that simply use the ServerVariables() method to retrieve values with more logical names than the CGI standard names. This also allows abstraction to interfaces where differences exist such as the ASP mechanism and the Web Connection request formatting.
+﻿

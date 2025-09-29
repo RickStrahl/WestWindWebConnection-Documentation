@@ -1,4 +1,4 @@
-﻿Web Connection supports **MVC** (Model, View, Controller) development using built-in HTML scripting that mixes HTML syntax and Foxpro code. Scripts and Templates provide two mechanisms for rendering HTML using two methods - `Response.ExpandScript()` and `Response.ExpandTemplate()` respectively - to render FoxPro expressions and values into a merged HTML template.
+Web Connection supports **MVC** (Model, View, Controller) development using built-in HTML scripting that mixes HTML syntax and Foxpro code. Scripts and Templates provide two mechanisms for rendering HTML using two methods - `Response.ExpandScript()` and `Response.ExpandTemplate()` respectively - to render FoxPro expressions and values into a merged HTML template.
 
 MVC makes it relatively painless to create HTML content that mixes both HTML and FoxPro code using a simple approach that uses FoxPro application code you write in a FoxPro class, and HTML with embedded FoxPro expressions that are used to render HTML *Views* from plain text files. By using this approach you get the best of both worlds:
 
@@ -111,4 +111,4 @@ Templates:
 If you are building applications using Web Connection, using scripts or templates is the preferred way to generate HTML output.
 
 ### Read More
-<%= ChildTopicsList( oHelp, "TOPIC" ) %>
+{{ Helpers.ChildTopicsList() }}

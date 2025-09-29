@@ -2,4 +2,4 @@
 
 Note MD5 encryption is one way, which means you can't get the original value back. MD5 is typically used to encode data once and then only compare the hashed values.
 
-Note: This is a static function not a method of wwAPI
+> Note: This is a static function not a class method

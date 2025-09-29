@@ -1,0 +1,1 @@
+﻿The name of the user agent that the wwIPStuff client sends to the Web server. Change this property if you need to emulate a specific browser like Internet Explorer or Netscape.
