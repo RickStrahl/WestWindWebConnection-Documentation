@@ -1,0 +1,1 @@
+﻿Retrieves the Http Origin header from the current request. The Origin header is useful for CORS checking to ensure requests are being sent from a known origin domain.

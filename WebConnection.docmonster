@@ -15,6 +15,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 100,
+      "isExpanded": true,
       "updated": "2025-09-19T14:12:09.2938432-07:00",
       "helpId": "2",
       "classInfo": {
@@ -38,7 +39,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 140,
-          "updated": "2025-09-08T13:31:18.2161201-07:00",
+          "updated": "2025-10-09T11:33:31.0747808-07:00",
           "helpId": "915",
           "classInfo": {
             "memberName": "",
@@ -9570,7 +9571,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 450,
-              "updated": "2025-09-29T14:52:44.0132591-07:00",
+              "updated": "2025-10-09T11:15:02.2533724-07:00",
               "helpId": "1024",
               "classInfo": {
                 "memberName": "IsFormVar",
@@ -9762,7 +9763,7 @@
               "displayType": "classmethod",
               "type": "markdown",
               "remarks": "Note that some types of controls like Checkboxes and Radio buttons will not return a value for their respective field name when they are not checked or set.\n\nYou can check the request data on the [The Server Status Form](dm-topic://_s860xzrkk) and the Log File to see exactly what POST data you're actually receiving and that `aFormVars` is working off of.",
-              "sortOrder": 371,
+              "sortOrder": 370,
               "updated": "2025-09-29T13:54:13.2460405-07:00",
               "classInfo": {
                 "memberName": "aFormVars",
@@ -9783,7 +9784,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::UnbindFormVars",
               "remarks": "Logical values are handled from checkboxes, but non-logical checkbox values will not be captured when not checked. Selection values for checkboxes must be On or True in order to be recognized as a True value for a logical. Multiselect lists or multiple selection radios will pull only the first selection into the target property.\r\rObject and array members are ignored and not filled or updated. Date values are imported with CTOD and CTOT. There may be formatting problems so these properties may require post processing and potential problems with SET STRICTDATE settings.\r\rYou can work around any misparsing problems by performing additional post processing on the captured object data or handling any fields that might have been missed manually.\r\rThis method can cause issues with logical values that are not on the form. There's no safe way to detect checked status as checkboxes and radio buttons do not send unchecked values as form variables so it's possible that non-form fields can be updated. The workaround is to exclude logical properties that are not on the HTML form explicitly.",
               "example": "```foxpro\r*** Using a cursor\rUSE wws_Customer\rSCATTER NAME loCustomer MEMO BLANK\r\rRequest.FormVarsToObject(loCustomer)\r\r\r*** Using a 'real' business object\rloCust = CREATE(\"cCustomer\")\rloCust.New()\r\r*** Store form vars to oData properties\rRequest.FormVarsToObject(loCust.oData)\r\rIF !loCust.Validate()\r   THIS.Errormsg(\"Invalid Data\")\r   RETURN\rENDIF\r\rloCust.Save()\r\r\r\r*** Without an object passed in \r*** returns a new object with props for each form var\r*** all vars are returned as text\rloFormVars = Request.FormVarsToObject()\r\r***Retrieve the txtName and txtCompany variables\rlcName = loFormVars.txtName\rlcCompany = loFormVars.txtCompany\r```",
-              "sortOrder": 370,
+              "sortOrder": 360,
               "updated": "2025-09-29T13:49:45.0852865-07:00",
               "helpId": "1241339",
               "classInfo": {
@@ -9808,7 +9809,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 360,
+              "sortOrder": 350,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241950",
               "classInfo": {
@@ -9831,7 +9832,7 @@
               "seeAlso": "Class wwrequest\rwwProcess::Authenticate",
               "remarks": "In order for an authentication request to succeed on the server Basic Authentication must be enabled on the server.\r\n\r\nNote: Basic Authentication is a non-secure protocol that sits on top of HTTP. Passwords are passed as clear text (although encoded with a simple, easily breakable hash algorithm) and can be easily hijacked with a network sniffer. If you're worried about security make sure that your authentication request runs over SSL/HTTPS - when you do the entire request info is encrypted.\r\n\r\nAlso, check out the wwProcess::Login method which abstracts the login and authentication process into a single easy to use method.",
               "example": "lcUserName=Request.GetAuthenticatedUser()\r\n   \r\n* ** Did the user Authenticate\r\nIF EMPTY(lcUserName)\r\n   * ** Send Password Dialog - on success this request will be rerun\r\n   * ** AFter 3 failures an error message will be displayed.\r\n   THIS.oResponse.Authenticate(Request.GetServername())\r\n   RETURN .T.\r\nENDIF",
-              "sortOrder": 350,
+              "sortOrder": 340,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "983",
               "classInfo": {
@@ -9856,7 +9857,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 340,
+              "sortOrder": 330,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "984",
               "classInfo": {
@@ -9880,7 +9881,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "Cookies are scoped to a particular virtual directory, so a cookie set in a different virtual than the one the current request is running in will not be visible.\r\n\r\nAlthough cookies follow the directory hierarchy down, a Cookie set in the root directory will also not be in scope in a virtual below the root, but will be in scope in a dircectory below the root that is not a virutal.",
               "example": "* ** Try to retrieve the cookie...\r\nlcId=Request.GetCookie(\"WWUSERID\")\r\n\r\n* ** Create Standard Header\r\nloHeader=CREATEOBJECT(\"wwHTTPHeader\")\r\nloHeader.DefaultHeader()\r\n\r\n* ** If not Found\r\nIF EMPTY(lcId)\r\n   * ** Create the cookie\r\n   lcId=SYS(3)\r\n   \r\n   loHeader.AddCookie(\"WWUSERID\",lcId,\"/wconnect\")\r\n   \r\n   * ** To specify a permanent cookie supply NEVER or a specific expiration date\r\n   * ** loHeader.AddCookie(\"WWUSERID\",lcId,\"/\",\"NEVER\")\r\nENDIF            \r\n\r\n* ** Send Header and make sure to pass the Content Type (loHeader)\r\nResponse.ContentTypeHeader(oHeader)\r\n\r\n* ** more html\r\nResponse.Write(\"<HTML>Hidi ho</HTML>\")\r\n\r\n<hr>\r\n* ** OR: use one of the following methods which take a header parameter:\r\nResponse.HTMLHeader(\"Hidi ho\",,,oHeader)\r\nResponse.ExpandTemplate(THIS.cHTMLPagePath + \"nocode.wc\",oHeader)\r\nResponse.ExpandScript(THIS.cHTMLPagePath + \"nocode.wcs\",oHeader)",
-              "sortOrder": 330,
+              "sortOrder": 320,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "986",
               "classInfo": {
@@ -9905,7 +9906,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetReferrer\rwwRequest::GetRelativeSecureLink",
               "remarks": "",
               "example": "",
-              "sortOrder": 320,
+              "sortOrder": 310,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "982",
               "classInfo": {
@@ -9930,7 +9931,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetLogicalPath\rwwRequest::GetPhysicalPath",
               "remarks": "Same as calling Request.ServerVariables(\"SCRIPT_PATH\")",
               "example": "",
-              "sortOrder": 310,
+              "sortOrder": 300,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "991",
               "classInfo": {
@@ -9954,7 +9955,7 @@
               "seeAlso": "Class wwRequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 300,
+              "sortOrder": 290,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241394",
               "classInfo": {
@@ -9979,7 +9980,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::Form\rwwRequest::FormXML",
               "remarks": "",
               "example": "```foxpro\r\nDIMENSION laVars[1]\r\nlnVars=Request.GetFormMultiple(@laVars,\"LastName\")\r\n\r\nFOR x=1 to lnVars\r\n   Response.Write( laVars[1] + \"</br>\")\r\nENDFOR\r\n```",
-              "sortOrder": 290,
+              "sortOrder": 280,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "989",
               "classInfo": {
@@ -10004,7 +10005,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 280,
+              "sortOrder": 270,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1279586",
               "classInfo": {
@@ -10028,7 +10029,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 270,
+              "sortOrder": 260,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "978",
               "classInfo": {
@@ -10052,7 +10053,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetPhysicalPath\rwwRequest::GetExecutablePath",
               "remarks": "",
               "example": "",
-              "sortOrder": 260,
+              "sortOrder": 250,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "980",
               "classInfo": {
@@ -10077,7 +10078,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "This method return en-us if no language definition could be found. The optional array is filled with this value as well.",
               "example": "",
-              "sortOrder": 250,
+              "sortOrder": 240,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241904",
               "classInfo": {
@@ -10102,7 +10103,7 @@
               "seeAlso": "Class wwRequest\rwwRequest::GetMultiPartFiles\rwwRequest::Form",
               "remarks": "",
               "example": "```foxpro\rlcFileBuffer = Request.GetMultiPartFile(\"File\",@lcFileName)\rlcNotes = Request.GetMultipartFormVar(\"txtFileNotes\")\rlcFileName = SYS(2023)+\"\\\"+lcFileName\r\rIF LEN(lcFileBuffer) > 5000000\r   THIS.StandardPage(\"File upload refused\",;\r                     \"Files over 500k are not allowed for this sample...<BR>\"+;\r                     \"File: \" + lcFilename)\r   RETURN\rENDIF\r   \r*** Now dump the file to disk\rSTRTOFILE(lcFilebuffer,lcFileName)\r\rTHIS.StandardPage(\"Thank you for your file upload\",;\r                  \"<b>File Uploaded:</b> \" + lcFileName + ;\r                  \" (\" + TRANSFORM(FileSize(lcFileName),\"9,999,999\") + \" bytes)<p>\"+ ;\r                  \"<b>Notes:</b><br>\"+ CRLF + lcNotes )\r```",
-              "sortOrder": 240,
+              "sortOrder": 230,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1022",
               "classInfo": {
@@ -10127,7 +10128,7 @@
               "seeAlso": "Class wwRequest",
               "remarks": "This method is bound by the 16 meg string limit in FoxPro so files larger than 16 megs will fail to upload. If you exceed the 16 meg string limit you may have to use the [plUpload component](VFPS://Topic/_3QJ1500YC) instead.",
               "example": "The following is an example of a Process Method that handles one or multiple uploaded files to an `Upload` form variable either through an AJAX callback or by posting back to the server with the original page and string of image elements. The ajax code returns a JSON collection.\r\r```foxpro\rFUNCTION FileUpload\r\rllAjax = Request.QueryString(\"type\") == \"ajax\"\r\rpcImageListHtml = \"\"\r\r*** Files must use GetMultipartFile to retreive the file name as well\rloFiles = Request.GetMultiPartFiles(\"Upload\")\r\rFOR EACH loFile IN loFiles\r   *** Point upload at temp folder\r   lcFileName = this.ResolvePath(\"~/temp/\" +loFile.FileName)\r\r   lcExt = LOWER(JUSTEXT(lcFileName))\r   IF !INLIST(lcExt,\"jpg\",\"png\",\"jpeg\",\"gif\")\r      THIS.StandardPage(\"Upload Error\",\"Only image files are allowed for upload.\")\r      RETURN\r   ENDIF\r   IF LEN(loFile.Content) > 1500000\r      THIS.StandardPage(\"File upload refused\",;\r                        \"Files over 1.5meg are not allowed for this sample...<br/>\"+;\r                        \"File: \" + loFile.FileName)\r      RETURN\r   ENDIF\r   \r   STRTOFILE(loFile.Content,lcFileName)\r   \r   IF llAjax \r      loFile.Content = \"\"  &&amp; we don't need it on client\r   ELSE\r      pcImageListHtml = pcImageListHtml + ;\r        [<img src=\"~/temp/] + loFile.FileName + [\" />] + CRLF\r    ENDIF\rENDFOR\r\r\r*** delete files older than 10 minutes\rDeleteFiles( this.ResolvePath(\"~/temp/*.*\"),600)\r\rIF llAjax\r   *** Return collection of files\r   Response.ContentType = \"application/json\"\r   loSer = CREATEOBJECT(\"wwJsonSerializer\")\r   Response.Write( loSer.Serialize(loFiles) )\r   RETURN\rENDIF\r\rResponse.ExpandScript()\rENDFUNC\r```",
-              "sortOrder": 230,
+              "sortOrder": 220,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290673",
               "classInfo": {
@@ -10152,7 +10153,7 @@
               "seeAlso": "Class wwRequest\rwwRequest::GetMultipartFile\rwwRequest::Form",
               "remarks": "",
               "example": "lcFileBuffer = Request.GetMultiPartFile(\"File\",@lcFileName)\r\nlcNotes = Request.GetMultipartFormVar(\"txtFileNotes\")\r\nlcFileName = SYS(2023)+\"\\\"+lcFileName\r\n\r\nIF LEN(lcFileBuffer) > 5000000\r\n   THIS.StandardPage(\"File upload refused\",;\r\n                     \"Files over 500k are not allowed for this sample...<BR>\"+;\r\n                     \"File: \" + lcFilename)\r\n   RETURN\r\nENDIF\r\n   \r\n* ** Now dump the file to disk\r\nSTRTOFILE(lcFilebuffer,lcFileName)\r\n\r\nTHIS.StandardPage(\"Thank you for your file upload\",;\r\n                  \"<b>File Uploaded:</b> \" + lcFileName + ;\r\n                  \" (\" + TRANSFORM(FileSize(lcFileName),\"9,999,999\") + \" bytes)<p>\"+ ;\r\n                  \"<b>Notes:</b><br>\"+ CRLF + lcNotes )",
-              "sortOrder": 220,
+              "sortOrder": 210,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1023",
               "classInfo": {
@@ -10163,6 +10164,22 @@
                 "assembly": "",
                 "contract": "",
                 "exceptions": ""
+              }
+            },
+            {
+              "id": "_vxeiuxi54r",
+              "parentId": "_s850qfr2e",
+              "title": "wwRequest::GetOrigin",
+              "slug": "Framework-Classes/Class-wwRequest/wwRequestGetOrigin",
+              "link": "Framework-Classes/Class-wwRequest/wwRequestGetOrigin.md",
+              "displayType": "classmethod",
+              "type": "markdown",
+              "sortOrder": 200,
+              "updated": "2025-10-09T11:18:52.0401767-07:00",
+              "classInfo": {
+                "memberName": "GetOrigin",
+                "parameters": "****\r\n\r\n",
+                "syntax": ".GetOrigin()"
               }
             },
             {
@@ -10177,7 +10194,7 @@
               "seeAlso": "Class wwRequest\rLogging Requests in ISAPI and your Fox Server",
               "remarks": "",
               "example": "",
-              "sortOrder": 210,
+              "sortOrder": 190,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242593",
               "classInfo": {
@@ -10200,7 +10217,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetLogicalPath",
               "remarks": "If you're using any remote servers you have to be careful about the physical path. The physical path will always be returned with a Web server specific path. If you're running remotely via a DCOM object or remote filebased server, C:\\inetpub\\wwwroot\\myapp is not a valid path to pull the script page from, so you need to fix up the path.\r\n\r\nYou can do this by usign assiging a drive override which can use VFP's FORCEDRIVE() or a full path override by using FULLPATH to adjust the path for the full location.\r\n\r\nPhysical path is a parsed value that guarantees to hold either the ISAPI extension's name or the name of the script that was executed. ISAPI does not provide this functionality natively and splits this between PATH_INFO and PATH_TRANSLATED and SCRIPT_NAME. Use GetPhysicalPath() to retrieve this value safely, but be aware that this variable does not exist in ASP or ISAPI directly.",
               "example": "",
-              "sortOrder": 200,
+              "sortOrder": 180,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "979",
               "classInfo": {
@@ -10223,7 +10240,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetCurrentUrl\rwwRequest::GetRelativeSecureLink",
               "remarks": "",
               "example": "",
-              "sortOrder": 190,
+              "sortOrder": 170,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "981",
               "classInfo": {
@@ -10246,7 +10263,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::GetCurrentUrl\rwwRequest::GetReferrer",
               "remarks": "This method will not work correctly if the current URL does not include a document name, such as home pages. To get around this always reference pages that use this method with an explicit page such as Default.wc.",
               "example": "",
-              "sortOrder": 180,
+              "sortOrder": 160,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1427",
               "classInfo": {
@@ -10271,7 +10288,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 170,
+              "sortOrder": 150,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290665",
               "classInfo": {
@@ -10294,7 +10311,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 160,
+              "sortOrder": 140,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "987",
               "classInfo": {
@@ -10317,7 +10334,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 150,
+              "sortOrder": 130,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "988",
               "classInfo": {
@@ -10340,7 +10357,7 @@
               "seeAlso": "Class wwRequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 140,
+              "sortOrder": 120,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1254264",
               "classInfo": {
@@ -10363,7 +10380,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "This method will not work with ASP messaging, since ASP doesn't use wc.ini or knows even where the file resides.",
               "example": "",
-              "sortOrder": 130,
+              "sortOrder": 110,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "996",
               "classInfo": {
@@ -10388,7 +10405,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "This method looks at Request.ServerVariables(\"SERVER_PORT\") to get the server port.",
               "example": "",
-              "sortOrder": 120,
+              "sortOrder": 100,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "990",
               "classInfo": {
@@ -10412,7 +10429,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "Request.GetClientCertificate(\"CN\")   && Retrieve Common Name",
-              "sortOrder": 110,
+              "sortOrder": 90,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "985",
               "classInfo": {
@@ -10436,7 +10453,7 @@
               "seeAlso": "Class wwRequest\rwwRequest::FormVarsToObject",
               "remarks": "This method unbinds only a single level (flat hierarchy) of values. Nested objects, collections and arrays are ignored. You can use additional calls to `UnbindFormVars()` to unbind child objects.\r\r##### @icon-warning Important: Logical Values and Missing Fields\rDue to limitations in HTML, logical values have to be handled carefully! Logical values are unbound as .F. **if they are unchecked *OR* don't exist on the form**. \r\rThis means there's **no difference between an unchecked checkbox/radio button or one a non-existant field for that field**.\r\rIf you unbind to objects that contain logical values that **are not bound to a field on the form, make sure you explicitly *exclude* those fields in the `lcExcludedProperties` list** or - alternately - create a hidden form variable with the value for each missing field so it can be matched.\r\r##### Behavior\rLogical values are handled from checkboxes and radio buttons, but non-logical checkbox values will not be captured when not checked. Selection values for checkboxes must be `On` or `True` or `1` in order to be recognized as a `.T.` value. \r\rMultiselect lists or multiple selection radios will pull only the first selection into the target property.\r\rObject and array members are ignored and not filled or updated. Date values are imported with `CTOD` and `CTOT`. There may be formatting problems so these properties may require post processing and potential problems with SET STRICTDATE settings.\r\rYou can work around any misparsing problems by performing additional post processing on the captured object data or handling any fields that might have been missed manually by using explicit `Request.Form()` calls to fill additional fields.",
               "example": "The following is a more complete data binding example with error handling that captures errors and displays them on the page.\r\r```foxpro\r*** Binding Values\rPRIVATE poError, poCustomer\r*** Create Error object that can hold message, header and details\rpoError = CREATEOBJECT(\"HtmlErrorDisplayConfig\")\r\r*** Business object data object to bind to\rpoCustomer = loCustomer.oData\r\r*** Postback Code\rIF (Request.IsPostBack())\r   poError.Errors = Request.UnbindFormVars(loCustomer.oData)\r\r   IF !loCustomer.Validate()\r       poError.Errors.AddErrors( loCustomer.oValidationErrors )\r   ENDIF\r   \r   IF poError.Errors.Count < 1 \r       IF !loCustomer.Save() \r\t      poError.Message = loCustomer.cErrorMsg      \r       ENDIF  \r   ENDIF\r\r   *** Handle  display of confirmations and errors\r   IF (poError.Errors.Count > 0)\r   \t   poError.Message = poError.Errors.ToHtml()\r   \t   poError.Header = \"Please fix the following form entry errors\"\r   ELSE\r       poError.Message = \"Entry saved.\"\r       poError.Icon = \"info\"\r       Response.AppendHeader(\"Refresh\",\"2;url=customers.ttk\")\r   ENDIF               \rENDIF\r\r*** Render the page with the Model data\rResponse.ExpandScript()\r```\r\rTo display the binding errors in a page you can then use:\r\r```html\r<%= HtmlErrorDisplay(poError) %>\r```\r\rIndividual controls can add HtmlBindingErrors to display error info next to their respective controls.\r\r```html\r<input name=\"Company\" id=\"Company\" ... />\r<%= HtmlBindingError(\"Company\",poError) %>\r\r<input name=\"Entered\" id=\"Entered\" ... />\r<%= HtmlBindingError(\"Entered\",poError) %>\r```",
-              "sortOrder": 100,
+              "sortOrder": 80,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290615",
               "classInfo": {
@@ -10460,7 +10477,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 90,
+              "sortOrder": 70,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242600",
               "classInfo": {
@@ -10483,7 +10500,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 80,
+              "sortOrder": 60,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241955",
               "classInfo": {
@@ -10506,7 +10523,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::Form\rwwRequest::lUseXMLFormVars\rwwHTTP::AddPostFile",
               "remarks": "",
               "example": "",
-              "sortOrder": 70,
+              "sortOrder": 50,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1009",
               "classInfo": {
@@ -10529,7 +10546,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 60,
+              "sortOrder": 40,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1005",
               "classInfo": {
@@ -10553,7 +10570,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 50,
+              "sortOrder": 30,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1010",
               "classInfo": {
@@ -10577,7 +10594,7 @@
               "seeAlso": "Class wwrequest\rwwRequest::Form\rwwHTTP::AddPostFile",
               "remarks": "",
               "example": "",
-              "sortOrder": 40,
+              "sortOrder": 20,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1007",
               "classInfo": {
@@ -10600,7 +10617,7 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 30,
+              "sortOrder": 10,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1002",
               "classInfo": {
@@ -10623,7 +10640,6 @@
               "seeAlso": "Class wwrequest",
               "remarks": "",
               "example": "",
-              "sortOrder": 20,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1008",
               "classInfo": {
@@ -62279,6 +62295,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_s861e8cgm"
+    "lastTopicId": "_s8104dggl"
   }
 }

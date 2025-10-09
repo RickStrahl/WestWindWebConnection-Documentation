@@ -2,11 +2,33 @@
 
 <small>not released yet</small>
 
+* **[wwRequest::GetOrigin](dm-topic://_vxeiuxi54r)**  
+New request helper that returns the Http origin from an Http request which is useful for CORS Origin domain detection. 
+
+* **Update `wwProcess` Template for CORS Domain Logic**  
+CORS rules have gotten more strict in browsers recently, with certain browsers disallowing the catch-all `Access-Control-Allow-Origin: *` rule. Updated internal code to use `GetOrigin()` in the default `wwProcess` template and explicitly assign that value, which has the same effect along with notes on how to create custom check logic.
+
+* **Explicit wwDotnetBridge [GetField()](dm-topic://_70y19t8wr) and [SetField()](dm-topic://_s850mn6vv) Methods**  
+Due to recent changes that removed `GetProperty()` and `SetProperty()` behavior that also retrieved .NET Field values (for performance), there are now dedicated `GetField()` and `SetField()` methods.
+
 * **[wwSFtpClient::UploadFile](dm-topic://_6wr0zm6jl) and [wwSftpClient::DownloadFile()](dm-topic://_6wr0zm6jk) now preserve File Time**  
 These methods now preserve the uploaded or downloaded file's time stamp on the receiving end when the file is saved. SFTP natively is a streaming API and doesn't support automatic timestamps, but wwSftpClient now explicit calls the server API to match the client and server dates by default. If you need different dates, you can use the new `SetFileTime()` method to explicitly change the date.
 
 * **[wwSftpClient::SetFileTime()](dm-topic://_octus3bcc6)**  
 Added new method to allow setting the file time of a server file more easily. Note that `UploadFile()` and `DownloadFile()` now preserve file dates by default so there should be less need for this method, but it can be used if you different behavior than our new imposed default of time preservation.
+
+* **[wwSftpClient::GetDirectory()](dm-topic://_idnh36dbs9)**  
+Returns the currently active SFTP directory.
+
+* **[wwSftClient::SetFileTime](dm-topic://_octus3bcc6)**  
+Sets the time on a remote file on the SFTP server. 
+
+
+* **Fix: wwHttp Upload File Name Encoding**  
+Fix issues with file names not encoding correctly when uploading files using `nHttpPostMode=2`. In some cases files would double UTF-8 encode and wouldn't preserve filename case so it was hard to determine expected file names.
+
+
+
 
 ## Version 8.4
 <small>July 21st, 2025 &bull;

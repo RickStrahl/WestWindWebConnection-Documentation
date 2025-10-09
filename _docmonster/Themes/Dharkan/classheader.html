@@ -5,7 +5,11 @@
     <img src="~/_docmonster/icons/{{ Topic.DisplayType }}.png">
     {{ Model.Topic.Title }}
 </h1>
-
+{{% if (!string.IsNullOrEmpty(Topic.ClassInfo.Implements)) { }}
+    <div class="small mb-3"><b>Implements:</b>
+        {{ Topic.ClassInfo.Implements }}
+    </div>
+{{% } }}
 
 <div class="content-body" id="body">
     {{! Model.Helpers.Markdown(Topic.Body) }}

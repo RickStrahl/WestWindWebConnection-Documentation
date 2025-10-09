@@ -8,7 +8,7 @@
     {{ Model.Topic.Title }}
 </h2>
 
-{{ Script.RenderPartial("_docmonster\\Themes\\Under-Construction-Partial.html", Model) }}
+{{ Script.RenderPartial("Under-Construction-Partial.html", Model) }}
 
 <div class="content-body" id="body">
     {{% if (Topic.IsLink && Topic.Body.Trim().StartsWith("http") ) { }}        
