@@ -16,7 +16,7 @@
       "example": "",
       "sortOrder": 100,
       "isExpanded": true,
-      "updated": "2025-09-19T14:12:09.2938432-07:00",
+      "updated": "2025-10-09T13:28:25.5339492-07:00",
       "helpId": "2",
       "classInfo": {
         "memberName": "",
@@ -34,12 +34,12 @@
           "link": "West-Wind-Web-Connection/Whats-new-in-Web-Connection.md",
           "displayType": "whatsnew",
           "type": "markdown",
-          "keywords": "wwMicrosoftPdf\rwwPdf",
+          "keywords": "",
           "seeAlso": "",
           "remarks": "",
           "example": "",
           "sortOrder": 140,
-          "updated": "2025-10-09T11:33:31.0747808-07:00",
+          "updated": "2025-10-09T13:09:35.5916925-07:00",
           "helpId": "915",
           "classInfo": {
             "memberName": "",
@@ -388,7 +388,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 60,
-          "updated": "2025-03-12T00:00:00Z",
+          "updated": "2025-10-09T13:49:28.9655651-07:00",
           "helpId": "1294535",
           "classInfo": {
             "memberName": "",
@@ -5761,7 +5761,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
-      "isExpanded": true,
       "updated": "2025-05-28T10:11:30.6452845-07:00",
       "helpId": "3",
       "classInfo": {
@@ -9203,7 +9202,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 50,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "967",
           "classInfo": {
@@ -17997,6 +17995,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 60,
+      "isExpanded": true,
       "updated": "2025-09-14T12:33:00.7147074-07:00",
       "helpId": "24",
       "classInfo": {
@@ -18346,14 +18345,14 @@
                   "keywords": "",
                   "seeAlso": "West Wind Web Connection\rwwHTTP::lHttpCancelDownload\rwwHTTP::HTTPCanceldownload",
                   "remarks": "Be careful with what kind of code you put into the 'event' method since it fires on every buffer update. Keep code in this method and any called methods to a minimum to avoid download slowdowns.\r\rIf you want things like Cancel buttons you will need to use DOEVENTS in the event code to allow the click events to fire. even so the responsiveness of the button may not be very good due to VFP's limited concurrent processing capabilities.\r\rWe also suggest that you increase your buffer size so that this event doesn't fire so frequently. Increasing [nHTTPWorkBufferSize](vfps://Topic/wwHttp%3A%3Anhttpworkbuffersize)  on the Http instance can significantly improve the performance of HTTP operations.",
-                  "example": "##### Using Subclassing\r\n\r\n```foxpro\r\nDO wwHTTP\r\nloHttp = CREATEOBJECT(\"wwHttp_WithEvents\")\r\n\r\n*** Make the HTTP call - lcHTML is set but output is not used\r\n*** the output written by this example is written from the\r\n*** event handler as data is retrieved\r\nlcHTML = loHttp.HttpGet(\"http://www.microsoft.com\")\r\n\r\n* create sub-class of wwHttp and implement OnHttpBufferUpdate\r\nDEFINE CLASS wwHttp_WithEvents as wwHttp\r\n\r\nFUNCTION OnHttpBufferUpdate\r\nLPARAMETERS lnbytes,lnbufferreads,lccurrentchunk, loHttp\r\n\r\nDO CASE\r\n    *** 0 - Http Header\r\n\tCASE lnBufferReads = 0\r\n\t\tlcHttpHeader = lcCurrentChunk\r\n    *** -1 - done or cancelled or failed\r\n\tCASE lnBufferReads = -1\r\n\t\t* done or cancelled \t\t\r\n\t\tIF THIS.lhttpcanceldownload \r\n\t\t\t? \"Cancelled\"\r\n\t\tELSE\r\n\t\t\t? \"---\"\r\n\t\t\t? \"Completed...\"\r\n\t\tENDIF\r\n\t*** anything else - data has been read\r\n\tCASE lnBufferReads > 0\r\n\t    WAIT WINDOW TRANSFORM(lnBytes,\"9,999,999\") + \" of \" + TRANSFORM(THIS.nContentSize,\"9,999,999\") + \" bytes\" NOWAIT \r\nENDCASE\r\n\r\n*** You can also accumuluate the data incrementally\r\n*** to allow users to look at data as it comes in\r\n? lcCurrentChunk\r\n\r\nENDDEFINE\r\n```\r\n\r\n\r\n##### Using BINDEVENT\r\n\r\n```foxpro\r\nDO wwHTTP\r\nloHttp = CREATEOBJECT(\"wwHttp\")\r\n\r\n*** Object that will handle the event. This could be a form \r\n*** or any other object instance on which you implement\r\n*** the OnHttpBufferUpdate event handler code\r\nloSink = CREATEOBJECT(\"HttpEventSink\")\r\n\r\n*** Bind event from wwHttp to the event handling object\r\nBINDEVENT(loHTTP,\"OnHttpBufferUpdate\",loSink,\"OnHttpBufferUpdate\")\r\n\r\n*** Make the HTTP call - lcHTML is set but output is not used\r\n*** the output written by this example is written from the\r\n*** event handler as data is retrieved\r\nlcHTML = loHttp.HttpGet(\"http://www.microsoft.com\")\r\n\r\nRETURN\r\n\r\n*** If you have a class instance - a Form for example\r\n*** you can use that class as the Event sink and simply\r\n*** add the method below to it\r\nDEFINE CLASS HttpEventSink as Custom\r\n\r\nFUNCTION OnHttpBufferUpdate\r\nLPARAMETERS lnbytes,lnbufferreads,lccurrentchunk, loHttp\r\n\r\nDO CASE\r\n    *** 0 - Http Header\r\n\tCASE lnBufferReads = 0\r\n\t\tlcHttpHeader = lcCurrentChunk\r\n    *** -1 - done or cancelled or failed\r\n\tCASE lnBufferReads = -1\r\n\t\t* done or cancelled \t\t\r\n\t\tIF loHttp.lhttpcanceldownload \r\n\t\t\t? \"Cancelled\"\r\n\t\tELSE\r\n\t\t\t? \"---\"\r\n\t\t\t? \"Completed...\"\r\n\t\tENDIF\r\n\t*** anything else - data has been read\r\n\tCASE lnBufferReads > 0\r\n\t    WAIT WINDOW TRANSFORM(lnBytes,\"9,999,999\") + \" of \" + TRANSFORM(loHTTP.nContentSize,\"9,999,999\") + \" bytes\" NOWAIT \r\nENDCASE\r\n\r\n*** Dump data incrementally\r\n? lcCurrentChunk\r\n\r\nENDDEFINE\r\n```",
+                  "example": "##### Using Subclassing\r\n\r\n```foxpro\r\nDO wwHTTP\r\nloHttp = CREATEOBJECT(\"wwHttp_WithEvents\")\r\n\r\n*** Make the HTTP call - lcHTML is set but output is not used\r\n*** the output written by this example is written from the\r\n*** event handler as data is retrieved\r\nlcHTML = loHttp.Get(\"http://www.microsoft.com\")\r\n\r\n* create sub-class of wwHttp and implement OnHttpBufferUpdate\r\nDEFINE CLASS wwHttp_WithEvents as wwHttp\r\n\r\nFUNCTION OnHttpBufferUpdate\r\nLPARAMETERS lnbytes,lnbufferreads,lccurrentchunk, loHttp\r\n\r\nDO CASE\r\n    *** 0 - Http Header\r\n\tCASE lnBufferReads = 0\r\n\t\tlcHttpHeader = lcCurrentChunk\r\n    *** -1 - done or cancelled or failed\r\n\tCASE lnBufferReads = -1\r\n\t\t* done or cancelled \t\t\r\n\t\tIF THIS.lhttpcanceldownload \r\n\t\t\t? \"Cancelled\"\r\n\t\tELSE\r\n\t\t\t? \"---\"\r\n\t\t\t? \"Completed...\"\r\n\t\tENDIF\r\n\t*** anything else - data has been read\r\n\tCASE lnBufferReads > 0\r\n\t    WAIT WINDOW TRANSFORM(lnBytes,\"9,999,999\") + \" of \" + TRANSFORM(THIS.nContentSize,\"9,999,999\") + \" bytes\" NOWAIT \r\nENDCASE\r\n\r\n*** You can also accumuluate the data incrementally\r\n*** to allow users to look at data as it comes in\r\n? lcCurrentChunk\r\n\r\nENDDEFINE\r\n```\r\n\r\n\r\n##### Using BINDEVENT\r\n\r\n```foxpro\r\nDO wwHTTP\r\nloHttp = CREATEOBJECT(\"wwHttp\")\r\n\r\n*** Object that will handle the event. This could be a form \r\n*** or any other object instance on which you implement\r\n*** the OnHttpBufferUpdate event handler code\r\nloSink = CREATEOBJECT(\"HttpEventSink\")\r\n\r\n*** Bind event from wwHttp to the event handling object\r\nBINDEVENT(loHTTP,\"OnHttpBufferUpdate\",loSink,\"OnHttpBufferUpdate\")\r\n\r\n*** Make the HTTP call - lcHTML is set but output is not used\r\n*** the output written by this example is written from the\r\n*** event handler as data is retrieved\r\nlcHTML = loHttp.HttpGet(\"http://www.microsoft.com\")\r\n\r\nRETURN\r\n\r\n*** If you have a class instance - a Form for example\r\n*** you can use that class as the Event sink and simply\r\n*** add the method below to it\r\nDEFINE CLASS HttpEventSink as Custom\r\n\r\nFUNCTION OnHttpBufferUpdate\r\nLPARAMETERS lnbytes,lnbufferreads,lccurrentchunk, loHttp\r\n\r\nDO CASE\r\n    *** 0 - Http Header\r\n\tCASE lnBufferReads = 0\r\n\t\tlcHttpHeader = lcCurrentChunk\r\n    *** -1 - done or cancelled or failed\r\n\tCASE lnBufferReads = -1\r\n\t\t* done or cancelled \t\t\r\n\t\tIF loHttp.lhttpcanceldownload \r\n\t\t\t? \"Cancelled\"\r\n\t\tELSE\r\n\t\t\t? \"---\"\r\n\t\t\t? \"Completed...\"\r\n\t\tENDIF\r\n\t*** anything else - data has been read\r\n\tCASE lnBufferReads > 0\r\n\t    WAIT WINDOW TRANSFORM(lnBytes,\"9,999,999\") + \" of \" + TRANSFORM(loHTTP.nContentSize,\"9,999,999\") + \" bytes\" NOWAIT \r\nENDCASE\r\n\r\n*** Dump data incrementally\r\n? lcCurrentChunk\r\n\r\nENDDEFINE\r\n```",
                   "sortOrder": 560,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "601",
                   "classInfo": {
                     "memberName": "OnHttpBufferUpdate",
                     "scope": "Public",
-                    "parameters": "**lnBytesDownloaded**  \rNumber of bytes that have been downloaded so far.\r\r**lnBufferReads**  \rNumber of reads that have occurred. The following special values can be passed in here:\r0  - HTTP Header for the request\r-1 - Request was completed or cancelled. See lHttpCancelDownload.\r\r**lcCurrentChunk**  \rThe current block of bytes read from the Request.\r\r**loHttp **  \rwwHttp instance for this buffer update. Useful if you're using BINDEVENT to route the event to another object rather than subclassing. For subclasses you can also use the THIS. pointer instead to reference the FTP object.\r",
+                    "parameters": "**lnBytesDownloaded**  \rNumber of bytes that have been downloaded so far.\r\r**lnBufferReads**  \rNumber of reads that have occurred. The following special values can be passed in here:\r0  - HTTP Header for the request\r-1 - Request was completed or cancelled. See lHttpCancelDownload.\r\r**lcCurrentChunk**  \rThe current block of bytes read from the Request.\r\r**loHttp**  \rwwHttp instance for this buffer update. Useful if you're using BINDEVENT to route the event to another object rather than subclassing. For subclasses you can also use the THIS. pointer instead to reference the FTP object.\r",
                     "syntax": "o.onhttpbufferupdate(lnBytesDownloaded,lnBufferReads,lcCurrentChunk, loHttp)",
                     "assembly": "",
                     "contract": "",
@@ -19288,7 +19287,7 @@
                 {
                   "id": "_0jj1aw84a",
                   "parentId": "_0jj1abf2k",
-                  "title": "wwHTTP::cusername",
+                  "title": "wwHTTP::cUsername",
                   "slug": "Utility-Classes/West-Wind-Internet-Protocols/Class-wwHTTP/wwHTTPcusername",
                   "link": "Utility-Classes/West-Wind-Internet-Protocols/Class-wwHTTP/wwHTTPcusername.md",
                   "displayType": "classproperty",
@@ -19301,9 +19300,9 @@
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "615",
                   "classInfo": {
-                    "memberName": "cusername",
+                    "memberName": "cUsername",
                     "scope": "Public",
-                    "syntax": "",
+                    "syntax": "o.cUsername",
                     "assembly": "",
                     "contract": "",
                     "exceptions": ""
@@ -19320,7 +19319,7 @@
                   "keywords": "",
                   "seeAlso": "West Wind Web Connection\rwwHTTP::nHttpServiceFlags",
                   "remarks": "HTTP protocol specific flags should set nHttpServiceFlags.",
-                  "example": "#INCLUDE wconnect.h\r\nDO wconnect\r\n\r\nloHttp = CREATEOBJECT(\"wwHttp\")\r\n\r\nloHttp.nHttpServiceFlags = BITOR(INTERNET_FLAG_NO_COOKIES,0x00400000)\r\n\r\n? loHttp.nHttpServiceFlags \r\n\r\nlcHtml = loHttp.HttpGet(\"http://west-wind.com\")\r\n\r\n? SUBSTR(lcHtml,1,500)\r\nRETURN",
+                  "example": "```foxpro\r\n#INCLUDE wconnect.h\r\nDO wconnect\r\n\r\nloHttp = CREATEOBJECT(\"wwHttp\")\r\n\r\nloHttp.nHttpServiceFlags = BITOR(INTERNET_FLAG_NO_COOKIES,0x00400000)\r\n\r\n? loHttp.nHttpServiceFlags \r\n\r\nlcHtml = loHttp.HttpGet(\"http://west-wind.com\")\r\n\r\n? SUBSTR(lcHtml,1,500)\r\nRETURN\r\n```",
                   "sortOrder": 150,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1241502",
@@ -19616,7 +19615,7 @@
                 {
                   "id": "_0jj1aujzi",
                   "parentId": "_0jj1abf2k",
-                  "title": "wwHTTP::nhttpworkbuffersize",
+                  "title": "wwHTTP::nHttpWorkBufferSize",
                   "slug": "Utility-Classes/West-Wind-Internet-Protocols/Class-wwHTTP/wwHTTPnhttpworkbuffersize",
                   "link": "Utility-Classes/West-Wind-Internet-Protocols/Class-wwHTTP/wwHTTPnhttpworkbuffersize.md",
                   "displayType": "classproperty",
@@ -19629,13 +19628,15 @@
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "632",
                   "classInfo": {
-                    "memberName": "nhttpworkbuffersize",
+                    "memberName": "nHttpWorkBufferSize",
                     "scope": "Public",
-                    "parameters": "Default value - 8182 bytes.\r\n",
-                    "syntax": "",
+                    "parameters": "",
+                    "returns": "",
+                    "syntax": "o.nHttpWorkBufferSize",
                     "assembly": "",
                     "contract": "",
-                    "exceptions": ""
+                    "exceptions": "",
+                    "defaultValue": "Default value - 65556 bytes"
                   }
                 },
                 {
@@ -33648,6 +33649,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 190,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "2",
           "classInfo": {
@@ -33786,6 +33788,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "3",
               "classInfo": {
@@ -34501,6 +34504,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "8",
                   "classInfo": {
@@ -38379,6 +38383,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241963",
           "classInfo": {
@@ -62295,6 +62300,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_s8104dggl"
+    "lastTopicId": "_5z00wyay7"
   }
 }

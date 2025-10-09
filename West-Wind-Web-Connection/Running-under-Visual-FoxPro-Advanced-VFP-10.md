@@ -1,4 +1,4 @@
-﻿Web Connection works with [Visual FoxPro Advanced](http://www.baiyujia.com/vfpadvanced/f_vfpa_about.asp) (aka VFP 10). It's possible to run Web Connection under this patched **unofficial** version of Visual FoxPro with a few caveats:
+Web Connection works with [Visual FoxPro Advanced](http://www.baiyujia.com/vfpadvanced/f_vfpa_about.asp) (aka VFP 10). It's possible to run Web Connection under this patched **unofficial** version of Visual FoxPro with a few caveats:
 
 * You have to run the 32 bit version
 * West Wind does not officially support this environment
@@ -11,7 +11,7 @@ That said, I've set up Visual FoxPro Advanced and was able to run the Web Connec
 
 The example above runs the Web Connection .NET Core local Web Server (also tested in IIS) using COM Mode and it works with all the Web Connection Samples, this message board and a few others. In other words, except for a few small cosmetic issues it looks like **it just works**.
 
-> For setting up Visual FoxPro Advanced I'd recommend you look at [Eric Selje's Southwest Fox White Paper](https://saltydogllc.com/wp-content/uploads/SELJE-VFP-Advanced.pdf) which provides much better install instructions than the Web site does. 
+> For setting up Visual FoxPro Advanced I'd recommend you look at [Eric Selje's Southwest Fox White Paper](https://www.slideshare.net/slideshow/selje-vfp-advancedpdf/255749235) which provides much better install instructions than the Web site does. 
 
 ### Why No 64 Bit
 The main reason for this limitation is that Web Connection uses a 32 bit support assembly in `wwipstuff.dll`. There are a number of commonly used features in this DLL that provide things like .NET hosting, some high performance conversions and some old integrations for things like the old Zip functions. While it might be possible to move some of this over to 64 bit (or dual mode) or move the dependencies over to .NET altogether and remove the DLL some things like the .NET hosting require the C++ code.
@@ -35,14 +35,21 @@ SET EXCLUSIVE OFF
 
 You can then `DO SetEnvironment` to set up your paths and environment instead of relying on `config.fpw`.
 
-#### UI Inconsistencies
-I also ran into a number of problems with application icons in COM mode when running in `INTERACTIVE` user mode on the desktop. The icons sometimes would show, sometimes not, and sometimes show without opacity.
+### ActiveX and COM 64bit Incompatibility
+If you're going to run in 64 bit mode you'll lose the ability to access 32 bit COM components. Since most ActiveX controls are 32 bits - including Common Controls - that means most ActiveX controls won't work when running VFPA in 64bit mode. The same goes for any in-process COM objects that are 32 bit only as well as any FLLs that are not explicitly compiled for 64 bit.
+
+> This is the reason Web Connection won't run in 64 bit mode because `wwipstuff.dll` is 32 bit and Web Connection uses that DLL extensively.
 
 ### Should you use VFP Advanced?
-Personally I would **not recommend** using VFP Advanced, simply because of the nature of process of how this product patches Visual FoxPro 9 and because it's impossible to track problems. The author does not have an easily accessible support mechanism or a message board where issues are tracked.
+Unless you have a pressing need, or it fixes a very specific problem for you, I would **not recommend** using VFP Advanced due to the incompatibilities that make use somewhat limited, as well as the nature of process of how this product patches Visual FoxPro 9 and because it's impossible to track problems. The author does not have an easily accessible support mechanism or a message board where issues are tracked.
 
-My concern is simply that this tool patches Visual FoxPro at the binary level, rather than from changes in Source Code. These fixes are made most likely from decompiled code which which is tricky at best (especially knowing how byzantine even the original MS source code was). I can't imagine that the author goes through extensive regression of the entire product as Visual FoxPro did for official Microsoft releases. Although the changes and fixes are relatively small and focused they do have the potential to affect other parts of the product. Especially the 64 bit version had to touch a lot of the codebase to work.
+My concern is simply that this tool patches Visual FoxPro at the binary level, rather than from changes in Source Code. These fixes are made most likely from decompiled code which which is tricky at best (especially knowing how byzantine even the original MS source code was). I can't imagine that the author goes through extensive regression testing of the entire product as the Visual FoxPro team did for official Microsoft releases. Although the changes and fixes are relatively small and focused they do have the potential to affect other parts of the product. Especially the 64 bit version had to touch a lot of the code base to work.
 
-The work done here is substantial and impressive, but it lacks a process that can be tracked in a meaningful way. I'd be worried that maybe at some point in the future I'd run into some obscure side effect that's rarely hit.
+The only thing here that will tell the story is time in actual applications - which given the small number of FoxPro developers left and the small percentage that will use VFPA is going to be hard to get a read on.
 
-The bottom line is this: Use this with caution and make sure you test this extensively before you commit to using it. And above all make sure you're actually getting a benefit from using it as the fixes are all relative small and very specific.
+### Bottom Line: Make Sure!
+The bottom line is this: 
+
+The work Chen has done is definitely very impressive, but use Visual FoxPro Advanced with caution and make sure you test it extensively with your code base, before you commit to using it in production. If you are going to run in 64 bit mode, make sure you know what components you are using and test any non-native FoxPro components for compatibility. The 32 bit version is much more compatible, but it also doesn't provide the primary benefit of a 64 bit version.
+
+And above all make sure you're actually getting more than a perceived benefit from using it!

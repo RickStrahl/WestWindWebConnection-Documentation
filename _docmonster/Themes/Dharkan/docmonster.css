@@ -408,6 +408,7 @@ table p { margin-bottom: 0.5em; }
 
 .topic-outline {
     display: none;
+
 }
 .topic-outline a {
     font-weight: normal !important;;
@@ -416,7 +417,7 @@ table p { margin-bottom: 0.5em; }
     .topic-outline {        
         position: fixed;                
         display: block;
-        overflow-y: auto;
+        overflow-y:auto;
 
         top: 7em;
         right: 1em;
@@ -430,10 +431,13 @@ table p { margin-bottom: 0.5em; }
         margin-left: 10px;
         padding: 20px 3px 0 20px;
     }
+    
+    
     .topic-outline-content {        
         margin-top: 1em;
         padding: 5px 5px 5px 0;        
-    }
+        overflow-y: auto;
+    }    
     .topic-outline-content a {        
         border-left: 2px transparent solid;
         
@@ -442,6 +446,16 @@ table p { margin-bottom: 0.5em; }
         padding: 5px 0 5px 5px;
         text-decoration: none;
         border-left: 1px solid #eee;
+    }
+    /* Chrome/Opera/mobile Webkit browsers */
+    .topic-outline::-webkit-scrollbar {                                        
+        width: 3px;
+        height: 8px;        
+        background: #777;
+    }
+    .topic-outline::-webkit-scrollbar-thumb {                    
+        background: #a2a2a2;
+        border-radius: 0.3em;
     }
     .topic-outline-content a.active {
         border-left: 2px steelblue solid;

@@ -6,7 +6,7 @@ Web Connection is a complete Web application framework for developing and delive
 
 Make sure you read the following important topics:
 
-* **<a href="https://west-wind.com/webconnection/docs/_s8104dggl.htm" target="top">What's new in Web Connection 8.0</a>**
+* **<a href="https://webconnection.west-wind.com/docs/West-Wind-Web-Connection/Whats-new-in-Web-Connection.html" target="top">What's new in Web Connection 8.0</a>**
 
 This documentation is large, yes. Don't let it scare you off though, most of the information is here to help you with specific functionality, but for getting started you only need to know a few things.
 

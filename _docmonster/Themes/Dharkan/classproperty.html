@@ -15,9 +15,9 @@
 <pre class="syntaxbox" id="syntax">{{ Topic.ClassInfo.Syntax }}</pre>
 {{% } }}
 
-{{% if(!string.IsNullOrEmpty(Topic.ClassInfo.Parameters)) { }}
-<h3 class="outdent" id="parameters">Parameters</h3>
-	{{ Helpers.Markdown(Topic.ClassInfo.Parameters) }}
+{{% if(!string.IsNullOrEmpty(Topic.ClassInfo.DefaultValue) || !string.IsNullOrEmpty(Topic.ClassInfo.Parameters)) { }}
+<h3 class="outdent" id="parameters">Default Value</h3>
+	{{ Topic.ClassInfo.DefaultValue ?? Topic.ClassInfo.Parameters }}
 {{% } }}
 
 {{% if(!string.IsNullOrEmpty(Topic.ClassInfo.Exceptions)) { }}
