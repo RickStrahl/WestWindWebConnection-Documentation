@@ -1,4 +1,4 @@
-﻿The Web Connection WebControl Framework is a rich, object oriented Web Development framework similar to ASP.NET that lives ontop of the core Web Connection engine. Although there are similiarities to ASP.NET and you can use Visual Studio 2005/Visual Web Developer to create your HTML Script pages, it is based 100% on FoxPro code.
+﻿The Web Connection WebControl Framework is a rich, object oriented Web Development framework similar to ASP.NET that lives on top of the core Web Connection engine. Although there are similarities to ASP.NET and you can use Visual Studio 2005/Visual Web Developer to create your HTML Script pages, it is based 100% on FoxPro code.
 
 The framework uses a control based architecture that lets you access Web content through controls with properties rather than dealing with low level HTML elements directly (although that is still completely possible). In additon an event based model makes it much easier to write isolated code for specific actions instead of monolithic methods that need to handle lots of different operations. A Web Page button click can be mapped to a FoxPro method in a Page class for example.
 

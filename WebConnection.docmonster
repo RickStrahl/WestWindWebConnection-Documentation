@@ -527,6 +527,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 90,
+      "isExpanded": true,
       "updated": "2025-05-28T10:11:28.9282906-07:00",
       "helpId": "861",
       "classInfo": {
@@ -4273,6 +4274,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1148",
           "classInfo": {
@@ -4365,6 +4367,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242548",
               "classInfo": {
@@ -4388,7 +4391,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-10-10T11:32:58.7423064-07:00",
                   "helpId": "1150",
                   "classInfo": {
                     "memberName": "",
@@ -4411,7 +4414,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-10-10T12:53:10.2318195-07:00",
                   "helpId": "1242549",
                   "classInfo": {
                     "memberName": "",
@@ -5761,6 +5764,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
+      "isExpanded": true,
       "updated": "2025-05-28T10:11:30.6452845-07:00",
       "helpId": "3",
       "classInfo": {
@@ -7498,6 +7502,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "927",
           "classInfo": {
@@ -46861,6 +46866,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 10,
+      "isExpanded": true,
       "updated": "2025-05-28T08:35:16.0178733-07:00",
       "helpId": "1294703",
       "classInfo": {
@@ -49650,6 +49656,7 @@
           "seeAlso": "",
           "remarks": "",
           "example": "",
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242025",
           "classInfo": {
@@ -50348,6 +50355,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242042",
               "classInfo": {
@@ -57350,6 +57358,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242224",
                   "classInfo": {
@@ -58113,6 +58122,7 @@
                       "remarks": "This control requires Session state to work. This means you need to set the Page's EnableSessionState property to .T. Make sure this is done or code might fail or worse authentication will not work. By association this means that HTTP Cookies must be enabled.\r\n\r\nSets two Session Vars: WebLogin and WebLoginAdmin. The name of the Var is configurable via the LoginSessionVar property.",
                       "example": "",
                       "sortOrder": 60,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242441",
                       "classInfo": {
@@ -62300,6 +62310,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_5z00wyay7"
+    "lastTopicId": "_1p200a3d3"
   }
 }

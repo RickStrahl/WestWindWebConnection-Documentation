@@ -1,22 +1,87 @@
-The UserSecurity authentication model provides a FoxPro code based mechanism plus a custom HTML form for validating users. It uses the [wwUserSecurity class](VFPS://Topic/_1P30TA7N1), which provides a default implementation **using a simple FoxPro table based security implementation**. 
+The UserSecurity authentication model provides a FoxPro code based authentication mechanism and a custom HTML form for validating users. It uses the [wwUserSecurity class](VFPS://Topic/_1P30TA7N1) which provides a default implementation **using a simple FoxPro table based security implementation** by default. 
 
-You can override the `wwUserSecurity` class and create custom authentication schemes that validate against your own data stores or even alternate stores like Active Directory, Azure Entra ID or another OpenId Connect/oAuth provider.
+You can override the `wwUserSecurity` class and create completely custom authentication schemes that validate against your own data stores or even alternate stores like Active Directory, Azure Entra ID or another OpenId Connect/oAuth provider.
 
-Using the [wwProcess::Authenticate()](VFPS://Topic/_1P10UVIG9) method users can authenticate against this table. The `Authenticate()` method itself contains and manages intercepting the HTTP request and displaying a login page that also validates the user info. If correct the user is forwarded to the required page - otherwise the Login page is redisplayed.
+Using the [wwProcess::Authenticate()](VFPS://Topic/_1P10UVIG9) method users can authenticate against this table. The `Authenticate()` method itself contains and manages intercepting the HTTP request and displaying a login page that also validates the user info. If authentication is correct, the user is forwarded to the required page - otherwise the Login page is re-displayed.
 
 ![](/images/misc/logindialog.png)
 
+
+### The Basics!
+There are two ways you can use the built in, default UserSecurity Authentication in its simplest, default form:
+
+* Per Request
+* Globally for all Requests
+
+### Setup and Configuration
+In order to use the default UserSecurity Authorization handling you need to first enable it via a property override:
+
+```foxpro
+*** Set property in your wwProcess class
+cAuthenticationMode = "UserSecurity"
+```
+
+This enables the UserSecurity mode and allows you to call `THIS.Authenticate()`. It also calls implicitly calls `THIS.InitSession()` if it hasn't been explicitly called previously.
+
+> If you need custom Session handling with a persistent session, make sure to call `THIS.InitSession()` explicitly in your Process class `OnProcessInit()` handler before `THIS.Authenticate()` is called.
+
+#### Per Request - Process Method Handling
+If you want to authenticate on a per request you can add a call to `Authenticate()` to any process method like this:
+
+```foxpro
+FUNCTION TestFunction
+
+*** Check for any authenticated user
+IF !THIS.Authenticate("ANY")
+   RETURN  && not authenticated - challenges again
+ENDIF
+
+*** Logged in! Access the Authenticate user name and a full UserSecurity instance
+this.StandardPage("You've Authenticated as " + this.cAuthenticatedUser + "  " + ;
+                  "Full User name: " + this.oUserSecurity.oUser.FullName)
+ENDFUNC
+```
+
+This works well for applications where only certain requests need to be secured. For example, you may have a few Admin requests that require logging in while most of the application can be accessed without authentication.
+
+#### Global Authentication Handling
+An alternate approach that works better for applications where most requests require authentication, is to use global authentication that consolidates the call to `Authenticate()` into the `OnProcessInit()` handler that is fired on every request:
+
+```foxpro
+FUNCTION OnProcessInit
+
+* other OnProcessInit() code
+
+*** Update this condition with any endpoints that
+*** DON'T AUTHENTICATE or any other conditions
+*** that you want that should be anonymous
+lcScriptName = LOWER(JUSTFNAME(Request.GetPhysicalPath()))
+llIgnoreLoginRequest =  INLIST(lcScriptName, ;
+                               "default", "login")
+  
+IF !llIgnoreLoginRequest AND !THIS.Authenticate("any")
+   RETURN .F.   
+ENDIF   
+
+RETURN .T.
+ENDFUNC
+```
+
+You can create an optional condition (perhaps with a separate function if the logic is complex) to specify whether authentication should fire. 
+
+> Note that if you choose to call `Authenticate()` on **all requests** you may also have to exclude certain requests that need explicit anonymous access like `login.myext` or `home.myext` etc. You can get `Request.GetScriptname()`
+
 ### The wwUserSecurity Class
-The wwUserSecurity class provides a simple class and cursor based lookup mechanism for retrieving username/password combinations. It supports creation of the table, adding and deleting of records and the familiar business object approach that Web Connection uses to hold registration data. The wwUserSecurity class is a base feature for the following enhancements.
+The `wwUserSecurity` class' default implementation provides a simple class and cursor based lookup mechanism for retrieving username/password combinations. It supports creation of the table, adding and deleting of records and the familiar business object approach that Web Connection uses to hold registration data. 
 
-The class is very simple and the key method is Authenticate which is passed a username and password. If Authenticate succeeds - or you call GetUser or GetUserByUserName - an internal oUser member is set with the user information. oUser contains username, password, FullName, email, admin and a notes field. It also supports Get and SetProperty methods to add additional information. 
+The class is very simple and the key method is `Authenticate()` which is passed a username and password. If Authenticate succeeds - or you call `GetUser()` or `GetUserByUserName()` - an internal `oUser` member is set with the user information. `oUser` contains username, password, fullName, email, admin and a notes field. It also supports Get and SetProperty methods to add additional information. 
 
-You can extend the underlying table with new fields and these fields show up in the oUser member. You can override the table name and even override the wwUserSecurity class to customize the behavior. As long as you stick to the base method interface definition you can use subclasses for UserSecurity Authentication.
+You can extend the underlying table with new fields and these fields show up in the `oUser` member. You can override the table name and even override the `wwUserSecurity` class altogether to customize the behavior. As long as you stick to the base method interface you can use subclasses for UserSecurity Authentication.
 
 ### wwProcess::Authenticate
-There's a new Authenticate method on the process class that deals with Authentication. Authenticate is a one stop method meant to be a one liner in any code and provide automatic user validation based on the Authentication mode in use. The method can use either Basic/Windows Authentication or the new UserSecurity approach.
+There's a new `Authenticate()` method on the process class that deals with Authentication. `Authenticate()` is a high level method meant to be a one liner in any code and provide automatic user validation based on the Authentication mode in use. It essentially orchestrates the User Security class and setting the cookie information to persist the user data across requests, once authenticated.
 
-In this mode Web Connection displays a login dialog and validates the input against the table used by the UserSecurity class. 
+> `Authenticate()` works with either Basic/Windows Authentication as well as UserSecurity approach described in this topic. When using Basic/Windows authentication the Windows logon dialog is used in lieu of the HTML based login form.
 
 To authenticate is as simple as this:
 
@@ -24,17 +89,17 @@ To authenticate is as simple as this:
 *** In the wwProcess class header
 cAuthenticationMode = "UserSecurity"
 
-*** To override the UserSecurity class specify a custom class here
-
-cAuthenticationUserSecurityClass = "MyUserSecurity"
+*** You can specify a custom class here - uses default
+* cAuthenticationUserSecurityClass = "myUserSecurity"
 
 FUNCTION TestFunction
 
+*** Check for any authenticated user
 IF !THIS.Authenticate("ANY")
-   RETURN
+   RETURN  && not authenticated - challenge again
 ENDIF
 
-* **Access the Authenticate user name and a full UserSecurity instance
+*** Logged in! Access the Authenticate user name and a full UserSecurity instance
 this.StandardPage("You've Authenticated as " + this.cAuthenticatedUser + "  " + ;
                   "Full User name: " + this.oUserSecurity.oUser.FullName)
 
@@ -45,16 +110,17 @@ Here's what the authentication request looks like:
 
 ![](/images/misc/logindialog.png)
 
-> ### @icon-info Customize the Sign In Form
-> The login form by default is loaded from a `views\_login.wcs` and `views\_layoutpage.wcs` template that you can customize to fit your application style.
+> ### @icon-info-circle Customize the Sign In Form
+> The login form by default is loaded from the `views\_login.wcs` and `views\_layoutpage.wcs` templates. You can customize these templates, or change the path used to point at a different template to render the Html UI.
 
 ### User Data Storage
-In order for this to work you need to add usernames and passwords and any additional information such as Admin status and fullname into a `UserSecurity.dbf` table (you can change the name). Web Connection then validates against this table. 
+By default user login information is stored in a `UserSecurity.dbf` file. If the file doesn't exist it's auto-created as an empty file.
 
-The validation process is driven through the UserSecurity class and you can customize how this class is created an used. You can override this class to provide custom functionality and user validation as long as you maintain the public interface of the base class.
+The file contains fields for username and password, admin status and additional fields commonly used like firstname, lastname, company, fullname etc. You can add custom fields to this data table and it will show up on the `oUser` record.
 
+The validation process is driven through the `wwUserSecurity` default class and you can customize how this class is created and used. You can override this class to provide custom functionality and user validation as long as you maintain the public interface of the base class.
 
-There a are a few new properties on the wwProcess class that provide for Authentication functionality:
+There a are a few new properties on the `wwProcess` class that provide for Authentication functionality:
 
 ```foxpro
 cAuthenticationMode = "UserSecurity"
@@ -71,9 +137,13 @@ oUserSecurity = null
 cAuthenticatedUser = ""
 ```
 
-You can specify the Authentication Mode (Basic, UserSecurity), the name of the authentication class if using UserSecurity (defaulting to the stock wwUserSecurity using a Fox UserSecurity table). After Authentication is successful the cAuthenticatedUser property is set to the user name and you can optionally access the oUserSecurity object including it's oUser member that contains the user details (username, password, name, admin flag etc.).
+You can specify the Authentication Mode (`Basic`, `UserSecurity`), the name of the authentication class if using not using the default `wwUserSecurity` class with its default `UserSecurity.dbf` FoxPro table. 
 
-The idea is that you can customize the operation of Authentication on your custom Process class. You can override the class if necessary to use custom tables or even override the functional behavior. For example the WebLog sample does the following in its custom Process class:
+After Authentication is successful the `cAuthenticatedUser` property is set to the user name and you can optionally access the `oUserSecurity` object including it's `oUser` member that contains the user details (username, password, name, admin flag etc.).
+
+The idea is that you can customize the operation of authentication on your custom Process class. You can override the class if necessary to use custom tables or even override the functional behavior to use some other authorization mechanism to verify users. 
+
+For example the WebLog sample does the following in its custom `wwProcess` class:
 
 ```foxpro
 DEFINE CLASS WebLogProcess AS wwProcess
@@ -98,29 +168,15 @@ cFilename = "Weblog\data\WeblogUserSecurity"
 ENDDEFINE
 ```
 
-Once set up like this any calls the wwProcess::Authenticate automatically use these new settings.
-
-To use the Process in Web Control Pages is very easy as well. Remember that the Process class is always available as an instance variable Process. So you can do the following in the Page_Load for example:
-
-```foxpro
-FUNCTION OnLoad()
-
-IF !Process.Authenticate()
-   RETURN
-ENDIF
-
-this.lblMessage.Text = Process.cAuthenticatedUser + " " + ;
-                       Process.oUserSecurity.oUser.Fullname
-ENDFUNC
-```
+Once set up like this any calls the wwProcess::Authenticate automatically use these new settings with the alternate table and class.
 
 ### Overriding wwUserSecurity Behavior
-You can easily override the user security class by creating your own class that inherits from user security and overrides relevant methods such as Authenticate. You can point it at custom tables and fields and generally change the default behavior. Or you can just subclass point at different files and uses as is.
+You can easily override the user security class by creating your own class that inherits from `wwUserSecurity` and then overrides relevant methods such as `Authenticate`. You can point it at custom tables and fields and generally change the default behavior. Or you can just subclass point at different files and uses as is.
 
 **wwProcess::OnAuthenticateUser** 
 This method is an easy way to hook up custom authentication when the cAuthenticationMode="UserSecurity". Basically the UI login feature calls the OnAuthenticateUser() method with a username and password parameter and you can choose how to perform the lookup. This method is the simplest way to hook up custom security if all you need to do is perform authentication.
 
-When subclassing this method successful login attempts should set the Web Connection security session variable by invoking this code:
+When sub-classing this method successful login attempts should set the Web Connection security session variable by invoking this code:
 
 ```foxpro
 Session.SetSessionVar(this.cAuthenticationUserSecurityKey,lcUsername)
@@ -153,67 +209,3 @@ ENDIF
 RETURN .T.
 ENDFUNC
 ```
-
-### wwWebLogin Control
-The Page framework also includes a wwWebLogin control that can be dropped onto a page and you can use the control as a page level access validator. When not logged in the control displays as login display:
-
-![](/images/WebControls/LoginControlLogin.png)
- 
-and you can enter username and password into it. The control has a LoggedIn property you can query from the page:
-
-```foxpro
-IF !THIS.Login.LoggedIn
-   this.panelAdminContent.Visible =.F.   
-ENDIF
-```
-
-Based on the on the LoggedIn flag or the IsAdmin flag you can show or hide content as needed based on the users level of authentication. Once you're logged in the control displays as a tag that shows the user's login name:
-
-![](/images/WebControls/LoginControlShowUser.png)
-
-Of course you can also hide the control from the page with:
-
-```foxpro
-this.Login.Visible = .F.
-```
-
-after Authentication() succeeded.
-
-### wwWebLogin as a Non-Visual Component
-The control can also be used via code directly. For example, in the WebLog sample there's a generic Authentication routine which looks like this:
-
-```foxpro
-* ***********************************************************************
-* WebLog_Routines :: IsAdminLogin
-* ***************************************
-* ** Function: Generic Admin Security routine that can be generically
-* **           called from the admin pages to validate users and force
-* **           a login.
-* **   Assume:
-* **     Pass:
-* **   Return:
-* ***********************************************************************
-FUNCTION IsAdminLogin()
-
-loLogin = CREATEOBJECT("wwWebLogin")
-loLogin.UserSecurityClass = "WebLogUserSecurity"
-
-IF loLogin.Login() AND loLogin.IsAdmin
-   RETURN .T.
-ENDIF
-
-Process.ErrorMsg("Access Denied",;
-   "<blockquote>The Administrative features require that you log in first. " +;
-   "Please return to main page of the Web Log form first and log on from there.<p></blockquote><hr>",,;
-   3,Process.ResolveUrl("~/Default.blog#WebLogin") )
-
-* **Shut down Web Control Framework Response Object
-Response.End()
-RETURN .F.
-ENDFUNC
-```
-
-The WebLogin class's Login method manages all aspects of the login process from authentication to the retrieving and setting Session variables. Here based on the result of the login we display an error message in case the login fails.
-
-
-The wwUserSecurity, wwProcess and wwWebLogin classes all work together to provide a common Authentication experience.
