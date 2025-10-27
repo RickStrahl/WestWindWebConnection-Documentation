@@ -49,7 +49,7 @@ Fixed an issue with `wwUserSecurity` auth cookie not getting set when running in
 Fix a bug where passing the content type would throw an exception due to a missing type check.
 
 
-#### Breaking Changes in v8.4{style="color: firebrick"}
+#### Breaking Changes in v8.4{style="color: Firebrick"}
 
 * **Breaking Change: Remove redundant llIsFile parameter from [wwHttp::AddPostFile()](dm-topic://_0jj1afxk3)**        
 When this method was introduced it retained the same syntax as AddPostKey() and was meant to be a direct replacement. That makes little sense however, and the parameter signature is slightly different anyway. The updated syntax only provides the parameters actually needed.  

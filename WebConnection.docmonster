@@ -16,7 +16,7 @@
       "example": "",
       "sortOrder": 100,
       "isExpanded": true,
-      "updated": "2025-10-09T13:28:25.5339492-07:00",
+      "updated": "2025-10-09T10:28:25.5339492-10:00",
       "helpId": "2",
       "classInfo": {
         "memberName": "",
@@ -39,7 +39,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 140,
-          "updated": "2025-10-09T13:09:35.5916925-07:00",
+          "updated": "2025-10-27T09:58:02.4826891-10:00",
           "helpId": "915",
           "classInfo": {
             "memberName": "",
@@ -62,7 +62,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
-          "updated": "2025-09-14T12:26:41.6507462-07:00",
+          "updated": "2025-09-14T09:26:41.6507462-10:00",
           "helpId": "1242800",
           "classInfo": {
             "memberName": "",
@@ -85,7 +85,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
-          "updated": "2025-06-02T17:00:25.9483696-07:00",
+          "updated": "2025-06-02T14:00:25.9483696-10:00",
           "helpId": "1242007",
           "classInfo": {
             "memberName": "",
@@ -108,7 +108,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 100,
-          "updated": "2025-09-13T22:29:08.5356649-07:00",
+          "updated": "2025-09-13T19:29:08.5356649-10:00",
           "helpId": "1258814",
           "classInfo": {
             "memberName": "",
@@ -131,7 +131,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
-              "updated": "2025-09-29T10:43:44.4342601-07:00",
+              "updated": "2025-09-29T07:43:44.4342601-10:00",
               "helpId": "1243166",
               "classInfo": {
                 "memberName": "",
@@ -154,7 +154,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 25,
-              "updated": "2025-09-26T08:58:46.3176891-07:00",
+              "updated": "2025-09-26T05:58:46.3176891-10:00",
               "helpId": "1294439",
               "classInfo": {
                 "memberName": "",
@@ -296,7 +296,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 95,
-          "updated": "2025-07-12T15:44:19.7038009-07:00",
+          "updated": "2025-10-27T09:55:11.7940289-10:00",
           "helpId": "1294725",
           "classInfo": {
             "memberName": "",
@@ -319,7 +319,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 90,
-          "updated": "2025-05-28T09:46:32.1764121-07:00",
+          "updated": "2025-05-28T06:46:32.1764121-10:00",
           "helpId": "1241294",
           "classInfo": {
             "memberName": "",
@@ -342,7 +342,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
-          "updated": "2025-05-28T10:06:53.6110982-07:00",
+          "updated": "2025-05-28T07:06:53.6110982-10:00",
           "helpId": "1241690",
           "classInfo": {
             "memberName": "",
@@ -388,7 +388,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 60,
-          "updated": "2025-10-09T13:49:28.9655651-07:00",
+          "updated": "2025-10-09T10:49:28.9655651-10:00",
           "helpId": "1294535",
           "classInfo": {
             "memberName": "",
@@ -527,8 +527,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 90,
-      "isExpanded": true,
-      "updated": "2025-05-28T10:11:28.9282906-07:00",
+      "updated": "2025-05-28T07:11:28.9282906-10:00",
       "helpId": "861",
       "classInfo": {
         "memberName": "",
@@ -551,7 +550,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
-          "updated": "2025-05-28T10:11:27.7808931-07:00",
+          "updated": "2025-05-28T07:11:27.7808931-10:00",
           "helpId": "1098",
           "classInfo": {
             "memberName": "",
@@ -574,7 +573,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
-          "updated": "2025-05-08T18:10:08.0035524-07:00",
+          "updated": "2025-05-08T15:10:08.0035524-10:00",
           "helpId": "1241352",
           "classInfo": {
             "memberName": "",
@@ -597,7 +596,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 90,
-          "updated": "2025-05-08T18:10:07.7804071-07:00",
+          "updated": "2025-05-08T15:10:07.7804071-10:00",
           "helpId": "1258832",
           "classInfo": {
             "memberName": "",
@@ -620,7 +619,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
-          "updated": "2025-09-11T16:27:15.79345-07:00",
+          "updated": "2025-09-11T13:27:15.79345-10:00",
           "helpId": "1094",
           "classInfo": {
             "memberName": "",
@@ -666,7 +665,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 130,
-              "updated": "2025-05-04T14:33:13.437435-07:00",
+              "updated": "2025-05-04T11:33:13.437435-10:00",
               "helpId": "1294361",
               "classInfo": {
                 "memberName": "",
@@ -689,7 +688,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 120,
-              "updated": "2025-05-01T14:30:02.9457218-07:00",
+              "updated": "2025-05-01T11:30:02.9457218-10:00",
               "helpId": "1294532",
               "classInfo": {
                 "memberName": "",
@@ -712,7 +711,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
-                  "updated": "2025-05-01T14:38:12.3813125-07:00",
+                  "updated": "2025-05-01T11:38:12.3813125-10:00",
                   "helpId": "1242878",
                   "classInfo": {
                     "memberName": "",
@@ -758,7 +757,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-03-12T13:30:32.8601944-07:00",
+                  "updated": "2025-03-12T10:30:32.8601944-10:00",
                   "helpId": "1279512",
                   "classInfo": {
                     "memberName": "",
@@ -782,7 +781,7 @@
                   "example": "",
                   "sortOrder": 20,
                   "isExpanded": true,
-                  "updated": "2025-05-02T11:05:22.80145-07:00",
+                  "updated": "2025-05-02T08:05:22.80145-10:00",
                   "helpId": "1294496",
                   "classInfo": {
                     "memberName": "",
@@ -830,7 +829,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 110,
-              "updated": "2025-05-01T14:24:29.8447568-07:00",
+              "updated": "2025-05-01T11:24:29.8447568-10:00",
               "helpId": "862",
               "classInfo": {
                 "memberName": "",
@@ -852,7 +851,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-03-12T13:30:32.8603574-07:00",
+                  "updated": "2025-03-12T10:30:32.8603574-10:00",
                   "helpId": "1095",
                   "classInfo": {
                     "memberName": "",
@@ -874,7 +873,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-03-12T13:30:32.8604872-07:00",
+                  "updated": "2025-03-12T10:30:32.8604872-10:00",
                   "helpId": "1096",
                   "classInfo": {
                     "memberName": "",
@@ -896,7 +895,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-03-12T13:30:32.8606091-07:00",
+                  "updated": "2025-03-12T10:30:32.8606091-10:00",
                   "helpId": "1110",
                   "classInfo": {
                     "memberName": "",
@@ -1106,7 +1105,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 70,
-              "updated": "2025-03-12T13:30:32.8607393-07:00",
+              "updated": "2025-03-12T10:30:32.8607393-10:00",
               "helpId": "1294493",
               "classInfo": {
                 "memberName": "",
@@ -1129,7 +1128,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 50,
-              "updated": "2025-03-12T13:30:32.8608834-07:00",
+              "updated": "2025-03-12T10:30:32.8608834-10:00",
               "helpId": "1242993",
               "classInfo": {
                 "memberName": "",
@@ -1924,7 +1923,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
-              "updated": "2025-03-12T13:30:32.8611191-07:00",
+              "updated": "2025-03-12T10:30:32.8611191-10:00",
               "helpId": "1294432",
               "classInfo": {
                 "memberName": "",
@@ -2016,7 +2015,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 40,
-                      "updated": "2025-03-12T13:30:32.8613125-07:00",
+                      "updated": "2025-03-12T10:30:32.8613125-10:00",
                       "helpId": "1243059",
                       "classInfo": {
                         "memberName": "",
@@ -2039,7 +2038,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
-                      "updated": "2025-03-12T13:30:32.8614929-07:00",
+                      "updated": "2025-03-12T10:30:32.8614929-10:00",
                       "helpId": "1294409",
                       "classInfo": {
                         "memberName": "",
@@ -2087,7 +2086,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
-                  "updated": "2025-03-12T13:30:32.861637-07:00",
+                  "updated": "2025-03-12T10:30:32.861637-10:00",
                   "helpId": "1294433",
                   "classInfo": {
                     "memberName": "",
@@ -2110,7 +2109,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 40,
-                      "updated": "2025-03-12T13:30:32.8617685-07:00",
+                      "updated": "2025-03-12T10:30:32.8617685-10:00",
                       "helpId": "1294435",
                       "classInfo": {
                         "memberName": "",
@@ -2156,7 +2155,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
-                      "updated": "2025-03-12T13:30:32.8618907-07:00",
+                      "updated": "2025-03-12T10:30:32.8618907-10:00",
                       "helpId": "1294436",
                       "classInfo": {
                         "memberName": "",
@@ -2208,7 +2207,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "updated": "2025-06-11T13:51:54.6438259-07:00",
+          "updated": "2025-06-11T10:51:54.6438259-10:00",
           "helpId": "1281",
           "classInfo": {
             "memberName": "",
@@ -2227,7 +2226,7 @@
               "displayType": "topic",
               "type": "markdown",
               "sortOrder": 120,
-              "updated": "2025-06-21T14:07:57.9167481-07:00",
+              "updated": "2025-06-21T11:07:57.9167481-10:00",
               "classInfo": {}
             },
             {
@@ -2243,7 +2242,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 110,
-              "updated": "2025-03-12T13:30:32.8621288-07:00",
+              "updated": "2025-03-12T10:30:32.8621288-10:00",
               "helpId": "1241721",
               "classInfo": {
                 "memberName": "",
@@ -2289,7 +2288,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
-                  "updated": "2025-05-29T17:34:20.0854485-07:00",
+                  "updated": "2025-05-29T14:34:20.0854485-10:00",
                   "helpId": "1241996",
                   "classInfo": {
                     "memberName": "",
@@ -2335,7 +2334,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 80,
-                  "updated": "2025-05-29T17:34:23.8218577-07:00",
+                  "updated": "2025-05-29T14:34:23.8218577-10:00",
                   "helpId": "1294304",
                   "classInfo": {
                     "memberName": "",
@@ -2358,7 +2357,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 70,
-                  "updated": "2025-05-05T12:41:06.1247448-07:00",
+                  "updated": "2025-05-05T09:41:06.1247448-10:00",
                   "helpId": "1339",
                   "classInfo": {
                     "memberName": "",
@@ -2381,7 +2380,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 40,
-                      "updated": "2025-05-05T09:31:50.8215447-07:00",
+                      "updated": "2025-05-05T06:31:50.8215447-10:00",
                       "helpId": "1294292",
                       "classInfo": {
                         "memberName": "",
@@ -2404,7 +2403,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 30,
-                      "updated": "2025-05-01T16:08:48.921476-07:00",
+                      "updated": "2025-05-01T13:08:48.921476-10:00",
                       "helpId": "1294570",
                       "classInfo": {
                         "memberName": "",
@@ -2498,7 +2497,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
-                  "updated": "2025-05-29T19:45:51.2591911-07:00",
+                  "updated": "2025-05-29T16:45:51.2591911-10:00",
                   "helpId": "1242669",
                   "classInfo": {
                     "memberName": "",
@@ -2851,7 +2850,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-09-10T11:22:23.2078378-07:00",
+              "updated": "2025-09-10T08:22:23.2078378-10:00",
               "helpId": "1241237",
               "classInfo": {
                 "memberName": "",
@@ -3015,7 +3014,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 80,
-              "updated": "2025-03-12T13:30:32.8624502-07:00",
+              "updated": "2025-03-12T10:30:32.8624502-10:00",
               "helpId": "1241238",
               "classInfo": {
                 "memberName": "",
@@ -3180,7 +3179,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-03-12T13:30:32.8625975-07:00",
+                  "updated": "2025-03-12T10:30:32.8625975-10:00",
                   "helpId": "1242591",
                   "classInfo": {
                     "memberName": "",
@@ -3390,7 +3389,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 40,
-          "updated": "2025-05-28T08:37:28.3758547-07:00",
+          "updated": "2025-05-28T05:37:28.3758547-10:00",
           "helpId": "1104",
           "classInfo": {
             "memberName": "",
@@ -3413,7 +3412,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 60,
-              "updated": "2025-03-12T13:30:32.8629208-07:00",
+              "updated": "2025-03-12T10:30:32.8629208-10:00",
               "helpId": "1143",
               "classInfo": {
                 "memberName": "",
@@ -3668,7 +3667,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
-                  "updated": "2025-03-12T13:30:32.863075-07:00",
+                  "updated": "2025-03-12T10:30:32.863075-10:00",
                   "helpId": "1294445",
                   "classInfo": {
                     "memberName": "",
@@ -3715,7 +3714,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
-              "updated": "2025-03-12T13:30:32.8632257-07:00",
+              "updated": "2025-03-12T10:30:32.8632257-10:00",
               "helpId": "1294538",
               "classInfo": {
                 "memberName": "",
@@ -3970,7 +3969,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 30,
-          "updated": "2025-05-28T08:38:19.9432659-07:00",
+          "updated": "2025-05-28T05:38:19.9432659-10:00",
           "helpId": "860",
           "classInfo": {
             "memberName": "",
@@ -4016,7 +4015,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
-              "updated": "2025-05-28T08:40:58.4607189-07:00",
+              "updated": "2025-05-28T05:40:58.4607189-10:00",
               "helpId": "2001",
               "classInfo": {
                 "memberName": "",
@@ -4039,7 +4038,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
-                  "updated": "2025-05-28T08:40:55.7814681-07:00",
+                  "updated": "2025-05-28T05:40:55.7814681-10:00",
                   "helpId": "2002",
                   "classInfo": {
                     "memberName": "",
@@ -4062,7 +4061,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
-                  "updated": "2025-05-28T08:38:49.7407267-07:00",
+                  "updated": "2025-05-28T05:38:49.7407267-10:00",
                   "helpId": "2003",
                   "classInfo": {
                     "memberName": "",
@@ -4084,7 +4083,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-05-28T08:40:57.8134255-07:00",
+                  "updated": "2025-05-28T05:40:57.8134255-10:00",
                   "helpId": "2005",
                   "classInfo": {
                     "memberName": "",
@@ -4109,7 +4108,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
-              "updated": "2025-05-28T10:08:05.1745527-07:00",
+              "updated": "2025-05-28T07:08:05.1745527-10:00",
               "helpId": "866",
               "classInfo": {
                 "memberName": "",
@@ -4131,7 +4130,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-05-28T08:53:03.7345995-07:00",
+                  "updated": "2025-05-28T05:53:03.7345995-10:00",
                   "helpId": "867",
                   "classInfo": {
                     "memberName": "",
@@ -4153,7 +4152,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-05-28T09:45:45.8911969-07:00",
+                  "updated": "2025-05-28T06:45:45.8911969-10:00",
                   "helpId": "868",
                   "classInfo": {
                     "memberName": "",
@@ -4201,7 +4200,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
-                  "updated": "2025-03-12T13:30:32.8635022-07:00",
+                  "updated": "2025-03-12T10:30:32.8635022-10:00",
                   "helpId": "1241387",
                   "classInfo": {
                     "memberName": "",
@@ -4224,7 +4223,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
-                  "updated": "2025-03-12T13:30:32.8636223-07:00",
+                  "updated": "2025-03-12T10:30:32.8636223-10:00",
                   "helpId": "1241389",
                   "classInfo": {
                     "memberName": "",
@@ -4274,7 +4273,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1148",
           "classInfo": {
@@ -4298,7 +4296,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 75,
-              "updated": "2025-03-12T13:30:32.8637491-07:00",
+              "updated": "2025-03-12T10:30:32.8637491-10:00",
               "helpId": "1241288",
               "classInfo": {
                 "memberName": "",
@@ -4367,7 +4365,6 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
-              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242548",
               "classInfo": {
@@ -4391,7 +4388,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
-                  "updated": "2025-10-10T11:32:58.7423064-07:00",
+                  "updated": "2025-10-10T08:32:58.7423064-10:00",
                   "helpId": "1150",
                   "classInfo": {
                     "memberName": "",
@@ -4414,7 +4411,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-10-10T12:53:10.2318195-07:00",
+                  "updated": "2025-10-10T10:27:17.793466-10:00",
                   "helpId": "1242549",
                   "classInfo": {
                     "memberName": "",
@@ -4487,7 +4484,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
-          "updated": "2025-03-12T13:30:32.8638905-07:00",
+          "updated": "2025-03-12T10:30:32.8638905-10:00",
           "helpId": "1376",
           "classInfo": {
             "memberName": "",
@@ -4510,7 +4507,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 180,
-              "updated": "2025-09-08T12:54:45.9176098-07:00",
+              "updated": "2025-09-08T09:54:45.9176098-10:00",
               "helpId": "1294302",
               "classInfo": {
                 "memberName": "",
@@ -4556,7 +4553,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 160,
-              "updated": "2025-03-12T13:30:32.8640302-07:00",
+              "updated": "2025-03-12T10:30:32.8640302-10:00",
               "helpId": "1294492",
               "classInfo": {
                 "memberName": "",
@@ -4878,7 +4875,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
-              "updated": "2025-09-10T11:11:47.4890624-07:00",
+              "updated": "2025-09-10T08:11:47.4890624-10:00",
               "helpId": "1294527",
               "classInfo": {
                 "memberName": "",
@@ -4927,7 +4924,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 80,
-      "updated": "2025-03-12T13:30:32.8641745-07:00",
+      "updated": "2025-03-12T10:30:32.8641745-10:00",
       "helpId": "1290678",
       "classInfo": {
         "memberName": "",
@@ -5019,7 +5016,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-05-04T14:35:46.6275748-07:00",
+              "updated": "2025-05-04T11:35:46.6275748-10:00",
               "helpId": "1101",
               "classInfo": {
                 "memberName": "",
@@ -5042,7 +5039,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 80,
-              "updated": "2025-04-23T13:01:42.5393394-07:00",
+              "updated": "2025-04-23T10:01:42.5393394-10:00",
               "helpId": "1102",
               "classInfo": {
                 "memberName": "",
@@ -5065,7 +5062,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 70,
-              "updated": "2025-03-12T13:30:32.8645862-07:00",
+              "updated": "2025-03-12T10:30:32.8645862-10:00",
               "helpId": "1103",
               "classInfo": {
                 "memberName": "",
@@ -5088,7 +5085,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 60,
-              "updated": "2025-03-12T13:30:32.864724-07:00",
+              "updated": "2025-03-12T10:30:32.864724-10:00",
               "helpId": "1106",
               "classInfo": {
                 "memberName": "",
@@ -5111,7 +5108,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 50,
-              "updated": "2025-03-12T13:30:32.8648714-07:00",
+              "updated": "2025-03-12T10:30:32.8648714-10:00",
               "helpId": "1241790",
               "classInfo": {
                 "memberName": "",
@@ -5134,7 +5131,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
-              "updated": "2025-03-12T13:30:32.8649907-07:00",
+              "updated": "2025-03-12T10:30:32.8649907-10:00",
               "helpId": "1294529",
               "classInfo": {
                 "memberName": "",
@@ -5157,7 +5154,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
-              "updated": "2025-03-12T13:30:32.8651292-07:00",
+              "updated": "2025-03-12T10:30:32.8651292-10:00",
               "helpId": "1443",
               "classInfo": {
                 "memberName": "",
@@ -5180,7 +5177,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
-              "updated": "2025-03-12T13:30:32.8652707-07:00",
+              "updated": "2025-03-12T10:30:32.8652707-10:00",
               "helpId": "1444",
               "classInfo": {
                 "memberName": "",
@@ -5203,7 +5200,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
-              "updated": "2025-03-12T13:30:32.8653994-07:00",
+              "updated": "2025-03-12T10:30:32.8653994-10:00",
               "helpId": "1294530",
               "classInfo": {
                 "memberName": "",
@@ -5228,7 +5225,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "updated": "2025-03-12T13:30:32.8655265-07:00",
+          "updated": "2025-03-12T10:30:32.8655265-10:00",
           "helpId": "1241698",
           "classInfo": {
             "memberName": "",
@@ -5251,7 +5248,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 120,
-              "updated": "2025-03-12T13:30:32.8656491-07:00",
+              "updated": "2025-03-12T10:30:32.8656491-10:00",
               "helpId": "1241654",
               "classInfo": {
                 "memberName": "",
@@ -5506,7 +5503,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 80,
-              "updated": "2025-05-04T14:37:21.0131083-07:00",
+              "updated": "2025-05-04T11:37:21.0131083-10:00",
               "helpId": "1292300",
               "classInfo": {
                 "memberName": "",
@@ -5644,7 +5641,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
-              "updated": "2025-08-12T19:57:16.5431291-07:00",
+              "updated": "2025-08-12T16:57:16.5431291-10:00",
               "helpId": "1292316",
               "classInfo": {
                 "memberName": "",
@@ -5692,7 +5689,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
-          "updated": "2025-03-12T13:30:32.8658036-07:00",
+          "updated": "2025-03-12T10:30:32.8658036-10:00",
           "helpId": "1294402",
           "classInfo": {
             "memberName": "",
@@ -5715,7 +5712,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 5,
-          "updated": "2025-07-17T10:40:20.7066575-07:00",
+          "updated": "2025-07-17T07:40:20.7066575-10:00",
           "helpId": "1294509",
           "classInfo": {
             "memberName": "",
@@ -5764,8 +5761,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
-      "isExpanded": true,
-      "updated": "2025-05-28T10:11:30.6452845-07:00",
+      "updated": "2025-05-28T07:11:30.6452845-10:00",
       "helpId": "3",
       "classInfo": {
         "memberName": "",
@@ -7502,7 +7498,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "927",
           "classInfo": {
@@ -8854,7 +8849,7 @@
           "remarks": "Services methods expose the following **PRIVATE** variables that let you control lower level access to the server:\r\r* **JsonService**  \rThe wwJsonService class that controls the JSON input and output parsing. This is useful to override behavior of the service, such as telling it to not generate any output using the **IsRawResponse** property which you can use if you want to use the Response object to return your own raw response output (ie. using `Response.Write()`).\r\r* **Serializer**  \rAn instance of the wwJsonSerializer which allows you to override behavior of the serializer. For example, you can override things like the PropertyNameOverrides property to generate 'proper' field names rather than all lowercase.\r\r* **Request, Response, Server, Process, Session etc.**   \rOf course all the other, normally exposed objects inside of process classes are also in scope so you can access any Request object methods like *QueryString* or *ServerVariables()* to retrieve input.",
           "example": "",
           "sortOrder": 60,
-          "updated": "2025-05-08T12:28:44.952192-07:00",
+          "updated": "2025-05-08T09:28:44.952192-10:00",
           "helpId": "1270489",
           "classInfo": {
             "memberName": "",
@@ -8923,7 +8918,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 120,
-              "updated": "2025-03-12T13:30:32.866007-07:00",
+              "updated": "2025-03-12T10:30:32.866007-10:00",
               "helpId": "1279585",
               "classInfo": {
                 "memberName": "",
@@ -9157,7 +9152,7 @@
               "remarks": "",
               "example": "```foxpro\r************************************************************************\r*  OnBeforeCallMethod - implemented as wwProcess Method\r*******************************************************\rFUNCTION OnBeforeCallMethod()\r\r*** Don't stop on errors even in Web Connection Debug Mode\rJsonService.IsDebugMode = .F.\r\rENDFUNC\r*   OnBeforeCallMethod\r```",
               "sortOrder": 20,
-              "updated": "2025-05-08T12:26:53.1179297-07:00",
+              "updated": "2025-05-08T09:26:53.1179297-10:00",
               "helpId": "1294299",
               "classInfo": {
                 "memberName": "OnBeforeCallMethod",
@@ -9254,7 +9249,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 580,
-              "updated": "2025-09-29T14:03:49.194622-07:00",
+              "updated": "2025-09-29T11:03:49.194622-10:00",
               "helpId": "1089",
               "classInfo": {
                 "memberName": "",
@@ -9574,7 +9569,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 450,
-              "updated": "2025-10-09T11:15:02.2533724-07:00",
+              "updated": "2025-10-09T08:15:02.2533724-10:00",
               "helpId": "1024",
               "classInfo": {
                 "memberName": "IsFormVar",
@@ -9747,7 +9742,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 380,
-              "updated": "2025-09-29T14:04:03.8190612-07:00",
+              "updated": "2025-09-29T11:04:03.8190612-10:00",
               "helpId": "1090",
               "classInfo": {
                 "memberName": "",
@@ -9767,7 +9762,7 @@
               "type": "markdown",
               "remarks": "Note that some types of controls like Checkboxes and Radio buttons will not return a value for their respective field name when they are not checked or set.\n\nYou can check the request data on the [The Server Status Form](dm-topic://_s860xzrkk) and the Log File to see exactly what POST data you're actually receiving and that `aFormVars` is working off of.",
               "sortOrder": 370,
-              "updated": "2025-09-29T13:54:13.2460405-07:00",
+              "updated": "2025-09-29T10:54:13.2460405-10:00",
               "classInfo": {
                 "memberName": "aFormVars",
                 "parameters": "**taVars**  \nAn array that will receive the form variables and values.\n\nThe array contains the name of the field and the value:\n\n1. The name/key of the variable\n2. the actual value as a string\n\n**tcPrefix**  \nAn optional Form variable prefix that is used to selectively retrieve form variables. Use this if you have subforms that are prefixed in some way. \n\n**tcDataBuffer**  \nOptional - by default this method uses the current request's `cFormVars` property for input data. If you pass `tcDataBuffer` you can optionally override the POST data with your own raw, encoded form data (url encoded or multi-part encoded).",
@@ -9788,7 +9783,7 @@
               "remarks": "Logical values are handled from checkboxes, but non-logical checkbox values will not be captured when not checked. Selection values for checkboxes must be On or True in order to be recognized as a True value for a logical. Multiselect lists or multiple selection radios will pull only the first selection into the target property.\r\rObject and array members are ignored and not filled or updated. Date values are imported with CTOD and CTOT. There may be formatting problems so these properties may require post processing and potential problems with SET STRICTDATE settings.\r\rYou can work around any misparsing problems by performing additional post processing on the captured object data or handling any fields that might have been missed manually.\r\rThis method can cause issues with logical values that are not on the form. There's no safe way to detect checked status as checkboxes and radio buttons do not send unchecked values as form variables so it's possible that non-form fields can be updated. The workaround is to exclude logical properties that are not on the HTML form explicitly.",
               "example": "```foxpro\r*** Using a cursor\rUSE wws_Customer\rSCATTER NAME loCustomer MEMO BLANK\r\rRequest.FormVarsToObject(loCustomer)\r\r\r*** Using a 'real' business object\rloCust = CREATE(\"cCustomer\")\rloCust.New()\r\r*** Store form vars to oData properties\rRequest.FormVarsToObject(loCust.oData)\r\rIF !loCust.Validate()\r   THIS.Errormsg(\"Invalid Data\")\r   RETURN\rENDIF\r\rloCust.Save()\r\r\r\r*** Without an object passed in \r*** returns a new object with props for each form var\r*** all vars are returned as text\rloFormVars = Request.FormVarsToObject()\r\r***Retrieve the txtName and txtCompany variables\rlcName = loFormVars.txtName\rlcCompany = loFormVars.txtCompany\r```",
               "sortOrder": 360,
-              "updated": "2025-09-29T13:49:45.0852865-07:00",
+              "updated": "2025-09-29T10:49:45.0852865-10:00",
               "helpId": "1241339",
               "classInfo": {
                 "memberName": "FormVarsToObject",
@@ -10178,7 +10173,7 @@
               "displayType": "classmethod",
               "type": "markdown",
               "sortOrder": 200,
-              "updated": "2025-10-09T11:18:52.0401767-07:00",
+              "updated": "2025-10-09T08:18:52.0401767-10:00",
               "classInfo": {
                 "memberName": "GetOrigin",
                 "parameters": "****\r\n\r\n",
@@ -11781,7 +11776,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 35,
-                      "updated": "2025-03-12T13:30:32.8661964-07:00",
+                      "updated": "2025-03-12T10:30:32.8661964-10:00",
                       "helpId": "1294312",
                       "classInfo": {
                         "memberName": "",
@@ -11875,7 +11870,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 300,
-                          "updated": "2025-09-08T12:06:17.7423602-07:00",
+                          "updated": "2025-09-08T09:06:17.7423602-10:00",
                           "helpId": "1290614",
                           "classInfo": {
                             "memberName": "OnAfterRowsRendered",
@@ -12938,7 +12933,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 190,
-                  "updated": "2025-09-08T15:21:19.4900437-07:00",
+                  "updated": "2025-09-08T12:21:19.4900437-10:00",
                   "helpId": "1258967",
                   "classInfo": {
                     "memberName": "HtmlLabel",
@@ -18000,8 +17995,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 60,
-      "isExpanded": true,
-      "updated": "2025-09-14T12:33:00.7147074-07:00",
+      "updated": "2025-09-14T09:33:00.7147074-10:00",
       "helpId": "24",
       "classInfo": {
         "memberName": "",
@@ -18047,7 +18041,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
-              "updated": "2025-03-12T13:42:37.744122-07:00",
+              "updated": "2025-03-12T10:42:37.744122-10:00",
               "helpId": "853",
               "classInfo": {
                 "memberName": "",
@@ -18093,7 +18087,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
-                  "updated": "2025-09-08T12:40:36.2979147-07:00",
+                  "updated": "2025-09-08T09:40:36.2979147-10:00",
                   "helpId": "1241863",
                   "classInfo": {
                     "memberName": "",
@@ -18258,7 +18252,7 @@
               "remarks": "**External Dependencies**  \rwwIPstuff.dll  \rzLib.dll",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-07-15T18:44:33.6550367-07:00",
+              "updated": "2025-07-15T15:44:33.6550367-10:00",
               "helpId": "1241726",
               "classInfo": {
                 "memberName": "",
@@ -18401,7 +18395,7 @@
                   "remarks": "UrlEncoded content that is longer than 254 characters requires wwIPStuff.dll for the URLEncoding using C++ code for better performance. This refers to the default nHttpPostMode value of 1.\r\rDepending on the value of the [nHTTPPostMode](vfps://Topic/wwipstuff%3A%3Anhttppostmode) property forms are posted either in standard URLEncoded or Multi-Part form mode. Multi-part form mode can be more efficient for large uploads as no encoding takes place, but the server application must support parsing multi-part forms. Web Connection automatically handles this via Request.Form().\r\rIf you are posting **data larger than 16mb** which is FoxPro's string size limit, you have use the `loHttp.lUseLargePostBuffer = .T.` to force using custom temporary cursor based storage for post data, so that data can be fed in one large chunk that can bypass the 16mb string limit. For more info see this <a href=\"https://west-wind.com/wconnect/weblog/showentry.blog?id=882\" target=\"top\">blog post</a>.",
                   "example": "```foxpro\rloHTTP = CREATEOBJECT(\"wwHTTP\")\r\r*** Standard HTML style UrlEncoded Form Variables\rloHTTP.AddPostKey(\"Company\",\"West Wind\")\rloHTTP.AddPostKey(\"Name\",\"Rick Strahl\")\r\rlcHTML = loHTTP.Post(\"http://www.west-wind.com/wconnect/testpage.wwd\")\r\r*** Posting JSON\rloHTTP.AddPostKey()  && Clear POST buffer\rlcJson = FILETOSTR(\"someJsonData.json\")\r\r*** Raw post buffer\rloHTTP.cContentType = \"application/json\"\rloHTTP.AddPostKey(lcJson)   && Just the raw data, no key\r\rlcJson = loHTTP.Post(\"http://www.west-wind.com/wconnect/testJson.wwd\")\r\r*** Posting a multi-part form with a File Upload\rloHTTP.AddPostKey()  && Clear existing POST buffer\r\rloHTTP.nHttpPostMode = 2  && Multipart form encoding\r\r*** Post a file and a regular form variable\rloHttp.AddPostFile(\"File\",\"d:\\temp\\wws_invoice.pdf\",\"invoice.pdf\",\"application/pdf\")\rloHttp.AddPostKey(\"txtFileNotes\",\"test note\")\r\rlcHTML = loHTTP.Post(\"http://localhost/wconnect/FileUpload.wwd\")\r\r* Note: Prior to v7 you can use .HttpGet() instead of .Post() or .Put()\r```",
                   "sortOrder": 540,
-                  "updated": "2025-07-16T14:54:29.7379287-07:00",
+                  "updated": "2025-07-16T11:54:29.7379287-10:00",
                   "helpId": "1294534",
                   "classInfo": {
                     "memberName": "AddPostKey",
@@ -19421,7 +19415,7 @@
                   "remarks": "GZip functionality relies on open source ZLIB1.dll (<a href=\"http://www.zlib.net\" target=\"top\">www.zlib.net</a>). The DLL is shipped with all West Wind Products that use it.",
                   "example": "",
                   "sortOrder": 110,
-                  "updated": "2025-07-15T22:04:02.947976-07:00",
+                  "updated": "2025-07-15T19:04:02.947976-10:00",
                   "helpId": "1242869",
                   "classInfo": {
                     "memberName": "lAllowGZip",
@@ -21489,7 +21483,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 330,
-                  "updated": "2025-08-22T13:33:47.0223127-07:00",
+                  "updated": "2025-08-22T10:33:47.0223127-10:00",
                   "helpId": "1294667",
                   "classInfo": {
                     "memberName": "DownloadFile",
@@ -21583,7 +21577,7 @@
                   "displayType": "classmethod",
                   "type": "markdown",
                   "sortOrder": 290,
-                  "updated": "2025-08-12T19:59:10.9325315-07:00",
+                  "updated": "2025-08-12T16:59:10.9325315-10:00",
                   "classInfo": {
                     "memberName": "GetDirectory",
                     "returns": "Server relative path with a leading `/`. Empty if not connected or there's an error in the connection.",
@@ -21624,7 +21618,7 @@
                   "displayType": "classmethod",
                   "type": "markdown",
                   "sortOrder": 271,
-                  "updated": "2025-08-22T13:55:05.5045452-07:00",
+                  "updated": "2025-08-22T10:55:05.5045452-10:00",
                   "classInfo": {
                     "memberName": "SetFileTime",
                     "parameters": "**lcServerFile**  \nThe remote server file to set the time on.\n\n**ltTime**  \nTime to set it to.\n\n**llUseUtc**  \nOptional - If .T. sets the time using UTC format.  \n*typically you'd want to use local time, which is internally translated to utc time when updated but allows for easier setting from FoxPro*.",
@@ -21670,7 +21664,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 260,
-                  "updated": "2025-08-22T13:33:24.489292-07:00",
+                  "updated": "2025-08-22T10:33:24.489292-10:00",
                   "helpId": "1294668",
                   "classInfo": {
                     "memberName": "UploadFile",
@@ -22378,7 +22372,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 270,
-          "updated": "2025-09-14T13:46:02.0912384-07:00",
+          "updated": "2025-09-14T10:46:02.0912384-10:00",
           "helpId": "1242995",
           "classInfo": {
             "memberName": "",
@@ -22449,7 +22443,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 530,
-                  "updated": "2025-04-12T23:05:03.3269178-07:00",
+                  "updated": "2025-04-12T20:05:03.3269178-10:00",
                   "helpId": "1259023",
                   "classInfo": {
                     "memberName": "",
@@ -22520,7 +22514,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 430,
-              "updated": "2025-03-12T13:30:32.8666915-07:00",
+              "updated": "2025-03-12T10:30:32.8666915-10:00",
               "helpId": "1279540",
               "classInfo": {
                 "memberName": "",
@@ -22543,7 +22537,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 420,
-              "updated": "2025-03-12T13:44:51.8704715-07:00",
+              "updated": "2025-03-12T10:44:51.8704715-10:00",
               "helpId": "1243062",
               "classInfo": {
                 "memberName": "",
@@ -22845,7 +22839,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
-                  "updated": "2025-03-12T13:30:32.8668432-07:00",
+                  "updated": "2025-03-12T10:30:32.8668432-10:00",
                   "helpId": "1258875",
                   "classInfo": {
                     "memberName": "",
@@ -23006,7 +23000,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-03-12T13:30:32.8669761-07:00",
+                  "updated": "2025-03-12T10:30:32.8669761-10:00",
                   "helpId": "1258876",
                   "classInfo": {
                     "memberName": "",
@@ -24764,7 +24758,7 @@
               "remarks": "Only `public` fields are retrieved.",
               "example": "",
               "sortOrder": 240,
-              "updated": "2025-05-29T11:59:29.1437124-07:00",
+              "updated": "2025-05-29T08:59:29.1437124-10:00",
               "helpId": "1294723",
               "classInfo": {
                 "memberName": "GetField",
@@ -24887,7 +24881,7 @@
               "remarks": "Parameter passing errors, or errors that occur inside of the .NET code that you are calling **cause an Exception in FoxPro code**.\r\rIf you get **Invalid Method** or **Method not found**  errors most likely you are calling the method with missing or invalidly typed parameters.\r\rIn some cases you may have to explicitly coerce parameter types by using the **VFP CAST() function**. This is especially true for numeric values since VFP numbers are typically passed as double or int depending on the existance of decimals. For example, decimal values need CAST(1.11 as Currency) or CAST(10 as int).\r\rYou can also use the [ComValue Class](vfps://Topic/_3481232SD) to explicitly force parameter types to specific types, including types that you cannot set directly from FoxPro such as Single, Long, Byte, Guid, DbNull and numerous others. \r\rTo **pass ByRef/Ref parameters use ComValue objects** instead of plain parameter values. ComValue parameters will always be updated after returning from a method call.",
               "example": "```foxpro\r*** Simple Method Invokation:\r\rloNet = loBridge.Createinstance(\"Westwind.WebConnection.TypePassingTests\")\r? loBridge.InvokeMethod(loNet,\"HelloWorld\",\"Rick\")\r*** Note this is the same as:\rloNet.HelloWorld(\"Rick\")\r\r\r*** Pass ByRef parameters and return values:\r\r*** Create ComValue objects for each parameter\rloInt = loBridge.CreateComValue(INT(10))\rloString = loBridge.CreateComValue(\"Hello World.\")\rloDecimal = loBridge.CreateComValue(CAST( 5.22 as Currency))\r\r? \"Original:\"\r? loInt.Value, loString.Value, loDecimal.Value\r\rlobridge.InvokeMethod(loNet,;\r                      \"PassByReference\",;\r                      loInt,loString,loDecimal)\r\r*** Look at the result values\r? \"Updated:\"\r? loInt.Value, loString.Value, loDecimal.Value\r```",
               "sortOrder": 190,
-              "updated": "2025-04-11T19:09:27.6339403-07:00",
+              "updated": "2025-04-11T16:09:27.6339403-10:00",
               "helpId": "1243010",
               "classInfo": {
                 "memberName": "InvokeMethod",
@@ -25060,7 +25054,7 @@
               "remarks": "",
               "example": "```foxpro\rloBridge = CreateObject(\"wwDotNetBridge\",\"V4\")\r\rloTests = loBridge.CreateInstance(\"Westwind.WebConnection.TypePassingTests\")\r\r*** IMPORTANT: The callback object must remain in scope\r***            Either use a public var, or attach to an object that\r***            stays in scope for the duration of the callback\rPUBLIC loCallback\rloCallback = CREATEOBJECT(\"MyCallback\")\r\r*** This methods returns immediately - then fire events when done\rloBridge.InvokeStaticMethodAsync(loCallback,loTests,\"HelloWorldStatic\",\"Ricj\")\r\rRETURN\r\r*** Handle result values in this object\r*** The callback object is called back \r*** when the method completes or fails\rDEFINE CLASS MyCallback as AsyncCallbackEvents\r\rFUNCTION OnCompleted(lvResult,lcMethod)\r? \"Success: \" + lcMethod,lvResult\rENDFUNC\r\rFUNCTION OnError(lcMessage,loException,lcMethod)\r? \"Error: \" + lcMethod,lcMessage\rENDFUNC\r\rENDDEFINE\r```",
               "sortOrder": 150,
-              "updated": "2025-09-26T08:57:58.7896253-07:00",
+              "updated": "2025-09-26T05:57:58.7896253-10:00",
               "helpId": "1292298",
               "classInfo": {
                 "memberName": "InvokeStaticMethodAsync",
@@ -25205,7 +25199,7 @@
               "remarks": "Event handlers are fired from .NET Async code which can and often runs on seperate threads. COM marshals the thread back to FoxPro's STA execution thread, but it can fire **at any time** between commands, interrupting other code executing. For this reason ensure to keep the code executing short and you **always reset state** at the end of the call. If necessary capture the result values and save them, then delay execute the result code either in a known repeat location of your code or using the [EvalTimer()](VFPS://Topic/_4JC1EZZHG) class/function, which occurs at more predictable code points.",
               "example": "```foxpro\rCLEAR\rdo wwDotNetBridge\rLOCAL loBridge as wwDotNetBridge\rloBridge = CreateObject(\"wwDotNetBridge\",\"V4\")\r\r*** .NET File System watcher notifies of changes in file system\rloFW = loBridge.CreateInstance(\"System.IO.FileSystemWatcher\",\"C:\\temp\")\rloFw.EnableRaisingEvents = .T.\rloFw.IncludeSubDirectories = .T.\r\r*** Handler instance that maps events we want to capture\rloFwHandler = CREATEOBJECT(\"FwEventHandler\")\rloSubscription = loBridge.SubscribeToEvents(loFw, loFwHandler)\r\rDOEVENTS\r\rlcFile = \"c:\\temp\\test.txt\"\rDELETE FILE ( lcFile )  \rSTRTOFILE(\"DDD\",lcFile)\rSTRTOFILE(\"FFF\",lcFile)\r\rWAIT WINDOW\r\rloSubscription.Unsubscribe()\r\rRETURN\r\r\r*** Handler object implementation that maps the\r*** event signatures for the events we want to handle\rDEFINE CLASS FwEventHandler as Custom\r\rFUNCTION OnCreated(sender,ev)\r? \"FILE CREATED: \"\r?  ev.FullPath\rENDFUNC\r\rFUNCTION OnChanged(sender,ev)\r? \"FILE CHANGE: \"\r?  ev.FullPath\rENDFUNC\r\rFUNCTION OnDeleted(sender, ev)\r? \"FILE DELETED: \"\r?  ev.FullPath\rENDFUNC\r\rFUNCTION OnRenamed(sender, ev)\rLOCAL lcOldPath, lcPath\r\r? \"FILE RENAMED: \" \rloBridge = GetwwDotnetBridge()\r\rlcOldPath = loBridge.GetProperty(ev,\"OldFullPath\")\rlcPath = loBridge.GetProperty(ev,\"FullPath\")\r? lcOldPath + \" -> \" + lcPath\r\rENDFUNC\r\rENDDEFINE\r```",
               "sortOrder": 90,
-              "updated": "2025-06-02T17:15:45.772354-07:00",
+              "updated": "2025-06-02T14:15:45.772354-10:00",
               "helpId": "1294393",
               "classInfo": {
                 "memberName": "SubscribeToEvents",
@@ -26837,7 +26831,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 250,
-          "updated": "2025-03-12T17:26:54.5020116-07:00",
+          "updated": "2025-03-12T14:26:54.5020116-10:00",
           "helpId": "1241562",
           "classInfo": {
             "memberName": "",
@@ -26908,7 +26902,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 550,
-              "updated": "2025-03-12T13:30:32.8671564-07:00",
+              "updated": "2025-03-12T10:30:32.8671564-10:00",
               "helpId": "1241608",
               "classInfo": {
                 "memberName": "",
@@ -28436,7 +28430,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 240,
-          "updated": "2025-05-29T17:01:31.8877416-07:00",
+          "updated": "2025-05-29T14:01:31.8877416-10:00",
           "helpId": "1232",
           "classInfo": {
             "memberName": "",
@@ -31179,7 +31173,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 230,
-          "updated": "2025-07-25T15:44:30.9392232-07:00",
+          "updated": "2025-07-25T12:44:30.9392232-10:00",
           "helpId": "1241792",
           "classInfo": {
             "memberName": "",
@@ -31199,7 +31193,7 @@
               "displayType": "classheader",
               "type": "markdown",
               "sortOrder": 370,
-              "updated": "2025-07-25T15:31:17.4805048-07:00",
+              "updated": "2025-07-25T12:31:17.4805048-10:00",
               "classInfo": {},
               "topics": [
                 {
@@ -31693,7 +31687,7 @@
               "remarks": "This is a free standing function not a method.\r\n\r\nThis method works only with binary integer values that are exactly 4 bytes long (ie. a DWORD or LONG value).",
               "example": "* *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** **\r\nFUNCTION GetTimeZone\r\n* *** *** *** *** *** *** *** *** *** *** **\r\n* **  Function: Returns the TimeZone offset from GMT including\r\n* **            daylight savings. Result is returned in minutes.\r\n* *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** **\r\n\r\nDECLARE integer GetTimeZoneInformation IN Win32API ;\r\n   STRING @ TimeZoneStruct\r\n   \r\nlcTZ = SPACE(256)\r\n\r\nlnDayLightSavings = GetTimeZoneInformation(@lcTZ)\r\n\r\n* ** First 4 bytes contain the timezone offset\r\n* ** Value is a signed 32 bit Integer\r\nlnOffset = CharToBin(SUBSTR(lcTZ,1,4),.T.)\r\n\r\n* ** Subtract an hour if daylight savings is active\r\nIF lnDaylightSavings = 2\r\n   lnOffset = lnOffset - 60\r\nENDIF\r\n\r\nRETURN lnOffSet",
               "sortOrder": 360,
-              "updated": "2025-07-25T15:32:56.2279723-07:00",
+              "updated": "2025-07-25T12:32:56.2279723-10:00",
               "helpId": "1241855",
               "classInfo": {
                 "memberName": "CharToBin",
@@ -31717,7 +31711,7 @@
               "remarks": "",
               "example": "```foxpro\rFUNCTION SetACL(lcPath,lcUser,lcAccess,llInherit,llReplace)\rLOCAL lcCommand, lcFile, lcParms\r\r*** Strip off any trailing backslashes\rIF RIGHT(lcPath,1)=\"\\\" AND LEN(lcPath) > 1\r   lcPath = SUBSTR(lcPath,1,LEN(lcPath)-1)\rENDIF\r\rlcParms = ShortPath( lcPath) \rIF llInherit\r   lcParms = lcParms + \" /T \"\rENDIF\rIF !llReplace \r   lcParms = lcParms + \" /E \" \rENDIF\rlcParms = lcParms + \" /P \" + lcUser + \":\" + lcAccess\r\r\r\rLOCAL loAPI\rloAPI = CREATEOBJECT(\"wwAPI\")\rCreateProcess( loAPI.GetSystemDir() + \"cacls.exe\",ALLTRIM(lcParms),0,.T.,5000)\r\r```",
               "sortOrder": 350,
-              "updated": "2025-07-25T15:36:35.2439784-07:00",
+              "updated": "2025-07-25T12:36:35.2439784-10:00",
               "helpId": "1241947",
               "classInfo": {
                 "memberName": "CreateProcess",
@@ -31742,7 +31736,7 @@
               "remarks": "This function is a standalone function and not a member of the wwAPI class.\r\rThis function requires `wwIpstuff.dll`.",
               "example": "```foxpro\rFUNCTION SetACL(lcPath,lcUser,lcAccess,llInherit,llReplace)\rLOCAL lcCommand, lcFile, lcParms\r\r*** Strip off any trailing backslashes\rIF RIGHT(lcPath,1)=\"\\\" AND LEN(lcPath) > 1\r   lcPath = SUBSTR(lcPath,1,LEN(lcPath)-1)\rENDIF\r\rlcParms = ShortPath( lcPath) \rIF llInherit\r   lcParms = lcParms + \" /T \"\rENDIF\rIF !llReplace \r   lcParms = lcParms + \" /E \" \rENDIF\rlcParms = lcParms + \" /P \" + lcUser + \":\" + lcAccess\r\r\r*** Use CreateProcessEx if wwIPStuff is available\r*** so we don't get flashing DOS Windows\rLOCAL oAPI\roAPI = CREATEOBJECT(\"wwAPI\")\rCreateProcessEx( oAPI.GetSystemDir() + \"cacls.exe\",ALLTRIM(lcParms),0,.t.,;\r                 FULLPATH(\"cacls.txt\"))\r```",
               "sortOrder": 340,
-              "updated": "2025-07-25T15:34:06.9624486-07:00",
+              "updated": "2025-07-25T12:34:06.9624486-10:00",
               "helpId": "1242000",
               "classInfo": {
                 "memberName": "CreateProcessEx",
@@ -31767,7 +31761,7 @@
               "remarks": "This is a standalone function not a method of the `wwApi` class.",
               "example": "",
               "sortOrder": 330,
-              "updated": "2025-07-25T15:36:11.9767812-07:00",
+              "updated": "2025-07-25T12:36:11.9767812-10:00",
               "helpId": "1242871",
               "classInfo": {
                 "memberName": "GetSpecialFolder",
@@ -31792,7 +31786,7 @@
               "remarks": "This function relies on wwDotnetBridge and .NET.",
               "example": "",
               "sortOrder": 320,
-              "updated": "2025-07-25T15:36:43.0709488-07:00",
+              "updated": "2025-07-25T12:36:43.0709488-10:00",
               "helpId": "1258962",
               "classInfo": {
                 "memberName": "GetUtcTime",
@@ -31817,7 +31811,7 @@
               "remarks": "Includes offsets for daylight savings time.\r\n\r\nThis is a standalone function not a method of wwAPI.",
               "example": "",
               "sortOrder": 310,
-              "updated": "2025-07-25T15:36:46.5521002-07:00",
+              "updated": "2025-07-25T12:36:46.5521002-10:00",
               "helpId": "1241859",
               "classInfo": {
                 "memberName": "GetTimeZone",
@@ -31840,7 +31834,7 @@
               "remarks": "Requires that ZLib1.dll is available in the FoxPro path.Based on the open source ZLib library (www.zlib.net)\r\n\r\nThis function uses temporary files in the Temp folder to unzip the Zip data.",
               "example": "",
               "sortOrder": 300,
-              "updated": "2025-07-25T15:36:49.9288737-07:00",
+              "updated": "2025-07-25T12:36:49.9288737-10:00",
               "helpId": "1242834",
               "classInfo": {
                 "memberName": "GZipCompressString",
@@ -31865,7 +31859,7 @@
               "remarks": "Requires that ZLib1.dll is available in the FoxPro path. Based on the open source ZLib library (www.zlib.net).\r\n\r\nThis function uses temporary files in the Temp folder to unzip the Zip data.",
               "example": "",
               "sortOrder": 290,
-              "updated": "2025-07-25T15:36:54.4378999-07:00",
+              "updated": "2025-07-25T12:36:54.4378999-10:00",
               "helpId": "1242835",
               "classInfo": {
                 "memberName": "GZipUncompressString",
@@ -31890,7 +31884,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 280,
-              "updated": "2025-07-25T15:37:02.7651176-07:00",
+              "updated": "2025-07-25T12:37:02.7651176-10:00",
               "helpId": "1242870",
               "classInfo": {
                 "memberName": "HashMD5",
@@ -31915,7 +31909,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 270,
-              "updated": "2025-07-25T15:37:06.0204535-07:00",
+              "updated": "2025-07-25T12:37:06.0204535-10:00",
               "helpId": "1279569",
               "classInfo": {
                 "memberName": "MapNetworkDrive",
@@ -31939,7 +31933,7 @@
               "remarks": "This is a plain function not a class method.",
               "example": "",
               "sortOrder": 260,
-              "updated": "2025-07-25T15:37:14.5431807-07:00",
+              "updated": "2025-07-25T12:37:14.5431807-10:00",
               "helpId": "1242006",
               "classInfo": {
                 "memberName": "InstallPrinterDriver",
@@ -31963,7 +31957,7 @@
               "remarks": "Uses wwImaging.dll shipped in the Web Connection directory.\r\rThe height and width are calculated by taking the longer side and reducing it to the specified width or height value, then figuring out the aspect ratio on the other dimension. This means image aspect ratios are maintained and images are not sized to the exact dimensions specified, but only match on the longer side. Images are never distorted or stretched.\r\rThis function supports the following image formats:\r<ul>\r* gif\r* jpg\r* png\r* tiff\r* bmp\r</ul>\r\rThis function requires wwImaging.dll and uses GDI+ which is available with XP/.NET Server by default and as separate installs on all other platforms. The latest versions of Internet Explorer (6.0), the Windows Media player and the .NET Platform also install GDI+.\r\rNote this is a function not a method of the wwAPI class. This function is simply stored in the wwAPI.prg file.\r\rGDI+ is downloadable from:\r<a href=\"http://www.microsoft.com/downloads/release.asp?releaseid=32738\" target=\"top\">http://www.microsoft.com/downloads/release.asp?releaseid=32738</a>",
               "example": "",
               "sortOrder": 250,
-              "updated": "2025-07-25T15:37:17.71585-07:00",
+              "updated": "2025-07-25T12:37:17.71585-10:00",
               "helpId": "1241852",
               "classInfo": {
                 "memberName": "CreateThumbnail",
@@ -31987,7 +31981,7 @@
               "remarks": "Uses wwImaging.dll shipped in the Web Connection directory.",
               "example": "",
               "sortOrder": 240,
-              "updated": "2025-07-25T15:33:00.119438-07:00",
+              "updated": "2025-07-25T12:33:00.119438-10:00",
               "helpId": "1241872",
               "classInfo": {
                 "memberName": "CopyImage",
@@ -32012,7 +32006,7 @@
               "remarks": "Uses wwImaging.dll shipped in the Web Connection directory.\r\rNote this is a **function not a method of the wwAPI class**. This function is simply stored in the wwAPI.prg file and is directly invoked without a class instance.\r\rThis function supports the following image formats that GDI+ supports:\r\r* jpg\r* png\r* gif\r* tiff\r* bmp",
               "example": "```foxpro\rSTORE 0 TO lnHeight, lnWidth, lnResolution\r? GetImageInfo(\"c:\\temp\\bugreport.png\",;\r              @lnWidth,@lnHeight,@lnResolution)\r\r? lnWidth, lnHeight, lnResolution\r```",
               "sortOrder": 230,
-              "updated": "2025-07-25T15:37:26.6497764-07:00",
+              "updated": "2025-07-25T12:37:26.6497764-10:00",
               "helpId": "1241853",
               "classInfo": {
                 "memberName": "GetImageInfo",
@@ -32037,7 +32031,7 @@
               "remarks": "Uses wwImaging.dll shipped in the Web Connection directory.",
               "example": "",
               "sortOrder": 220,
-              "updated": "2025-07-25T15:37:30.7746843-07:00",
+              "updated": "2025-07-25T12:37:30.7746843-10:00",
               "helpId": "1241870",
               "classInfo": {
                 "memberName": "WriteImage",
@@ -32061,7 +32055,7 @@
               "remarks": "Uses GDI+.\r\n\r\nNote this is a function not a method of the wwAPI class. This function is simply stored in the wwAPI.prg file.",
               "example": "",
               "sortOrder": 210,
-              "updated": "2025-07-25T15:33:56.9234965-07:00",
+              "updated": "2025-07-25T12:33:56.9234965-10:00",
               "helpId": "1242765",
               "classInfo": {
                 "memberName": "GetCaptchaImage",
@@ -32085,7 +32079,7 @@
               "remarks": "Uses wwImaging.dll shipped in the Web Connection directory.",
               "example": "",
               "sortOrder": 200,
-              "updated": "2025-07-25T15:37:39.464368-07:00",
+              "updated": "2025-07-25T12:37:39.464368-10:00",
               "helpId": "1241871",
               "classInfo": {
                 "memberName": "ReadImage",
@@ -32110,7 +32104,7 @@
               "remarks": "Uses wwImaging.dll in the .\\tools directory.\r\rThe height and width are calculated by taking the longer side and reducing it to the specified width or height value, then figuring out the aspect ratio on the other dimension. This means image aspect ratios are maintained and images are not sized to the exact dimensions specified, but only match on the longer side. Images are never distorted or stretched.\r\rThis function supports the following image formats:\r\r* gif\r* jpg\r* png\r* tiff\r* bmp\r\r\rThis function requires wwImaging.dll and uses GDI+ which is available with XP/.NET Server by default and as separate installs on all other platforms. The latest versions of Internet Explorer (6.0), the Windows Media player and the .NET Platform also install GDI+.\r\rNote this is a function not a method of the wwAPI class. This function is simply stored in the wwAPI.prg file.\r\rGDI+ is downloadable from:\r<a href=\"http://www.microsoft.com/downloads/release.asp?releaseid=32738\" target=\"top\">http://www.microsoft.com/downloads/release.asp?releaseid=32738</a>",
               "example": "",
               "sortOrder": 190,
-              "updated": "2025-07-25T15:37:42.8339184-07:00",
+              "updated": "2025-07-25T12:37:42.8339184-10:00",
               "helpId": "1241858",
               "classInfo": {
                 "memberName": "ResizeImage",
@@ -32135,7 +32129,7 @@
               "remarks": "The original image file is overwritten with the new rotated image. If you want to create a new image file, save the file to a new name first then rotate that image.\r\n\r\nImage rotation in compressed JPEG formats may result in image degradation if the image dimensions are not in exact multiples of 16 (which is a limitation of the underlying GDI+ functions used here).\r\n\r\nUses wwImaging.dll shipped in the Web Connection directory.\r\n\r\nThis function requires wwImaging.dll and uses GDI+ which is available with XP/.NET Server by default and as separate installs on all other platforms. The latest versions of Internet Explorer (6.0), the Windows Media player and the .NET Platform also install GDI+.\r\n\r\nNote this is a function not a method of the wwAPI class. This function is simply stored in the wwAPI.prg file.\r\n\r\nThis function supports the following image formats:\r\n<ul>\r\n* gif\r\n* jpg\r\n* png\r\n* tiff\r\n* bmp\r\n</ul>\r\n\r\nGDI+ is downloadable from:\r\n<a href=\"http://www.microsoft.com/downloads/release.asp?releaseid=32738\" target=\"top\">http://www.microsoft.com/downloads/release.asp?releaseid=32738</a>",
               "example": "",
               "sortOrder": 180,
-              "updated": "2025-07-25T15:37:45.8279188-07:00",
+              "updated": "2025-07-25T12:37:45.8279188-10:00",
               "helpId": "1241856",
               "classInfo": {
                 "memberName": "RotateImage",
@@ -32160,7 +32154,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 170,
-              "updated": "2025-07-25T15:37:49.315799-07:00",
+              "updated": "2025-07-25T12:37:49.315799-10:00",
               "helpId": "1294453",
               "classInfo": {
                 "memberName": "WinApi_GetStartupModuleFilename",
@@ -32184,7 +32178,7 @@
               "remarks": "Use this function if you are calling APIs that are returning string buffers that are not truncated at nulls natively. Most APIs truncate, but occasionally there are APIs that do not and that's what this function is for.",
               "example": "",
               "sortOrder": 160,
-              "updated": "2025-07-25T15:31:44.5447623-07:00",
+              "updated": "2025-07-25T12:31:44.5447623-10:00",
               "helpId": "1243127",
               "classInfo": {
                 "memberName": "WinApi_NullString",
@@ -32208,7 +32202,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 150,
-              "updated": "2025-07-25T15:31:39.8994933-07:00",
+              "updated": "2025-07-25T12:31:39.8994933-10:00",
               "helpId": "1243129",
               "classInfo": {
                 "memberName": "WinApi_SendMessage",
@@ -32232,7 +32226,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 140,
-              "updated": "2025-07-25T16:47:24.1221169-07:00",
+              "updated": "2025-07-25T13:47:24.1221169-10:00",
               "helpId": "1294454",
               "classInfo": {
                 "memberName": "WinApi_Sleep",
@@ -32256,7 +32250,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 130,
-              "updated": "2025-07-25T15:31:30.717336-07:00",
+              "updated": "2025-07-25T12:31:30.717336-10:00",
               "helpId": "1294442",
               "classInfo": {
                 "memberName": "WinApi_GetEnvironmentVariable",
@@ -32281,7 +32275,7 @@
               "remarks": "This is a function not a method of the `wwApi` class.",
               "example": "",
               "sortOrder": 120,
-              "updated": "2025-07-25T15:31:59.0922161-07:00",
+              "updated": "2025-07-25T12:31:59.0922161-10:00",
               "helpId": "1294613",
               "classInfo": {
                 "memberName": "WinApi_GetSystemErrorMsg",
@@ -32307,7 +32301,7 @@
               "remarks": "This is a standalone function not a wwAPI class method.",
               "example": "",
               "sortOrder": 110,
-              "updated": "2025-07-25T15:32:03.738132-07:00",
+              "updated": "2025-07-25T12:32:03.738132-10:00",
               "helpId": "1270491",
               "classInfo": {
                 "memberName": "Is64Bit",
@@ -32332,7 +32326,7 @@
               "example": "",
               "sortOrder": 100,
               "isExpanded": true,
-              "updated": "2025-07-25T15:38:01.005075-07:00",
+              "updated": "2025-07-25T12:38:01.005075-10:00",
               "helpId": "1258830",
               "classInfo": {
                 "memberName": "Ping",
@@ -32357,7 +32351,7 @@
               "remarks": "This is a standalone function, not a method of the `wwApi` class",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-07-25T15:38:06.6076071-07:00",
+              "updated": "2025-07-25T12:38:06.6076071-10:00",
               "helpId": "1294614",
               "classInfo": {
                 "memberName": "CreateShortcut",
@@ -32406,7 +32400,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 70,
-              "updated": "2025-07-25T15:38:12.173474-07:00",
+              "updated": "2025-07-25T12:38:12.173474-10:00",
               "helpId": "1254261",
               "classInfo": {
                 "memberName": "DecodeDbf",
@@ -32431,7 +32425,7 @@
               "remarks": "Header is 105 bytes plus the concatenated content of the DBF + the FTP file if any.\r\n\r\nwwDBF 5 bytes\r\nDBF FileName 40 bytes\r\nLength of the file as a string 10 bytes\r\nFPT Filename 40 bytes\r\nLength of the FPT file 10 bytes\r\n\r\nThe FPT length must be buffered as an empty string (50 bytes) if not available. \r\n\r\nThe actual file content is simply concatenated and decoded based on the lengths described in the header.",
               "example": "",
               "sortOrder": 60,
-              "updated": "2025-09-08T12:10:40.7448754-07:00",
+              "updated": "2025-09-08T09:10:40.7448754-10:00",
               "helpId": "1254260",
               "classInfo": {
                 "memberName": "EncodeDbf",
@@ -33654,7 +33648,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 190,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "2",
           "classInfo": {
@@ -33793,7 +33786,6 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
-              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "3",
               "classInfo": {
@@ -34509,7 +34501,6 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
-                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "8",
                   "classInfo": {
@@ -35511,7 +35502,7 @@
               "remarks": "There are many combinations of Encryption Provider, Ciphers, Hash formats and key lengths. Be sure you know what format is required for your scenario **if you are not using this library for round trip conversions**.\r\r---\r\rWe recommend you don't call these methods directly in your application code, but rather create simple **application specific** `Encrypt()` and `Decrypt()` methods or functions that your application code calls and that to wrap up all the complexity of these two method calls in one place.",
               "example": "```foxpro\rDO wwEncryption\r\rLOCAL loEnc as wwEncryption\rloEnc = CREATEOBJECT(\"wwEncryption\")\r\rlcOrig = \"Hello World\"\r? lcOrig\r\r*** 32 byte key (works best with most formats)\rlcKey = \"12345678901234567890123456789012\"\r? lcKey\r? LEN(lcKey)\r\r*** Example using Default settings for TripleDES \rlcVal  = loEnc.EncryptString(lcOrig, lcKey)\r? lcVal\r\rlcOrig  = loEnc.DecryptString(lcVal, lcKey)\r? lcOrig\r\r\r*** TripleDES explicit\rlcVal  = loEnc.EncryptString(lcOrig, lcKey, .F., \"TripleDES\", \"ECB\", \"MD5\")\r? lcVal\r\rlcOrig  = loEnc.DecryptString(lcVal, lcKey, .F., \"TripleDES\", \"ECB\", \"MD5\")\r? lcOrig\r\r*** AES Example\r\r*** 16 byte IvKey\rlcIvKey = \"1234567890123456\"\r\r*** Key Size 24 or 16 bytes\rlcKey2 = PADR(lcKey, 24)\r\rlcVal  = loEnc.EncryptString(lcOrig, lcKey2, .F., \"AES\", \"CBC\",\"\",\"\",lcIvKey)\r? lcVal\r\rlcOrig  = loEnc.EncryptString(lcVal, lcKey2, .F., \"AES\", \"CBC\",\"\",\"\",lcIvKey)\r? lcOrig\r```",
               "sortOrder": 80,
-              "updated": "2025-03-12T13:30:32.8674055-07:00",
+              "updated": "2025-03-12T10:30:32.8674055-10:00",
               "helpId": "1290597",
               "classInfo": {
                 "memberName": "EncryptString",
@@ -38388,7 +38379,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241963",
           "classInfo": {
@@ -41455,7 +41445,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
-              "updated": "2025-05-12T13:39:00.3087755-07:00",
+              "updated": "2025-05-12T10:39:00.3087755-10:00",
               "helpId": "1242926",
               "classInfo": {
                 "memberName": "Replace",
@@ -41479,7 +41469,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
-              "updated": "2025-05-12T13:37:21.8391048-07:00",
+              "updated": "2025-05-12T10:37:21.8391048-10:00",
               "helpId": "1242924",
               "classInfo": {
                 "memberName": "Match",
@@ -41548,7 +41538,7 @@
               "link": "Utility-Classes/Class-wwRegEx/GetwwRegEx-Function.md",
               "displayType": "classmethod",
               "type": "markdown",
-              "updated": "2025-03-29T01:44:46.4423376-07:00",
+              "updated": "2025-03-28T22:44:46.4423376-10:00",
               "classInfo": {
                 "memberName": "GetwwRegEx",
                 "syntax": "GetwwRegEx()"
@@ -41569,7 +41559,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 25,
-          "updated": "2025-06-11T09:08:38.9780944-07:00",
+          "updated": "2025-06-11T06:08:38.9780944-10:00",
           "helpId": "1294726",
           "classInfo": {
             "memberName": "",
@@ -43637,7 +43627,7 @@
               "remarks": "",
               "example": "* ** Simple Example\r\noProxy = CREATEOBJECT(\"FoxCentralProxy\")\r\nlcXML = oProxy.GetNewsItems(14,0,\"ALL\")\r\n\r\n\r\n* ** Custom Settings example\r\n* ** Create for wwSoap and don't load WSDL file yet\r\noProxy = CreateObject(\"FoxCentralProxy\",0,.T.)  \r\n\r\noProxy.nTimeout = 5\r\noProxy.cUsername = \"rstrahl\"\r\noProxy.cPassword = \"supersecret\"\r\n\r\noProxy.LoadWsdl()\r\n\r\nlcXML = oProxy.GetNewsItems(14,0,\"ALL\")",
               "sortOrder": 10,
-              "updated": "2025-05-28T10:11:26.4719828-07:00",
+              "updated": "2025-05-28T07:11:26.4719828-10:00",
               "helpId": "1241929",
               "classInfo": {
                 "memberName": "",
@@ -43815,7 +43805,7 @@
                   "seeAlso": "Class wwSOAPProxy",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-05-28T10:11:15.8553238-07:00",
+                  "updated": "2025-05-28T07:11:15.8553238-10:00",
                   "helpId": "1241935",
                   "classInfo": {
                     "memberName": "nClientMode",
@@ -43867,7 +43857,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 50,
-      "updated": "2025-04-13T15:15:16.2227928-07:00",
+      "updated": "2025-04-13T12:15:16.2227928-10:00",
       "helpId": "58",
       "classInfo": {
         "memberName": "",
@@ -44135,7 +44125,7 @@
               "remarks": "**StatusBar Options**  \rThe following options and their default values are available:\r\r```javascript\r\nopt = { elementId: \"_showstatus\",\r     // display a close button on upper right corner\r\tclosable: false,\r      // Optional text displayed after timeout is up\r\tafterTimeoutText: null,\r      // if true status bar hides after timeout is up\r\tautoClose: false,\r      // you can turn off all effects and just show the status bar\r\tnoEffects: false,\r      // speed for animation effect\r      effectSpeed: null,\r      // css class for main status bar display\r\tcssClass: \"statusbar\",\r      // css class for highlighted status bar display\r\thighlightClass: \"statusbarhighlight\",\r      // css class for close button\r\tcloseButtonClass: \"statusbarclose\",\r     // allow multiple lines cumulative display\r     additive: false,\r     // add multiple line to the top if true\r\tprependMultiline: true\r}\r\n```\r\r**Statusbar Configuration**  \rThe showStatus function works based on default settings and requires no special configuration by default. Just call the showStatus() function and it will create a default status bar and work with the default settings. Default styles are provided in westwind.css.\r\rIf you want to configure the operation of the status bar you can do so by calling showStatus() and passing a configuration object with the values to override. Configuration typically should occur only once per page:\r\r```javascript\r\n$(document).ready( function() { \r    showStatus( { afterTimeoutText: \"Ready\", closable: true} );\r});\r\n```\r\r**CSS Styling**  \rDefault styling is provided in the westwind.css stylesheet. \r\r```css\r\n.statusbar\r{\r\tposition: fixed;\r\tbottom: 0px;\r\tleft: 10px;\r\tright: 10px;\r\theight: 16px;\t\r\tpadding: 5px 2px 5px 10px;\t\r\tbackground: black;\r\tcolor: white;\t\r\topacity: .85;\t\r\tfilter: alpha(opacity=\"85\");\r\tz-index: 200;\r\toverflow: hidden;\r\toverflow-y: auto; \r    border-radius: 8px 8px 0 0;            \r    box-shadow: -1px -1px 6px 2px #535353;\r}\r.statusbarhighlight\r{\r\tfont-weight: bold;\r\tcolor: yellow;\t\r}\r.statusbarclose\r{\r\tposition: absolute;\r\tright: 20px; \r\ttop: 2px;\r\tcolor:red;\r\tfont-size: 8pt;\r\tfont-weight: bold;\r\tcursor: pointer;\r}\r\n```",
               "example": "",
               "sortOrder": 20,
-              "updated": "2025-03-12T13:30:32.8677976-07:00",
+              "updated": "2025-03-12T10:30:32.8677976-10:00",
               "helpId": "1243147",
               "classInfo": {
                 "memberName": "showStatus",
@@ -44185,7 +44175,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 90,
-          "updated": "2025-03-12T13:40:39.7662295-07:00",
+          "updated": "2025-03-12T10:40:39.7662295-10:00",
           "helpId": "1243144",
           "classInfo": {
             "memberName": "",
@@ -44716,7 +44706,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
-          "updated": "2025-03-12T13:30:32.8676437-07:00",
+          "updated": "2025-03-12T10:30:32.8676437-10:00",
           "helpId": "1287843",
           "classInfo": {
             "memberName": "",
@@ -44787,7 +44777,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "updated": "2025-03-12T13:41:17.6340845-07:00",
+          "updated": "2025-03-12T10:41:17.6340845-10:00",
           "helpId": "1287846",
           "classInfo": {
             "memberName": "",
@@ -46485,7 +46475,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 30,
-      "updated": "2025-04-13T15:18:36.0617909-07:00",
+      "updated": "2025-04-13T12:18:36.0617909-10:00",
       "helpId": "1241293",
       "classInfo": {
         "memberName": "",
@@ -46530,7 +46520,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 120,
-              "updated": "2025-05-28T10:10:58.1838103-07:00",
+              "updated": "2025-05-28T07:10:58.1838103-10:00",
               "helpId": "1241880",
               "classInfo": {
                 "memberName": "cApplicationPool",
@@ -46866,8 +46856,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 10,
-      "isExpanded": true,
-      "updated": "2025-05-28T08:35:16.0178733-07:00",
+      "updated": "2025-05-28T05:35:16.0178733-10:00",
       "helpId": "1294703",
       "classInfo": {
         "memberName": "",
@@ -46890,7 +46879,7 @@
           "remarks": "This class does not support SFTP (secure FTP over SSL)",
           "example": "",
           "sortOrder": 80,
-          "updated": "2025-03-12T00:00:00Z",
+          "updated": "2025-10-27T08:16:08.6754682-10:00",
           "helpId": "678",
           "classInfo": {
             "memberName": "",
@@ -47812,7 +47801,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 80,
-              "updated": "2025-05-29T11:55:19.4867962-07:00",
+              "updated": "2025-05-29T08:55:19.4867962-10:00",
               "helpId": "1258956",
               "classInfo": {
                 "memberName": "cUserAgent",
@@ -49200,7 +49189,7 @@
           "remarks": "IMPORTANT: You can only run one socket instance per FoxPro application!!! If you connect a second socket you will kill any previous existing socket connections created with this class.\r\n\r\nRequires Winsock 2.0 on the client machine. (ws2_32.dll in your SYSTEM32/SYSTEM dir).",
           "example": "",
           "sortOrder": 10,
-          "updated": "2025-03-12T13:43:12.2928061-07:00",
+          "updated": "2025-03-12T10:43:12.2928061-10:00",
           "helpId": "1241543",
           "classInfo": {
             "memberName": "",
@@ -49656,7 +49645,6 @@
           "seeAlso": "",
           "remarks": "",
           "example": "",
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242025",
           "classInfo": {
@@ -50355,7 +50343,6 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
-              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242042",
               "classInfo": {
@@ -57358,7 +57345,6 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
-                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242224",
                   "classInfo": {
@@ -58122,7 +58108,6 @@
                       "remarks": "This control requires Session state to work. This means you need to set the Page's EnableSessionState property to .T. Make sure this is done or code might fail or worse authentication will not work. By association this means that HTTP Cookies must be enabled.\r\n\r\nSets two Session Vars: WebLogin and WebLoginAdmin. The name of the Var is configurable via the LoginSessionVar property.",
                       "example": "",
                       "sortOrder": 60,
-                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242441",
                       "classInfo": {
@@ -62310,6 +62295,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_1p200a3d3"
+    "lastTopicId": "_index"
   }
 }
