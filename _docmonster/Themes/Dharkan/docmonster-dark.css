@@ -19,9 +19,10 @@ blockquote {
     background: #383838;    
     border-left: 0.65em #3b5572 solid;    
 }
+blockquote code { background: #292929}
 table th {
     color:  #eee;
-    background:#222e;
+    background:#222;
 }
  table td {
         border: solid 1px #555;

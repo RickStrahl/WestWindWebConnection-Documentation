@@ -16,7 +16,7 @@
       "example": "",
       "sortOrder": 100,
       "isExpanded": true,
-      "updated": "2025-10-09T10:28:25.5339492-10:00",
+      "updated": "2025-11-02T11:15:03.6618068-10:00",
       "helpId": "2",
       "classInfo": {
         "memberName": "",
@@ -39,7 +39,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 140,
-          "updated": "2025-10-27T09:58:02.4826891-10:00",
+          "updated": "2025-11-06T10:17:13.0913595-10:00",
           "helpId": "915",
           "classInfo": {
             "memberName": "",
@@ -62,7 +62,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
-          "updated": "2025-09-14T09:26:41.6507462-10:00",
+          "updated": "2025-11-03T21:59:28.1802226-10:00",
           "helpId": "1242800",
           "classInfo": {
             "memberName": "",
@@ -527,6 +527,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 90,
+      "isExpanded": true,
       "updated": "2025-05-28T07:11:28.9282906-10:00",
       "helpId": "861",
       "classInfo": {
@@ -619,6 +620,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-09-11T13:27:15.79345-10:00",
           "helpId": "1094",
           "classInfo": {
@@ -829,7 +831,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 110,
-              "updated": "2025-05-01T11:24:29.8447568-10:00",
+              "updated": "2025-11-06T09:36:52.6824855-10:00",
               "helpId": "862",
               "classInfo": {
                 "memberName": "",
@@ -2311,7 +2313,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 90,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-11-02T11:37:07.7631033-10:00",
                   "helpId": "1241271",
                   "classInfo": {
                     "memberName": "",
@@ -8849,7 +8851,7 @@
           "remarks": "Services methods expose the following **PRIVATE** variables that let you control lower level access to the server:\r\r* **JsonService**  \rThe wwJsonService class that controls the JSON input and output parsing. This is useful to override behavior of the service, such as telling it to not generate any output using the **IsRawResponse** property which you can use if you want to use the Response object to return your own raw response output (ie. using `Response.Write()`).\r\r* **Serializer**  \rAn instance of the wwJsonSerializer which allows you to override behavior of the serializer. For example, you can override things like the PropertyNameOverrides property to generate 'proper' field names rather than all lowercase.\r\r* **Request, Response, Server, Process, Session etc.**   \rOf course all the other, normally exposed objects inside of process classes are also in scope so you can access any Request object methods like *QueryString* or *ServerVariables()* to retrieve input.",
           "example": "",
           "sortOrder": 60,
-          "updated": "2025-05-08T09:28:44.952192-10:00",
+          "updated": "2025-11-04T13:20:42.2479725-10:00",
           "helpId": "1270489",
           "classInfo": {
             "memberName": "",
@@ -8871,7 +8873,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
-              "sortOrder": 140,
+              "sortOrder": 160,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294403",
               "classInfo": {
@@ -8894,7 +8896,7 @@
               "seeAlso": "Class wwRestProcess\r\nUsing the wwRestProcess Class",
               "remarks": "",
               "example": "",
-              "sortOrder": 130,
+              "sortOrder": 150,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1287851",
               "classInfo": {
@@ -8917,7 +8919,7 @@
               "seeAlso": "Class wwRestProcess\rHow wwRestService works",
               "remarks": "",
               "example": "",
-              "sortOrder": 120,
+              "sortOrder": 140,
               "updated": "2025-03-12T10:30:32.866007-10:00",
               "helpId": "1279585",
               "classInfo": {
@@ -8940,7 +8942,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
-              "sortOrder": 110,
+              "sortOrder": 130,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1287861",
               "classInfo": {
@@ -8963,7 +8965,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
-              "sortOrder": 100,
+              "sortOrder": 120,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294611",
               "classInfo": {
@@ -8986,7 +8988,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
-              "sortOrder": 90,
+              "sortOrder": 110,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294605",
               "classInfo": {
@@ -9009,7 +9011,7 @@
               "seeAlso": "Class wwRestProcess\rwwRestProcess.Authenticate",
               "remarks": "",
               "example": "",
-              "sortOrder": 80,
+              "sortOrder": 100,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294603",
               "classInfo": {
@@ -9033,7 +9035,7 @@
               "seeAlso": "Class wwRestProcess",
               "remarks": "",
               "example": "",
-              "sortOrder": 70,
+              "sortOrder": 90,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294604",
               "classInfo": {
@@ -9057,7 +9059,7 @@
               "seeAlso": "Class wwRestProcess\rwwJsonService::IsRawResponse\rSending raw, non-JSON Response results with a REST method",
               "remarks": "This property acts as a proxy for [wwJsonService::IsRawResponse](VFPS://Topic/_3W317ZAT5).",
               "example": "```foxpro\rFUNCTION ReturnPdf()\r\rTHIS.lRawResponse = .T.\rResponse.ContentType = \"application/pdf\"\r\r lcFilename = THIS.ResolvePath(\"~/policy.pdf\") \r\r*** Send from memory - string/blob\rlcFile = FILETOSTR(lcFilename)\rResponse.BinaryWrite( lcFile )\r\r*** OR: Send from file\r*!* Response.TransmitFile(lcFilename,\"application/pdf\")\r\rENDFUNC\r```",
-              "sortOrder": 60,
+              "sortOrder": 80,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294612",
               "classInfo": {
@@ -9080,12 +9082,80 @@
               "seeAlso": "Class wwRestProcess",
               "remarks": "",
               "example": "",
-              "sortOrder": 50,
+              "sortOrder": 70,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294366",
               "classInfo": {
                 "memberName": "oJsonService",
                 "syntax": "o.oJsonService",
+                "assembly": "",
+                "contract": "",
+                "exceptions": ""
+              }
+            },
+            {
+              "id": "_scoqegiihc",
+              "parentId": "_3i012wddt",
+              "title": "wwRestProcess::OnError",
+              "slug": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnError",
+              "link": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnError.md",
+              "displayType": "classevent",
+              "type": "markdown",
+              "seeAlso": "wwRestProcess::OnJsonError",
+              "sortOrder": 60,
+              "updated": "2025-11-04T13:19:40.3928207-10:00",
+              "classInfo": {}
+            },
+            {
+              "id": "_o7b75vrgfd",
+              "parentId": "_3i012wddt",
+              "title": "wwRestProcess::OnJsonError",
+              "slug": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnJsonError",
+              "link": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnJsonError.md",
+              "displayType": "classevent",
+              "type": "markdown",
+              "seeAlso": "",
+              "sortOrder": 50,
+              "updated": "2025-11-04T13:32:46.3744616-10:00",
+              "classInfo": {
+                "memberName": "OnJsonError",
+                "parameters": "**loException**  \r\nAn exception object that contains error information.",
+                "syntax": "o.OnJsonError(loException)"
+              }
+            },
+            {
+              "id": "_fjov3c4h5v",
+              "parentId": "_3i012wddt",
+              "title": "wwRestProcess::OnError",
+              "slug": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnError",
+              "link": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnError.md",
+              "displayType": "classevent",
+              "type": "markdown",
+              "sortOrder": 40,
+              "updated": "2025-11-04T13:22:21.2139304-10:00",
+              "classInfo": {
+                "memberName": "OnError",
+                "syntax": "o.OnError(loException)"
+              }
+            },
+            {
+              "id": "_4l30qhj33",
+              "parentId": "_3i012wddt",
+              "title": "wwRestProcess::OnBeforeCallMethod",
+              "slug": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnBeforeCallMethod",
+              "link": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnBeforeCallMethod.md",
+              "displayType": "classevent",
+              "type": "markdown",
+              "keywords": "",
+              "seeAlso": "Class wwRestProcess",
+              "remarks": "",
+              "example": "```foxpro\r************************************************************************\r*  OnBeforeCallMethod - implemented as wwProcess Method\r*******************************************************\rFUNCTION OnBeforeCallMethod()\r\r*** Don't stop on errors even in Web Connection Debug Mode\rJsonService.IsDebugMode = .F.\r\rENDFUNC\r*   OnBeforeCallMethod\r```",
+              "sortOrder": 30,
+              "updated": "2025-05-08T09:26:53.1179297-10:00",
+              "helpId": "1294299",
+              "classInfo": {
+                "memberName": "OnBeforeCallMethod",
+                "syntax": "o.OnBeforeCallMethod()",
                 "assembly": "",
                 "contract": "",
                 "exceptions": ""
@@ -9103,7 +9173,7 @@
               "seeAlso": "Class wwRestProcess",
               "remarks": "",
               "example": "```foxpro\r************************************************************************\r*  OnAfterCallMethod - implemented as wwProcess Method\r******************************************************\rFUNCTION OnAfterCallMethod(@lcResult)\r\r*** Check for error responses and remove the error label from text\rIF !EMPTY(lcResult) and ATC(lcResult,[\"ERROR: ])\r   lcResult = STRTRAN(lcResult,[\"Error: ],[\"],1,1,1)\rENDIF\r\rENDFUNC\r*   OnBeforeCallMethod\r```",
-              "sortOrder": 40,
+              "sortOrder": 20,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294300",
               "classInfo": {
@@ -9127,36 +9197,13 @@
               "seeAlso": "Class wwRestProcess",
               "remarks": "",
               "example": "",
-              "sortOrder": 30,
+              "sortOrder": 10,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1279582",
               "classInfo": {
                 "memberName": "CreateJsonService",
                 "returns": "has to return a wwJsonService instance\r\n",
                 "syntax": "o.CreateJsonService()",
-                "assembly": "",
-                "contract": "",
-                "exceptions": ""
-              }
-            },
-            {
-              "id": "_4l30qhj33",
-              "parentId": "_3i012wddt",
-              "title": "wwRestProcess::OnBeforeCallMethod",
-              "slug": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnBeforeCallMethod",
-              "link": "Framework-Classes/Class-wwRestProcess/wwRestProcessOnBeforeCallMethod.md",
-              "displayType": "classevent",
-              "type": "markdown",
-              "keywords": "",
-              "seeAlso": "Class wwRestProcess",
-              "remarks": "",
-              "example": "```foxpro\r************************************************************************\r*  OnBeforeCallMethod - implemented as wwProcess Method\r*******************************************************\rFUNCTION OnBeforeCallMethod()\r\r*** Don't stop on errors even in Web Connection Debug Mode\rJsonService.IsDebugMode = .F.\r\rENDFUNC\r*   OnBeforeCallMethod\r```",
-              "sortOrder": 20,
-              "updated": "2025-05-08T09:26:53.1179297-10:00",
-              "helpId": "1294299",
-              "classInfo": {
-                "memberName": "OnBeforeCallMethod",
-                "syntax": "o.OnBeforeCallMethod()",
                 "assembly": "",
                 "contract": "",
                 "exceptions": ""
@@ -9174,7 +9221,6 @@
               "seeAlso": "Class wwRestProcess",
               "remarks": "",
               "example": "",
-              "sortOrder": 10,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1279583",
               "classInfo": {
@@ -62258,6 +62304,8 @@
   ],
   "settings": {
     "renderTheme": "Dharkan",
+    "renderThemeMode": "dark",
+    "showTocIcons": true,
     "topicTypes": {
       "index": "Top level topic for the documentation.",
       "header": "Header topic for sub-topics",
@@ -62295,6 +62343,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_index"
+    "lastTopicId": "_s8104dggl"
   }
 }

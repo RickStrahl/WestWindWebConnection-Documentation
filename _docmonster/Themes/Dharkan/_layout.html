@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="~/_docmonster/themes/scripts/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="~/_docmonster/themes/scripts/fontawesome/css/font-awesome.min.css" />
     <link id="AppCss" rel="stylesheet" type="text/css" href="~/_docmonster/themes/{{ theme }}/docmonster.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="~/_docmonster/themes/{{ theme }}/kavadocs-dark.css" /> -->
+    
 
     <script src="~/_docmonster/themes/scripts/jquery/jquery.min.js"></script>
 
@@ -37,8 +37,8 @@
     <script>
         window.page = {};
         window.page.basePath = "{{ Project.Settings.RelativeBaseUrl }}";     
-            
-        window.renderTheme='dark';    
+
+        window.renderTheme="{{ Project.Settings.RenderThemeMode }}";    
     </script>
     <script src="~/_docmonster/themes/scripts/docmonster.js"></script>
 

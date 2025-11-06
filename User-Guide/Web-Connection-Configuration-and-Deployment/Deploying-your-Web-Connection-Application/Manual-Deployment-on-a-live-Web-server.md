@@ -1,4 +1,4 @@
-﻿Once you've developed your application and you've tested and debugged it on your development machine, the next step is to transfer that application to the server for deployment. 
+Once you've developed your application and you've tested and debugged it on your development machine, the next step is to transfer that application to the server for deployment. 
 
 ### Summary
 Deploying involves a number of steps:
@@ -91,18 +91,34 @@ Depending on how you packaged your code files you likely just unzip the file int
 
 
 ### Copying Web Folder to the Server
+The Web Folder contains all your Html resources for your project and it needs to go **mostly** as-is to the server for deployment.
+
 For deploying your Web files (Html, CSS, JavaScript, Images and Web Connection Script Files) to the server you have a number of options:
 
-##### Simple Copy
-At its simplest you can simply zip your `Web` folder and send that up to the server and unzip it there. That works fine for a one time install. You can use Remote Desktop File Transfer, a DropBox/OneDrive file share, or any number of other ways to the get files up there.
+* Explicit manual file upload or copy
+* Using WebDeploy
 
-##### Using Visual Studio Web Publishing
+
+> ##### @icon-warning Do not publish Template `.prg` and `.fxp` files!
+> While most files in the `Web` folder are static, the compiled `.prg` and `.fxp` files are not. They are FoxPro generated and compiled code of the script templates and as such often contain site specific values, like expanded paths **that may differ from your development environment**. They need to be recreated on the server's environment.
+> 
+> Do not copy these files, or you may end up with **File not found Errors** when trying to load page or partial page templates. Alternately you can let those file copy but ensure that you then compile the scripts from the Administration page.
+>
+> ![Script Compilation Admin Page](../../../images/misc/ScriptCompilationAdminPage.png)
+> 
+> Note that if files don't exist, they are automatically created so another option is to simply delete all the files on the server, but note that they may be locked if the server is running and they are in use.
+
+
+#### Manually Copying Files
+At its simplest you can simply zip your `Web` folder and send that up to the server and unzip it there. You can also use FTP to publish directly into your server Web folder, or you can manually copy files via a remote folder share, or use Remote Desktop to transfer files. 
+
+There are lots of ways to do this, but all essentially involve directly updating the `Web` folder on the server from the local files.
+
+#### Using WebDeploy (Visual Studio or Command Line)
 However, more than likely you'll also want to update Web files frequently as you modify your application and for that you typically will want to use an FTP server or IIS Web deploy to allow for individual or incremental updates of server files.
 
 If you use Visual Studio, you can use the **Web Publish feature** and **Web Deploy** on the server to push files from your machine to the Web server. Web Publishing uses either FTP or <a href="http://www.iis.net/downloads/microsoft/web-deploy" target="top">IIS Web Deploy</a> to publish your entire Web site **or** individual files or folders to the Web server. Web Publish supports incremental updates of projects as well as allowing to publish individual files quickly and easily right out of Visual Studio.
 
-> #### @icon-warning Exclude for PRG/FXP Script Files
-> If you're using Web Connection Scripting Pages (via `Response.ExpandScript()`) make sure you don't publish your PRG or FXP files in your Web folder. When script files compile they embed hardcoded paths into the PRG and if paths change the code will break. Either let the files auto-compile or if you're running pre-compiled scripts use the admin page *Compile scripts* option to compile your scripts.
 
 ### Run the Server Configuration Script
 Once you've uploaded and set up  your `Deploy` code and `Web` files, you need to configure the Web Server for your application. Make sure that [IIS is installed and configured on the server](VFPS://Topic/_22F0XKBMQ), and that any Web site you plan to install on exists before you start.

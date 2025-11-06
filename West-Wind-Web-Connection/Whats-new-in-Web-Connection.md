@@ -2,7 +2,18 @@
 
 <small>not released yet</small>
 
-* **[wwRequest::GetOrigin](dm-topic://_vxeiuxi54r)**  
+
+* **Update wwProcess Error Handling to catch nested Errors in Error Handling**  
+Updated the Web Connection process error handler to detect and better handle errors that occur during error handling. If your code fails during error handling (like say a database error during error logging) that second error is now captured and logged and a generic error page is displayed. This fixes the scenario where you get a blank page result, due to  these nested errors which were difficult to debug or pinpoint.
+
+* **[wwRestProcess::OnJsonError Handler](dm-topic://_o7b75vrgfd)**  
+Added a new explicit error method that is fired when a Json service process method in `wwRestProcess` fails. This method can be used for capturing and logging errors.
+
+* **Removed Case Insensitivity from wwUserSecurity Username and Password**  
+Changed the behavior of base authentication in default `wwProcess::OnAuthenticateUser()` by removing the `LOWER()` case conversions on input and expecting username and  password to be lower case. Reason: modern security often requires and generates mixed case passwords and forcing case insensitivity lowers the password's strength.
+
+
+* **[New wwRequest::GetOrigin() Method](dm-topic://_vxeiuxi54r)**  
 New request helper that returns the Http origin from an Http request which is useful for CORS Origin domain detection. 
 
 * **Update New wwProcess Template for CORS Domain Logic**  
@@ -25,6 +36,12 @@ There are additional documentation improvements - courtesy of [Documentation Mon
 
 * **Fix: wwHttp Upload File Name Encoding**  
 Fix issues with file names not encoding correctly when uploading files using `nHttpPostMode=2`. In some cases files would double UTF-8 encode and wouldn't preserve filename case so it was hard to determine expected file names.
+
+### Breaking Changes in 8.5{style='color: firebrick'}
+
+* **User Authentication Username and Password are now case sensitive**  
+Depending on how you store passwords in your User Security table you may see changes to password behavior if users expect to use case insensitive passwords. To avoid this and keep old behavior you can update all passwords to be stored as lower case in your data store.
+
 
 ## Version 8.4
 <small>July 21st, 2025 &bull;
