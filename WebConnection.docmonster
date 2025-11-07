@@ -39,7 +39,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 140,
-          "updated": "2025-11-06T10:17:13.0913595-10:00",
+          "updated": "2025-11-07T13:01:47.7530633-10:00",
           "helpId": "915",
           "classInfo": {
             "memberName": "",
@@ -108,6 +108,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 100,
+          "isExpanded": true,
           "updated": "2025-09-13T19:29:08.5356649-10:00",
           "helpId": "1258814",
           "classInfo": {
@@ -4275,6 +4276,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1148",
           "classInfo": {
@@ -4486,6 +4488,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8638905-10:00",
           "helpId": "1376",
           "classInfo": {
@@ -4926,6 +4929,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 80,
+      "isExpanded": true,
       "updated": "2025-03-12T10:30:32.8641745-10:00",
       "helpId": "1290678",
       "classInfo": {
@@ -5482,6 +5486,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 60,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1292299",
           "classInfo": {
@@ -5763,6 +5768,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
+      "isExpanded": true,
       "updated": "2025-05-28T07:11:30.6452845-10:00",
       "helpId": "3",
       "classInfo": {
@@ -9248,6 +9254,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "967",
           "classInfo": {
@@ -10709,6 +10716,7 @@
           "remarks": "Any **~/** virtual relative paths in the final output are automatically replaced to use the Process.GetUrlBasePath() value. So any reference of `< script src=\"~/scripts/jquery.js >` fixes up to the proper virtual path like: `< script src=\"/wconnect/scripts/jquery.js\" >`.",
           "example": "",
           "sortOrder": 40,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242470",
           "classInfo": {
@@ -10780,6 +10788,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 270,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242481",
               "classInfo": {
@@ -10804,6 +10813,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 260,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294498",
                   "classInfo": {
@@ -18041,6 +18051,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 60,
+      "isExpanded": true,
       "updated": "2025-09-14T09:33:00.7147074-10:00",
       "helpId": "24",
       "classInfo": {
@@ -18064,6 +18075,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 280,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "2",
           "classInfo": {
@@ -18087,6 +18099,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
+              "isExpanded": true,
               "updated": "2025-03-12T10:42:37.744122-10:00",
               "helpId": "853",
               "classInfo": {
@@ -18105,12 +18118,12 @@
                   "link": "Utility-Classes/West-Wind-Internet-Protocols/Quick-Start-Examples/Access-Http-content-over-the-Web.md",
                   "displayType": "topic",
                   "type": "markdown",
-                  "keywords": "",
+                  "keywords": "wwHttp",
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
                   "sortOrder": 60,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-11-07T13:58:30.7406311-10:00",
                   "helpId": "857",
                   "classInfo": {
                     "memberName": "",
@@ -18298,6 +18311,7 @@
               "remarks": "**External Dependencies**  \rwwIPstuff.dll  \rzLib.dll",
               "example": "",
               "sortOrder": 90,
+              "isExpanded": true,
               "updated": "2025-07-15T15:44:33.6550367-10:00",
               "helpId": "1241726",
               "classInfo": {
@@ -20614,6 +20628,7 @@
               "remarks": "#### Dependencies\rThis API uses a .NET library to provide FTP functionality.\r\r\r* wwIpstuff.dll  \r* wwDotnetBridge.dll  \r* FluentFtp.dll",
               "example": "",
               "sortOrder": 60,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294622",
               "classInfo": {
@@ -21357,6 +21372,7 @@
               "remarks": "#### Dependencies\rThis API uses a .NET library to provide FTP functionality.\r\r* wwIpstuff.dll  \r* wwDotnetBridge.dll  \r* Renci.sshNet.dll",
               "example": "",
               "sortOrder": 50,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294661",
               "classInfo": {
@@ -26877,6 +26893,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 250,
+          "isExpanded": true,
           "updated": "2025-03-12T14:26:54.5020116-10:00",
           "helpId": "1241562",
           "classInfo": {
@@ -33362,6 +33379,7 @@
           "remarks": "",
           "example": "```foxpro\r\r************************************************************************\rDEFINE CLASS CustomerServiceClient as wwJsonServiceClient\r*********************************************************\r\r************************************************************************\r*  GetCustomers\r***************\rFUNCTION Customers(loParms)\rLOCAL loCustomers\r\rloCustomers = THIS.CallService(this.cServiceBaseUrl + \"customers.csvc\", loParms)\r\rIF THIS.lError\r   RETURN null\rENDIF   \r\rRETURN loCustomers\rENDFUNC\r*   GetCustomers\r\r************************************************************************\r*  UpdateCustomer\r*****************\rFUNCTION UpdateCustomer(loCustomer)\r\rloCustomer = THIS.CallService(this.cServiceBaseUrl + \"customer.csvc\",loCustomer,\"PUT\")\r\rIF THIS.lError\r   RETURN null\rENDIF \r\rRETURN loCustomer\rENDFUNC\r*   UpdateCustomer\r\rENDDEFINE\r```",
           "sortOrder": 200,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1292313",
           "classInfo": {
@@ -37369,6 +37387,7 @@
           "remarks": "This class is used by wwBusiness when nDataMode is set to 4 (Web Data).\r\rThis class works in conjunction of a server side wwHTTPSQLServer implementation which means a Web Server running a Visual FoxPro backend is required. This means Web Connection, ASP with a COM object etc. in addition to running whatever backend SQL engine is running.",
           "example": "",
           "sortOrder": 130,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241735",
           "classInfo": {
@@ -37486,6 +37505,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 130,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241749",
               "classInfo": {
@@ -38425,6 +38445,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241963",
           "classInfo": {
@@ -38635,6 +38656,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 200,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242733",
               "classInfo": {
@@ -40570,6 +40592,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241819",
           "classInfo": {
@@ -42348,6 +42371,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241396",
           "classInfo": {
@@ -42373,6 +42397,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 440,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241961",
               "classInfo": {
@@ -43903,6 +43928,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 50,
+      "isExpanded": true,
       "updated": "2025-04-13T12:15:16.2227928-10:00",
       "helpId": "58",
       "classInfo": {
@@ -45618,6 +45644,7 @@
           "remarks": "This class has no dependencies on server side features.",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "119",
           "classInfo": {
@@ -46902,6 +46929,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 10,
+      "isExpanded": true,
       "updated": "2025-05-28T05:35:16.0178733-10:00",
       "helpId": "1294703",
       "classInfo": {
@@ -46925,6 +46953,7 @@
           "remarks": "This class does not support SFTP (secure FTP over SSL)",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-10-27T08:16:08.6754682-10:00",
           "helpId": "678",
           "classInfo": {
@@ -49691,6 +49720,7 @@
           "seeAlso": "",
           "remarks": "",
           "example": "",
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242025",
           "classInfo": {
@@ -50389,6 +50419,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242042",
               "classInfo": {
@@ -52472,6 +52503,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242163",
                   "classInfo": {
@@ -62343,6 +62375,6 @@
       "deleteExtraFiles": true,
       "maxUploadConnections": 10
     },
-    "lastTopicId": "_s8104dggl"
+    "lastTopicId": "_s9001zxih"
   }
 }

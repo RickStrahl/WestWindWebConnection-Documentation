@@ -10,7 +10,8 @@ Updated the Web Connection process error handler to detect and better handle err
 Added a new explicit error method that is fired when a Json service process method in `wwRestProcess` fails. This method can be used for capturing and logging errors.
 
 * **Removed Case Insensitivity from wwUserSecurity Username and Password**  
-Changed the behavior of base authentication in default `wwProcess::OnAuthenticateUser()` by removing the `LOWER()` case conversions on input and expecting username and  password to be lower case. Reason: modern security often requires and generates mixed case passwords and forcing case insensitivity lowers the password's strength.
+Changed the behavior of base authentication in default `wwProcess::OnAuthenticateUser()` by removing the `LOWER()` case conversions on input and expecting username and  password to be lower case. Reason: modern security often requires and generates mixed case passwords and forcing case insensitivity lowers the password's strength.    
+<b class='text-danger'>*Breaking change*</b>
 
 
 * **[New wwRequest::GetOrigin() Method](dm-topic://_vxeiuxi54r)**  
@@ -37,7 +38,7 @@ There are additional documentation improvements - courtesy of [Documentation Mon
 * **Fix: wwHttp Upload File Name Encoding**  
 Fix issues with file names not encoding correctly when uploading files using `nHttpPostMode=2`. In some cases files would double UTF-8 encode and wouldn't preserve filename case so it was hard to determine expected file names.
 
-### Breaking Changes in 8.5{style='color: firebrick'}
+### Breaking Changes in 8.5{.text-danger}
 
 * **User Authentication Username and Password are now case sensitive**  
 Depending on how you store passwords in your User Security table you may see changes to password behavior if users expect to use case insensitive passwords. To avoid this and keep old behavior you can update all passwords to be stored as lower case in your data store.
@@ -66,7 +67,7 @@ Fixed an issue with `wwUserSecurity` auth cookie not getting set when running in
 Fix a bug where passing the content type would throw an exception due to a missing type check.
 
 
-#### Breaking Changes in v8.4{style="color: Firebrick"}
+### Breaking Changes in v8.4{.text-danger}
 
 * **Breaking Change: Remove redundant llIsFile parameter from [wwHttp::AddPostFile()](dm-topic://_0jj1afxk3)**        
 When this method was introduced it retained the same syntax as AddPostKey() and was meant to be a direct replacement. That makes little sense however, and the parameter signature is slightly different anyway. The updated syntax only provides the parameters actually needed.  
@@ -108,7 +109,7 @@ Added a new wwHeap class that allows fast access to byte and character data incl
 Fixed a bug in the deprecated wwSftp class that caused download operations to fail.  
 *We highly recommend you switch to the new `wwSftpClient` (Sftp)  or `wwFtpClient` (ftp or ftps) for future compatibility - the old wwFtp and wwSftp classes will not be updated in the future* 
 
-### Version 8.1
+## Version 8.1
 <small>October 16th, 2024</small>
 
 * **Add support for Response Output greater than 16mb**  
@@ -141,12 +142,12 @@ A helper method that returns a FoxPro collection from a ComArray instance.
 Updated the request log table definitions for `RemoteAddr` for 40 characters to fit IPv6 addresses.    
 <small>*Requires that you widen the fields by deleting `wwRequestLog.dbf` and or re-running the SQL Server log table creation script*</small>.
 
-#### Breaking Changes in v8.1{style="color: firebrick"}
+### Breaking Changes in v8.1{.text-danger}
 
 * **Request Log Field Change: New Size `numeric (10,0)` field in Log Table**  
 The log table structure has been updated with a new `Size numeric (10,0)` for FoxPro and  `[size] [int] NOT NULL DEFAULT 0,` for SQL field. For FoxPro tables this value *should update automatically* when you restart your server or you can delete the table and it will be recreated. For SQL Server you'll have to explicitly add the field. This is a potentially breaking change for existing applications that have logging enabled.
 
-### Version 8.0
+## Version 8.0
 <small>June 25th, 2024 &bull;
 [Release Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9179) &bull; 
 [Breaking Changes](https://webconnection.west-wind.com/docs/_s8104dggl.htm#breaking-changes-in-v8.0)
@@ -195,7 +196,7 @@ Updated the Web Connection Web Server to run the latest version of .NET Core 8.0
 Adding a .NET runtime installer - `DotnetRuntimeInstaller.exe` that can quickly install the .NET Hosting Bundle required to run the Web Connection Web Server. Checks to see if already installed and if not optionally downloads and installs the required version. Can also download the .NET 8.0 Desktop runtime via the `-desktop` command line switch. This installer is automatically called from Setup if choosing the Web Connection Web Server. Effectively this automates the .NET Runtime installation if you choose to use the Web Connection .NET Web Server for local development (recommended). As a reminder this server is self-contained and you manually start it as part of your `Launch()` sequence to run your app locally.
 
 
-#### Breaking Changes in v8.0{style='color: firebrick'}
+### Breaking Changes in v8.0{.text-danger}
 * **The wwFtp and wwSftp classes have been deprecated**  
 They are still available and now ship in the `classes\OldFiles` folder. They are replaced by the `wwFtpClient` and `wwSFtpClient` classes that provide similar functionality with a more consistent interface. If you were using the `UploadFile()`/`DownloadFile()` methods the new classes are compatible with identical interfaces.
 
@@ -207,7 +208,7 @@ The signatures for the FTP events handler for the **wwFtp** and **wwSFtp** class
   * The `Renci.sshNet.dll` has been updated to the latest version
   * An update to `wwDotnetBridge.dll`  is required for all FTP functionality
 
-### Version 7.40
+## Version 7.40
 <small>February 25th, 2024</small>
 
 * **wwJsonSerializer Deserialization Performance Improvements**  
@@ -217,7 +218,7 @@ Optimized the .NET parsing of the deserialized object graph for improved perform
 You can now use a site relative URL by specifying a `cServiceBaseUrl` before calling `CallService()` which allows you to use site relative paths for the URL. You can use Urls like `/authenticate` which makes it easier to switch between different host sites. If the URL does not start with `http://` or `http://`, the `cServiceBaseUrl` is prepended to the URL to create a full URL. This is useful if you switch between different sites such as running against different servers for dev, staging and production servers.
 
 
-### Version 7.35
+## Version 7.35
 <small>November 15th, 2023 &bull; [Release Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9175) &bull; [Breaking Changes](https://webconnection.west-wind.com/docs/_s8104dggl.htm#breaking-changes-in-7.34)</small>
 
 * **[wwDotnetBridge: Improved support for Task Exception Handling](VFPS://Topic/_5PJ0XL2YP)**  
@@ -243,12 +244,12 @@ Fixed issue where COM server uploads and restarts would not work correct
 * **Fix: Stop wwDotnetBridge from Attempting to Serialize Non-FoxPro Objects**  
 wwDotnetBridge now checks for COM objects and components and won't serialize those objects rather than attempting and failing. FoxPro's `AMEMBERS()` can't reliably retrieve properties from COM objects so rather than getting an incomplete object, or worse a crash due to non-properties being access, we now serialize `null` for COM objects.
 
-#### Breaking Changes in 7.35{style='color: firebrick'}
+### Breaking Changes in 7.35{.text-danger}
 
 * **Make sure to update `Newtonsoft.Json.dll` and `wwDotnetBridge.dll` in your Projects**  
 The two dlls are linked to each other and so they always need to stay in sync in order for JSON serialization to work consistently. Needed if you use JSON deserialization using `wwJsonSerializer`, or you're building API Web projects.
 
-### Version 7.32
+## Version 7.32
 
 <small>April 5th, 2023 &bull; [Release Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9173)</small>
 
@@ -270,7 +271,7 @@ When serializing `EMPTY` objects, or by association cursors and collections whic
 * **Fix: wwJsonSerializer::AssumeUtcDates Output still converting to Local**  
 Fixed issue that when this flag was set, it would not convert the inbound date from local to UTC but use the current date as UTC, but it would still convert the date back to local when deserializing. This change now leaves the deserialized date in the original UTC time, but returns it as a local FoxPro time (ie. the date is not adjusted for timezone) which was the original assumption of this flag. This was broken when we switched from FoxPro based parsing to .NET parsing using JSON.NET. **This is a potentially breaking change if you used this obscure flag in your code**.
 
-### Version 7.30
+## Version 7.30
 
 <small>October 25th, 2022</small>  
 
@@ -283,7 +284,7 @@ Added these helper functions to load the .NET Core Runtime of wwDotnetBridge and
 * **[wwCookie](VFPS://Topic/_5M50NOCS1) and [Response.AddCookie()](VFPS://Topic/_1O80YQ3EY) Default Changes**  
 Made default cookie handling more secure by adding `HttpOnly` to the default settings. Also added `samesite=strict;` to the default when explicitly creating a cookie. The `wwCookie::Init()` constructor now can set the name and value ie.: `CREATEOBJECT("wwCookie","name","value")`
 
-### Version 7.28
+## Version 7.28
 
 <small>June 12th, 2022</small>
 
@@ -293,12 +294,12 @@ Added `DefaultEmptyDate` property to wwJsonSerializer to allow you set a predefi
 * **Fix: wwJsonService UTF-8 Encoding/Decoding**   
 Fixed inconsistencies in UTF-8 encoding by the service client. Now data sent is encoded and data received is decoded. Optional parameters allow disabling this auto en/decoding.
 
-#### Breaking Changes in 7.28{style='color: firebrick'}
+### Breaking Changes in 7.28{.text-danger}  
 
 * **wwJsonServiceClient fixes UTF-8 decoding by default**  
 There was a bug that caused `wwJsonServiceClient` to not decode UTF-8 content automatically, which would result in extended characters in deserialized values and objects to be misformatted. In 7.27 content now is UTF-8 decoded by default and you can disable the auto-decoding via the `lNoUtfDecoding=.T.` to keep the old behavior.
 
-### Version 7.26
+## Version 7.26
 
 <small>January 18th, 2022 &bull; [Release Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9170)  &bull; [Breaking Changes](#breaking-changes-in-7.26)</small>
 
@@ -329,7 +330,7 @@ Fix `OnFtpBufferUpdate()` for `wwSftp` so it now works to provide to check for t
 * **Fix: ExpandTemplate with _Layout Pages not reading Base Path correctly**  
 Fixed issue where `wwPageResponse.ExpandTemlate()` was not correctly setting the Web site base path resulting in empty layout pages to be rendered. This in turn resulted in empty pages. Fixed.
 
-#### Breaking Changes in 7.26 {style='color: firebrick'}
+### Breaking Changes in 7.26 {.text-danger}
 
 * **NewtonSoft.Json.dll needs to be Updated**  
 We've updated the .NET JSON serializer to the latest version `13.0.1` in Web Connection and if you're using the REST API Process classes or using the JSON Serializer in any way make sure to update this DLL in your application folder or `DeserializeJson()` might fail.
@@ -338,7 +339,7 @@ We've updated the .NET JSON serializer to the latest version `13.0.1` in Web Con
 The optional West Wind Web Connection local Web Server now uses .NET 6.0 to support the latest LTS release of the .NET Core Runtime. To use this local Web Server you'll need to make sure that [.NET Core 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or [.NET Core 6.0 Hosting Bundle](https://dotnet.microsoft.com/download/dotnet/6.0) is installed.
 
 
-### Version 7.25
+## Version 7.25
   
 <small>October 1st, 2021</small> &bull; [Breaking Changes](#breaking-changes-in-7.25)
 
@@ -357,7 +358,7 @@ These methods now let you choose the crypto provider (TripleDES and AES), the ci
 * **wwUtils: ShowJson() Function**  
 Added a new `ShowJson()` function in wwUtils that shows the content of the string in the configured JSON editor (typically VS Code). Also update the ShowHtml, ShowXml methods to output UTF-8 files that are then rendered from disk to avoid garbage characters otherwise shown.
 
-#### Breaking Changes in 7.25 {style='color: firebrick'}
+## Breaking Changes in 7.25 {.text-danger}
 
 * **NewtonSoft.Json.dll needs to be Updated**  
 We've updated the .NET JSON serializer to the latest version `13.0.1` in Web Connection and if you're using the REST API Process classes or using the JSON Serializer in any way make sure to update this DLL in your application folder or `DeserializeJson()` might fail.
@@ -378,7 +379,7 @@ New helper function that wraps `Deserialize()` and `CollectionToCursor()` which 
 * **Local User Credentials for SMTP Emails**  
 Added support for a special `LOCALACCOUNT` username value that can be used to specify to use the logged on user's Windows credentials for SMTP server access. Note this is unusual and typically only works for internal servers running Exchange or other Managed Mail platforms using Windows Domain Accounts for access.
 
-### Version 7.20
+## Version 7.20
 <small>March 16th, 2021</small>  
 [Release Notes](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=9166) &bull; [Breaking Changes](#breaking-changes-in-7.20)
 
@@ -409,12 +410,12 @@ This flag allows you to control the max Request and Response size to log when us
 * **Fix: Request.GetCurrentUrl() with Ports and HTTPS**  
 Fix problem with `https://` requests that have custom ports not showing the HTTP scheme properly. Fixed.
 
-#### Breaking Changes in 7.20{style='color: firebrick'}
+## Breaking Changes in 7.20{.text-danger}
 
 * **Web Connection Web Server now uses .NET Core 5.0**  
 To provide support for the most current version of .NET the Web Connection local dev server now uses .NET Core 5.0. To use this local Web Server you'll need to make sure that .NET Core 5.0 SDK or .NET Core Runtime and ASP.NET Core Runtime [are installed](https://webconnection.west-wind.com/docs/_5lw0ysxq9.htm#requires.net-core-5.x-runtime-or-sdk).
 
-### Version 7.15
+## Version 7.15
 <small>August 2nd, 2020 &bull; [Release Notes](https://west-wind.com/wconnect/Weblog/ShowEntry.blog?id=963) &bull; [Breaking Changes](#breaking-changes-in-7.15)</small>
 
 * **[New Log Formats](VFPS://Topic/_1Q40SZXAA)**  
@@ -444,7 +445,7 @@ You can now access Indexed properties (`[0]` or `["name"]`) without requiring a 
 * **Fix: JSON Date Formatting Rounding Issue**  
 Fixed a bug where dates from cursors would not show the exact second/millisecond format with a float rounding error. Reworked the Json conversion function to adjust date explicitly to UTC format and then using `TTOC(ldDate,3)` instead.
 
-#### Breaking Changes in 7.15{style='color: firebrick'}
+### Breaking Changes in 7.15{.text-danger}
 
 * **Must update wwDotnetBridge.dll**  
 wwDotnetBridge has some important fixes and a few additional helpers that are used by some of the libraries - specifically `wwJsonSerializer` which break when used with the older DLL.
@@ -455,7 +456,7 @@ The `wwRequestLog` has a few changes in fields so if you're using FoxPro tables,
 * **Recommended: Set the `LogFormat`**  
 The new `LogFormat` property is used to control logging. The default format is `1 - Minimal Request`. But for local development it's often useful to set this to `3 - Request and Response` so you can easily review requests and the output generated while debugging.
 
-### Version 7.13
+## Version 7.13
 <small>May 29th, 2020</small>
 
 * **[Request.GetServerName() now Returns Port Information](VFPS://Topic/_S850QHU8J)**   
@@ -479,7 +480,7 @@ Fix issue with the Console application failing when started from within a projec
 * **Fix: Web Connection Web Server Cookie Processing Bug in ASP.NET Core**  
 Work around an ASP.NET Core bug that incorrectly formats the raw cookie string of a request by explicitly rewriting all cookies using the proper format.
 
-### Version 7.12
+## Version 7.12
 <small>April 29th, 2020 &bull; [Release Notes](https://west-wind.com/wconnect/Weblog/ShowEntry.blog?id=959)</small>
 
 * **[Console Update Project Resources Helper](VFPS://Topic/_0R10SLEAN#updateprojectresources)**  
@@ -510,12 +511,12 @@ Fix ability to instantiate .NET `struct` types which now are returned as `ComVal
 * **wwDotnetBridge Instances can now pass ComValue instances as Parameters**  
 You can now pass `ComValue` instances to `InvokeMethod()`, `SetProperty()` and `GetProperty()` so that you can invoke functionality on objects that are otherwise not accessible in FoxPro. When you pass `ComValue` for the `loInstance` parameter, wwDotnetBridge automatically uses the `Value` property.
 
-#### Breaking Changes in v7.12{style='color: firebrick'}
+### Breaking Changes in v7.12{.text-danger}
 
 * **Update `webconnectionmodule.dll` and `wwServer.prg` due to `ProcessHitBinary()` Change**  
 The new binary transfer functionality in this version is a major breaking change that requires that **both the `webconnectionmodule.dll` and the Web Connection framework (and more specifically `wwServer.prg` and `wwServer::ProcessHitBinary()`) are synced**. The module now calls this new `ProcessHitBinary()` method in `wwServer`Server interface so this method has to exist and it didn't in older versions. In turn this also adds the method to the COM interface, so make sure to **re-register your server** when updating applications on your servers.
 
-### Version 7.10
+## Version 7.10
 <small>March 10th, 2020 &bull; [Release Notes](https://www.west-wind.com/wconnect/weblog/ShowEntry.blog?id=958)</small>
 
 * **[Preview: Local .NET Core Development Server](VFPS://Topic/_5LW0YSXQ9)**  
@@ -554,7 +555,7 @@ We now log the server user account in Web Connection FoxPro server requests in t
 * **Fix: Perf Counter Permissions**  
 Trap errors in Web Connection Module Server list related to PerfCounter access - if access is not allowed, perf-counters are turned off. 
 
-#### Breaking Changes in v7.10{style='color: firebrick'}
+### Breaking Changes in v7.10{.text-danger}
 
 * **LiveReload Configuration Change for `web.config`**  
 If using LiveReload you will need to change the configuration to use the new `WebConnectionModule`. Using the new module removes the need to add/remove the old handler when switching modes - it now works off the `LiveReloadEnabled` flag internally so you only have to set one setting.
@@ -579,7 +580,7 @@ If using LiveReload you will need to change the configuration to use the new `We
 Please make sure you delete the request log (`wwRequestLog.dbf` by default) or add an `account v(15)` field to the table. Latest version detects if the field is missing and automatically deletes the table and creates a new one otherwise.
 
 
-### Version 7.09
+## Version 7.09
 <small>October 22nd, 2019</small>
 
 * **[Preview: Local .NET Core Web Server Support](VFPS://Topic/_5LW0YSXQ9)**  
@@ -597,12 +598,12 @@ Fixed error message code display to be properly HTML encoded. If the code contai
 * **Fix: wwDotnetBridge Guid Results and Properties**  
 Changed behavior of wwDotnetBridge methods that return Guid values or accss Guid Properties. Guids are value types and fixed up by wwDotnetBridge, but previously used the obsolete `ComGuid` type. This has been changed to use the standard `ComValue` type and the `GetGuid()` method. So a method that returns a Guid returns a `ComValue`, as does a Guid property accessed with `GetProperty()`.
 
-### Breaking Changes in 7.09
+### Breaking Changes in 7.09{.text-danger}
 
 * **ComGuid Class Retired for Guid Handling**  
 Any wwDotnetBridge code that previously access Guid values, now uses the [ComValue](VFPS://Topic/Class%20ComValue) helper, which includes `GetGuid()`, `SetGuid()` and `NewGuid()` helper methods. This is a breaking change, but provides better compatibility with all other special handling types which also use the `ComValue` class.
 
-### Version 7.08
+## Version 7.08
 <small>September 3rd, 2019</small>
 
 * **[Simplified Live Reload Configuration](VFPS://Topic/_5HM1E6KMV)**  
@@ -620,7 +621,7 @@ Fix bug where application pools in IIS weren't properly attached to the newly cr
 * **Cleanup Startup Launch.prg Handling**  
 After setup and new project Launching now clearly shows what it's doing with messages to the desktop, so you new users can effectively re-run the application without having to look in the docs. `DO LAUNCH` always shows options now.
 
-### Version 7.06
+## Version 7.06
 <small>*May 25th, 2019*  
 [Release Notes Blog Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=952&id=952)  &bull; [Breaking Changes](#breaking-changes-in-7.06)
 </small>
@@ -637,7 +638,7 @@ Simple helper function that strips the Ole Dispatch error prefix from the front 
 
   > You can create a new `Launch.prg` for existing projects by generating a new project,copying `Launch.prg` into your project and changing the configuration variables at the top of the file (usually the project name and virtual). The rest of the file is generic and portable.
 
-#### Breaking Changes in 7.06
+### Breaking Changes in 7.06{.text-danger}
 
 * **Changed the `Server.oConfig.lLiveReloadServer` to `lLiveReloadEnabled`**  
 Due to the changes in Live Reload functionality and for consistency the `lLiveReloadServer` flag naming has changed. This flag was introduced in `7.05` and generated in the `MyAppMain.prg` main program file of new projects.
@@ -645,7 +646,7 @@ Due to the changes in Live Reload functionality and for consistency the `lLiveRe
 * **Make sure to update WebConnectionModule.dll and Microsoft.WebSockets.dll**  
 The new Live Reload functionality is implemented inside of the WebConnection .NET Module in `webconnectionmodule.dll` so to use this new feature you need to update that file in all your Web projects. Also a new DLL, `Microsoft.WebSockets.dll` has been introduced to enable the Live Reload functionality. 
 
-### Version 7.05
+## Version 7.05
 <small>*May 7th, 2019*</small>  
 <small>[Release Blog Post](https://west-wind.com/wconnect/Weblog/ShowEntry.blog?id=951) &bull; **No Breaking Changes** &bull; [Update Notes](https://webconnection.west-wind.com/docs/_2jw0bpb4d.htm)</small>
 
@@ -672,11 +673,10 @@ Optimized a number of API calls commonly used by reusing API declarations for a 
 * **Fix: DLL Naming Problems in New Project Wizard**  
 Fixed bug with New Project Wizard that failed to copy multi-segment named DLLs into the new project folder correctly. Specifically, `newtonsoft.json.dll` and `renci.sshnet.dll` were truncated to (`newtonsoft.dll` and `renci.dll`). Fixed. Please update your project folders with updated DLLs from this release.
 
-#### No Breaking Changes in 7.05
 
 * There are no breaking changes in 7.05 but as always you'll want to upgdate your DLLs in your projects to the latest from the Web Connection folders. Update the Deploy folder DLLs and the `\web\bin` folder dlls.
 
-### Version 7.04
+## Version 7.04
 <small>@icon-clock-o March 6th, 2019</small>
 
 <small>**No Breaking Changes** &bull; [Update Notes](https://webconnection.west-wind.com/docs/_2jw0bpb4d.htm)</small>
@@ -705,7 +705,7 @@ When you create a new project, the Wizard now automatically copies all Web Conne
 * **Fixes to the `Launch.prg` Startup Program**  
 Fixed a number of small issues related to how `Launch.prg` is generated and started initially when a new project is generated.
 
-### Version 7.02
+## Version 7.02
 <small>@icon-clock-o January 24th, 2019</small>
 
 <small>[Release Blog Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=948) &bull; [Breaking Changes](#v702breakingchanges) &bull; [Update Notes](https://webconnection.west-wind.com/docs/_2jw0bpb4d.htm)</small>
@@ -753,17 +753,15 @@ Rounds out routines to write out Json values as string in addition to `JsonStrin
 * **All Web Connection DLLs and EXEs are now digitally signed**  
 Web Connection is now built with a proper build process that builds the entire product in an automated fashion. Previously some parts were using this automated process but it has now been fully automated. As part of that process all West Wind DLLs and EXEs and Setup files are signed with a digital signature to allow verifying authenticity. This will also make it less 'scary' to run the installer for the first time if Windows SmartScreen is is enabled.
 
-<div id="v702breakingchanges" class="updatenotice" style="margin-left: 0;margin-right">
 
-#### Breaking Changes in 7.02
+### Breaking Changes in 7.02{.text-danger}
 
 * **wwResponseFile.prg and wwResponseString.prg Consolidated into wwResponse.prg**  
 Consolidated the legacy response object classes into the single `wwResponse` class file which now contains all three of these classes. This removes two additional files from a base install. These objects are now only used as pass through objects proxying for `wwPageResponse` that's used for all actual Request object operations.   
 **To update:** You'll get compilation errors for missing files - just choose remove when prompted to remove them from the project.
 
-</div>
 
-### Version 7.0
+## Version 7.0
 <small>*November 16th, 2018*</small>
 
 <small>[Release Blog Post](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=944) &bull; [Breaking Changes](#v700breakingchanges)</small>
@@ -846,9 +844,7 @@ You can now specify that the Session cookie created can only be used under HTTPS
 * **[wwUtils GetFullPath() Function](VFPS://Topic/_5CD14MRRU)**  
 Function that resolves a relative path to a full path but also matches the proper case of the file on disk if it exists.
 
-<div id="v700breakingchanges" class="updatenotice" style="margin-left: 0;margin-right">
-
-### Breaking changes in 7.0
+### Breaking changes in 7.0{.text-danger}
 
 * **Bootstrap 4 and FontAwesome 5**  
 Web Connection switches default templates to Bootstrap 4 and FontAwesome 5 (free). Bootstrap and Fontawesome syntax have changed somewhat for these new frameworks. These changes don't affect any existing applications, except for: the `HtmlDateTextBox()` and `HtmlErrorDislay()` which are affected by the changes. If you need to use the old version of Bootstrap use the `BOOTSTRAP_VERSION=3` in `wconnect_override.h`. If you decide to upgrade applications to Bootstrap 4, most bootstrap concepts work, but <a href="https://getbootstrap.com/docs/4.0/migration/" target="top">there are number of differences</a> you have to account for. The list is long but in Web Connection's own templates only very few things were affected mainly panels (cards now) and wells (also cards).
@@ -858,5 +854,3 @@ We've switched wwSql and wwXml to run as PRG classes in order to simplify distri
 
 * **wwBusinessObject replaces wwBusiness as a PRG class**  
 We've replaced `wwBusiness.vcx` with a PRG based version called `wwBusinessObject.prg`. Unlike the wwSql and wwXml classes, we've explicitly renamed the PRG and class to `wwBusinessObject`. The old version will still be available in the `OldClasses` folder for those that need visual classes but any new development will be made only on `wwBusinessObject`. To replace search for any references to `SET CLASSLIB TO wwBusiness` and replace with `SET PROCEDURE TO wwBusinessObject`. Find any class references to `AS wwBusiness` and replace with `AS wwBusinessObject`. If you are using a VCX based subclasses of `wwBusiness` you have to continue using old wwBusiness.vcx **unless you explicitly migrate the visual class to a code class** - you can do that easily with the VFP Class Browser export feature. I suspect the same is true for most applications.
-
-</div>

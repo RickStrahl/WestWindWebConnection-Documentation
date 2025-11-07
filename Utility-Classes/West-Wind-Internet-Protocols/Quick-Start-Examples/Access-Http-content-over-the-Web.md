@@ -1,8 +1,120 @@
-﻿The Client Tools make it easy to access HTTP content using the [wwHTTP class](vfps://Topic/Class%20wwHTTP). It provides simple functions to retrieve and post content to and from a Web Server as well as full access to advanced HTTP features.
+The Client Tools make it easy to access HTTP content using the [wwHTTP class](vfps://Topic/Class%20wwHTTP). It provides simple functions to retrieve and post content to and from a Web Server as well as full access to advanced HTTP features.
 
 Web content includes anything that is accessible via the HTTP protocol. This can be HTML text, plain text, JSON or XML data, binary content like Zip files, images or PDFs. You can easily use any HTTP Verb like `GET`, `POST`, `PUT`, `DELETE` etc., access secure content, set and access HTTP headers and automatically handle authentication, redirect and GZip compression/decompression.
 
-### Simple HTTP Content Download
+### The simplest Thing Possible
+Let's start with a few common scenarios using the simplest thing possible. We'll talk about error handling and more advanced options later on.
+
+#### Simple Content Download
+First off lets download some Web content from a Url - in this case a plain HTML Url:
+
+```foxpro
+*** For Shareware versions replace with `DO wwClient` or `DO wconnect`
+DO wwHttp  && load libraries  
+
+loHttp=CREATEOBJECT("wwHTTP")
+lcHTML = loHttp.Get("https://west-wind.com")
+? lcHtml  && Raw HTML
+```
+
+This downloads **any kind of data** but in this case it'll be HTML. You can download JSON and XML text data, or binary data like PDF, Zip files etc. Anything can be downloaded using the same syntax.
+
+
+A binary download might look like this:
+
+```foxpro
+loHttp=CREATEOBJECT("wwHTTP")
+lcData = loHttp.Get("https://west-wind.com/files/wwClientTools.zip")
+STRTOFILE(lcData, "c:\temp\wwClientTools.zip")
+```
+> Binary content is downloaded into a string, and you can use `STRTOFILE()` to save the data or use `CAST(lcData as BLOB)` to get a true binary response.
+
+#### Posting JSON to Server and Deserialize
+Next let's post some JSON to a server and get a JSON response back:
+
+```foxpro
+loHttp = CREATEOBJECT("wwHttp")
+loHttp.cContentType = "application/json"
+
+*** Optionally add headers
+loHttp.AppendHeader("Authorization","Bearer c42ffadef3f3aa3d5c97da77e")
+loHttp.AppendHeader("Custom-Header","Custom value")
+
+lcJson = '{ "name": "Rick", "company": "West Wind", "key": "x32af2dro3"}'
+lcJsonResult = loHttp.Post(lcUrl, lcJson)
+? lcJsonResult
+```
+
+This posts a raw JSON string and returns a raw JSON result. 
+
+A more complete example could add JSON Serialization and DeSerialization:
+
+```foxpro
+DO wwHttp 
+DO wwJsonSerializer
+
+*** Use any FoxPro object here including nested objects
+loData = CREATEOBJECT("Empty")
+ADDPROPERTY(loData,"name", "Rick")
+ADDPROPERTY(loData,"company","West Wind")
+ADDPROPERTY(loData,"key","x32af2dro3")
+
+*** Serialize it
+loSer = CREATEOBJECT("wwJsonSerializer")
+lcJson = loSer.Serialize(loData)
+
+*** Send it
+loHttp = CREATEOBJECT("wwHttp")
+loHttp.cContentType = "application/json"
+lcJsonResult = loHttp.Post(lcUrl, lcJson)
+
+*** Deserialize and display nested object
+loResult = loSer.Deserialize(lcJsonResult)
+? loResult.Message
+? loResult.StatusObject.ResultCode
+```
+
+#### Posting Form Data to a Server
+These days most APIs work with JSON data, but there are still many APIs that expect form data to be sent. Form data differs from raw data in that it contains key value pairs that each contain individual values. 
+
+There are two types of form post operations:
+
+* UrlEncoded Forms   (Html Form Style)
+* Multi-Part Forms   (for binary uploads - `nHttpPostMode=2`)
+
+Here's how you post Form data to a server:
+
+```foxpro
+loHttp=CREATEOBJECT("wwHTTP")
+* loHttp.nHttpPostMode = 2   && for multi-part forms
+
+*** Add POST form variables (url encoded by default)
+loHttp.AddPostKey("FirstName","Rick")
+loHttp.AddPostKey("LastName","Strahl")
+loHttp.AddPostKey("Company","West Wind Technologies")
+
+lcHTML = loHttp.Post("https://west-wind.com/wconnect/TestPage.wwd")
+? lcHtml && Raw HTML result
+```
+
+Multi-part forms tend to be used for file uploads which looks like this:
+
+```foxpro
+loHttp = CREATEOBJECT("wwHTTP")
+loHttp.nHttpPostMode = 2  && Multipart form encoding
+
+*** Post a file
+loHttp.AddPostFile("File","d:\temp\wws_invoice.pdf", "invoice.pdf")
+
+*** Post normal text (part of the same form)
+loHttp.AddPostKey("txtFileNotes","test note")
+
+lcHTML = loHTTP.Post("http://localhost/wconnect/FileUpload.wwd")
+```
+
+### Access Http Content
+Ok now that you have the basics let's provide a little more detail by adding error handling and some of the options. The following requests repeat some of the basics with a little more detail.
+
 The simplest requests are `GET` operations to retrieve content only. The following example captures some HTML text from a URL:
 
 ```foxpro
@@ -12,6 +124,12 @@ loHttp=CREATEOBJECT("wwHTTP")
 
 *** Issue an HTTP GET operation 
 lcHTML = loHttp.Get("https://west-wind.com")
+
+*** Check for errors
+IF (loHttp.nError != 0)
+   ? loHttp.cErrorMsg
+   RETURN
+ENDIF
 
 ? lcHtml  && Raw HTML
 ```
@@ -128,23 +246,36 @@ The above example posts using Html Form type POST data that is provided in key v
 * 1 -  `application/x-www-form-urlencoded` - html form based encoding (default)
 * 2 -  `multi-part/form-data` -  used for file uploads and forms with binary data
 
-#### Posting raw Data like JSON or XML
+
+
+### POSTING Raw Data like JSON or XML
 For raw data posts that provide a full buffer of data as-is rather than the key/value pairs shown above, you can can use the `cContentType` property to specify the content type, then POST the raw data as a single string.
 
-The following is sufficient for sending JSON content to the server:
+> ##### @icon-warning Don't mix nHttpPostMode and cContentType
+> Use either `nHttpPostMode` or `cContentType` - but don't use both! Use `nHttpPostMode` for form submissions with `AddPostKey(key,value)` (ie. UrlEncoded or binary) and use `cContentType` to send raw data buffers with `AddPostKey(lcData)` or directly in `.Post(lcUrl, lcData)` or `.Put(lcUrl, lcData)`.
+
+The following is sufficient for sending raw JSON content to the server:
 
 ```foxpro
+loHttp = CREATEOBJECT("wwHttp")
 loHttp.cContentType = "application/json"
-loHttp.Post(lcUrl, lcJson)
+
+*** Not required when using explicit .Post()/.Put() etc. methods
+* loHttp.cHttpVerb = "POST"  && PUT, DELETE etc.
+
+lcJson = '{ "name": "Rick", "company": "West Wind", "key": "x32af2dro3"}'
+
+lcJsonResult = loHttp.Post(lcUrl, lcJson)
+
+*** Check for errors
+IF (loHttp.nError # 0)
+   RETURN
+ENDIF
+
+? lcJsonResult
 ```
 
-> ##### @icon-warning Don't mix nHttpPostMode and cContentType
-> Use either `nHttpPostMode` or `cContentType` - but don't use both! Use `nHttpPostMode` for form submissions with `AddPostKey(key,value)` and use `cContentType` to send raw buffers with `AddPostKey(lcData)` or directly in `.Post(lcUrl, lcData)` or `.Put(lcUrl, lcData)`.
-
-### POSTING Raw Data
-A common scenario is to post JSON or XML to a server for some sort of Service access. In this case you'll need to use the `POST` or `PUT` HTTP operation and set the `cContentType` to the appropriate content type like `application/json` or `text/xml` for example.
-
-To send  XML data to a server you can use the following code:
+Likewise to send  XML data to a server you can use the following code:
 
 ```foxpro
 loHttp = CREATEOBJECT("wwHttp")
@@ -163,17 +294,20 @@ IF (loHttp.nError # 0)
    RETURN
 ENDIF
 
-ShowXml(lcXmlResult)
+? lcJsonResult
 ```
 
-If you've been using `wwHttp` for a while you might note that this syntax of using `.Post()` is new as is the `lcData` parameter. The old syntax that uses `.AddPostKey(lcData)` also still works:
+If you've been using `wwHttp` for a while you might note that this syntax of using `.Post()` is new as is the `lcData` parameter. The old syntax that uses `.AddPostKey(lcData)` and `.Send()` also still works:
 
 ```foxpro
+loHttp.cHttpVerb = "POST"
 loHttp.AddPostKey(lcXml)
-loHttp.Post(lcUrl)
+loHttp.Send(lcUrl)   && or HttpGet()
 ```
 
-with the same behavior as the example above. The new `.Post()` syntax is just simpler and more common for HTTP requests.
+with the same behavior as the example above. 
+
+> `.Send()` is the low level interface and  the wrappers - `.Post()`, `.Put()`, `Delete()` - all delegate to it setting the appropriate headers. For custom verbs like `PATCH`, `OPTIONS`, `HEAD` etc. you can use `.Send()` explicitly.
 
 #### Generic Http Requests via Send()
 There are special methods for `Get(),Post(),Put(),Delete()` that map the corresponding HTTP verbs, but these are simply wrappers around the `Send()` method. If you need a custom HTTP verb, or you want more control over the configuration you can use `Send()` and explicitly set the `cHttpVerb` instead:
