@@ -1,36 +1,37 @@
-The Client Tools make it easy to access HTTP content using the [wwHTTP class](vfps://Topic/Class%20wwHTTP). It provides simple functions to retrieve and post content to and from a Web Server as well as full access to advanced HTTP features.
+The [wwHttp class](vfps://Topic/Class%20wwHttp) make it very easy to access Http content from FoxPro by providing simple functions to retrieve and post content to and from a Web Server, as well as providing full access to advanced Http features.
 
-Web content includes anything that is accessible via the HTTP protocol. This can be HTML text, plain text, JSON or XML data, binary content like Zip files, images or PDFs. You can easily use any HTTP Verb like `GET`, `POST`, `PUT`, `DELETE` etc., access secure content, set and access HTTP headers and automatically handle authentication, redirect and GZip compression/decompression.
+Web content includes anything that is accessible via the Http protocol. This can be Html text, plain text, JSON or XML data, binary content like Zip files, images or PDFs. You can easily use any Http Verb like `GET`, `POST`, `PUT`, `DELETE` etc., access secure content, set and access Http headers and automatically handle authentication, redirect and GZip compression/decompression.
 
 ### The simplest Thing Possible
 Let's start with a few common scenarios using the simplest thing possible. We'll talk about error handling and more advanced options later on.
 
 #### Simple Content Download
-First off lets download some Web content from a Url - in this case a plain HTML Url:
+First off lets download some Web content from a Url - in this case retrieving a plain Html response which is returned as Html text.
 
 ```foxpro
 *** For Shareware versions replace with `DO wwClient` or `DO wconnect`
 DO wwHttp  && load libraries  
 
-loHttp=CREATEOBJECT("wwHTTP")
-lcHTML = loHttp.Get("https://west-wind.com")
-? lcHtml  && Raw HTML
+loHttp=CREATEOBJECT("wwHttp")
+lcHtml = loHttp.Get("https://west-wind.com")
+? lcHtml  && Raw Html
 ```
 
-This downloads **any kind of data** but in this case it'll be HTML. You can download JSON and XML text data, or binary data like PDF, Zip files etc. Anything can be downloaded using the same syntax.
+Any of wwhttp's access methods (like `.Get()`, `.Post()` etc.) can retrieve  **any kind of data** but in this case it returns an Html string. Other common return types might be JSON, XML or binary data like PDF, images, Zip etc. 
 
-
-A binary download might look like this:
+Binary content works the same way and is also returned as FoxPro string or can optionally via the second parameter be streamed directly to file.
 
 ```foxpro
-loHttp=CREATEOBJECT("wwHTTP")
+loHttp=CREATEOBJECT("wwHttp")
 lcData = loHttp.Get("https://west-wind.com/files/wwClientTools.zip")
 STRTOFILE(lcData, "c:\temp\wwClientTools.zip")
 ```
 > Binary content is downloaded into a string, and you can use `STRTOFILE()` to save the data or use `CAST(lcData as BLOB)` to get a true binary response.
 
-#### Posting JSON to Server and Deserialize
-Next let's post some JSON to a server and get a JSON response back:
+#### Sending raw Data: Posting JSON to a Server
+A common scenario for Http calls is to send raw data to the server and get a response back. This is a common scenario for calling REST Web Services or APIs which use JSON as its transport data via Http `POST` or `PUT` operations.
+
+Here's how you can send JSON and get a JSON response back and @icon-warning-color:Goldenrod error handling @icon-warning-color:goldenrod :
 
 ```foxpro
 loHttp = CREATEOBJECT("wwHttp")
@@ -38,16 +39,13 @@ loHttp.cContentType = "application/json"
 
 *** Optionally add headers
 loHttp.AppendHeader("Authorization","Bearer c42ffadef3f3aa3d5c97da77e")
-loHttp.AppendHeader("Custom-Header","Custom value")
 
 lcJson = '{ "name": "Rick", "company": "West Wind", "key": "x32af2dro3"}'
 lcJsonResult = loHttp.Post(lcUrl, lcJson)
 ? lcJsonResult
 ```
 
-This posts a raw JSON string and returns a raw JSON result. 
-
-A more complete example could add JSON Serialization and DeSerialization:
+A more complete example could add JSON serialization and de-serialization:
 
 ```foxpro
 DO wwHttp 
@@ -55,22 +53,34 @@ DO wwJsonSerializer
 
 *** Use any FoxPro object here including nested objects
 loData = CREATEOBJECT("Empty")
-ADDPROPERTY(loData,"name", "Rick")
+ADDPROPERTY(loData,"firstName", "Rick")
 ADDPROPERTY(loData,"company","West Wind")
-ADDPROPERTY(loData,"key","x32af2dro3")
+ADDPROPERTY(loData,"merchantKey","x32af2dro3")
+ADDPROPERTY(loData,"dateEntered",Date())
 
-*** Serialize it
+
+*** Serialize the object
 loSer = CREATEOBJECT("wwJsonSerializer")
+*** Enforce Json field case - all others are auto-lower cased
+loSer.PropertyNameOverrides = "firstName,merchantKey,dateEntered"
+
 lcJson = loSer.Serialize(loData)
 
-*** Send it
+*** Send Json to the server and retrieve Json result
 loHttp = CREATEOBJECT("wwHttp")
 loHttp.cContentType = "application/json"
 lcJsonResult = loHttp.Post(lcUrl, lcJson)
 
+*** always handle errors from Http calls!
+IF (lohttp.nError != 0)
+   *** Handle error
+   ? "Error: " + loHttp.cErrorMsg
+   RETURN
+ENDIF
+
 *** Deserialize and display nested object
 loResult = loSer.Deserialize(lcJsonResult)
-? loResult.Message
+? loResult.Message 
 ? loResult.StatusObject.ResultCode
 ```
 
@@ -85,7 +95,7 @@ There are two types of form post operations:
 Here's how you post Form data to a server:
 
 ```foxpro
-loHttp=CREATEOBJECT("wwHTTP")
+loHttp=CREATEOBJECT("wwHttp")
 * loHttp.nHttpPostMode = 2   && for multi-part forms
 
 *** Add POST form variables (url encoded by default)
@@ -93,14 +103,14 @@ loHttp.AddPostKey("FirstName","Rick")
 loHttp.AddPostKey("LastName","Strahl")
 loHttp.AddPostKey("Company","West Wind Technologies")
 
-lcHTML = loHttp.Post("https://west-wind.com/wconnect/TestPage.wwd")
-? lcHtml && Raw HTML result
+lcHtml = loHttp.Post("https://west-wind.com/wconnect/TestPage.wwd")
+? lcHtml && Raw Html result
 ```
 
 Multi-part forms tend to be used for file uploads which looks like this:
 
 ```foxpro
-loHttp = CREATEOBJECT("wwHTTP")
+loHttp = CREATEOBJECT("wwHttp")
 loHttp.nHttpPostMode = 2  && Multipart form encoding
 
 *** Post a file
@@ -109,21 +119,23 @@ loHttp.AddPostFile("File","d:\temp\wws_invoice.pdf", "invoice.pdf")
 *** Post normal text (part of the same form)
 loHttp.AddPostKey("txtFileNotes","test note")
 
-lcHTML = loHTTP.Post("http://localhost/wconnect/FileUpload.wwd")
+lcHtml = loHttp.Post("http://localhost/wconnect/FileUpload.wwd")
 ```
+
+[more info on file uploads](dm-topic://_0rs0twgr6)
 
 ### Access Http Content
 Ok now that you have the basics let's provide a little more detail by adding error handling and some of the options. The following requests repeat some of the basics with a little more detail.
 
-The simplest requests are `GET` operations to retrieve content only. The following example captures some HTML text from a URL:
+The simplest requests are `GET` operations to retrieve content only. The following example captures some Html text from a URL:
 
 ```foxpro
 DO wwHttp  && load dependencies
 
-loHttp=CREATEOBJECT("wwHTTP")
+loHttp=CREATEOBJECT("wwHttp")
 
-*** Issue an HTTP GET operation 
-lcHTML = loHttp.Get("https://west-wind.com")
+*** Issue an Http GET operation 
+lcHtml = loHttp.Get("https://west-wind.com")
 
 *** Check for errors
 IF (loHttp.nError != 0)
@@ -131,23 +143,23 @@ IF (loHttp.nError != 0)
    RETURN
 ENDIF
 
-? lcHtml  && Raw HTML
+? lcHtml  && Raw Html
 ```
 The raw result from the request is returned as a string in the return value (or a result file via the `llDownloadFile` parameter ) and in most cases that may be all you need to know.
 
-> **Note:** Any HTML content downloaded doesn't include dependencies like images, stylesheets, JavaScript etc. The downloaded page also doesn't 'run' JavaScript. You simply get the **raw** HTML (or other) content from the server as a string or BLOB.
+> **Note:** Any Html content downloaded doesn't include dependencies like images, stylesheets, JavaScript etc. The downloaded page also doesn't 'run' JavaScript. You simply get the **raw** Html (or other) content from the server as a string or BLOB.
 
 ### Download Non-Html and Binary Data
-The content you download doesn't have to be HTML or even text. You can download non-HTML text data like JSON and XML data, but you can also download binary content like Images, Pdf or Zip files.
+The content you download doesn't have to be Html or even text. You can download non-Html text data like JSON and XML data, but you can also download binary content like Images, Pdf or Zip files.
 
 The following downloads and saves a Zip file.
 
 ```foxpro
 DO wwHttp
 
-loHttp=CREATEOBJECT("wwHTTP")
+loHttp=CREATEOBJECT("wwHttp")
 
-*** Issue an HTTP GET operation 
+*** Issue an Http GET operation 
 lcZip = loHttp.Get("https://west-wind.com/files/wwClient.zip")
 
 lcFile = "c:\temp\wwCient.zip"
@@ -166,11 +178,11 @@ loHttp.Get("https://west-wind.com/files/wwClient.zip", "c:\temp\wwclient.zip")
 > If you download large files it's recommended you go directly to file to **avoid excessive memory usage**. It also lets you download files much larger than FoxPro's 16mb string limit.
 
 ### Retrieving Http Response Headers and Error Information
-For proper content and result identification - especially for API calls or binary downloads - you also should check for errors and frequently look at the HTTP headers to identify the content type, and the response code of whether a request worked or not and what type of content it returned. You can use the HTTP Headers to do this.
+For proper content and result identification - especially for API calls or binary downloads - you also should check for errors and frequently look at the Http headers to identify the content type, and the response code of whether a request worked or not and what type of content it returned. You can use the Http Headers to do this.
 
 
 ```foxpro
-lcHTML = loHttp.Get("https://markdownmonster.west-wind.com")
+lcHtml = loHttp.Get("https://markdownmonster.west-wind.com")
 
 *** Check for errors
 IF loHttp.nError != 0
@@ -178,51 +190,51 @@ IF loHttp.nError != 0
    RETURN
 ENDIF
 
-*** Get HTTP Response Code
+*** Get Http Response Code
 ? loHttp.cResultCode   && 200, 500, 401, 404, 401.1 etc.
 
 *** Get full Http Response Header (multiple lines)
 ? loHttp.cHttpHeaders
 
-*** Retrieve any HTTP header from the result
+*** Retrieve any Http header from the result
 ? loHttp.GetHttpHeader("Content-Type")
 ```
 
-HTTP headers for the request above look like this:
+Http headers for the request above look like this:
 
-```http
-HTTP/1.1 200 OK
+```Http
+Http/1.1 200 OK
 Cache-Control: private
-Content-Type: text/html; charset=utf-8
+Content-Type: text/Html; charset=utf-8
 Server: Microsoft-IIS/10.0
 Date: Tue, 23 Feb 2021 21:13:55 GMT
 Content-Length: 39718
 ```
 
 > #### @icon-info-circle Always check for Errors
-> When making HTTP calls you should **always** check for errors after the call to ensure you got data. At minimum check for empty results, but you can use the `nError` and `cErrorMsg` properties to get detailed error information.
+> When making Http calls you should **always** check for errors after the call to ensure you got data. At minimum check for empty results, but you can use the `nError` and `cErrorMsg` properties to get detailed error information.
 
-> #### @icon-info-circle HTTP Headers
-> Http headers includes information about a request - like the **Content Type**, **Encoding**, **Content Length**, **Authentication Information** as well as any custom headers the server is sending. Not every request needs to look at this, but it's important for generic applications that process HTTP content, or even for binary downloads that need to determine what type of content you are dealing with (for example downloading an image or file and saving it to disk).
+> #### @icon-info-circle Http Headers
+> Http headers includes information about a request - like the **Content Type**, **Encoding**, **Content Length**, **Authentication Information** as well as any custom headers the server is sending. Not every request needs to look at this, but it's important for generic applications that process Http content, or even for binary downloads that need to determine what type of content you are dealing with (for example downloading an image or file and saving it to disk).
 ### Posting Form Data and sending Headers to a Server
 
 To post data to a server you generally use either `.Post()` or `.Put()`. Semantically POST is used for adding, PUT for updating, but for most Web backends this distinction is not significant and you can use the two interchangeably. POST tends to be more common.
 
-To post data to a server using HTML Form style form submissions with urlencoded Key/Value pairs (`application/x-www-form-urlencoded` content), you can use the `.AddPostKey()` method. Use that method to add key and value pairs to POST to the server. You can also add HttpHeaders by using `.AppendHeader()` to add any standard or custom HTTP headers to your request. 
+To post data to a server using Html Form style form submissions with urlencoded Key/Value pairs (`application/x-www-form-urlencoded` content), you can use the `.AddPostKey()` method. Use that method to add key and value pairs to POST to the server. You can also add HttpHeaders by using `.AppendHeader()` to add any standard or custom Http headers to your request. 
 
 #### Generic `Send()`
-At the lowest level there's the `Send()` method which is the core method that sends all HTTP requests (also: `HttpGet()` which runs the same code).  This method requires that all properties are set via properties and methods.
+At the lowest level there's the `Send()` method which is the core method that sends all Http requests (also: `HttpGet()` which runs the same code).  This method requires that all properties are set via properties and methods.
 
-To make calls for specific HTTP Verbs easier, the library provides shorthand methods specific to each verb such as `Get()`,`Post()`,`Put()`,`Delete()`. These methods automatically set the verb and provide optional parameters for data to be sent. 
+To make calls for specific Http Verbs easier, the library provides shorthand methods specific to each verb such as `Get()`,`Post()`,`Put()`,`Delete()`. These methods automatically set the verb and provide optional parameters for data to be sent. 
 
-> #### @icon-info-circle All HTTP Verbs are supported
-> Note: Although only a few of the available and most common HTTP verbs have custom methods, you can use **any HTTP Verb** by using the `Send()` method by specifying the `cHttpVerb` explicitly (ie. `loHttp.cHttpVerb = "OPTIONS"`).
+> #### @icon-info-circle All Http Verbs are supported
+> Note: Although only a few of the available and most common Http verbs have custom methods, you can use **any Http Verb** by using the `Send()` method by specifying the `cHttpVerb` explicitly (ie. `loHttp.cHttpVerb = "OPTIONS"`).
 
-#### Posting HTML Form Data
+#### Posting Html Form Data
 You then call `.Post()` (or `.Put()`) to make the request:
 
 ```foxpro
-loHttp=CREATEOBJECT("wwHTTP")
+loHttp=CREATEOBJECT("wwHttp")
 * loHttp.nHttpPostMode = 2   && for multi-part forms
 
 *** Add POST form variables (url encoded by default)
@@ -234,16 +246,16 @@ loHttp.AddPostKey("Company","West Wind Technologies")
 loHttp.AppendHeader("Authorization","Bearer c42ffadef3f3aa3d5c97da77e")
 loHttp.AppendHeader("Custom-Header","Custom value")
 
-lcHTML = loHttp.Post("https://west-wind.com/wconnect/TestPage.wwd")
+lcHtml = loHttp.Post("https://west-wind.com/wconnect/TestPage.wwd")
 
-ShowHTML( lcHTML )
+ShowHtml( lcHtml )
 ```
 
-This formats the HTTP POST buffer for sending the variables to the Web server which simulates an HTML Web form submission which is quite common.
+This formats the Http POST buffer for sending the variables to the Web server which simulates an Html Web form submission which is quite common.
 
 The above example posts using Html Form type POST data that is provided in key value pairs. wwHttp supports 2 form data post modes via the `nHttpPostMode` property:
 
-* 1 -  `application/x-www-form-urlencoded` - html form based encoding (default)
+* 1 -  `application/x-www-form-urlencoded` - Html form based encoding (default)
 * 2 -  `multi-part/form-data` -  used for file uploads and forms with binary data
 
 
@@ -283,7 +295,7 @@ loHttp = CREATEOBJECT("wwHttp")
 *** Specify that we want to post raw data and a custom content type
 loHttp.cContentType = "text/xml"  && Content type of the data posted
 
-*** Explicitly specify HTTP verb optionall
+*** Explicitly specify Http verb optionall
 * loHttp.cHttpVerb = "POST"       && (PUT/DELETE/HEAD/OPTIONS)
 
 *** Load up the XML data any way you need
@@ -310,7 +322,7 @@ with the same behavior as the example above.
 > `.Send()` is the low level interface and  the wrappers - `.Post()`, `.Put()`, `Delete()` - all delegate to it setting the appropriate headers. For custom verbs like `PATCH`, `OPTIONS`, `HEAD` etc. you can use `.Send()` explicitly.
 
 #### Generic Http Requests via Send()
-There are special methods for `Get(),Post(),Put(),Delete()` that map the corresponding HTTP verbs, but these are simply wrappers around the `Send()` method. If you need a custom HTTP verb, or you want more control over the configuration you can use `Send()` and explicitly set the `cHttpVerb` instead:
+There are special methods for `Get(),Post(),Put(),Delete()` that map the corresponding Http verbs, but these are simply wrappers around the `Send()` method. If you need a custom Http verb, or you want more control over the configuration you can use `Send()` and explicitly set the `cHttpVerb` instead:
 
 ```foxpro
 *** GET is the default
@@ -349,7 +361,7 @@ loResultObject = loSer.DeserializeJson(lcJsonResult)
 ? loResultObject.Data.SummaryValue
 ```
 
-To make things even easier with JSON REST Services take a look at the [JsonServiceClient](VFPS://Topic/_4JF1F19ZR) class which handles all the HTTP calls **and** serialization, UTF-8 encoding and decoding, and error handling all via single `CallService()` method.
+To make things even easier with JSON REST Services take a look at the [JsonServiceClient](VFPS://Topic/_4JF1F19ZR) class which handles all the Http calls **and** serialization, UTF-8 encoding and decoding, and error handling all via single `CallService()` method.
 
 The following sends JSON data to a service and receives a JSON result back as a FoxPro object:
 
@@ -358,7 +370,7 @@ loProxy = CREATEOBJECT("wwJsonServiceClient")
 
 lcUrl = "http://albumviewer.west-wind.com/api/album"
 lvData = loAlbum && FoxPro object
-lcVerb = "PUT"   && HTTP Verb
+lcVerb = "PUT"   && Http Verb
 
 *** Make the service call and returns an Album object
 loAlbum2 = loProxy.CallService(lcUrl, lvData, lcVerb)
@@ -390,14 +402,14 @@ lcHtml = loHttp.Post("http://www.west-wind.com/SomeUril.xsvc")
 
 Note that you can use the cContentType property to specify the content type of the data POSTed to the server. 
 
-### Send a File As an HTTP Form Upload (multi-part forms)
-Many APIs and applications may also require form based file uploads which uses a special HTTP format (known as multi-part encoding) to upload files via HTTP. This format requires that you use `nHttpPostMode=2` and you can then use `AddPostFile()` and `AddPostKey()` to add form variables to the POST operation:
+### Send a File As an Http Form Upload (multi-part forms)
+Many APIs and applications may also require form based file uploads which uses a special Http format (known as multi-part encoding) to upload files via Http. This format requires that you use `nHttpPostMode=2` and you can then use `AddPostFile()` and `AddPostKey()` to add form variables to the POST operation:
 
 ```foxpro
-loHTTP = CREATEOBJECT("wwHTTP")
+loHttp = CREATEOBJECT("wwHttp")
 
 *** Posting a multi-part form with a File Upload
-loHTTP.nHttpPostMode = 2  && Multipart form encoding
+loHttp.nHttpPostMode = 2  && Multipart form encoding
 
 *** Post a file
 loHttp.AddPostFile("File","d:\temp\wws_invoice.pdf",.T.)
@@ -405,16 +417,16 @@ loHttp.AddPostFile("File","d:\temp\wws_invoice.pdf",.T.)
 *** Post normal text (part of the same form)
 loHttp.AddPostKey("txtFileNotes","test note")
 
-lcHTML = loHTTP.Post("http://localhost/wconnect/FileUpload.wwd")
+lcHtml = loHttp.Post("http://localhost/wconnect/FileUpload.wwd")
 ```
 
 ### Streaming Downloads directly to file
 You can also stream the content from a URL directly to a file which is useful to avoid FoxPro's 16mb string limit and also because it's faster and less resource intensive. 
 
-To do this you can use additional parameters on the `.Send()`, `.Get()`, `.Post()`, `.Put()` and `.Delete()` methods which take an `lcOutputFilename` parameter to allow streaming the HTTP data into. This allows for large files to be downloaded without tying up memory as they normally would.
+To do this you can use additional parameters on the `.Send()`, `.Get()`, `.Post()`, `.Put()` and `.Delete()` methods which take an `lcOutputFilename` parameter to allow streaming the Http data into. This allows for large files to be downloaded without tying up memory as they normally would.
 
 ```foxpro
-loHttp = CREATEOBJECT('wwhttp')
+loHttp = CREATEOBJECT('wwHttp')
 loHttp.Get("http://www.west-wind.com/","c:\test.htm")
 
 IF loHttp.nError # 0
@@ -426,9 +438,9 @@ ENDIF
 GoUrl("c:\test.htm")
 ```
 
-Streaming to file allows you to bypass large memory usage as `wwHTTP` directly streams into the file with small chunks read from the server. This allows files much larger than 16mb to be downloaded.
+Streaming to file allows you to bypass large memory usage as `wwHttp` directly streams into the file with small chunks read from the server. This allows files much larger than 16mb to be downloaded.
 
 ### Reveiving Download Event Notifications
 `wwHttp` also includes an **OnHttpBufferUpdate event** wich provides you download progress information via an event handler on the wwHttp class. You can find out more on how this works and an example here:
 
-[wwHttp::OnHttpBufferUpdate](vfps://Topic/_0JJ1AFUB8)
+[wwhttp::OnHttpBufferUpdate](vfps://Topic/_0JJ1AFUB8)

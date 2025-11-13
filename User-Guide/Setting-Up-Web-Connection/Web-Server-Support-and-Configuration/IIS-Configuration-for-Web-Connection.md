@@ -78,7 +78,7 @@ Once the base components have been installed you can use Web Connection's automa
 
 In all cases you should use the IIS  server setting from the server type drop down or list.
 
-![](/images/ManagementConsole/setup1.png)
+![Web Connection Setup](/images/ManagementConsole/setup1.png)
 
 These tools automatically create virtual directories, application pools, script maps, set permissions and get your application ready to work. Generally this is the easiest way to start Web Connection applications on a development set up.
 
@@ -169,7 +169,7 @@ To create an Application Pool in IIS:
 * Create with the name of your choice (West Wind Web Connection)
 * Choose .NET Framework **4.0** and **Integrated** Managed Pipeline Mode
 
-![](/images/misc/CreateApplicationPool.png)
+![Create Application Pool](/images/misc/CreateApplicationPool.png)
 
 Once you've created the Application Pool select it in the list and click on Advanced Settings. 
 
@@ -178,7 +178,7 @@ In the Application Pool settings set the Identity for the Application Pool to `L
  
 By default the user identity you choose here also is passed to your your Web Connection FoxPro server, so make sure you use an account that has the rights your application needs.
 
-![](/images/misc/ApplicationPoolAdvanced.png)
+![Detailed Application Pool Settings](/images/misc/ApplicationPoolAdvanced.png)
  
 You can also configure various other settings such as the process recycling, idle timeout and various other flags. 
 > #### @icon-exclamation-circle Enabling 32 bit Applications on 64 bit Machines for ISAPI
@@ -191,7 +191,7 @@ In order to run a Web Connection application you will need to create a virtual d
 * Enter the name of the virtual directory (WebDemo)  and the path to the Web directory
 * Select the West Wind Web Connection Application Pool if it exists
 
-<img src="IMAGES/misc/IIS7Virtual.png">
+![Create Virtual Directory](/images/misc/IIS7Virtual.png)
 
 Once the virtual has been created select the Authentication option in the virtual's configuration.
 
@@ -201,7 +201,7 @@ Enable:
 * Basic Authentication
 * Windows Authentication
 
-<img src="IMAGES/misc/IIS7VirtualAuthentication.png">
+![](/IMAGES/misc/IIS7VirtualAuthentication.png)
 
 ### Setting the ISAPI Restrictions for each copy of wc.dll
 *applies only to the ISAPI module, not the .NET module*
@@ -215,7 +215,7 @@ The extension needs to be explicitly enabled:
 * Select ISAPI and CGI Restrictions (IIS Settings)
 * Click and add your mapping to wc.dll in your Web path
 
-<img src="IMAGES/misc/IIS7IsapiRestrictions.png">
+![](/IMAGES/misc/IIS7IsapiRestrictions.png)
 
 > #### @icon-warning Changed behavior: bin/wc.dll execution is not allowed
 > IIS 7 and later does not allow direct URL access to any code in a BIN directory. For Web Connection this means that URLs that point at something like this:
@@ -246,7 +246,7 @@ The process for the .NET Handler and ISAPI extension are slightly different.
 * Select Allow All Verbs (or GET/POST at minimum) on the Verbs page
 * Select Script on the Access page
 
-<img src="IMAGES/misc/IIs7ScriptMap1_Managed.png">
+<img src="/images/misc/IIs7ScriptMap1_Managed.png">
 
 
 **ISAPI ScriptMap**
@@ -261,11 +261,11 @@ The process for the .NET Handler and ISAPI extension are slightly different.
 * Select Allow All Verbs (or GET/POST at minimum) on the Verbs page
 * Select Script on the Access page
 
-<img src="IMAGES/misc/IIs7ScriptMap1.png">
+<img src="/images/misc/IIs7ScriptMap1.png">
 
 On both types set the access restrictions:
 
-<img src="IMAGES/misc/IIs7ScriptMap2.png">
+<img src="/images/misc/IIs7ScriptMap2.png">
 
 **Web Connection Web Server**  
 The Web Connection Web Server uses only XML based configuration in `WebConnectionWebServerSettings.xml` (see below).

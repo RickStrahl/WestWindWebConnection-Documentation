@@ -1,4 +1,4 @@
-﻿There are a few different ways that 'file uploads' are performed in HTTP and REST applications:
+There are a few different ways that 'file uploads' are performed in HTTP and REST applications:
 
 * Multi-part Forms
 * Raw Data Uploads
@@ -19,7 +19,7 @@ oHttp = CREATEOBJECT("wwHTTP")
 oHttp.nHttpPostMode = 2
 
 *** Post a file as a Form variable
-oHttp.AddPostFile("upload","c:\sailbig.jpg",.T.,"image.png","image/png")
+oHttp.AddPostFile("upload","c:\sailbig.jpg","image.png","image/png")
 
 *** Optionally there may be form variables (ie. text vars) on the form
 oHttp.AddPostKey("notes","Notes about the image uploaded")
@@ -30,7 +30,7 @@ lcHTML = oHTTP.Post("http://localhost/wconnect/wcscripts/FileUpload.wwd")
 ShowHTML(lcHTML)  && Image is there but not rendering because of relative path
 ```
 
-The important part is to set `oHttp.nPostMode=2` (multi-part forms) **before calling `AddPostKey()` or `AddPostFile()`, which is required in order to upload files via HTTP. 
+The important part is to set `oHttp.nHttpPostMode=2` (multi-part forms) **before calling `AddPostKey()` or `AddPostFile()`, which is required in order to upload files via HTTP. 
 
 Multi-part uploads are much more efficient than standard URL Encoded forms as raw binary data is sent to the server un-encoded which results in smaller transfers raw data that doesn't have to be encoded into a multi-byte base64 encoding first. Most upload operations on the Web use multi-part forms for upload purposes as part of their APIs.
 

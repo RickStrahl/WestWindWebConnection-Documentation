@@ -23,6 +23,10 @@ CORS rules have gotten more strict in browsers recently, with certain browsers d
 * **Explicit wwDotnetBridge [GetField()](dm-topic://_70y19t8wr) and [SetField()](dm-topic://_s850mn6vv) Methods**  
 Due to recent changes that removed field retrieval from `GetProperty()` and `SetProperty()`, there are now dedicated `GetField()` and `SetField()` methods to perform that task. The original reasoning for field removal from the Property methods was to improve Reflection performance on fewer members to parse.
 
+* **[wwFtpClient::AddCertificateFromCertificateStore](dm-topic://_8ea3e8k6o2)**  
+Added a new method that can be used to add a certificate from the certificate store to the connection. You can specify a certificate Subject (full or partial) to locate a certificate, or if no subject is passed interactively pick one.
+
+
 * **[wwSFtpClient::UploadFile](dm-topic://_6wr0zm6jl) and [wwSftpClient::DownloadFile()](dm-topic://_6wr0zm6jk) now preserve File Time**  
 These methods now preserve the uploaded or downloaded file's time stamp on the receiving end when the file is saved. SFTP natively is a streaming API and doesn't support automatic timestamps, but wwSftpClient now explicit calls the server API to match the client and server dates by default. If you need different dates, you can use the new `SetFileTime()` method to explicitly change the date.
 
