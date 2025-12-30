@@ -69,7 +69,7 @@ ENDFUNC
 
 You can create an optional condition (perhaps with a separate function if the logic is complex) to specify whether authentication should fire. 
 
-> Note that if you choose to call `Authenticate()` on **all requests** you may also have to exclude certain requests that need explicit anonymous access like `login.myext` or `home.myext` etc. You can get `Request.GetScriptname()`
+> If you choose to call `Authenticate()` on **all requests** you may also have to exclude certain requests that need explicit anonymous access - typically the login and landing pages for example. You can get `Request.GetScriptname()` or the code shown above (that retrieves just filename w/o extension) and then basically create a white list of requests that you **don't want to authenticate**. The code shown is common, but you can of course use any logic to determine what should and shouldn't be authenticated.
 
 ### The wwUserSecurity Class
 The `wwUserSecurity` class' default implementation provides a simple class and cursor based lookup mechanism for retrieving username/password combinations. It supports creation of the table, adding and deleting of records and the familiar business object approach that Web Connection uses to hold registration data. 

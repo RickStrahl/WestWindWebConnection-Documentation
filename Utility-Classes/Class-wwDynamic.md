@@ -1,6 +1,8 @@
-﻿This class allows you to create or extend an object with 'dynamic' properties by simply referencing non-existing properties on the instance. Any non-existing properties you reference will automatically be created - this model is similar to the way JavaScript or Expando objects work.
+This class allows you to create or extend an object with 'dynamic' properties by simply referencing non-existing properties on the instance. Any non-existing properties you reference will automatically be created - this model is similar to the way JavaScript or .NET Expando objects work.
 
-In essence this is a cleaner and non-declarative way to write `ADDPROPERTY()` logic. This makes a great tool for creating complex objects on the fly in user code which is especially useful when creating data transfer objects for JSON or XML Services to transmit.
+In essence this is a easier, cleaner, non-declarative way to write `ADDPROPERTY()` logic. This makes a great tool for creating complex objects on the fly in user code which is especially useful when creating data transfer objects for JSON or XML Services to transmit.
+
+> Behind the scenes the internal object created is an `EMPTY` class instance to which properties are added with `ADDPROPERTY()`.
 
 Here's an example of what you can do:
 
@@ -37,7 +39,7 @@ For JSON serialization you can also use the explicit `.AddProp()` method which a
 
 ```foxpro
 loMessage = CREATEOBJECT("wwDynamic")
-loMessage.sid = ""   && prop is non-cased (lower)
+loMessage.Sid = ""   && prop is non-cased (lower)
 loMessage.AddProp("dateCreated", DATETIME())
 loMessage.AddProp("dateUpdated", DATETIME())
 loMessage.AddProp("dateSent",DATETIME())

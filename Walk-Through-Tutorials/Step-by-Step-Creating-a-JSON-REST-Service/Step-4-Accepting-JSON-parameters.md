@@ -11,7 +11,7 @@ Your JSON client can send a single value, object or array to your application. I
 ### Query String Parameters
 To handle query string parameters is the same as in a non-service application by using the `Request.QueryString()` method to retrieve query parameters. 
 
-Let's set this up for the customer list by passing in a single parameter for a company lookup:
+Let's set this up for the customer list by passing in a single parameter for a company lookup and returning a cursor as a JSON array:
 
 ```foxpro
 ************************************************************************

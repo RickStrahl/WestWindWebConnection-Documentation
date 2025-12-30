@@ -25,10 +25,7 @@
         </blockquote>
     {{% } else { }}
         {{ Model.Helpers.Markdown(Model.Topic.Body) }}
-    {{% } }}
-
-         {{ Script.RenderPartial($"Under-Construction-Partial.html", Model) }}
-
+    {{% } }}       
 </div>
 
 {{% if (!string.IsNullOrEmpty(Model.Topic.Remarks)) {  }}

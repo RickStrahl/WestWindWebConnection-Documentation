@@ -15,8 +15,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 100,
-      "isExpanded": true,
-      "updated": "2025-11-02T11:15:03.6618068-10:00",
+      "updated": "2025-12-29T14:49:28.0734527-10:00",
       "helpId": "2",
       "classInfo": {
         "memberName": "",
@@ -131,7 +130,8 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
-              "updated": "2025-09-29T07:43:44.4342601-10:00",
+              "isExpanded": true,
+              "updated": "2025-12-27T15:08:46.4987242-10:00",
               "helpId": "1243166",
               "classInfo": {
                 "memberName": "",
@@ -527,6 +527,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 90,
+      "isExpanded": true,
       "updated": "2025-05-28T07:11:28.9282906-10:00",
       "helpId": "861",
       "classInfo": {
@@ -619,6 +620,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-09-11T13:27:15.79345-10:00",
           "helpId": "1094",
           "classInfo": {
@@ -829,6 +831,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 110,
+              "isExpanded": true,
               "updated": "2025-11-06T09:36:52.6824855-10:00",
               "helpId": "862",
               "classInfo": {
@@ -942,7 +945,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
-              "updated": "2025-03-12T00:00:00Z",
+              "updated": "2025-11-16T13:11:10.7658159-10:00",
               "helpId": "1108",
               "classInfo": {
                 "memberName": "",
@@ -1013,29 +1016,6 @@
                   "sortOrder": 30,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1153",
-                  "classInfo": {
-                    "memberName": "",
-                    "syntax": "",
-                    "assembly": "",
-                    "contract": "",
-                    "exceptions": ""
-                  }
-                },
-                {
-                  "id": "_32r0no329",
-                  "parentId": "_s8h1ecqdy",
-                  "title": "404 Resource Not Found Errors",
-                  "slug": "User-Guide/Setting-Up-Web-Connection/Setup-troubleshooting/404-Resource-Not-Found-Errors",
-                  "link": "User-Guide/Setting-Up-Web-Connection/Setup-troubleshooting/404-Resource-Not-Found-Errors.md",
-                  "displayType": "topic",
-                  "type": "markdown",
-                  "keywords": "",
-                  "seeAlso": "",
-                  "remarks": "",
-                  "example": "",
-                  "sortOrder": 20,
-                  "updated": "2025-03-12T00:00:00Z",
-                  "helpId": "1258831",
                   "classInfo": {
                     "memberName": "",
                     "syntax": "",
@@ -1243,7 +1223,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-12-16T11:52:22.9725873-10:00",
                   "helpId": "1242882",
                   "classInfo": {
                     "memberName": "",
@@ -1315,7 +1295,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T11:57:23.9208562-10:00",
                       "helpId": "1242893",
                       "classInfo": {
                         "memberName": "AdminPage",
@@ -1339,7 +1319,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T11:53:51.4314514-10:00",
                       "helpId": "1242900",
                       "classInfo": {
                         "memberName": "AutoStartServers",
@@ -1363,7 +1343,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T11:56:26.0506449-10:00",
                       "helpId": "1242901",
                       "classInfo": {
                         "memberName": "ComServerLoadingMode",
@@ -1387,7 +1367,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T11:58:53.665566-10:00",
                       "helpId": "1242898",
                       "classInfo": {
                         "memberName": "ComServerProgId",
@@ -1411,7 +1391,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T12:01:02.9692307-10:00",
                       "helpId": "1242894",
                       "classInfo": {
                         "memberName": "ExeFile",
@@ -1435,7 +1415,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T12:01:42.1689893-10:00",
                       "helpId": "1242896",
                       "classInfo": {
                         "memberName": "LogDetail",
@@ -1459,7 +1439,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T12:02:14.5821442-10:00",
                       "helpId": "1242902",
                       "classInfo": {
                         "memberName": "MessageDisplayFooter",
@@ -1483,7 +1463,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T12:05:17.1889226-10:00",
                       "helpId": "1242891",
                       "classInfo": {
                         "memberName": "MessagingMechanism",
@@ -1507,7 +1487,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-16T12:05:53.3781882-10:00",
                       "helpId": "1242888",
                       "classInfo": {
                         "memberName": "PostBufferLimit",
@@ -1531,7 +1511,7 @@
                       "seeAlso": "webConnectionConfiguration Settings",
                       "remarks": "",
                       "example": "",
-                      "updated": "2025-03-12T00:00:00Z",
+                      "updated": "2025-12-22T16:40:19.0202673-10:00",
                       "helpId": "1242899",
                       "classInfo": {
                         "memberName": "ServerCount",
@@ -1654,7 +1634,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2025-12-16T11:46:16.952198-10:00",
                   "helpId": "1242903",
                   "classInfo": {
                     "memberName": "",
@@ -1884,29 +1864,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "id": "_534176iva",
-                  "parentId": "_22q0ykdns",
-                  "title": ".NET Handler Administration Links",
-                  "slug": "User-Guide/Setting-Up-Web-Connection/Using-the-Web-Connection-Managed-Handler/NET-Handler-Administration-Links",
-                  "link": "User-Guide/Setting-Up-Web-Connection/Using-the-Web-Connection-Managed-Handler/NET-Handler-Administration-Links.md",
-                  "displayType": "topic",
-                  "type": "markdown",
-                  "keywords": "",
-                  "seeAlso": "",
-                  "remarks": "",
-                  "example": "",
-                  "sortOrder": 10,
-                  "updated": "2025-03-12T00:00:00Z",
-                  "helpId": "1294369",
-                  "classInfo": {
-                    "memberName": "",
-                    "syntax": "",
-                    "assembly": "",
-                    "contract": "",
-                    "exceptions": ""
-                  }
                 }
               ]
             },
@@ -2207,6 +2164,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-06-11T10:51:54.6438259-10:00",
           "helpId": "1281",
           "classInfo": {
@@ -2242,6 +2200,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 110,
+              "isExpanded": true,
               "updated": "2025-03-12T10:30:32.8621288-10:00",
               "helpId": "1241721",
               "classInfo": {
@@ -2591,6 +2550,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "871",
                   "classInfo": {
@@ -3969,6 +3929,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 30,
+          "isExpanded": true,
           "updated": "2025-05-28T05:38:19.9432659-10:00",
           "helpId": "860",
           "classInfo": {
@@ -4015,6 +3976,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
+              "isExpanded": true,
               "updated": "2025-05-28T05:40:58.4607189-10:00",
               "helpId": "2001",
               "classInfo": {
@@ -4108,6 +4070,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
+              "isExpanded": true,
               "updated": "2025-05-28T07:08:05.1745527-10:00",
               "helpId": "866",
               "classInfo": {
@@ -4143,7 +4106,7 @@
                 {
                   "id": "_s7r14tbyk",
                   "parentId": "_s7r13t6g7",
-                  "title": "Step 2 - Configure optional Virtual and Scriptmap",
+                  "title": "Step 2 - Configure Optional Scriptmap",
                   "slug": "User-Guide/The-Web-Connection-Management-Console/New-Process-Wizard/Step-2-Configure-optional-Virtual-and-Scriptmap",
                   "link": "User-Guide/The-Web-Connection-Management-Console/New-Process-Wizard/Step-2-Configure-optional-Virtual-and-Scriptmap.md",
                   "displayType": "topic",
@@ -4152,7 +4115,7 @@
                   "seeAlso": "",
                   "remarks": "",
                   "example": "",
-                  "updated": "2025-05-28T06:45:45.8911969-10:00",
+                  "updated": "2025-12-24T13:45:40.5340109-10:00",
                   "helpId": "868",
                   "classInfo": {
                     "memberName": "",
@@ -4177,6 +4140,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241386",
               "classInfo": {
@@ -4411,7 +4375,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
-                  "updated": "2025-10-10T10:27:17.793466-10:00",
+                  "updated": "2025-12-16T11:43:33.4241292-10:00",
                   "helpId": "1242549",
                   "classInfo": {
                     "memberName": "",
@@ -4924,6 +4888,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 80,
+      "isExpanded": true,
       "updated": "2025-03-12T10:30:32.8641745-10:00",
       "helpId": "1290678",
       "classInfo": {
@@ -4993,6 +4958,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241789",
           "classInfo": {
@@ -5225,6 +5191,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8655265-10:00",
           "helpId": "1241698",
           "classInfo": {
@@ -5480,6 +5447,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 60,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1292299",
           "classInfo": {
@@ -5572,7 +5540,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 50,
-              "updated": "2025-03-12T00:00:00Z",
+              "updated": "2025-12-29T14:51:32.5578068-10:00",
               "helpId": "1292308",
               "classInfo": {
                 "memberName": "",
@@ -5595,7 +5563,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
-              "updated": "2025-03-12T00:00:00Z",
+              "updated": "2025-12-29T15:06:00.8224105-10:00",
               "helpId": "1292309",
               "classInfo": {
                 "memberName": "",
@@ -18296,7 +18264,7 @@
               "remarks": "**External Dependencies**  \rwwIPstuff.dll  \rzLib.dll",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-07-15T15:44:33.6550367-10:00",
+              "updated": "2025-11-30T18:00:28.8195143-10:00",
               "helpId": "1241726",
               "classInfo": {
                 "memberName": "",
@@ -41210,7 +41178,7 @@
           "remarks": "**Performance Notice**:   \rThis code uses an `THIS_Access()` accessor method to intercept **every property and method access** and then checks to see whether that property/method exists. This has a bit of overhead and is considerably slower than direct object property/method access. Use with care in critical path operations and test for performance carefully.",
           "example": "",
           "sortOrder": 40,
-          "updated": "2025-03-12T00:00:00Z",
+          "updated": "2025-12-27T14:46:30.4190901-10:00",
           "helpId": "1294447",
           "classInfo": {
             "memberName": "",
@@ -41634,7 +41602,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 25,
-          "updated": "2025-06-11T06:08:38.9780944-10:00",
+          "updated": "2025-12-27T14:41:50.4178548-10:00",
           "helpId": "1294726",
           "classInfo": {
             "memberName": "",
@@ -62365,13 +62333,13 @@
     "webSiteHomeUrl": "https://webconnection.west-wind.com/",
     "supportEmail": "support@west-wind.com",
     "upload": {
-      "hostname": "west-wind.com",
+      "hostname": "ftp.west-wind.com",
       "uploadFtpPath": "/Westwind_SysRoot/Web Sites/webconnection.west-wind.com/docs/",
       "webSiteUrl": "https://webconnection.west-wind.com/docs/",
       "username": "rstrahl",
       "deleteExtraFiles": true,
-      "maxUploadConnections": 10
+      "maxUploadConnections": 20
     },
-    "lastTopicId": "_index"
+    "lastTopicId": "_4jf0tzov6"
   }
 }

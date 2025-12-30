@@ -1,6 +1,4 @@
-﻿Determines whether servers are automatically started when the first hit comes into the module. 
-
-This property is used only for file based operation and determines whether file base instances are loaded when the module starts for the first time.
+﻿Determines whether servers are automatically started when the first hit comes into the module **in File Mode** (COM servers **always** auto-start). 
 
 This flag also determines several related behaviors:
 

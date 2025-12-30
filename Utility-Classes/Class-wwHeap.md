@@ -1,4 +1,4 @@
-﻿A wrapper class around the Windows Heap that allows creating a buffer of character or byte data that you can access quickly even for very large buffers. 
+A wrapper class around the Windows Heap that allows creating a buffer of character or byte data that you can access quickly even for very large buffers. 
 
 This class specifically allows for iterating over strings or byte buffers one byte at a time as required by parsers and encoders. It helps works around the extreme slowness of FoxPro's `Substr()` function with anything but small buffers ([more info](https://west-wind.com/wconnect/weblog/ShowEntry.blog?id=962))
 
@@ -25,16 +25,16 @@ loHeap.Release()
 ```
 
 ### For Improved Performance in Tight Loops bypass `.GetBytes()`
-`GetBytes()` is the explicit method to retrieve data from the heap, but it turns off the method wrapper adds significant overhead to retrieval times. If you need the highest performance it's more efficient to call the `SYS(2600)` function directly to access the memory.
+`GetBytes()` is the explicit method to retrieve data from the heap and while it's much faster than `SUBSTR()` for large string, it turns out that the method wrapper adds relatively significant overhead to retrieval times. If you need the highest performance it's more efficient to call the `SYS(2600)` function directly to access the memory.
 
 The above code can be changed to:
 
 ```foxpro
-*** Direct Access without GetBytes() is much faster!
+*** Direct Access without GetBytes() is much faster still
 lnStart = SECONDS()
-FOR x = 1 TO lnIterations
+FOR x = 0 TO lnIterations - 1  && zero based address
    *** No method call	
-   lcChar =	Sys(2600,loHeap.nBaseAddress-1 + x,1)
+   lcChar =	Sys(2600,loHeap.nBaseAddress + x,1)
 ENDFOR
 ? SECONDS() - lnStart   && 1.1 seconds
 ```

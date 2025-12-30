@@ -145,26 +145,35 @@
                 </article>
 
                 <hr />
-                <div class="float-end">
-                    <a href="http://documentationmonster.com" target="_blank"><img src="~/_docmonster/images/docmonster.png" style="height: 2.5em"/></a>
+            
+             
+                <div class="footer">
+                    
+                    <div class="float-start">                    
+                        &copy; {{ Project.Owner }}, {{ DateTime.Now.Year }} &bull;
+                        updated: {{ Topic.Updated.ToString("MMM dd, yyyy") }}
+                        <br />
+                        {{%      
+                            string mailBody = $"Project: {Project.Title}\nTopic: {Topic.Title}\n\nUrl:\n{ Project.Settings.WebSiteBaseUrl?.TrimEnd('/') + Project.Settings.RelativeBaseUrl }{ Topic.Id }.html";
+                            mailBody = WebUtility.UrlEncode(mailBody).Replace("+", "%20");                        
+                        }}
+                        <a href="mailto:{{ Project.Settings.SupportEmail }}?subject=Support: {{ Project.Title }} - {{ Topic.Title }}&body={{ mailBody }}">Comment or report problem with topic</a>
+                    </div>
+
+                    <div class="float-end">
+                        <a href="https://documentationmonster.com" target="_blank"><img src="~/_docmonster/images/docmonster.png" style="height: 3.8em"/></a>
+                    </div>
                 </div>
 
-                <div class="footer">
-                     &copy; {{ Project.Owner }}, {{ DateTime.Now.Year }} &bull;
-                    updated: {{ Topic.Updated.ToString("MMM dd, yyyy") }}
-                    <br />
-                    {{%      
-                        string mailBody = $"Project: {Project.Title}\nTopic: {Topic.Title}\n\nUrl:\n{ Project.Settings.WebSiteBaseUrl?.TrimEnd('/') + Project.Settings.RelativeBaseUrl }{ Topic.Id }.html";
-                        mailBody = WebUtility.UrlEncode(mailBody).Replace("+", "%20");                        
-                    }}
-                    <a href="mailto:{{ Project.Settings.SupportEmail }}?subject=Support: {{ Project.Title }} - {{ Topic.Title }}&body={{ mailBody }}">Comment or report problem with topic</a>
-                </div>
                 <br class="clearfix" />
                 <br />
                 <!-- End Rendered Content -->                    
-            </div>
-        </div>
-    </div>
+
+            </div> <!-- End MainContent --> 
+
+        </div> <!-- End page-content -->
+
+    </div>   <!-- End flex-master -->
 
 
     <!-- End Markdown Monster Content -->

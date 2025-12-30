@@ -1,4 +1,4 @@
-﻿At this point you've already seen how to do all the things you typically need to do with a REST Service:
+At this point you've already seen how to do all the things you typically need to do with a REST Service:
 
 * Display data results
 * Capture query string input values
@@ -35,7 +35,7 @@ ENDIF
 
 Serializer.PropertyNameOverrides = this.cCustomerCapitalizations
 
-*** return oData member that contains customer object
+*** return .oData member that contains customer **object**
 RETURN loCustBus.oData
 ```
 
@@ -43,7 +43,7 @@ The key here again is the `Request.QueryString("id")` method call that retrieves
 
 <a href="http://localhost/customerdemo/customer.csvc?id=_4FG12Y7UD" target="top">http://localhost/customerdemo/customer.csvc?id=_4FG12Y7UD</a>
 
-which results in this single customer object JSON response:
+which results in this single customer **object** being turned into a JSON response:
 
 ```json
 {
@@ -65,15 +65,32 @@ which results in this single customer object JSON response:
 ```
 The result is an individual JSON object with properties for each of the customer records properties.
 
+> #### @icon-warning Single Record Cursors do not return an Object!
+> In the code above using the business object the code retrieves a single record from the database via a `SELECT` and then implicitly turns the first record into an object on the `.oData` member via the `Load()` method <small>*(as part of wwBusiness)*</small>.
+>
+> If you intend to return an object result and the result comes from Cursor or Table, the result is still **always an array - not an object** even if you are returning a single record!
+>
+>In order to return an object, you have to select a record from the cursor and use `SCATTER NAME` to turn it into an object:
+>
+>  ```foxpro
+>  SELECT * FROM customers WHERE id = "_123"  
+> SCATTER NAME loCustomer MEMO  && first record - otherwise use GO or SKIP
+>
+>  *** Return customer record as JSON
+>  RETURN loCustomer
+>  ```
+
 ### Updating a Customer Record
-To update a customer record we essentially pass in a customer record that has the updated values we need to assign to an existing customer object. The sequence is:
+To update a customer record we essentially pass in a customer record that has the updated values we need to assign to an existing customer object. 
+
+The sequence is:
 
 * Capture the updated JSON data
 * Load the customer record that is to be updated
 * Update the individual values
 * Validate and save the updated values 
 
-Here's the method code that handles the update:
+Here's the code that handles an update:
 
 ```foxpro
 ************************************************************************
@@ -112,7 +129,9 @@ RETURN loCustBus.oData
 ENDFUNC
 ```
 
-The loCust parameter holds the updated customer data sent from the client via JSON. From that we can read the ID and load up the existing customer record and the associated customer ID. We read that and call `.Load()` on the business object, and then update the `oData` member with the data sent from the client. The code uses manual assignments but you can also choose to use `CopyObjectProperties()` which allows copying of all properties in bulk depending on whether you need more control over the update process.
+The `loCust` parameter holds the updated customer data sent from the client via JSON. From that we can read the ID and load up the existing customer record and the associated customer ID. We read that and call `.Load()` on the business object, and then update the `oData` member with the data sent from the client. 
+
+This code uses manual assignments, but you can also choose to use `CopyObjectProperties()` which allows copying of all properties in bulk depending on whether you need more control over the update process.
 
 Finally you can validate and then save the object back to disk. 
 

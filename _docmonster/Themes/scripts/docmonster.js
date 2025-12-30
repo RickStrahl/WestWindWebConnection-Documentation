@@ -51,8 +51,12 @@ var helpBuilder = null;
 	                loadTopicAjax(href);
 	                return false; // stop navigation
 	            } 
-	        });
-            
+	        })
+            .on("dblclick", "img", function() {                
+                var href = $(this).attr("src");
+                window.open(href);
+            });
+                    
             var id = getIdFromUrl();
 
             if (id){
@@ -444,9 +448,15 @@ var helpBuilder = null;
         var $button = $href.parent().prev();
 
         if ($ul.is(":visible"))
-            $button.removeClass("fa-caret-right").addClass("fa-caret-down");
+        {
+                $button.removeClass("fa-caret-right").addClass("fa-caret-down");
+                $button.removeClass("fas").addClass("far");
+        }
         else
-            $button.removeClass("fa-caret-down").addClass("fa-caret-right");
+        {
+                $button.removeClass("fa-caret-down").addClass("fa-caret-right");
+                $button.removeClass("far").addClass("fas");
+        }
     }
 
     function expandParents(id, noFocus) {

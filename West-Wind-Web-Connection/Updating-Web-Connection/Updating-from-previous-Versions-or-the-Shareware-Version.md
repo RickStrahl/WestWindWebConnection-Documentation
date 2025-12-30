@@ -1,4 +1,4 @@
-﻿Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 7.10 -> 7.12 for example).
+Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 8.01 -> 8.12 for example).
 
 > #### @icon-warning Updating from the Shareware Version
 > If you are updating from the Shareware version or you had previously installed the Shareware version, or you have already installed and are seeing shareware version prompts we recommend a **full delete of all files** in the Web Connection installation folder followed by a full reinstall as a **Fresh Install** as described below.
@@ -12,7 +12,7 @@ For this reason **a complete delete all and reinstall is the preferred way to up
 
 If you build applications using the new project system **all application related files will be in your project folders**. So it's perfectly safe to:
 
-* Backup your existing installation to something like `\wconnectXXX`
+* Backup or rename your existing installation to something like `\wconnectXXX`
 * Delete all content in the original `\wconnect` folder
 * Reinstall or Unzip Web Connection into `\wconnect`
 
@@ -20,11 +20,12 @@ There are potentially some files that you may have customized and you may want t
 
 * `wconnect_override.h`
 * `wwSession` and `WebRequestLog` tables if you need to retain logs/sessions
-* Any other files you've explicitly put in the install folder **(not recommended!)**
+* Any other files you've explicitly put in the install folder     
+<small>(not recommended - put anything you change into your project folder or some external common folder)</small>
 
 > Always, always put your application specific files into a separate project folder.
 
-Once copied we recommend you also run `setup.exe` again, to update the Visual Studio Addin and Visual Studio and Visual Studio Code templates etc. but this is optional. Setup doesn't touch any of your project files so it's safe to run without breaking existing applications. 
+Once copied we recommend you also run `setup.exe` again, to update the Web Connection Samples, Visual Studio Addin and Visual Studio Code templates etc. but this is optional. Setup doesn't touch any of your project files so it's safe to run without breaking your existing applications. 
 
 
 > #### @icon-info-circle If Things Go Wrong
@@ -64,14 +65,14 @@ DO CompileWC()  && in '\tools' folder
 ```
 
 #### Shareware Version Update 
-If you are updating from the Shareware Version and you're overwriting make sure you:
+If you are updating from the Shareware version to the full version, and you're overwriting make sure you:
 
 * Delete `wconnect.app`
-* Make sure that `#DEFINE SHAREWARE .F.` in `wconnect.h`
+* Make sure that `#DEFINE SHAREWARE .F.` in `wconnect.h` <small>*(should have overwritten)*</small>
 * Ensure you recompiled **everything** as described above
 
 ### Update DLLs in Production Apps
-Web Connection 7 and later uses self-contained projects to hold all resources associated with a Web Connection project - nothing gets stored in the Web Connection install folder, and all support files other than the Web Connection code dependencies are contained within the project's folder hierarchy.
+Web Connection 6.5 and later uses self-contained projects to hold all resources associated with a Web Connection project - nothing gets stored in the Web Connection install folder, and all support files other than the Web Connection code dependencies are contained within the project's folder hierarchy.
 
 ### Use the Update Project Wizard (or Console Command)
 The easiest way to update projects is to use a new utility in Web Connection 7.12+ which lets you update existing projects. There are two ways to do this:

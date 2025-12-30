@@ -2,4 +2,4 @@
 
 This section describes several possible problem scenarios.
 
-<%=  ChildTopicsList(oHelp,'TOPIC') %>
+{{  Helpers.ChildTopicsList() }}
