@@ -9,8 +9,8 @@ Updated the Web Connection process error handler to detect and better handle err
 * **[wwRestProcess::OnJsonError Handler](dm-topic://_o7b75vrgfd)**  
 Added a new explicit error method that is fired when a Json service process method in `wwRestProcess` fails. This method can be used for capturing and logging errors.
 
-* **Removed Case Insensitivity from wwUserSecurity Username and Password**  
-Changed the behavior of base authentication in default `wwProcess::OnAuthenticateUser()` by removing the `LOWER()` case conversions on input and expecting username and  password to be lower case. Reason: modern security often requires and generates mixed case passwords and forcing case insensitivity lowers the password's strength.    
+* **Removed Case Insensitivity from wwUserSecurity  Password**  
+Changed the behavior of base authentication in default `wwProcess::OnAuthenticateUser()` by removing the `LOWER()` case conversion on the input password to be lower case. Reason: modern security often requires and generates mixed case passwords and forcing case insensitivity lowers the password's strength.    
 <b class='text-danger'>*Breaking change*</b>
 
 
