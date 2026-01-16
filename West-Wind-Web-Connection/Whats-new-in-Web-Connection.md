@@ -2,7 +2,6 @@
 
 <small>not released yet</small>
 
-
 * **Update wwProcess Error Handling to catch nested Errors in Error Handling**  
 Updated the Web Connection process error handler to detect and better handle errors that occur during error handling. If your code fails during error handling (like say a database error during error logging) that second error is now captured and logged and a generic error page is displayed. This fixes the scenario where you get a blank page result, due to  these nested errors which were difficult to debug or pinpoint.
 

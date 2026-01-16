@@ -1,6 +1,6 @@
 ![](/images/WebConnection_Code_Banner.png)
 
-Welcome to West Wind Web Connection.
+Welcome to West Wind Web Connection. 
 
 Web Connection is a complete Web application framework for developing and delivering scalable e-business solutions with Visual FoxPro. It is a proven development platform for integrating browser, server and database technologies into Web applications for Visual FoxPro developers.
 
