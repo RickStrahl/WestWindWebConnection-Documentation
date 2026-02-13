@@ -1,4 +1,4 @@
-﻿Allows adding an alternate view of the message that provides richer content. For example you may configure the main message as plain text and the alternate view as html including embedded images that are stored as part of the message. 
+Allows adding an alternate view of the message that provides richer content. For example you may configure the main message as plain text and the alternate view as html including embedded images that are stored as part of the message. 
 
 This feature works only when `nMailMode = 0` (.NET mode). If all you want is to create a plain text AND HTML message you can use the [cAlternateText](vfps://Topic/_2QL0TV6M3) and [cAlternateContentType](vfps://Topic/_2QL0TV6M5) which works in both modes. 
 
@@ -16,7 +16,13 @@ LOCAL loAlternateView as wwSmtpAlternateView
 loAlternateView = CREATEOBJECT("wwSmtpAlternateView")
 loAlternateView.cText = "<b>Hello</b> World! <img src='cid:sailbig' />"
 loAlternateView.cContentType = "text/html"
-loAlternateView.AddLinkedResource("c:\sailbig.jpg","image/jpeg","sailbig")
+
+*** Good idea to check for errors - if file doesn't exist don't
+IF (!loAlternateView.AddLinkedResource("c:\sailbig.jpg","image/jpeg","sailbig"))
+    ? loAlternateView.cErrorMsg
+    RETURN
+ENDIF
+
 loSmtp.AddAlternateView( loAlternateView )
 ```
 

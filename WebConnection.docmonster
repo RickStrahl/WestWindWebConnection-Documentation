@@ -62,7 +62,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
-          "updated": "2026-01-14T15:17:19.1005719-10:00",
+          "updated": "2026-02-13T10:31:18.98035-10:00",
           "helpId": "1242800",
           "classInfo": {
             "memberName": "",
@@ -156,6 +156,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 25,
+              "isExpanded": true,
               "updated": "2025-09-26T05:58:46.3176891-10:00",
               "helpId": "1294439",
               "classInfo": {
@@ -622,6 +623,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-09-11T13:27:15.79345-10:00",
           "helpId": "1094",
           "classInfo": {
@@ -691,6 +693,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 120,
+              "isExpanded": true,
               "updated": "2025-05-01T11:30:02.9457218-10:00",
               "helpId": "1294532",
               "classInfo": {
@@ -946,6 +949,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
+              "isExpanded": true,
               "updated": "2025-11-16T13:11:10.7658159-10:00",
               "helpId": "1108",
               "classInfo": {
@@ -1178,6 +1182,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242879",
               "classInfo": {
@@ -1247,6 +1252,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242883",
                   "classInfo": {
@@ -1635,6 +1641,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
+                  "isExpanded": true,
                   "updated": "2025-12-16T11:46:16.952198-10:00",
                   "helpId": "1242903",
                   "classInfo": {
@@ -1881,6 +1888,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T10:30:32.8611191-10:00",
               "helpId": "1294432",
               "classInfo": {
@@ -1904,6 +1912,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242402",
                   "classInfo": {
@@ -2044,6 +2053,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
+                  "isExpanded": true,
                   "updated": "2025-03-12T10:30:32.861637-10:00",
                   "helpId": "1294433",
                   "classInfo": {
@@ -2317,6 +2327,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 70,
+                  "isExpanded": true,
                   "updated": "2025-05-05T09:41:06.1247448-10:00",
                   "helpId": "1339",
                   "classInfo": {
@@ -2480,6 +2491,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1259021",
                   "classInfo": {
@@ -2717,6 +2729,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1012",
               "classInfo": {
@@ -2811,6 +2824,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 90,
+              "isExpanded": true,
               "updated": "2025-09-10T08:22:23.2078378-10:00",
               "helpId": "1241237",
               "classInfo": {
@@ -2975,6 +2989,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 80,
+              "isExpanded": true,
               "updated": "2025-03-12T10:30:32.8624502-10:00",
               "helpId": "1241238",
               "classInfo": {
@@ -3046,6 +3061,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 70,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290593",
               "classInfo": {
@@ -3117,6 +3133,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 60,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242590",
               "classInfo": {
@@ -3350,6 +3367,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 40,
+          "isExpanded": true,
           "updated": "2025-05-28T05:37:28.3758547-10:00",
           "helpId": "1104",
           "classInfo": {
@@ -3488,6 +3506,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290604",
               "classInfo": {
@@ -3511,6 +3530,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1241393",
                   "classInfo": {
@@ -3675,6 +3695,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T10:30:32.8632257-10:00",
               "helpId": "1294538",
               "classInfo": {
@@ -3766,6 +3787,7 @@
                   "seeAlso": "Class wwWebSocket",
                   "remarks": "",
                   "example": "",
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294542",
                   "classInfo": {
@@ -4238,6 +4260,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1148",
           "classInfo": {
@@ -4330,6 +4353,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242548",
               "classInfo": {
@@ -4449,6 +4473,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8638905-10:00",
           "helpId": "1376",
           "classInfo": {
@@ -5681,6 +5706,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 5,
+          "isExpanded": true,
           "updated": "2025-07-17T07:40:20.7066575-10:00",
           "helpId": "1294509",
           "classInfo": {
@@ -5730,6 +5756,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
+      "isExpanded": true,
       "updated": "2025-11-10T20:23:27.7564144-10:00",
       "helpId": "3",
       "classInfo": {
@@ -5753,6 +5780,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "4",
           "classInfo": {
@@ -6690,6 +6718,7 @@
               "remarks": "",
               "example": "Assume you have a process class called wwDemo which typically creates a configuration section called wwDemo and an owwDemo property on the main Config object.\r\rYou can now access things like this:\r\r```foxpro\r*** Top level configuration property\rlcPath = Config.cSystemFilesDataPath\rllLogToFile = Config.lLogToFile\r\r*** Child config object for wwDemo section\rlcDataPath = Config.owwDemo.cDataPath\rlcHtmlPage = Config.owwDemo.cHtmlPagePath\r```",
               "sortOrder": 40,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1279553",
               "classInfo": {
@@ -7084,6 +7113,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "10",
               "classInfo": {
@@ -7467,6 +7497,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "927",
           "classInfo": {
@@ -8818,6 +8849,7 @@
           "remarks": "Services methods expose the following **PRIVATE** variables that let you control lower level access to the server:\r\r* **JsonService**  \rThe wwJsonService class that controls the JSON input and output parsing. This is useful to override behavior of the service, such as telling it to not generate any output using the **IsRawResponse** property which you can use if you want to use the Response object to return your own raw response output (ie. using `Response.Write()`).\r\r* **Serializer**  \rAn instance of the wwJsonSerializer which allows you to override behavior of the serializer. For example, you can override things like the PropertyNameOverrides property to generate 'proper' field names rather than all lowercase.\r\r* **Request, Response, Server, Process, Session etc.**   \rOf course all the other, normally exposed objects inside of process classes are also in scope so you can access any Request object methods like *QueryString* or *ServerVariables()* to retrieve input.",
           "example": "",
           "sortOrder": 60,
+          "isExpanded": true,
           "updated": "2025-11-04T13:20:42.2479725-10:00",
           "helpId": "1270489",
           "classInfo": {
@@ -9215,6 +9247,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "967",
           "classInfo": {
@@ -10676,6 +10709,7 @@
           "remarks": "Any **~/** virtual relative paths in the final output are automatically replaced to use the Process.GetUrlBasePath() value. So any reference of `< script src=\"~/scripts/jquery.js >` fixes up to the proper virtual path like: `< script src=\"/wconnect/scripts/jquery.js\" >`.",
           "example": "",
           "sortOrder": 40,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242470",
           "classInfo": {
@@ -10747,6 +10781,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 270,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242481",
               "classInfo": {
@@ -10771,6 +10806,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 260,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294498",
                   "classInfo": {
@@ -11648,6 +11684,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 25,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "932",
           "classInfo": {
@@ -11671,6 +11708,7 @@
               "remarks": "All the functions described in this library are **not class methods, but plain functions**. They are accessed simply by their names without any class prefix:\r\r```foxpro\r< %= HtmlDataGrid(\"tt_cust\") % >\r```",
               "example": "",
               "sortOrder": 60,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1258833",
               "classInfo": {
@@ -11718,6 +11756,7 @@
                   "remarks": "",
                   "example": "The following produces a simple non-paged table that simply uses fieldnames for column headers.\r\r```foxpro\rlcHtml = HtmlDataGrid(\"TCustomers\")\r```\r\rThe following produces simple table that has a couple of simple properties set such as paging enabled and an explicit Width set:\r\r```foxpro\rloConfig = CREATEOBJECT(\"HtmlDataGridConfig\")\rloConfig.Width = \"800px\"\rloConfig.Id = \"tblCustomers\"\rloConfig.PageSize = 10\r\rlcHtml = HtmlDataGrid(\"TCustomers\",loConfig)\r```\r\rThe following is a more sophisticated example that uses more extensive configuration and columns:\r\r```foxpro\r* **Create the configuration helper object to set \r* **rendering options and each individual column to render\rloConfig = CREATEOBJECT(\"HtmlDataGridConfig\")\r\r* **Main configuration options\rloConfig.Width = \"900px\"\rloConfig.CssClass = \"blackborder\"\rloConfig.Style = \"margin-top: 30px;\"\rloConfig.DataKeyField = \"Pk\"\r\r* **Paging configuration\rloConfig.PageSize = 10\r*loConfig.PageBaseLink = \"HtmlDataGrid.wwd?\" \r\r* **Embedding a link with an expression - an HREF link in this case\rloColumn = CREATEOBJECT(\"HtmlDataGridColumn\")\rloColumn.Expression = [HtmlLink(\"customer.wwd?id=\" + TRANSFORM(TCustomers.pk),TCustomers.Company)]\rloColumn.HeaderText = \"Company\"\rloColumn.SortExpression = \"UPPER(Company)\"\rloConfig.AddColumn(loColumn)\r\r* **Embedding a plain and simple field  - using easier loConfig.AddColumn() syntax\rloColumn = loConfig.AddColumn(\"TCustomers.CareOf\",\"Name)\rloColumn.SortExpression = \"Upper(Careof)\"\r\r* **Apply Fox formatting\rloColumn = loConfig.AddColumn(\"BillRate\",\"Rate\",\"N\")\rloColumn.Format = \"$$$,$$$.99\"\rloColumn.ItemAttributeString = [ style=\"text-align: right\" ]\r\rlcHtml = HtmlDataGrid(\"TCustomers\",loConfig)\r```",
                   "sortOrder": 230,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1258888",
                   "classInfo": {
@@ -11836,6 +11875,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1258889",
                       "classInfo": {
@@ -12591,6 +12631,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 10,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1258923",
                       "classInfo": {
@@ -13042,6 +13083,7 @@
                   "remarks": "If you bind to an object and pass the object reference make sure this object is marked as PRIVATE so that HtmlRecord can see it when binding.",
                   "example": "The following creates a generic unconfigured HTML table from the selected record:\r\r```foxpro\r* **Find a specific record in a table\rSELECT Customers\rLOCATE FOR Pk = 2\r\r* **now create the HTML (return value outputs)\rlcHtml =  HtmlRecord(\"Customers\")\r```\r\rThe next example allows more configuration for the display and individual columns used:\r\r```foxpro\r***Find a specific record in a table\rSELECT Customers\rLOCATE FOR Pk = 2\r\r***Create a configuration objec\rloConfig = CREATEOBJECT(\"HtmlRecordConfig\")\rloConfig.Width = \"700px\"\rloConfig.HeaderCssClass = \"myrecordheader\"\rloConfig.ItemCssClass = \"myitems\"\r\r***Create columns manually for each field\rloCol = CREATEOBJECT(\"HtmlRecordColumn\",\"Company\")\rloConfig.AddColumn(loCol)\r\rloCol = CREATEOBJECT(\"HtmlRecordColumn\",\"CareOf\",\"Name\")\rloConfig.AddColumn(loCol)\r\rloCol = CREATEOBJECT(\"HtmlRecordColumn\",\"BillRate\",\"Billing Rate\")\rloConfig.FieldType=\"N\"\rloConfig.Format=\"$$,$$$.99\"\rloConfig.AddColumn(loCol)\r\rloCol = CREATEOBJECT(\"HtmlRecordColumn\",[ShortDate(Entered,2)],\"Entered\")\rloCol.FieldType = \"C\"\rloConfig.AddColumn(loCol)\r\r***now create the HTML (return value outputs)\rlcHtml = HtmlRecord(\"Customers\",loConfig)\r```",
                   "sortOrder": 150,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1258968",
                   "classInfo": {
@@ -13088,6 +13130,7 @@
                       "seeAlso": "",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1258989",
                       "classInfo": {
@@ -13379,6 +13422,7 @@
                       "seeAlso": "wwHtmlHelpers.HtmlRecord",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1258971",
                       "classInfo": {
@@ -14006,6 +14050,7 @@
                   "remarks": "",
                   "example": "```foxpro\rlcOutput = HtmlErrorDisplay(\"This is a simple info\",\"info\")\r\rlcOutput = HtmlErrorDisplay(\"This is a simple info with dismissable\",\"info\",;\r                            \"\",\"\",.T.)\r\r\rlcOutput = HtmlErrorDisplay(\"This is a simple error with header\",\"info\",;\r                            \"\",\"An error occurred\",.T.)\r\rlcOutput = HtmlErrorDisplay(\"This is a simple error with header\",\"info\",;\r                            \"width: 300px\",\"An error occurred\",.T.)\r```\r\rA more complete example as part of a form validation operation might look like this:\r\r```foxpro\rFunction TimeReport\r\r*** Error display object\rpoError = CREATEOBJECT(\"HtmlErrorDisplayConfig\")\r\r*** Business object for binding\rpoReportParms = CREATEOBJECT(\"ReportParameters\")\r\rIF (Request.IsPostBack())\r   *** Assign validation errors\r   poError.Errors = Request.UnbindFormVars(poReportParms)\r\r   IF (poError.Errors.Count > 0)\r   \t   poError.Message = poError.Errors.ToHtml()\r   \t   poError.Header = \"Please fix the following form entry errors\"\r   ELSE\r       poError.Message = \"Ready to run report.\"\r       poError.Icon = \"info\"\r   ENDIF               \rENDIF\r\r*** Display the template\rResponse.ExpandScript(Config.cHtmlPagePath + \"TimeReport.ttk\")\r```\r\rIn the template then:\r\r```html\r<%= HtmlErrorDisplay(poError) %>\r```",
                   "sortOrder": 50,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1258960",
                   "classInfo": {
@@ -14031,6 +14076,7 @@
                       "remarks": "",
                       "example": "```foxpro\r\nFunction TimeReport\r\n\r\n*** Error display object\r\npoError = CREATEOBJECT(\"HtmlErrorDisplayConfig\")\r\n\r\n*** Business object for binding\r\npoReportParms = CREATEOBJECT(\"ReportParameters\")\r\n\r\nIF (Request.IsPostBack())\r\n   *** Assign validation errors\r\n   poError.Errors = Request.UnbindFormVars(poReportParms)\r\n\r\n   IF (poError.Errors.Count > 0)\r\n   \t   poError.Message = poError.Errors.ToHtml()\r\n   \t   poError.Header = \"Please fix the following form entry errors\"\r\n   ELSE\r\n       poError.Message = \"Ready to run report.\"\r\n       poError.Icon = \"info\"\r\n   ENDIF               \r\nENDIF\r\n\r\n*** Display the template\r\nResponse.ExpandScript(Config.cHtmlPagePath + \"TimeReport.ttk\")\r\n```\r\n\r\nIn the template then:\r\n\r\n```html\r\n<%= HtmlErrorDisplay(poError) %>\r\n```",
                       "sortOrder": 10,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1290650",
                       "classInfo": {
@@ -14222,6 +14268,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294415",
                   "classInfo": {
@@ -14246,6 +14293,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1294416",
                       "classInfo": {
@@ -14533,6 +14581,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 50,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "933",
               "classInfo": {
@@ -15206,6 +15255,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 40,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242550",
               "classInfo": {
@@ -15850,6 +15900,7 @@
               "remarks": "The cache is implemented as a cursor, so the contents of the cache is not permanently stored on disk, but stored in temporary files. \r\rCategory list items are case sensitive",
               "example": "",
               "sortOrder": 30,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241884",
               "classInfo": {
@@ -16208,6 +16259,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241522",
               "classInfo": {
@@ -16675,6 +16727,7 @@
               "remarks": "",
               "example": "```foxpro\r\n* ** Process Method\r\nFUNCTION plUploadSample\r\n\r\nloUpload = CREATEOBJECT(\"plUploadHandler\")\r\n\r\n* ** Upload to temp folder\r\nloUpload.cUploadPath = ADDBS(THIS.oConfig.cHtmlPagePath) + \"temp\"\r\n\r\n* ** Hook OnUploadComplete event to local method\r\nBINDEVENT(loUpload,\"OnUploadComplete\",THIS,\"OnUploadComplete\",1)\r\n\r\n* ** Constrain the extensions allowed on the server\r\nloUpload.cAllowedExtensions = \"jpg,jpeg,png,gif\"\r\n\r\n* ** Process the file or chunk\r\nloUpload.ProcessRequest()\r\n\r\nENDFUNC\r\n\r\n\r\n* ** Event handler also in Process class\r\n* ** Only requirement is to call loUpload.WriteCompletionResponse()\r\n* ** to write output string that client can receive.\r\nFUNCTION OnUploadComplete(lcFilename, loUpload)\r\nLOCAL lcUrl, lcFile\r\n\r\nlcUrl = this.ResolveUrl(\"~/temp/\" + lcFileName)\r\n\r\n* ** Resize the image\r\nlcFile = ADDBS(loUpload.cUploadPath) + lcFileName\r\nResizeImage(lcFile,lcFile,640,480)\r\n\r\n* ** Delete expired files - only for 10 minutes\r\nDeleteFiles(ADDBS(JUSTPATH(lcFile)) + \"*.*\",600)\r\n\r\n* ** Write out the response for the client (if any)\r\n* ** In this case the URL to the uploaded image\r\nloUpload.WriteCompletionResponse(lcUrl)\r\n\r\nENDFUNC\r\n```\r\n```html\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>plUploadSample</title>\r\n    <link href=\"../westwind.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n\r\n      <link href=\"../scripts/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css\" \r\n          rel=\"stylesheet\"\r\n          type=\"text/css\" />\r\n\r\n    <script src=\"../scripts/jquery.js\" type=\"text/javascript\"></script>\r\n    <script src=\"../scripts/ww.jquery.js\" type=\"text/javascript\"></script>\r\n\r\n    <script src=\"../scripts/plupload/plupload.full.js\"></script>    \r\n    <script src=\"../scripts/plupload/jquery.plupload.queue/jquery.plupload.queue.js\"></script>\r\n\r\n</head>\r\n<body>\r\n    <h1>plUpload File Upload Sample</h1>\r\n\r\n    <div class=\"containercontent\">    \r\n    \r\n        <!-- Container to preview images - Optional to sample-->\r\n        <div id=\"ImageContainer\">\r\n        </div>\r\n\r\n        <!-- Upload control renders into here -->\r\n        <div id=\"Uploader\">        \r\n        </div>    \r\n\r\n\r\n    </div>\r\n\t<script> // on next page </script>\r\n</body>\r\n</html>\r\n```\r\n```javascript\r\n<script>\r\n$(document).ready(function () {\r\n    $(\"#Uploader\").pluploadQueue({\r\n        runtimes: 'html5,silverlight,flash,html4',\r\n        url: 'plUpload.wwd',\r\n        max_file_size: '2mb',\r\n        chunk_size: '64kb',\r\n        unique_names: false,\r\n        // Resize images on clientside if we can\r\n        resize: { width: 800, height: 600, quality: 90 },\r\n        // Specify what files to browse for\r\n        filters: [{ title: \"Image files\", extensions: \"jpg,jpeg,gif,png\" }],\r\n        flash_swf_url: '../scripts/plupload/plupload.flash.swf',\r\n        silverlight_xap_url: '../scripts/plupload/plupload.silverlight.xap',\r\n        multiple_queues: true\r\n    });\r\n\r\n    // get uploader instance\r\n    var uploader = $(\"#Uploader\").pluploadQueue();\r\n\r\n\r\n    // bind uploaded event and display the image\r\n    // response.response returns the last response from server\r\n    // which is the URL to the image that was sent by OnUploadCompleted\r\n    uploader.bind(\"FileUploaded\", function (upload, file, response) {\r\n        // remove the file from the list\r\n        upload.removeFile(file);\r\n\r\n        // Response.response returns server output from onUploadCompleted\r\n        // our code returns the url to the image so we can display it\r\n        var imageUrl = response.response;\r\n\r\n        $(\"<img>\").attr({ src: imageUrl })\r\n                  .appendTo($(\"#ImageContainer\"));\r\n    });\r\n\r\n    // Error handler displays client side errors and transfer errors\r\n    // when you click on the error icons\r\n    uploader.bind(\"Error\", function (upload, error) {            \r\n        showStatus(error.message, 3000, true);\r\n    });\r\n\r\n});\r\n</script>\r\n```",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1279524",
               "classInfo": {
@@ -16966,6 +17019,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1243013",
           "classInfo": {
@@ -16989,6 +17043,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1026",
               "classInfo": {
@@ -17867,6 +17922,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1290658",
           "classInfo": {
@@ -18032,6 +18088,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 280,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "2",
           "classInfo": {
@@ -18055,6 +18112,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 100,
+              "isExpanded": true,
               "updated": "2025-03-12T10:42:37.744122-10:00",
               "helpId": "853",
               "classInfo": {
@@ -18124,6 +18182,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "852",
                   "classInfo": {
@@ -18266,6 +18325,7 @@
               "remarks": "**External Dependencies**  \rwwIPstuff.dll  \rzLib.dll",
               "example": "",
               "sortOrder": 90,
+              "isExpanded": true,
               "updated": "2025-11-30T18:00:28.8195143-10:00",
               "helpId": "1241726",
               "classInfo": {
@@ -19690,6 +19750,7 @@
               "remarks": "#### Running wwSmtp off a Network  \rIf you're running wwSmtp in .NET mode and from a network location please take a look at [.NET security configuration](VFPS://Topic/_36E0QLOGR) required that might affect operation of the wwSmtp class.\r\r##### Dependencies:\r* wwDotnetBridge.prg\r* wwUtils.prg\r* wwApi.prg\r* wwCollections.prg\r\r##### For .NET mode\r* .NET Runtime 4.5 or later\r* wwDotNetBridge.dll\r* wwIpStuff.dll\r\r##### For Classic Mode\r* wwIPStuff.dll",
               "example": "```foxpro\rDO wwSmtp && load libraries\r\rLOCAL loSMTP as wwSmtp\rloSmtp=CREATEOBJECT(\"wwSmtp\")\rloSmtp.nMailMode = 0  && wwIPStuff mode (Win32 - default)   0 - .NET wwSmtp\r\rloSmtp.cMailServer=\"mail.yourmailserver.net\"\rloSmtp.cSenderEmail=\"rstrahl@mydomain.com\"\rloSmtp.cSenderName=\"Mr. Testa\"\r\r*** Optional Username\r* loSmtp.cUsername = \"ricks\"\r* loSmtp.cPassword = \"seeKrit\"\r\r*** Optional SSL Messages (only in .NET mode (nMailMode = 0))\r* loSmtp.lUseSsl = .T.\r\rloSmtp.cRecipient=\"somebody@sweat.com,another@bust.com\"\rloSmtp.cCCList=\"rstrahl@east-wind.com,looser@nobody.com\"\rloSmtp.cBCCList=\"fred@flintstone.com\"\rloSmtp.cSubject=\"wwSmtp Test Message\"\r\r*** Optionally specify content type - text/plain is default\rloSmtp.cContentType = \"text/html\"  \rloSmtp.cMessage=\"Who said this had to be <b>difficult</b>?\"\r\r*** Optionally provide an alternate content type or plain text fallback\rloSmtp.cAlternateContentType = \"text/plain\"\rloSmtp.cAlternateText = \"Plain text can go here.\"\r\r*** Optionally send file attachments\rloSmtp.AddAttachment(\"c:\\temp\\somefile.pdf\")\roSmtp.AddAttachment(\"c:\\temp\\sailbig.jpg\")\r\rllResult = loSmtp.SendMail()      \r\rIF !llResult\r   Wait window loSmtp.cErrorMsg\rENDIF\r```",
               "sortOrder": 70,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1251706",
               "classInfo": {
@@ -19761,11 +19822,12 @@
                   "remarks": "This feature only work with the .NET version of wwSMTP (`nMailMode = 0`).\r\rImportant: Although this feature is available the recommended way to get rich content to display is to use an HTML primary message text and link images from the Web into the message rather than embedding images directly into the email. This reduces mail traffic drastically.\r\rAdditionally keep in mind that not all mail clients support the embedded format, but most nowadays do support HTML messages.\r\rFinally note that 'preview' displays in Outlook display the main message plain text, and the alternate view when the message is opened. This may or may not be desirable. Spend some time checking out how mail clients display this mixed content.",
                   "example": "",
                   "sortOrder": 350,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2026-02-12T14:24:48.5198163-10:00",
                   "helpId": "1251746",
                   "classInfo": {
                     "memberName": "AddAlternateView",
                     "parameters": "**loAlternateView**  \rAn instance of the wwSmtpAlternateView class.\r\rThe class has the following properties and methods:\r\r**cText**  \rThe text of the alternate view message.\r\r**cContentType**  \rThe content type of the message. Default is plain/text, but common is text/html for rich content.\r\r**AddLinkedResource(lcFilename, lcContentType, lcContentId)**  \rThis method adds a related resource 'attachment' that is treated as an embedded resource that can be referenced from the cText property's html. Use `<img src=\"cid:<resourceId>\" />` to embed an image resource into the message.",
+                    "returns": ".T. or .F. check `.cErrorMsg` for errors",
                     "syntax": "o.AddAlternateView(loAlternateView)",
                     "assembly": "",
                     "contract": "",
@@ -19992,8 +20054,8 @@
                   "displayType": "classproperty",
                   "type": "markdown",
                   "keywords": "",
-                  "seeAlso": "Class wwSMTP",
-                  "remarks": "",
+                  "seeAlso": "Class wwSMTP\r\nwwSmtp::AddAlternateView",
+                  "remarks": "only applies to the old wwIpStuff mode. For .NET mode use `.AddAlternateView()`",
                   "example": "",
                   "sortOrder": 250,
                   "updated": "2025-03-12T00:00:00Z",
@@ -20016,11 +20078,11 @@
                   "displayType": "classproperty",
                   "type": "markdown",
                   "keywords": "",
-                  "seeAlso": "Class wwSMTP",
-                  "remarks": "",
+                  "seeAlso": "Class wwSMTP\r\nwwSmtp::AddAlternateView",
+                  "remarks": "Only applies to the old wwIpstuff send mode. For .NET mode use `AddAlternateView`",
                   "example": "```foxpro\r\nLOCAL loSMTP as wwSmtp\r\nloSmtp=CREATEOBJECT(\"wwSmtp\")\r\n* loSmtp.nMailMode = 2  && wwIPStuff mode (Win32)   0 - .NET wwSmtp\r\n\r\nloSmtp.cMailServer=\"mail.yourserver.net\"\r\nloSmtp.cSenderEmail=\"jimmy@hella2.com\"\r\nloSmtp.cSenderName=\"Jim Hella\"\r\n\r\nloSmtp.cRecipient=\"jimmy@hella.com\"\r\nloSmtp.cSubject=\"wwIPStuff Test Message\"\r\n\r\n\r\n* ** Send desired content type first\r\nloSmtp.cMessage=\"<b>This is the HTML text</b>\"\r\nloSmtp.cContentType = \"text/html\"\r\n\r\n* ** Send fallback content type second\r\nloSmtp.cAlternateText = \"This is the plain message text\"\r\nloSmtp.cAlternateContentType = \"text/plain\"\r\n\r\n\r\nllResult = loSmtp.SendMail()      \r\nIF !llResult\r\n   Wait window loSmtp.cErrorMsg\r\nENDIF\r\n```",
                   "sortOrder": 240,
-                  "updated": "2025-03-12T00:00:00Z",
+                  "updated": "2026-02-12T14:15:53.4925489-10:00",
                   "helpId": "1251733",
                   "classInfo": {
                     "memberName": "cAlternateText",
@@ -20582,6 +20644,7 @@
               "remarks": "#### Dependencies\rThis API uses a .NET library to provide FTP functionality.\r\r\r* wwIpstuff.dll  \r* wwDotnetBridge.dll  \r* FluentFtp.dll",
               "example": "",
               "sortOrder": 60,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294622",
               "classInfo": {
@@ -21356,6 +21419,7 @@
               "remarks": "#### Dependencies\rThis API uses a .NET library to provide FTP functionality.\r\r* wwIpstuff.dll  \r* wwDotnetBridge.dll  \r* Renci.sshNet.dll",
               "example": "",
               "sortOrder": 50,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294661",
               "classInfo": {
@@ -22417,6 +22481,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 270,
+          "isExpanded": true,
           "updated": "2025-09-14T10:46:02.0912384-10:00",
           "helpId": "1242995",
           "classInfo": {
@@ -22442,6 +22507,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 460,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1259024",
               "classInfo": {
@@ -22582,6 +22648,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 420,
+              "isExpanded": true,
               "updated": "2025-03-12T10:44:51.8704715-10:00",
               "helpId": "1243062",
               "classInfo": {
@@ -22791,6 +22858,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 410,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1258873",
               "classInfo": {
@@ -23116,6 +23184,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 400,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1243179",
               "classInfo": {
@@ -23139,6 +23208,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 20,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294577",
                   "classInfo": {
@@ -23164,6 +23234,7 @@
                       "seeAlso": "Class ComArray",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1294593",
                       "classInfo": {
@@ -23719,6 +23790,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1258842",
                   "classInfo": {
@@ -24950,6 +25022,7 @@
               "remarks": "Callback handlers are called back from a non-UI .NET thread and then marshalled back to the FoxPro UI thread. These callbacks can occur **at any time** after a program statement has executed on the FoxPro thread. This means the callback can interrupt a continuous block of currently executing code.\r\rFor this reason you should make sure to:\r\r* Keep the callback handler code very short and fast\r* Don't change state in the callback\r* Restore the environment (aliases, settings etc)\r* If necessary defer result processing by capturing  \rthe result state and processing it later.",
               "example": "Firing off the async request:\r\r```foxpro\rloBridge = CreateObject(\"wwDotNetBridge\",\"V4\")\r\rloTests = loBridge.CreateInstance(\"Westwind.WebConnection.TypePassingTests\")\r\r*** IMPORTANT: The callback object must remain in scope\r***            Either use a public var, or attach to an object that\r***            stays in scope for the duration of the callback\rPUBLIC loCallback\rloCallback = CREATEOBJECT(\"MyCallbacks\")\r\r*** This methods returns immediately - then fire events when done\rloBridge.InvokeMethodAsync(loCallback,loTests,\"HelloWorld\",\"Rick\")\r\rRETURN\r```\r\rHandling the Callback from the Async call:\r\r```foxpro\r*** Handle result values in this object\r*** The callback object is called back \r*** when the method completes or fails\rDEFINE CLASS MyCallback as AsyncCallbackEvents\r\r*** Returns the result of the method and the name of the method name\rFUNCTION OnCompleted(lvResult,lcMethod)\r? \"Success: \" + lcMethod,lvResult\rENDFUNC\r\r\r* Returns an error message, a .NET Exception and the method name\rFUNCTION OnError(lcMessage,loException,lcMethod)\r? \"Error: \" + lcMethod,lcMessage\rENDFUNC\r\rENDDEFINE\r```",
               "sortOrder": 180,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1292297",
               "classInfo": {
@@ -24975,6 +25048,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1294483",
                   "classInfo": {
@@ -25412,6 +25486,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1294718",
               "classInfo": {
@@ -25827,6 +25902,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1243079",
               "classInfo": {
@@ -25969,6 +26045,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 260,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1209",
           "classInfo": {
@@ -26876,6 +26953,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 250,
+          "isExpanded": true,
           "updated": "2025-03-12T14:26:54.5020116-10:00",
           "helpId": "1241562",
           "classInfo": {
@@ -27039,6 +27117,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 510,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241614",
               "classInfo": {
@@ -31219,6 +31298,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 230,
+          "isExpanded": true,
           "updated": "2025-07-25T12:44:30.9392232-10:00",
           "helpId": "1241792",
           "classInfo": {
@@ -31239,6 +31319,7 @@
               "displayType": "classheader",
               "type": "markdown",
               "sortOrder": 370,
+              "isExpanded": true,
               "updated": "2025-07-25T12:31:17.4805048-10:00",
               "classInfo": {},
               "topics": [
@@ -32644,6 +32725,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 220,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242780",
           "classInfo": {
@@ -33077,6 +33159,7 @@
           "remarks": "Called service methods have two PRIVATE variables passed into them:\r\r* **JsonService**  \r* **Serializer**\r\rUsing these references you can control the [wwJsonService](VFPS://Topic/_1WU1A33ET) and [wwJsonSerializer](VFPS://Topic/_1WU18OWBA) instances and perform tasks like override the `JsonService.IsRawResponse` to control output generation, or override the `Serializer.cPropertyNameOverrides` for proper cased values.",
           "example": "```foxpro\r************************************************************************\r*  JsonCallbacks\r****************************************\r***  Function: Demonstrates how to create a generic wwJSONService\r***            end point in a process class.\r***            This method uses a separate object to handle the\r***            actual method calls but you could also use THIS\r***            as the target object to directly execute Process\r***            Methods.\r***\r***            ajaxCallMethod(\"JsonCallbacks.wwd?Method=MyMethod\",[\"parm1\",10,new Date()],onSuccess,onError)\r***            ajaxJson(\"JSONCallbacks.wwd?Method=MyMethod\",null,onSuccess,onError);\r***      Pass: \r***    Return:\r************************************************************************\rFUNCTION JsonCallbacks()\r\rlcMethod = Request.QueryString(\"Method\")\r\r*** You don't have to create a new object - you can also use THIS\r*** But using a separate object ensures you only expose methods\r*** you care to expose rather than Process methods\rlotarget= CREATEOBJECT(\"AjaxCallbacks\")\r\r*** Instantiate the Json Service\rloService = CREATEOBJECT(\"wwJsonService\")\r\r*** Response is ALWAYS JSON unless there's a hard server error \rResponse.ContentType = \"application/json\"\r\r*** Simply call the specified method - \r*** The service will pull out method parameters from REQUEST\r*** Note the service will handle errors internally and return\r*** a JSON error object \rlcJSON = loService.CallMethod(Request,loTarget,lcMethod)\r\r*** Write out the result from CallMethod which returns the JSON for the method\r*** or a JSON Error object if the call failed\rResponse.Write( lcJSON )\rResponse.End()\r\rRETURN\rENDFUNC\r*   JsonCallbacks\r```",
           "sortOrder": 210,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242791",
           "classInfo": {
@@ -33362,6 +33445,7 @@
           "remarks": "",
           "example": "```foxpro\r\r************************************************************************\rDEFINE CLASS CustomerServiceClient as wwJsonServiceClient\r*********************************************************\r\r************************************************************************\r*  GetCustomers\r***************\rFUNCTION Customers(loParms)\rLOCAL loCustomers\r\rloCustomers = THIS.CallService(this.cServiceBaseUrl + \"customers.csvc\", loParms)\r\rIF THIS.lError\r   RETURN null\rENDIF   \r\rRETURN loCustomers\rENDFUNC\r*   GetCustomers\r\r************************************************************************\r*  UpdateCustomer\r*****************\rFUNCTION UpdateCustomer(loCustomer)\r\rloCustomer = THIS.CallService(this.cServiceBaseUrl + \"customer.csvc\",loCustomer,\"PUT\")\r\rIF THIS.lError\r   RETURN null\rENDIF \r\rRETURN loCustomer\rENDFUNC\r*   UpdateCustomer\r\rENDDEFINE\r```",
           "sortOrder": 200,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1292313",
           "classInfo": {
@@ -33694,6 +33778,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 190,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "2",
           "classInfo": {
@@ -33832,6 +33917,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "3",
               "classInfo": {
@@ -34153,6 +34239,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 250,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242918",
                   "classInfo": {
@@ -34547,6 +34634,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "8",
                   "classInfo": {
@@ -34810,6 +34898,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "18",
               "classInfo": {
@@ -35278,6 +35367,7 @@
           "remarks": "Distribution dependencies:\r* wwdotnetbridge.dll\r* wwipstuff.dll\r* markdig.dll",
           "example": "",
           "sortOrder": 180,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1290639",
           "classInfo": {
@@ -35446,6 +35536,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290641",
               "classInfo": {
@@ -35498,6 +35589,7 @@
           "remarks": "Relies uses the .NET Runtime and the [wwDotnetBridge library](vfps://Topic/Class%20wwDotNetBridge)",
           "example": "",
           "sortOrder": 170,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1290595",
           "classInfo": {
@@ -35548,6 +35640,7 @@
               "remarks": "There are many combinations of Encryption Provider, Ciphers, Hash formats and key lengths. Be sure you know what format is required for your scenario **if you are not using this library for round trip conversions**.\r\r---\r\rWe recommend you don't call these methods directly in your application code, but rather create simple **application specific** `Encrypt()` and `Decrypt()` methods or functions that your application code calls and that to wrap up all the complexity of these two method calls in one place.",
               "example": "```foxpro\rDO wwEncryption\r\rLOCAL loEnc as wwEncryption\rloEnc = CREATEOBJECT(\"wwEncryption\")\r\rlcOrig = \"Hello World\"\r? lcOrig\r\r*** 32 byte key (works best with most formats)\rlcKey = \"12345678901234567890123456789012\"\r? lcKey\r? LEN(lcKey)\r\r*** Example using Default settings for TripleDES \rlcVal  = loEnc.EncryptString(lcOrig, lcKey)\r? lcVal\r\rlcOrig  = loEnc.DecryptString(lcVal, lcKey)\r? lcOrig\r\r\r*** TripleDES explicit\rlcVal  = loEnc.EncryptString(lcOrig, lcKey, .F., \"TripleDES\", \"ECB\", \"MD5\")\r? lcVal\r\rlcOrig  = loEnc.DecryptString(lcVal, lcKey, .F., \"TripleDES\", \"ECB\", \"MD5\")\r? lcOrig\r\r*** AES Example\r\r*** 16 byte IvKey\rlcIvKey = \"1234567890123456\"\r\r*** Key Size 24 or 16 bytes\rlcKey2 = PADR(lcKey, 24)\r\rlcVal  = loEnc.EncryptString(lcOrig, lcKey2, .F., \"AES\", \"CBC\",\"\",\"\",lcIvKey)\r? lcVal\r\rlcOrig  = loEnc.EncryptString(lcVal, lcKey2, .F., \"AES\", \"CBC\",\"\",\"\",lcIvKey)\r? lcOrig\r```",
               "sortOrder": 80,
+              "isExpanded": true,
               "updated": "2025-03-12T10:30:32.8674055-10:00",
               "helpId": "1290597",
               "classInfo": {
@@ -35841,6 +35934,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 160,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1112",
           "classInfo": {
@@ -35865,6 +35959,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 70,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241999",
               "classInfo": {
@@ -36176,6 +36271,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 150,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242408",
           "classInfo": {
@@ -36198,6 +36294,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242409",
               "classInfo": {
@@ -36501,6 +36598,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242420",
               "classInfo": {
@@ -36828,6 +36926,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242434",
               "classInfo": {
@@ -36966,6 +37065,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290622",
               "classInfo": {
@@ -37035,6 +37135,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1290617",
               "classInfo": {
@@ -37154,6 +37255,7 @@
           "remarks": "FoxPro supports access to strings >16mb in a limited fashion. As long as strings are not mutated/changed and are assigned only directly with a single FoxPro operation (like `FILETOSTR()` or `loFs.ToString()`) larger than 16mb strings can be used in FoxPro code.",
           "example": "",
           "sortOrder": 140,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1294383",
           "classInfo": {
@@ -37369,6 +37471,7 @@
           "remarks": "This class is used by wwBusiness when nDataMode is set to 4 (Web Data).\r\rThis class works in conjunction of a server side wwHTTPSQLServer implementation which means a Web Server running a Visual FoxPro backend is required. This means Web Connection, ASP with a COM object etc. in addition to running whatever backend SQL engine is running.",
           "example": "",
           "sortOrder": 130,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241735",
           "classInfo": {
@@ -37486,6 +37589,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 130,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241749",
               "classInfo": {
@@ -38213,6 +38317,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 120,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "900",
           "classInfo": {
@@ -38425,6 +38530,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 110,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241963",
           "classInfo": {
@@ -38497,6 +38603,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 210,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242747",
               "classInfo": {
@@ -38635,6 +38742,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 200,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242733",
               "classInfo": {
@@ -39343,6 +39451,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 100,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1349",
           "classInfo": {
@@ -39714,6 +39823,7 @@
           "remarks": "Requires the MSXML 3.0 parser in order to work. Note: Version 4.x and later of the MSXML parser may not work correctly due to some changes with the XPATH default namespaces.\r\rThe oDOM property is loaded in the Init of the class, so if you want to avoid reloading this object for every use of this class you should persist this object.",
           "example": "",
           "sortOrder": 90,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241453",
           "classInfo": {
@@ -39885,6 +39995,7 @@
           "remarks": "Requires VFP 8.0 or later",
           "example": "```foxpro\r\n* ** Create XML from 2 cursors\r\nUSE Guest\r\nUSE tt_cust IN 0\r\n\r\nloXml = CREATEOBJECT(\"wwXmlAdapter\")\r\nloXml.AddTableSchema(\"TT_Cust\")\r\nloXml.AddTableSchema(\"Guest\")\r\nlcXml = \"\"\r\nloXml.ToXML(\"lcXml\")\r\n\r\n* ** This has your xml\r\n? lcXml\r\n\r\nClose data\r\n\r\n* ** Parse DataSet Xml back to cursors\r\nloXml = CREATEOBJECT(\"wwXmlAdapter\")\r\nloXml.LoadXML(lcXml)\r\n\r\n* ** Retrieve guest cursor\r\nloXml.GetCursor(\"Guest\")\r\nloXml.GetCursor(\"TT_Cust\")\r\n\r\nSELECT Guest\r\nBROWSE NOWAIT\r\nSELECT TT_CUST\r\nBROWSE NOWAIT\r\n```",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241956",
           "classInfo": {
@@ -39981,6 +40092,7 @@
           "remarks": "",
           "example": "DO WCONNECT\r\no = CREATEOBJECT(\"wwlocaleInfo\")\r\nlcLang = \"de-de\"\r\nLOCAL loLocale as Locale\r\no.GetLocaleInfo(lcLang)\r\n\r\nloLocale = o\r\n? loLocale.cLocaleId\r\n? loLocale.nLocaleId\r\n? loLocale.cCountry\r\n? loLocale.cEnglishCountry\r\n? loLocale.cDateSeparator\r\n? loLocale.cDateFormat\r\n? loLocale.cCURRENCYSYMBOL\r\n? loLocale.cCurrencyLocation\r\n? loLocale.CDECIMALPOINT\r\n? loLocale.ctHOUSANDSSEPARATOR\r\n\r\n? o.SetLocaleInfo(lcLang)\r\n? DATETIME()\r\n? DATE()\r\n? 100101.121\r\n? TRANSFORM(10000,\"@$\")",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241907",
           "classInfo": {
@@ -40421,6 +40533,7 @@
           "remarks": "* This library uses wwDotnet bridge\r* Dependencies:\r   * wwipstuff.dll\r   * wwDotnetBridge.dll",
           "example": "```foxpro\rDO wwZipArchive  && Load library and dependencies\r\rloZip = CREATEOBJECT(\"wwZipArchive\")\rlcZipFile = \"d:\\temp\\zipFiles.zip\"\r\r*** Zip up a folder with multiple wildcards\rIF !loZip.ZipFiles(;\r   lcZipFile,;\r   \"*.fpw,*.vc?,*.dll,*.h\",;  \r   CURDIR(), .T.)\r   ? \"Zipping Error: \" + loZip.cErrorMsg\r   RETURN\rENDIF   \r? loZip.cErrorMsg\r   \r*** add another file\r*** Note: You can add many files using same syntax as ZipFiles() above\rIF !loZip.AppendFiles(lcZipFile, \"wwZipArchive.prg\")\r   ? \"Error: \" + loZip.cErrorMsg\r   RETURN\rENDIF\r   \r*** Unzip all into a folder   \rIF !loZip.UnzipFolder(lcZipFile, \"d:\\temp\\Unzipped1\")\r   ? \"Unzip Error: \" + loZip.cErrorMsg\r   RETURN\rENDIF\r\r*** Look at all files in the zip   \rloEntries = loZip.GetZipEntries(lcZipFile)\rIF ISNULL(loEntries)\r   ? \"No entries:  \" + loZip.cErrorMsg\r   RETURN \rENDIF\r? loEntries.Count\r\r*** Iterate through the collection\rFOR EACH loEntry IN loEntries FoxObject     \r\t? loEntry.Name + \"  \" + ;\r\t  loEntry.Fullname + \" \" + ;\r\t  TRANSFORM(loEntry.Length) + \" - \" + ;\r\t  TRANSFORM(loEntry.CompressedLength)\rENDFOR   \r\r*** Unzip an individual entry and unzip it - first in this case\rloZip.UnzipFile(lcZipFile, loEntries[1].FullName, \"d:\\temp\\\" + loEntries[1].Name)\r```",
           "sortOrder": 60,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1294710",
           "classInfo": {
@@ -40570,6 +40683,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241819",
           "classInfo": {
@@ -41181,6 +41295,7 @@
           "remarks": "**Performance Notice**:   \rThis code uses an `THIS_Access()` accessor method to intercept **every property and method access** and then checks to see whether that property/method exists. This has a bit of overhead and is considerably slower than direct object property/method access. Use with care in critical path operations and test for performance carefully.",
           "example": "",
           "sortOrder": 40,
+          "isExpanded": true,
           "updated": "2025-12-27T14:46:30.4190901-10:00",
           "helpId": "1294447",
           "classInfo": {
@@ -41347,6 +41462,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 30,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242919",
           "classInfo": {
@@ -41605,6 +41721,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 25,
+          "isExpanded": true,
           "updated": "2025-12-27T14:41:50.4178548-10:00",
           "helpId": "1294726",
           "classInfo": {
@@ -41752,6 +41869,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241463",
           "classInfo": {
@@ -42348,6 +42466,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241396",
           "classInfo": {
@@ -42373,6 +42492,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 440,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241961",
               "classInfo": {
@@ -42536,6 +42656,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 430,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1241962",
               "classInfo": {
@@ -43673,6 +43794,7 @@
               "remarks": "",
               "example": "* ** Simple Example\r\noProxy = CREATEOBJECT(\"FoxCentralProxy\")\r\nlcXML = oProxy.GetNewsItems(14,0,\"ALL\")\r\n\r\n\r\n* ** Custom Settings example\r\n* ** Create for wwSoap and don't load WSDL file yet\r\noProxy = CreateObject(\"FoxCentralProxy\",0,.T.)  \r\n\r\noProxy.nTimeout = 5\r\noProxy.cUsername = \"rstrahl\"\r\noProxy.cPassword = \"supersecret\"\r\n\r\noProxy.LoadWsdl()\r\n\r\nlcXML = oProxy.GetNewsItems(14,0,\"ALL\")",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-05-28T07:11:26.4719828-10:00",
               "helpId": "1241929",
               "classInfo": {
@@ -43903,6 +44025,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 50,
+      "isExpanded": true,
       "updated": "2025-04-13T12:15:16.2227928-10:00",
       "helpId": "58",
       "classInfo": {
@@ -43926,6 +44049,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 100,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "353",
           "classInfo": {
@@ -44221,6 +44345,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 90,
+          "isExpanded": true,
           "updated": "2025-03-12T10:40:39.7662295-10:00",
           "helpId": "1243144",
           "classInfo": {
@@ -44752,6 +44877,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8676437-10:00",
           "helpId": "1287843",
           "classInfo": {
@@ -44823,6 +44949,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
+          "isExpanded": true,
           "updated": "2025-03-12T10:41:17.6340845-10:00",
           "helpId": "1287846",
           "classInfo": {
@@ -44846,6 +44973,7 @@
               "remarks": "This class requires use in conjunction with the server sie wwCallbackMethod control which provides the server side method processing semantics.",
               "example": "",
               "sortOrder": 110,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "95",
               "classInfo": {
@@ -45079,6 +45207,7 @@
               "remarks": "This class has no dependencies on server side features.",
               "example": "",
               "sortOrder": 100,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "128",
               "classInfo": {
@@ -45549,6 +45678,7 @@
           "remarks": "",
           "example": "```foxpro\r\nfunction HelloWorld()\r\n{\r\n\tCallback.Helloworld(\"Rick\",HelloWorldCallback,<<b>>OnPageError<</b>>);\r\n}\r\nfunction HelloWorldCallbac(Result)\r\n{\r\n\talert(Result);\r\n}\r\nfunction OnPageError(CallbackException)\r\n{\r\n\talert(\"Page Error: \" + CallbackException.message);\r\n}\r\n```",
           "sortOrder": 60,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "75",
           "classInfo": {
@@ -45618,6 +45748,7 @@
           "remarks": "This class has no dependencies on server side features.",
           "example": "",
           "sortOrder": 50,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "119",
           "classInfo": {
@@ -45899,6 +46030,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 40,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "638",
           "classInfo": {
@@ -46182,6 +46314,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "318",
           "classInfo": {
@@ -46423,6 +46556,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "773",
           "classInfo": {
@@ -46471,6 +46605,7 @@
           "seeAlso": "Class Number",
           "remarks": "",
           "example": "",
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "776",
           "classInfo": {
@@ -46521,6 +46656,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 30,
+      "isExpanded": true,
       "updated": "2025-04-13T12:18:36.0617909-10:00",
       "helpId": "1241293",
       "classInfo": {
@@ -46543,6 +46679,7 @@
           "seeAlso": "",
           "remarks": "",
           "example": "",
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1432",
           "classInfo": {
@@ -46902,6 +47039,7 @@
       "remarks": "",
       "example": "",
       "sortOrder": 10,
+      "isExpanded": true,
       "updated": "2025-11-12T19:57:45.1949406-10:00",
       "helpId": "1294703",
       "classInfo": {
@@ -46925,6 +47063,7 @@
           "remarks": "This class does not support SFTP (secure FTP over SSL)",
           "example": "",
           "sortOrder": 80,
+          "isExpanded": true,
           "updated": "2025-10-27T08:16:08.6754682-10:00",
           "helpId": "678",
           "classInfo": {
@@ -48139,6 +48278,7 @@
           "remarks": "#### Dependencies\r* .NET 4.5 or later\r* wwDotnetBridge.dll\r* renci.ssh.dll",
           "example": "",
           "sortOrder": 30,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1294332",
           "classInfo": {
@@ -48717,6 +48857,7 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241627",
           "classInfo": {
@@ -49235,6 +49376,7 @@
           "remarks": "IMPORTANT: You can only run one socket instance per FoxPro application!!! If you connect a second socket you will kill any previous existing socket connections created with this class.\r\n\r\nRequires Winsock 2.0 on the client machine. (ws2_32.dll in your SYSTEM32/SYSTEM dir).",
           "example": "",
           "sortOrder": 10,
+          "isExpanded": true,
           "updated": "2025-03-12T10:43:12.2928061-10:00",
           "helpId": "1241543",
           "classInfo": {
@@ -49691,6 +49833,7 @@
           "seeAlso": "",
           "remarks": "",
           "example": "",
+          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1242025",
           "classInfo": {
@@ -49714,6 +49857,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 30,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242044",
               "classInfo": {
@@ -49875,6 +50019,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 70,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242595",
                   "classInfo": {
@@ -49969,6 +50114,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 30,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1270483",
                   "classInfo": {
@@ -50134,6 +50280,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 20,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242035",
               "classInfo": {
@@ -50389,6 +50536,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 10,
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242042",
               "classInfo": {
@@ -50412,6 +50560,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 110,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242062",
                   "classInfo": {
@@ -52472,6 +52621,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 100,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242163",
                   "classInfo": {
@@ -53163,6 +53313,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 90,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242356",
                   "classInfo": {
@@ -53236,6 +53387,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 70,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242222",
                   "classInfo": {
@@ -53259,6 +53411,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 90,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242199",
                       "classInfo": {
@@ -53464,6 +53617,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 80,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242531",
                       "classInfo": {
@@ -53738,6 +53892,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 60,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242284",
                       "classInfo": {
@@ -53857,6 +54012,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 50,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1243095",
                       "classInfo": {
@@ -53903,6 +54059,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 20,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1243099",
                           "classInfo": {
@@ -54046,6 +54203,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 40,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1243086",
                       "classInfo": {
@@ -54211,6 +54369,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242386",
                       "classInfo": {
@@ -54561,6 +54720,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 60,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242655",
                   "classInfo": {
@@ -54583,6 +54743,7 @@
                       "seeAlso": "",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242214",
                       "classInfo": {
@@ -54697,6 +54858,7 @@
                       "seeAlso": "",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242289",
                       "classInfo": {
@@ -54862,6 +55024,7 @@
                       "seeAlso": "",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242360",
                       "classInfo": {
@@ -55201,6 +55364,7 @@
                       "seeAlso": "",
                       "remarks": "",
                       "example": "",
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242646",
                       "classInfo": {
@@ -55319,6 +55483,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 50,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242223",
                   "classInfo": {
@@ -55342,6 +55507,7 @@
                       "remarks": "",
                       "example": "</pre>\r\n\r\n**Script Code:**  \r\n```html\r\n<ww:wwWebDataGrid ID=\"gdCustomers\" runat=\"server\" PageSize=\"10\">\r\n<Columns>\r\n    <ww:wwWebDataGridColumn runat=\"server\" id=\"colCompany\"  Expression=\"Company\" HeaderText=\"Company\"  />\r\n    <ww:wwWebDataGridColumn runat=\"server\" id=\"colCareOf\" Expression=\"CareOf\" HeaderText=\"Name\"  />\r\n</Columns>\r\n</ww:wwWebDataGrid>\r\n```\r\n\r\n**Fox Code:**  \r\n```foxpro\r\nTHIS.gdCustomers = CREATEOBJECT(\"wwwebdatagrid\",THIS)\r\nTHIS.gdCustomers.Id = \"gdCustomers\"\r\nTHIS.gdCustomers.PageSize = 10\r\nTHIS.AddControl(THIS.gdCustomers)\r\n\r\nTHIS.colCompany = CREATEOBJECT(\"wwwebdatagridcolumn\",THIS)\r\nTHIS.colCompany.Id = \"colCompany\"\r\nTHIS.colCompany.Expression = [Company]\r\nTHIS.colCompany.HeaderText = [Company]\r\nTHIS.colCompany.UniqueId = [gdCustomers_colCompany]\r\nTHIS.gdCustomers.AddControl(THIS.colCompany)\r\n\r\nTHIS.colCareOf = CREATEOBJECT(\"wwwebdatagridcolumn\",THIS)\r\nTHIS.colCareOf.Id = \"colCareOf\"\r\nTHIS.colCareOf.Expression = [CareOf]\r\nTHIS.colCareOf.HeaderText = [Name]\r\nTHIS.colCareOf.UniqueId = [gdCustomers_colCareOf]\r\nTHIS.gdCustomers.AddControl(THIS.colCareOf)\r\n```",
                       "sortOrder": 60,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242227",
                       "classInfo": {
@@ -55367,6 +55533,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 290,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242384",
                           "classInfo": {
@@ -55530,6 +55697,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 250,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242260",
                           "classInfo": {
@@ -56401,6 +56569,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 30,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242300",
                       "classInfo": {
@@ -56495,6 +56664,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 180,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242347",
                           "classInfo": {
@@ -56987,6 +57157,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242960",
                       "classInfo": {
@@ -57084,6 +57255,7 @@
                       "remarks": "Any child controls that are rendered inside of a repeater only call OnInit() for performance reasons. This means that some controls may not work as expected. The reason is performance and also the fact that repeater renders data items as part of the .Render() process of the page and doesn't run through the full page cycle of events.",
                       "example": "",
                       "sortOrder": 10,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242370",
                       "classInfo": {
@@ -57391,6 +57563,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 40,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242224",
                   "classInfo": {
@@ -57414,6 +57587,7 @@
                       "remarks": "Requires wwImage.dll library.\r\n\r\nThis control uses Session to store the generated ID. Requires that EnableSessionState is true on the page or the InitSession is called in the Process class.",
                       "example": "",
                       "sortOrder": 100,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242768",
                       "classInfo": {
@@ -57679,6 +57853,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 90,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242974",
                       "classInfo": {
@@ -58030,6 +58205,7 @@
                       "remarks": "Make sure that the HTML form of the page uses an enctype=\"multipart/form-data\" when uploading files, and use Request.GetMultipartFile() to retrieve uploaded files, and Request.GetMultipartFormVar() to retrieve form variables on the server.",
                       "example": "",
                       "sortOrder": 80,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242586",
                       "classInfo": {
@@ -58105,6 +58281,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 70,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242509",
                       "classInfo": {
@@ -58154,6 +58331,7 @@
                       "remarks": "This control requires Session state to work. This means you need to set the Page's EnableSessionState property to .T. Make sure this is done or code might fail or worse authentication will not work. By association this means that HTTP Cookies must be enabled.\r\n\r\nSets two Session Vars: WebLogin and WebLoginAdmin. The name of the Var is configurable via the LoginSessionVar property.",
                       "example": "",
                       "sortOrder": 60,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242441",
                       "classInfo": {
@@ -58702,6 +58880,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 50,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242673",
                       "classInfo": {
@@ -58750,6 +58929,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 160,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242710",
                           "classInfo": {
@@ -58799,6 +58979,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 150,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242700",
                           "classInfo": {
@@ -59272,6 +59453,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 30,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242329",
                       "classInfo": {
@@ -59528,6 +59710,7 @@
                       "remarks": "Requires that you explicitly add SET PROCEDURE TO csCodeParser ADDITIVE in your server's startup code",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242523",
                       "classInfo": {
@@ -59620,6 +59803,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 10,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242935",
                       "classInfo": {
@@ -59713,6 +59897,7 @@
                           "remarks": "",
                           "example": "",
                           "sortOrder": 120,
+                          "isExpanded": true,
                           "updated": "2025-03-12T00:00:00Z",
                           "helpId": "1242952",
                           "classInfo": {
@@ -60065,6 +60250,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242806",
                   "classInfo": {
@@ -60088,6 +60274,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 90,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "81",
                       "classInfo": {
@@ -60228,6 +60415,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 80,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242837",
                       "classInfo": {
@@ -60494,6 +60682,7 @@
                       "remarks": "Please be aware that when making method callbacks OnInit() and OnLoad() events are fired both on the form and the control. If you have code in the page's OnInit() or OnLoad() use this.Page.CallbackControl.IsCallback to exit early if desired.\r\n\r\nIf you use this control from a user control and you want to route the callback handling code to a method in the user control you have to explcitly assign the TargetObject to the control in the OnInit():\r\n\r\n```foxpro\r\n* ** In a User Control use code like this to route User Control methods\r\nFUNCTION OnInit()\r\nthis.HeaderProxy.TargetObject = this\r\nDODEFAULT()\r\nRETURN\r\n```",
                       "example": "",
                       "sortOrder": 70,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242850",
                       "classInfo": {
@@ -60687,6 +60876,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 60,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242809",
                       "classInfo": {
@@ -60897,6 +61087,7 @@
                       "remarks": "This control uses the modalDialog jQuery plugin underneath the covers, so it's essentially driving JavaScript code. You can also easily use the modalDialog jQuery plugin directly with any dialog without having to use this control. \r\n\r\nFor example, the following displays an image in the center of the page over the darkened background:\r\n```javascript\r\n$(\"#imgWorking\").modalDialog()\r\n```\r\n\r\nOr you can access a dialog\r\n$(\"#divMessageDialog\").modalDialog( { dialogHandler: function() {\r\n     var btnText = $(this).val();\r\n     var btnId = this.id;\r\n     if (btnId == \"btnOk\")\r\n       return true;  // close dialog\r\n\r\n     return false;  // leave open\r\n});",
                       "example": "```html\r\n<input type=\"button\" id=\"btnShowMsgBox\" name=\"btnShowMsgBox\" value=\"Show Modal Dialog\" />\r\n\r\n\r\n<ww:wwModalDialog ID=\"MessageBox\" runat=\"server\" \r\n    CssClass=\"dialog boxshadow\" OnClientDialogClick=\"onMessageBoxClick\"              \r\n    Style=\"background: white; display: none; border-width:0; width: 400px;\">\r\n<div id=\"MessageBoxHeader\" class=\"dialog-header\">Header</div>\r\n<div style=\"padding: 10px;\">\r\n    <div id=\"MessageBoxContent\" class=\"dialog-content\">\r\n        Hello Cruel World.\r\n    </div>\r\n    <hr />\r\n    <input type='button' id='MessageBoxOk' value='Ok' />\r\n    <input type='button' id='Button1' value='Cancel' />\r\n</div>\r\n</ww:wwModalDialog>\r\n\r\n<script type=\"text/javascript\">\r\n$().ready( function() {\r\n   showStatus({ autoClose: true });\r\n\r\n   // hook up click event to button\r\n   $(\"#btnShowMsgBox\").click(function () {\r\n       MessageBox.show();\r\n   });\r\n});\r\n\r\n// the handler called when on of the buttons is clicked\r\nfunction onMessageBoxClick()\r\n{\r\n   var button = $(this).val();\r\n   showStatus(\"You clicked: \" + button,3000);\r\n\r\n   if (button == \"Ok\")\r\n       return true;\r\n\r\n    // don't close\r\n   return false;\r\n}\r\n</script>\r\n```",
                       "sortOrder": 50,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1242818",
                       "classInfo": {
@@ -61200,6 +61391,7 @@
                       "remarks": "Depends on:\r\n\r\n<ul>\r\n* ~/scripts/jquery.js\r\n* ~/scripts/ui.datepicker/ui.datepicker.js\r\n* ~/scripts/ui.datepicker/ui.datepicker.min.js\r\n* ~/scripts/ui.datepicker/ui.datepicker.css\r\n* ~/images/calendar.gif\r\n</ul>\r\n\r\nAll but the jQuery path are configurable (jQuery.js is required in the /scripts folder of your virtual root).",
                       "example": "",
                       "sortOrder": 30,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1243029",
                       "classInfo": {
@@ -61453,6 +61645,7 @@
                       "remarks": "This object must be used in conjunction with a wwWebPage\r\nas it relies on the Page object to inject script into the\r\npage.",
                       "example": "",
                       "sortOrder": 20,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1259031",
                       "classInfo": {
@@ -61765,6 +61958,7 @@
                       "remarks": "",
                       "example": "",
                       "sortOrder": 10,
+                      "isExpanded": true,
                       "updated": "2025-03-12T00:00:00Z",
                       "helpId": "1259011",
                       "classInfo": {
@@ -62024,6 +62218,7 @@
               "seeAlso": "",
               "remarks": "",
               "example": "",
+              "isExpanded": true,
               "updated": "2025-03-12T00:00:00Z",
               "helpId": "1242580",
               "classInfo": {
@@ -62139,6 +62334,7 @@
                   "remarks": "",
                   "example": "",
                   "sortOrder": 10,
+                  "isExpanded": true,
                   "updated": "2025-03-12T00:00:00Z",
                   "helpId": "1242711",
                   "classInfo": {
