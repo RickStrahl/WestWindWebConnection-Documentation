@@ -1,20 +1,43 @@
-Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to same version updates (ie. 8.01 -> 8.12 for example).
+In order to update Web Connection make sure you have the appropriate distribution of Web Connection installed. Web Connection is distributed **in two very distinct distributions that need to be installed independently**:
+
+* **Shareware version**  
+Installs using the [freely downloadable version from the West Wind Web site](https://webconnection.west-wind.com/download.aspx).
+
+* **Licensed Developer version**  
+Requires a Web Connection developer license and installs from a **private download link**. The download link is emailed to you upon registration and in update notifications, or available from your [West Wind Web Store Account](https://store.west-wind.com/profile). 
+
+Once you have the appropriate distribution installed you can update to a new version of the same distribution. 
+
+### The Short Take
+It's best to do a **clean re-install** of the appropriate version of Web Connection for each update to ensure that all component pieces are updated appropriately. This includes switching from shareware to licensed versions.
+
+In version 6.0 and later the Web Connection distribution folders don't contain any of your application data, so the installation folders can be safely deleted or moved and reinstalled.
+
+
+
+### Updating Web Connection
+Web Connection is updated frequently and so you'll often have to update an existing installation with the core files from a new version. This topic refers to minor version updates (ie. 8.1 -> 8.2 for example) but can also be used for major version updates.
 
 > #### @icon-warning Updating from the Shareware Version
-> If you are updating from the Shareware version or you had previously installed the Shareware version, or you have already installed and are seeing shareware version prompts we recommend a **full delete of all files** in the Web Connection installation folder followed by a full reinstall as a **Fresh Install** as described below.
+> If you are updating from the Shareware version or you had previously installed the Shareware version, or you have already installed and are seeing shareware version prompts we recommend to always do a **full delete of all files** in the Web Connection installation folder followed by a full reinstall as a **Fresh Install** as described below.
 
 ### Do a Fresh Install!
 Web Connection 6.x and later uses a new project system that **doesn't write anything of interest into the Web Connection Install folders** after installation. So the installation folder doesn't have any files worth keeping between releases and it is safe to delete the installation files and reinstall.
 
+> #### @icon-info-circle Upgrading Old Pre-v6 Versions
+> Older pre-v6 versions of Web Connection often stored application specific files in the installation folder. In that case an application migration that creates a new style project and imports files into the new project and folders is required.
+
 For this reason **a complete delete all and reinstall is the preferred way to update a Web Connection installation now.**
 
-> You can install Web Connection anywhere you like, but the following assumes `\wconnect` as the install folder.
 
 If you build applications using the new project system **all application related files will be in your project folders**. So it's perfectly safe to:
 
 * Backup or rename your existing installation to something like `\wconnectXXX`
 * Delete all content in the original `\wconnect` folder
 * Reinstall or Unzip Web Connection into `\wconnect`
+
+
+> You can install Web Connection anywhere you like, but the following assumes `\wconnect` as the install folder.
 
 There are potentially some files that you may have customized and you may want to copy back from your old install:
 
