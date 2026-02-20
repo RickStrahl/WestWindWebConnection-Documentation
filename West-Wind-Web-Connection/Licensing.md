@@ -1,14 +1,12 @@
 Web Connection is licensed per developer and/or per physical or virtual Windows Server instance. Licenses are assigned for a specific **major version** (8.x, 7.x, 6.x etc.) of Web Connection or one of its runtime licenses.
 
-All licenses are valid for the major version or any prior version that it was purchased for and updates within the same major version are always free. 
-
-Major version upgrades are available at discounted rates and any old version can be upgraded to a new version.
+Web Connection works off **license counts**, each of which can be applied either to a single developer **or** a single server installation.
 
 ## License Types
 Licenses come in two flavors:
 
 * **Full Developer License**  
-At least one full developer license is required in order to add any runtime licenses. The developer license includes 2 license counts: One developer and one server installation.
+At least one full developer license is required in order to add any runtime licenses. The developer license includes 2 license counts: One developer and one server installation, so you can build and deploy one Web Connection application.
 
 * **Runtime License**  
 A runtime license can be purchased once at least a single developer license exists. Runtime licenses come in various license counts from 5 to unlimited.
@@ -163,10 +161,28 @@ All licenses are granted for a specific Web Connection major version (6.x, 7.x, 
 
 Major version updates are fairly rare at no less than 5 years, and we guarantee a 1 year free upgrade window from purchase date for the Full Developer License, and 2 years for Runtime Licenses.
 
-For runtime upgrade purchases, you can use a **promo code** of **RUNTIME_UPGRADE** for the runtime upgrade discount. Note that we verify existing versions before any upgrade orders are approved.
+* **Licenses are Valid for a Major Version**  
+All licenses are valid for the major version (ie. `v8` or `v7`), and are valid for any prior version that it was purchased for.
+
+* **Free Minor Version Updates**  
+Minor version updates within the same major version (ie. `v8.1` to `v8.2`) are always free. 
+
+* **Major Version Upgrades**   
+Major version upgrades (`v7` to `v8`) are available at discounted rates and **any old version** can be upgraded to the latest version. 
+
+* **One Year Free Upgrade Grace Period**  
+Major versions can be upgraded for free if you purchased a previous version within 1 year before the upgrade's release.
+
+* **Runtime Upgrades**  
+For runtime upgrade purchases, you can use a **promo code** of **RUNTIME_UPGRADE** with the full product skus, which applies a 50% discount. 
+
+> Note that we manually verify existing versions before any upgrade orders are approved. For this reason upgrade orders may take a day to clear.
+
+
+
 
 ## Source Code,  Copyright and License 
-You may modify the source code and visual appearance of the Visual FoxPro Web Connection framework for your own applications. Regardless of any changes made to the framework itself, it remains copyright of West Wind Technologies.  Modification of any non Visual FoxPro binary files is not allowed.
+You may modify the source code and visual appearance of the Visual FoxPro Web Connection framework **for your own applications only**. Regardless of any changes made to the framework itself, it remains copyright of West Wind Technologies.  Modification of any non Visual FoxPro binary files is not allowed.
 
 ## Warranty Disclaimer: No Warranty!
 IN NO EVENT SHALL THE AUTHOR, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THIS PROGRAM AND DOCUMENTATION, BE LIABLE FOR ANY COMMERCIAL, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM INCLUDING, BUT NOT LIMITED TO, LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR LOSSES SUSTAINED BY THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS, EVEN IF YOU OR OTHER PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.

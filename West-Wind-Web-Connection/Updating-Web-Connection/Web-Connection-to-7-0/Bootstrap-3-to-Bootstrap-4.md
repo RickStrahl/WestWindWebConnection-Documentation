@@ -1,4 +1,4 @@
-﻿Web Connection 7.0 switches from Bootstrap v3 to v4 which is a fairly major change for the Bootstrap framework. Luckily as far as features used by Web Connection's base templates and style sheets, the changes are relatively minor.
+Web Connection 7.0 switches from Bootstrap v3 to v4 which is a fairly major change for the Bootstrap framework. Luckily as far as features used by Web Connection's base templates and style sheets, the changes are relatively minor.
 
 Most of the Bootstrap concepts from 3.x stay intact in v4 - there are a lot of new features and components and a few that have changed. However, some of the most common layout concepts and base form control layouts stay pretty much the same between 3 and 4.
 
