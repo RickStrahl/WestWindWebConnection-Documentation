@@ -15,7 +15,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 100,
-      "isExpanded": true,
       "updated": "2026-01-16T11:26:41.1661203-10:00",
       "helpId": "2",
       "classInfo": {
@@ -108,7 +107,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 100,
-          "isExpanded": true,
           "updated": "2026-01-18T21:27:46.7721217-10:00",
           "helpId": "1258814",
           "classInfo": {
@@ -156,7 +154,6 @@
               "remarks": "",
               "example": "",
               "sortOrder": 25,
-              "isExpanded": true,
               "updated": "2025-09-26T05:58:46.3176891-10:00",
               "helpId": "1294439",
               "classInfo": {
@@ -623,7 +620,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
-          "isExpanded": true,
           "updated": "2025-09-11T13:27:15.79345-10:00",
           "helpId": "1094",
           "classInfo": {
@@ -2175,7 +2171,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "isExpanded": true,
           "updated": "2025-06-11T10:51:54.6438259-10:00",
           "helpId": "1281",
           "classInfo": {
@@ -3367,7 +3362,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 40,
-          "isExpanded": true,
           "updated": "2025-05-28T05:37:28.3758547-10:00",
           "helpId": "1104",
           "classInfo": {
@@ -3952,7 +3946,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 30,
-          "isExpanded": true,
           "updated": "2025-05-28T05:38:19.9432659-10:00",
           "helpId": "860",
           "classInfo": {
@@ -4260,7 +4253,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 20,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1148",
           "classInfo": {
@@ -4473,7 +4465,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 10,
-          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8638905-10:00",
           "helpId": "1376",
           "classInfo": {
@@ -4984,7 +4975,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 80,
-          "isExpanded": true,
           "updated": "2025-03-12T00:00:00Z",
           "helpId": "1241789",
           "classInfo": {
@@ -5008,7 +4998,7 @@
               "remarks": "",
               "example": "",
               "sortOrder": 90,
-              "updated": "2025-05-04T11:35:46.6275748-10:00",
+              "updated": "2026-02-21T19:37:59.3987658-10:00",
               "helpId": "1101",
               "classInfo": {
                 "memberName": "",
@@ -5217,7 +5207,6 @@
           "remarks": "",
           "example": "",
           "sortOrder": 70,
-          "isExpanded": true,
           "updated": "2025-03-12T10:30:32.8655265-10:00",
           "helpId": "1241698",
           "classInfo": {
@@ -5756,7 +5745,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 70,
-      "isExpanded": true,
       "updated": "2025-11-10T20:23:27.7564144-10:00",
       "helpId": "3",
       "classInfo": {
@@ -18064,7 +18052,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 60,
-      "isExpanded": true,
       "updated": "2025-09-14T09:33:00.7147074-10:00",
       "helpId": "24",
       "classInfo": {
@@ -44025,7 +44012,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 50,
-      "isExpanded": true,
       "updated": "2025-04-13T12:15:16.2227928-10:00",
       "helpId": "58",
       "classInfo": {
@@ -46656,7 +46642,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 30,
-      "isExpanded": true,
       "updated": "2025-04-13T12:18:36.0617909-10:00",
       "helpId": "1241293",
       "classInfo": {
@@ -47039,7 +47024,6 @@
       "remarks": "",
       "example": "",
       "sortOrder": 10,
-      "isExpanded": true,
       "updated": "2025-11-12T19:57:45.1949406-10:00",
       "helpId": "1294703",
       "classInfo": {
