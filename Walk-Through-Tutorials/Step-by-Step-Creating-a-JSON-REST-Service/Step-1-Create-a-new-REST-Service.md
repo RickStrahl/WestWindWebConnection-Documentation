@@ -1,4 +1,4 @@
-﻿Let's start by creating a new **wwRESTProcess class** for our Customer business object. The goal is to create a simple CRUD service that can handle queries and allows adding and updating of customer records.
+Let's start by creating a new **wwRESTProcess class** for our Customer business object. The goal is to create a simple CRUD service that can handle queries and allows adding and updating of customer records.
 
 The first step is to create a new service. We'll use the **New Process Class Wizard** on the Web Connection Console to add the service class to the existing CustomerDemo example we built in the [MVC/Business object Tutorial](VFPS://Topic/_0I102WSAI). If you prefer you can also create a new project using the **New Project Wizard** instead.
 
