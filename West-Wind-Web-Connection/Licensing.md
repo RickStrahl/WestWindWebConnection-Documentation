@@ -2,6 +2,12 @@ Web Connection is licensed per developer and/or per physical or virtual Windows 
 
 Web Connection works off **license counts**, each of which can be applied either to a single developer **or** a single server installation.
 
+## Purchasing Licenses
+You can find pricing and purchase licenses from our Web site:
+
+* [Web Connection Pricing](https://webconnection.west-wind.com/purchase.aspx)
+
+
 ## License Types
 Licenses come in two flavors:
 

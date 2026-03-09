@@ -25,7 +25,8 @@
 {{% } }}
 
 {{% if(!string.IsNullOrEmpty(Topic.ClassInfo.Exceptions)) { }}
-	{{ HtmlUtils.DisplayMemo(Topic.ClassInfo.Exceptions) }}
+    <h3 class="outdent" id="exceptions">Exceptions</h3>
+	{{ Helpers.Markdown(Topic.ClassInfo.Exceptions) }}
 {{% } }}
 
 {{% if(!string.IsNullOrEmpty(Topic.Remarks))  { }}

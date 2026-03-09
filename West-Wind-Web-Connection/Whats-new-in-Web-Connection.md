@@ -43,7 +43,7 @@ Fix issues with file names not encoding correctly when uploading files using `nH
 
 ### Breaking Changes in 8.5{.text-danger}
 
-* **User Authentication Username and Password are now case sensitive**  
+* **User Authentication Password is now case sensitive**  
 Depending on how you store passwords in your User Security table you may see changes to password behavior if users expect to use case insensitive passwords. To avoid this and keep old behavior you can update all passwords to be stored as lower case in your data store.
 
 

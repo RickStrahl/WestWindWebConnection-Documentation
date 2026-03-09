@@ -144,23 +144,37 @@ var helpBuilder = null;
 
         // ajax navigation
         if (href.startsWith("_") || href.startsWith("/")) {
-            $.get(href, function (html) {
+            $.get(href, function (html) {                           
                 var $html = $(html);
                 var title = html.extract("<title>", "</title>");
                 window.document.title = title;
 
+
                 var $content = $html.find(".main-content");
                 if ($content.length > 0) {
+                    // update the navigation history/url in addressbar
+                    window.history.pushState({ title: title, URL: href }, title, href);
+
+                    // special check for MathJax script - force a full reload of the page if not in doc
+                    if (html.indexOf("class=\"math\"") > -1) {
+                        var el = document.getElementById("MathJax-script");
+
+                        if (!el) {
+                            window.location.reload();
+                            return;
+                        }
+                    }
+
                     html = $content.html();
                     $(".main-content").html(html);
-
-                    // update the navigation history/url in addressbar
-                    window.history.pushState({ title: '', URL: href }, "", href);
+                    
                     
                     $(".main-content").scrollTop(0);                    
                     setTheme();
                 } else
                     return;
+
+               
 
                 var $banner = $html.find(".banner");
                 if ($banner.length > 0);
@@ -813,9 +827,8 @@ function mermaidLoader(mermaidUrl, mermaidConfig)
         return;            
     }
     
-    function initializeMermaid() {
-        mermaid = window.mermaid;
-        mermaid.initialize(mermaidConfig);            
+    function initializeMermaid() {        
+        window.mermaid.initialize(mermaidConfig);            
         renderMermaid();
     }
 
@@ -825,7 +838,7 @@ function mermaidLoader(mermaidUrl, mermaidConfig)
         if (!window.mermaid)
             loadMermaid();                
         else            
-            mermaid.init(undefined,'.mermaid');    
+            window.mermaid.init(undefined,'.mermaid');    
     } 
 
     function loadMermaid() {            
