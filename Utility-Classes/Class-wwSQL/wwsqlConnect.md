@@ -1,1 +1,1 @@
-﻿Connects to a datasource via connection or connect string.
+Connects to a SQL datasource via a connection string or DSN string.
