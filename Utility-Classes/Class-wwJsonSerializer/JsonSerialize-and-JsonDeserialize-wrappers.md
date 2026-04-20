@@ -1,4 +1,4 @@
-﻿There are two helper methods that provide single line of code JSON serialization and deserialization.
+There are two helper methods that provide single line of code JSON serialization and deserialization.
 
 Note that these are standalone UDF() functions rather than class methods:
 
@@ -12,11 +12,12 @@ lcJson = JsonSerialize(loObjectOrValue, llFormat)
 ### JsonDeserialize()
 
 ```foxpro
-loObject = JsonSerialize(lcJson)
+loObject = JsonDeserialize(lcJson)
 ```
 
 ### Example
-Here's an example of how to use these 
+Here's an example of how to use these two methods:
+
 ```foxpro
 DO wwJsonSerializer
 
