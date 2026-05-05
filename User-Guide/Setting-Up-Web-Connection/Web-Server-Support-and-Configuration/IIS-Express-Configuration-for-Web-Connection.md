@@ -123,18 +123,18 @@ For more information, check out the [topic on the Managed Handler](vfps://Topic/
 ### Monitoring running IIS Express Sites and Configuration
 You can find more information about IIS Express running and the sites that are actively running in it in the Task Tray. An IIS Express icon lurks in the Task Tray which when clicked shows a summary of each site along with links to each of the site and their site configurations.
 
-<img src="IMAGES/TaskTrayIcon.png">
+![](/images/TaskTrayIcon.png)
 
 You can expand the icon and see a summary of sites:
 
-<img src="IMAGES/IISExpressBrowseSites.png">
+![](/images/IISExpressBrowseSites.png)
 
 ### Configuring IIS Express
 When you create a site for IIS Express it creates a full IIS application instance including its own ApplicationHost.config file which holds the full site configuration. Site configuration holds some important information, such as authentication methods supported, timeouts, filters and so forth.
 
 To find the configuration file associated with IIS Express bring up the Show All Applications link on the System Tray menu for IIS Express. When you do you'll see this dialog:
 
-<img src="IMAGES/IISSiteConfig.png">
+![](/IMAGES/IISSiteConfig.png)
 
 Note the link to the Configuration file. You can click the link to edit the configuration file.
 
@@ -148,16 +148,15 @@ One missing feature of the default IIS Express install is that it doesn't includ
 This is necessary in order for authentication to work on the admin links.
 
 ### Running IIS Express from the Command Line
-IIS Express is essentially launched via a Windows commandline. The Web Connection IIS Express launcher form that pops up is merely a wrapper form that creates a command line and then launches IIS Express. 
+IIS Express is essentially launched via a Windows Terminal command. The Web Connection IIS Express launcher form that pops up is merely a wrapper form that creates a command line and then launches IIS Express. 
 
 However if you prefer you can launch IIS Express yourself. You can find out more about the IIS Express Command Line here:
 
-**<a href="http://www.iis.net/learn/extensions/using-iis-express/running-iis-express-from-the-command-line" target="top">Running IIS Express from the Command Line</a>
-**
+* [Running IIS Express from the Command Line](http://www.iis.net/learn/extensions/using-iis-express/running-iis-express-from-the-command-line) 
 
 Web Connection typically launches IIS Express like this (all on one line):
 
-```text
+```powershell
 <program files>\IIS Express\IISExpress.exe  
                 /path:"c:\westwind\wconnect"  
                 /port:7000

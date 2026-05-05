@@ -1,4 +1,4 @@
-﻿Web Connection supports a number of different Web Servers. Click the link for installation and configuration instructions.
+Web Connection supports a number of different Web Servers. Click the link for installation and configuration instructions.
 
 * **[Internet Information Server (IIS)](VFPS://Topic/_22F0XKBMQ)** <small>(production, optionally dev)</small>   
 This is the built-in Windows Web Server which is typically used to run production applications on a live server but can also be used for local development. IIS is a Windows component, but it **has to be explicitly enabled and configured** and **requires Administrative Rights** to do so. IIS runs as a Windows Service and is **always on**.  
@@ -24,16 +24,15 @@ Some general recommendations:
 * For local Development:
   * Web Connection Web Server or IIS Express have low system impact  
     and run as Root web sites
-  * IIS can also be used locally,   
-    useful for final compatibility testing
-  * IIS is more complex to setup/maintain for local development  
-    as it requires a separate virtual directory or Root Web Site domain
-
+  * IIS can also be used locally, but...
+      * IIS is more complex to setup and maintain on a client Windows machine
+      * Requires Administrative rights to install and configure
+      * Each  application also requires a separate virtual directory or Root Web Site in configuration
+      * Web Site Configuration is not easily portable across machines - re-config is required
+      
 > #### @icon-info-circle Recommendations
-> Personally, I install IIS on the system and configure all new projects with it, even though I usually run my local development applications using the Web Connection Web Server. 
+> Use the **Web Connection Web Server** or **IIS Express** for local development and skip IIS on the local machine. The two self-contained servers make for quicker installation and is simply easier to work with as they make it easy to run root site Web sites without any of the IIS installation, local machine security and administration headaches.
+> 
+> For local development, we prefer the Web Connection Server, because it's a simple command line based application that also provides some visual feedback via the terminal when requests are processing. You can manually start and stop it, and `launch()` automatically launches it if not already running. The Web Connection Server is also re-distributable with your application, so it's possible to run your Web Connection application on a client computer without having to install a separate Web server (but you do need a .NET installation for which we provide an easy online-download installer).
 >
-> This way IIS is configured and can be run for testing **if needed**, but for the bulk of development work I can use the Web Connection Web Server or IIS Express. Little more effort, but best of both worlds.
->
-> If I configure a project for IIS, I usually change the `lcServerType` in `launch.prg` to my preferred local server (ie. `lcServerType="WebConnectionWebServer"`). 
->
-> If I don't configure for IIS and later decide I need IIS, I can run `<myApp>_ServerConfig.prg` to configure IIS for the project.
+> IIS for local machines makes sense only for specific compatibility checks, and for seeing exactly how your application will run on a deployed server.
